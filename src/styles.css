@@ -421,3 +421,10 @@ table.t .changed { color: var(--red); text-decoration: underline wavy var(--gold
   .mobile-only { display: flex !important; }
   .desktop-only { display: none !important; }
 }
+
+/* カードを裏返すアニメーション */
+.face { animation: flipIn 0.28s ease; }
+@keyframes flipIn { from { transform: perspective(700px) rotateY(80deg); opacity: 0.2; } to { transform: perspective(700px) rotateY(0); opacity: 1; } }
+.face-back { padding-top: 4px; }
+.irreg { text-align: center; }
+.irreg .k { font-size: 0.75rem; color: var(--red); margin-bottom: 4px; }

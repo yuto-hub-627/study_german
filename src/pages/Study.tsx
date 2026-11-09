@@ -2,12 +2,11 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Icon } from '../components/Icon';
 import { Speak } from '../components/Speak';
 import { GenderTag } from '../components/WordTables';
-import { ARTICLE, headword, speechText, verbForms } from '../lib/german';
+import { ARTICLE, PERSONS, headword, regularVerb, speechText, verbForms } from '../lib/german';
 import { go } from '../lib/router';
 import { newProgress, previewInterval, stage } from '../lib/srs';
 import { newLearnedToday } from '../lib/stats';
 import { grade as gradeWord, saveSettings, useStore } from '../lib/store';
-import { speak } from '../lib/tts';
 import { LESSONS, POS_LABEL, POS_ORDER, type Grade, type Pos, type Word } from '../lib/types';
 
 type Mode = 'de-ja' | 'ja-de' | 'type';
@@ -204,7 +203,8 @@ export function Study() {
 function Session({ queue, mode, onGrade, onQuit, remaining, peek }: { queue: string[]; mode: Mode; onGrade: (id: string, g: Grade, answer?: string) => void; onQuit: () => void; remaining: number; peek: string | null }) {
   const w = useStore((s) => s.wordMap.get(queue[0]));
   const p = useStore((s) => s.progress.get(queue[0]));
-  const [shown, setShown] = useState(false);
+  const [shown, setShown] = useState(false); // 裏面を一度でも見たか
+  const [side, setSide] = useState<'front' | 'back'>('front');
   const [typed, setTyped] = useState('');
   const [result, setResult] = useState<null | { g: Grade; msg: string }>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -231,7 +231,6 @@ function Session({ queue, mode, onGrade, onQuit, remaining, peek }: { queue: str
   const revealRef = useRef<(() => void) | null>(null);
 
   useEffect(() => {
-    if (w && mode === 'de-ja') speak(speechText(w));
     inputRef.current?.focus();
   }, [w, mode]);
 
@@ -274,17 +273,18 @@ function Session({ queue, mode, onGrade, onQuit, remaining, peek }: { queue: str
     if (Math.abs(dx) > 90) commit(dx > 0);
     else {
       setDrag(null);
-      if (Math.abs(dx) < 8 && Math.abs(dy) < 8 && !shown) reveal();
+      if (Math.abs(dx) < 8 && Math.abs(dy) < 8) reveal();
     }
   };
 
+  /** 表⇔裏をめくる (音声は自動では流さない) */
   const reveal = () => {
     setShown(true);
-    if (mode !== 'de-ja') speak(speechText(w));
+    setSide((s) => (s === 'front' ? 'back' : 'front'));
   };
 
   commitRef.current = commit;
-  revealRef.current = () => !shown && reveal();
+  revealRef.current = () => reveal();
 
   const checkTyped = () => {
     const ans = norm(typed);
@@ -310,7 +310,6 @@ function Session({ queue, mode, onGrade, onQuit, remaining, peek }: { queue: str
     }
     setResult({ g, msg });
     setShown(true);
-    speak(speechText(w));
   };
 
   const front =
@@ -335,6 +334,23 @@ function Session({ queue, mode, onGrade, onQuit, remaining, peek }: { queue: str
         </div>
       </>
     );
+
+  const backFace = (
+    <>
+      <div className="row" style={{ justifyContent: 'center' }}>
+        <GenderTag w={w} />
+        <span className="tag">{POS_LABEL[w.pos]}</span>
+      </div>
+      <div className="row" style={{ justifyContent: 'center' }}>
+        <span className={`big de${w.pos === 'noun' && w.g ? ' g-' + w.g : ''}`} style={{ fontSize: mode === 'de-ja' ? '1.5rem' : '2rem' }}>
+          {headword(w)}
+        </span>
+        <Speak small={mode === 'de-ja'} text={speechText(w)} />
+      </div>
+      <div style={{ fontSize: mode === 'de-ja' ? '1.6rem' : '1.2rem', fontWeight: 600 }}>{w.ja}</div>
+      <Extra w={w} />
+    </>
+  );
 
   const back = (
     <div className="answer stack" style={{ gap: 6 }}>
@@ -405,7 +421,13 @@ function Session({ queue, mode, onGrade, onQuit, remaining, peek }: { queue: str
             </div>
           </>
         )}
-        {front}
+        {swipeable ? (
+          <div key={side} className={`face face-${side} stack`} style={{ gap: 8, alignItems: 'center', width: '100%' }}>
+            {side === 'front' ? front : backFace}
+          </div>
+        ) : (
+          front
+        )}
         {mode === 'type' && !shown && (
           <form
             style={{ width: '100%', maxWidth: 420 }}
@@ -423,7 +445,7 @@ function Session({ queue, mode, onGrade, onQuit, remaining, peek }: { queue: str
               ))}
             </div>
             <div className="row" style={{ marginTop: 8, justifyContent: 'center' }}>
-              <button type="button" className="btn small" onClick={() => { setResult({ g: 0, msg: 'わからなかった' }); setShown(true); speak(speechText(w)); }}>
+              <button type="button" className="btn small" onClick={() => { setResult({ g: 0, msg: 'わからなかった' }); setShown(true); }}>
                 わからない
               </button>
               <button type="submit" className="btn primary small">
@@ -432,7 +454,7 @@ function Session({ queue, mode, onGrade, onQuit, remaining, peek }: { queue: str
             </div>
           </form>
         )}
-        {mode !== 'type' && !shown && <div className="tiny muted">タップで答え ・ 左右にスワイプで判定</div>}
+        {swipeable && <div className="tiny muted">{side === 'front' ? 'タップで裏返す ・ 左右にスワイプで判定' : 'タップで表に戻る'}</div>}
         {shown && result && (
           <div className={`alert ${result.g === 0 ? 'ng' : result.g === 1 ? 'warn' : 'ok'}`} style={{ width: '100%' }}>
             {result.msg}
@@ -443,7 +465,7 @@ function Session({ queue, mode, onGrade, onQuit, remaining, peek }: { queue: str
             )}
           </div>
         )}
-        {shown && back}
+        {!swipeable && shown && back}
       </div>
       {shown &&
         (result ? (
@@ -473,9 +495,9 @@ function Session({ queue, mode, onGrade, onQuit, remaining, peek }: { queue: str
             ))}
           </div>
         ))}
-      {!shown && mode !== 'type' && (
-        <button className="btn primary block desktop-only" onClick={reveal}>
-          答えを見る
+      {mode !== 'type' && (
+        <button className={`btn block desktop-only${shown ? '' : ' primary'}`} onClick={reveal}>
+          {side === 'front' ? '裏返す' : '表に戻す'}
         </button>
       )}
       {swipeable && !result && (
@@ -484,18 +506,16 @@ function Session({ queue, mode, onGrade, onQuit, remaining, peek }: { queue: str
             <Icon name="x" size={26} />
             <span>知らない</span>
           </button>
-          {!shown && (
-            <button className="btn sw-flip" onClick={reveal}>
-              答え
-            </button>
-          )}
+          <button className="btn sw-flip" onClick={reveal}>
+            {side === 'front' ? '裏返す' : '表へ'}
+          </button>
           <button className="btn sw-yes" onClick={() => commit(true)} aria-label="知ってる">
             <Icon name="check" size={26} />
             <span>知ってる</span>
           </button>
         </div>
       )}
-      {swipeable && <div className="tiny muted center desktop-only">キーボード: ← 知らない ／ → 知ってる ／ Space 答え</div>}
+      {swipeable && <div className="tiny muted center desktop-only">キーボード: ← 知らない ／ → 知ってる ／ Space 裏返す</div>}
       {peek && (
         <div className="toast" role="status">
           <span className="de">{peek}</span>
@@ -515,9 +535,38 @@ function Extra({ w }: { w: Word }) {
     );
   if (w.pos === 'verb') {
     const f = verbForms(w);
+    const reg = regularVerb(w.de, w.sep);
+    const first = (x?: string) => (x || '').split(' ')[0];
+    const irregular = PERSONS.map((p, i) => ({ p, f: f.pr?.[i] })).filter((x, i) => x.f && first(x.f) !== first(reg.pr?.[i]));
+    const aux = (f.ax || '').startsWith('sein') ? 'ist' : 'hat';
     return (
-      <div className="small de" style={{ color: 'var(--text-2)' }}>
-        er {f.pr?.[2]} ・ {f.pt?.[0]} ・ {(f.ax || '').startsWith('sein') ? 'ist' : 'hat'} {f.pp}
+      <div className="stack" style={{ gap: 8, width: '100%', maxWidth: 360 }}>
+        <div className="principal" style={{ marginTop: 0 }}>
+          <div>
+            <div className="k">過去形</div>
+            <div className="v de">{f.pt?.[0] ?? '—'}</div>
+          </div>
+          <div>
+            <div className="k">過去分詞</div>
+            <div className="v de">{f.pp ?? '—'}</div>
+          </div>
+          <div>
+            <div className="k">完了</div>
+            <div className={`v de${aux === 'ist' ? ' g-f' : ''}`}>{aux} …</div>
+          </div>
+        </div>
+        {irregular.length > 0 && (
+          <div className="irreg">
+            <div className="k">注意：不規則な現在形</div>
+            <div className="chips" style={{ justifyContent: 'center' }}>
+              {irregular.map((x) => (
+                <span key={x.p} className="chip de" style={{ cursor: 'default' }}>
+                  <span className="muted">{x.p}</span> <b style={{ color: 'var(--red)' }}>{x.f}</b>
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     );
   }
