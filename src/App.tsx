@@ -59,7 +59,7 @@ export function App() {
           <i />
         </div>
         {NAV.map((n) => (
-          <a key={n.path} href={`#${n.path}`} className={active(n.path) ? 'active' : ''} title={n.label}>
+          <a key={n.path} href={`#${n.path}`} className={active(n.path) ? 'active' : ''} title={n.label} onClick={(e) => e.currentTarget.blur()}>
             <Icon name={n.icon} />
             <span className="lbl">{n.label}</span>
           </a>

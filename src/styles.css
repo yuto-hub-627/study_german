@@ -393,12 +393,12 @@ table.t .changed { color: var(--red); text-decoration: underline wavy var(--gold
     width: 80px; padding: 20px 12px; overflow: hidden;
     transition: width 0.22s ease, box-shadow 0.22s ease;
   }
-  .sidebar:hover, .sidebar:focus-within { width: 248px; box-shadow: 3px 0 0 var(--gold), 10px 0 30px rgba(29, 26, 22, 0.18); }
+  .sidebar:hover, .sidebar:has(:focus-visible) { width: 248px; box-shadow: 3px 0 0 var(--gold), 10px 0 30px rgba(29, 26, 22, 0.18); }
   .sidebar .brand { padding: 0 4px 18px; gap: 12px; white-space: nowrap; }
   .sidebar .flagbar { margin: -6px 6px 18px !important; }
   .sidebar a { padding: 10px 14px; gap: 14px; white-space: nowrap; }
   .sidebar svg { width: 22px; height: 22px; flex-shrink: 0; }
   .sidebar .lbl { opacity: 0; transition: opacity 0.12s ease; }
-  .sidebar:hover .lbl, .sidebar:focus-within .lbl { opacity: 1; transition-delay: 0.06s; }
+  .sidebar:hover .lbl, .sidebar:has(:focus-visible) .lbl { opacity: 1; transition-delay: 0.06s; }
   .sidebar .foot { white-space: nowrap; }
 }
