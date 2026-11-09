@@ -1,6 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="112" fill="#f4ecdc"/>
-  <path d="M98 130 L418 136 L414 190 L94 186 Z" fill="#1d1a16"/>
-  <path d="M94 228 L416 224 L420 284 L98 288 Z" fill="#d62d20" stroke="#1d1a16" stroke-width="5"/>
-  <path d="M100 322 L414 328 L410 384 L96 378 Z" fill="#f2b705" stroke="#1d1a16" stroke-width="5"/>
+  <defs>
+    <filter id="r" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="6"/></filter>
+    <filter id="r2" x="-20%" y="-20%" width="140%" height="140%"><feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="2"/><feDisplacementMap in="SourceGraphic" scale="4"/></filter>
+    <pattern id="paper" width="22" height="22" patternUnits="userSpaceOnUse"><rect width="22" height="22" fill="#f4ecdc"/><circle cx="3" cy="4" r="1" fill="#ddd0b4"/><circle cx="14" cy="15" r="0.8" fill="#e2d6bc"/></pattern>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#paper)"/>
+  <g transform="translate(0.0 0.0) scale(1.0)">
+    <g filter="url(#r)">
+      <path d="M120 430 L250 140 L270 140 L392 430" fill="none" stroke="#1d1a16" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M178 334 L338 330" stroke="#1d1a16" stroke-width="42" stroke-linecap="round"/>
+    </g>
+    <g filter="url(#r2)">
+      <circle cx="198" cy="84" r="36" fill="#d62d20" stroke="#1d1a16" stroke-width="9"/>
+      <circle cx="320" cy="84" r="36" fill="#f2b705" stroke="#1d1a16" stroke-width="9"/>
+    </g>
+  </g>
 </svg>
