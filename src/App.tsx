@@ -42,9 +42,20 @@ export function App() {
 
   return (
     <div className="app">
+      <svg width="0" height="0" style={{ position: 'absolute' }} aria-hidden="true">
+        <filter id="sketchy">
+          <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="3" result="n" />
+          <feDisplacementMap in="SourceGraphic" in2="n" scale="1.6" />
+        </filter>
+      </svg>
       <nav className="sidebar" aria-label="メインメニュー">
         <div className="brand">
-          <span style={{ fontSize: 22 }}>🇩🇪</span> Deutsch lernen
+          <span className="de" style={{ fontSize: 26 }}>Deutsch lernen</span>
+        </div>
+        <div className="flagbar" style={{ margin: '-10px 12px 18px' }}>
+          <i />
+          <i />
+          <i />
         </div>
         {NAV.map((n) => (
           <a key={n.path} href={`#${n.path}`} className={active(n.path) ? 'active' : ''}>

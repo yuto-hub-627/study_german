@@ -111,7 +111,7 @@ function QuestionView({ q, answered, onAnswer }: { q: Question; answered: boolea
         <div className="q-sentence de">{q.de.split('___').map((part, idx, arr) => (
           <span key={idx}>
             {part}
-            {idx < arr.length - 1 && <span style={{ borderBottom: '2px solid var(--accent)', padding: '0 18px', margin: '0 2px' }}>{answered !== null ? '' : ' '}</span>}
+            {idx < arr.length - 1 && <span style={{ borderBottom: '3px solid var(--red)', padding: '0 18px', margin: '0 2px' }}>{answered !== null ? '' : ' '}</span>}
           </span>
         ))}</div>
         <div className="row" style={{ flexWrap: 'nowrap' }}>

@@ -16,8 +16,8 @@ export default defineConfig({
         start_url: '/',
         scope: '/',
         display: 'standalone',
-        background_color: '#ffffff',
-        theme_color: '#ffffff',
+        background_color: '#f4ecdc',
+        theme_color: '#f4ecdc',
         icons: [
           { src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
           { src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png' },
@@ -25,9 +25,15 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
+        globPatterns: ['**/*.{js,css,html,svg,png}', 'assets/*latin-400-normal*.woff2', 'assets/*latin-600-normal*.woff2'],
         navigateFallbackDenylist: [/^\/api\//],
         runtimeCaching: [
+          {
+            // 日本語手書きフォント (文字範囲ごとに分割) は使った分だけキャッシュ
+            urlPattern: ({ url }) => url.pathname.endsWith('.woff2'),
+            handler: 'CacheFirst',
+            options: { cacheName: 'fonts', expiration: { maxEntries: 300 } },
+          },
           {
             // 予測入力用の辞書 (約4.6MB) は初回利用時にキャッシュ
             urlPattern: ({ url }) => url.pathname.startsWith('/dict/'),

@@ -18,7 +18,7 @@ const P: Record<string, string> = {
 
 export function Icon({ name, size }: { name: keyof typeof P | string; size?: number }) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" width={size} height={size} aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.1} strokeLinecap="round" strokeLinejoin="round" width={size} height={size} aria-hidden="true">
       <path d={P[name] || ''} />
     </svg>
   );

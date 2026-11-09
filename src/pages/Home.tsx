@@ -41,7 +41,7 @@ export function Home() {
         <h1>Guten Tag! 👋</h1>
       </div>
 
-      <div className="card" style={{ background: 'linear-gradient(135deg, #2f5bd8, #4f7cf0)', color: '#fff', border: 0 }}>
+      <div className="card hero-today">
         <div className="row">
           <div>
             <div className="small" style={{ opacity: 0.85 }}>今日の学習</div>
@@ -51,7 +51,7 @@ export function Home() {
             <div className="small" style={{ opacity: 0.85 }}>今日の回答 {todayCount} 回{st > 0 ? ` ・ ${st}日連続 🔥` : ''}</div>
           </div>
           <div className="spacer" />
-          <button className="btn" style={{ background: '#fff', color: 'var(--accent)', border: 0 }} onClick={() => go('/study')}>
+          <button className="btn" onClick={() => go('/study')}>
             学習をはじめる
           </button>
         </div>
@@ -108,16 +108,16 @@ export function Home() {
         <div style={{ display: 'flex', alignItems: 'flex-end', gap: 4, height: 90 }}>
           {daily.map((d) => (
             <div key={d.day} title={`${new Date(d.day).toLocaleDateString('ja-JP')} ${d.total}回 (正解${d.ok})`} style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', height: '100%' }}>
-              <div style={{ height: `${((d.total - d.ok) / maxDaily) * 100}%`, background: '#f3b4b4', borderRadius: '4px 4px 0 0' }} />
-              <div style={{ height: `${(d.ok / maxDaily) * 100}%`, background: 'var(--accent)', borderRadius: d.total === d.ok ? '4px 4px 0 0' : 0, minHeight: d.total ? 2 : 0 }} />
+              <div style={{ height: `${((d.total - d.ok) / maxDaily) * 100}%`, background: 'var(--red)', borderRadius: '4px 4px 0 0', border: '1.5px solid var(--black)', borderBottom: 0 }} />
+              <div style={{ height: `${(d.ok / maxDaily) * 100}%`, background: 'var(--black)', borderRadius: d.total === d.ok ? '4px 4px 0 0' : 0, minHeight: d.total ? 2 : 0 }} />
             </div>
           ))}
         </div>
         <div className="row tiny muted" style={{ justifyContent: 'space-between', marginTop: 4 }}>
           <span>{new Date(daily[0].day).toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric' })}</span>
           <span className="legend">
-            <span><i style={{ background: 'var(--accent)' }} />正解</span>
-            <span><i style={{ background: '#f3b4b4' }} />不正解</span>
+            <span><i style={{ background: 'var(--black)' }} />正解</span>
+            <span><i style={{ background: 'var(--red)' }} />不正解</span>
           </span>
           <span>今日</span>
         </div>

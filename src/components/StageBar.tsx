@@ -1,6 +1,6 @@
 import type { Stage } from '../lib/srs';
 
-const COLORS: Record<Stage, string> = { new: 'var(--bg-sunk)', learning: 'var(--warn)', young: 'var(--accent)', mature: 'var(--ok)' };
+const COLORS: Record<Stage, string> = { new: 'transparent', learning: 'var(--gold)', young: 'var(--red)', mature: 'var(--black)' };
 const LABEL: Record<Stage, string> = { new: '未学習', learning: '学習中', young: '復習中', mature: '定着' };
 
 export function StageBar({ c, legend }: { c: Record<Stage, number>; legend?: boolean }) {
