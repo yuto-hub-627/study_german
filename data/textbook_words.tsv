@@ -1,0 +1,741 @@
+# lesson	word	pos	gender	plural	ja
+# pos: noun verb adj adv prep conj pron num intj phrase det / 分離動詞は an|fangen のように | で区切る
+1A	kommen	verb			来る
+1A	wohnen	verb			住む
+1A	lernen	verb			学ぶ、勉強する
+1A	machen	verb			する、作る
+1A	studieren	verb			(大学で)専攻する、勉強する
+1A	spielen	verb			(スポーツ・ゲームを)する、(楽器を)演奏する
+1A	kennen	verb			知っている(見聞きして)
+1A	ich	pron			私は
+1A	du	pron			君は
+1A	er	pron			彼は、それは
+1A	sie	pron			彼女は、それは／彼らは
+1A	es	pron			それは
+1A	wir	pron			私たちは
+1A	ihr	pron			君たちは
+1A	Sie	pron			あなた(がた)は
+1A	ja	adv			はい
+1A	nein	adv			いいえ
+1A	nicht	adv			〜ない
+1A	wo	adv			どこに、どこで
+1A	woher	adv			どこから
+1A	was	pron			何が、何を
+1A	aus	prep			〜から(出身・中から)
+1A	in	prep			〜の中に／〜の中へ
+1A	und	conj			そして、〜と
+1A	heute	adv			今日
+1A	Japan	noun	n		日本
+1A	Japanisch	noun	n		日本語
+1A	Deutsch	noun	n		ドイツ語
+1A	Jura	noun	n	-	法学 (無冠詞・複数扱いの語)
+1A	Politik	noun	f		政治、政治学
+1A	Mathematik	noun	f		数学
+1A	Soziologie	noun	f		社会学
+1A	Tennis	noun	n		テニス
+1A	Fußball	noun	m		サッカー
+1A	Klavier	noun	n	Klaviere	ピアノ
+1A	Frau	noun	f	Frauen	女性、妻、〜さん(女性)
+1A	Herr	noun	m	Herren	紳士、〜さん(男性)
+1A	null	num			0
+1A	eins	num			1
+1A	zwei	num			2
+1A	drei	num			3
+1A	vier	num			4
+1A	fünf	num			5
+1A	sechs	num			6
+1A	sieben	num			7
+1A	acht	num			8
+1A	neun	num			9
+1A	zehn	num			10
+1A	elf	num			11
+1A	zwölf	num			12
+1A	dreizehn	num			13
+1A	sechzehn	num			16
+1A	siebzehn	num			17
+1A	zwanzig	num			20
+1B	sein	verb			〜である、いる、ある
+1B	haben	verb			持っている
+1B	arbeiten	verb			働く
+1B	finden	verb			見つける、〜だと思う
+1B	reisen	verb			旅行する
+1B	heißen	verb			〜という名前である
+1B	besuchen	verb			訪ねる、(学校に)通う
+1B	gehen	verb			行く
+1B	Abend	noun	m	Abende	晩、夕方
+1B	Morgen	noun	m	Morgen	朝
+1B	morgen	adv			明日
+1B	Tag	noun	m	Tage	日、昼
+1B	Zeit	noun	f	Zeiten	時間
+1B	Durst	noun	m		のどの渇き
+1B	Hunger	noun	m		空腹
+1B	Fieber	noun	n		熱
+1B	Geld	noun	n	Gelder	お金
+1B	Geburtstag	noun	m	Geburtstage	誕生日
+1B	Party	noun	f	Partys	パーティー
+1B	Konzert	noun	n	Konzerte	コンサート
+1B	Deutschland	noun	n		ドイツ
+1B	Japaner	noun	m	Japaner	日本人(男性)
+1B	Japanerin	noun	f	Japanerinnen	日本人(女性)
+1B	Lehrer	noun	m	Lehrer	教師(男性)
+1B	Lehrerin	noun	f	Lehrerinnen	教師(女性)
+1B	Student	noun	m	Studenten	大学生(男性) ※男性弱変化名詞
+1B	Studentin	noun	f	Studentinnen	大学生(女性)
+1B	Koreaner	noun	m	Koreaner	韓国人(男性)
+1B	Amerikaner	noun	m	Amerikaner	アメリカ人(男性)
+1B	Französisch	noun	n		フランス語
+1B	Kunst	noun	f	Künste	芸術、美術
+1B	nett	adj			親切な、感じのよい
+1B	freundlich	adj			親切な、友好的な
+1B	interessant	adj			興味深い、面白い
+1B	krank	adj			病気の
+1B	groß	adj			大きい、背が高い
+1B	gut	adj			よい、上手に
+1B	schwer	adj			重い、難しい
+1B	auch	adv			〜も
+1B	gern	adv			好んで、喜んで
+1B	sehr	adv			とても
+1B	jetzt	adv			今
+1B	viel	adj			たくさんの、多く
+1B	zu	adv			〜すぎる
+1B	wie	adv			どのように、どう
+1B	wohin	adv			どこへ
+1B	warum	adv			なぜ
+1B	dort	adv			そこで、あそこで
+1B	aber	conj			しかし
+1B	denn	conj			というのは〜だから
+1B	oder	conj			あるいは、または
+1B	Hallo	intj			やあ、こんにちは
+1B	Guten Tag	phrase			こんにちは
+1B	Guten Morgen	phrase			おはよう
+1B	Guten Abend	phrase			こんばんは
+1B	Auf Wiedersehen	phrase			さようなら
+1B	Tschüs	intj			じゃあね、バイバイ
+1B	Danke	intj			ありがとう
+1B	Bitte	intj			どうぞ、どういたしまして
+1B	Entschuldigung	noun	f	Entschuldigungen	すみません、ごめんなさい
+1B	Wie geht es Ihnen?	phrase			ご機嫌いかがですか？
+1B	Wie geht's?	phrase			調子はどう？
+1B	Es geht.	phrase			まあまあです
+1B	Viel Spaß!	phrase			楽しんでね！
+1B	bis morgen	phrase			また明日
+2A	trinken	verb			飲む
+2A	essen	verb			食べる
+2A	probieren	verb			試す、試食する
+2A	schmecken	verb			(〜³にとって)おいしい、〜の味がする
+2A	kosten	verb			(値段が)〜である
+2A	suchen	verb			探す
+2A	geben	verb			与える、渡す
+2A	zeigen	verb			見せる
+2A	schicken	verb			送る
+2A	schreiben	verb			書く
+2A	gehören	verb			(〜³の)ものである
+2A	helfen	verb			(〜³を)手伝う、助ける
+2A	scheinen	verb			輝く、〜のように見える
+2A	Café	noun	n	Cafés	カフェ
+2A	Kaffee	noun	m	Kaffees	コーヒー
+2A	Tee	noun	m	Tees	紅茶、お茶
+2A	Kuchen	noun	m	Kuchen	ケーキ
+2A	Eis	noun	n		アイスクリーム、氷
+2A	Bier	noun	n	Biere	ビール
+2A	Orangensaft	noun	m	Orangensäfte	オレンジジュース
+2A	Mineralwasser	noun	n		ミネラルウォーター
+2A	Bratwurst	noun	f	Bratwürste	焼きソーセージ
+2A	Brot	noun	n	Brote	パン
+2A	Suppe	noun	f	Suppen	スープ
+2A	Pommes frites	noun		Pl	フライドポテト (複数扱い)
+2A	Vater	noun	m	Väter	父
+2A	Mutter	noun	f	Mütter	母
+2A	Kind	noun	n	Kinder	子ども
+2A	Mann	noun	m	Männer	男性、夫
+2A	Mädchen	noun	n	Mädchen	少女
+2A	Bruder	noun	m	Brüder	兄弟、兄、弟
+2A	Schwester	noun	f	Schwestern	姉妹、姉、妹
+2A	Sohn	noun	m	Söhne	息子
+2A	Tochter	noun	f	Töchter	娘
+2A	Freund	noun	m	Freunde	友人(男性)、ボーイフレンド
+2A	Freundin	noun	f	Freundinnen	友人(女性)、ガールフレンド
+2A	Buch	noun	n	Bücher	本
+2A	Unterricht	noun	m		授業
+2A	Uhr	noun	f	Uhren	時計、〜時
+2A	Tisch	noun	m	Tische	机、テーブル
+2A	Computer	noun	m	Computer	コンピューター
+2A	Tasche	noun	f	Taschen	かばん、ポケット
+2A	Handy	noun	n	Handys	携帯電話
+2A	Schuh	noun	m	Schuhe	靴
+2A	Kugelschreiber	noun	m	Kugelschreiber	ボールペン
+2A	Hut	noun	m	Hüte	(縁のある)帽子
+2A	Fahrrad	noun	n	Fahrräder	自転車
+2A	Jacke	noun	f	Jacken	上着、ジャケット
+2A	Hemd	noun	n	Hemden	シャツ
+2A	Foto	noun	n	Fotos	写真
+2A	Zeitung	noun	f	Zeitungen	新聞
+2A	Brief	noun	m	Briefe	手紙
+2A	Karte	noun	f	Karten	カード、はがき、切符
+2A	Pullover	noun	m	Pullover	セーター
+2A	E-Mail	noun	f	E-Mails	電子メール
+2A	Sonne	noun	f	Sonnen	太陽
+2A	Euro	noun	m	Euro	ユーロ
+2A	Cent	noun	m	Cent	セント
+2A	Essen	noun	n	Essen	食事、料理
+2A	praktisch	adj			実用的な
+2A	neu	adj			新しい
+2A	alt	adj			古い、年をとった
+2A	kaputt	adj			壊れた
+2A	leicht	adj			軽い、簡単な
+2A	schön	adj			美しい、すてきな
+2A	billig	adj			安い
+2A	toll	adj			すごい、すばらしい
+2A	gemütlich	adj			居心地のよい
+2A	hier	adv			ここで
+2A	dann	adv			それから、それなら
+2A	zusammen	adv			一緒に
+2A	getrennt	adv			別々に
+2A	Zahlen bitte!	phrase			お勘定をお願いします
+2A	Stimmt so!	phrase			おつりは結構です
+2A	Was kostet das?	phrase			これはいくらですか？
+2A	dreißig	num			30
+2A	vierzig	num			40
+2A	fünfzig	num			50
+2A	sechzig	num			60
+2A	siebzig	num			70
+2A	achtzig	num			80
+2A	neunzig	num			90
+2A	hundert	num			100
+2B	hören	verb			聞く
+2B	lieben	verb			愛する
+2B	schenken	verb			贈る、プレゼントする
+2B	Familie	noun	f	Familien	家族
+2B	Eltern	noun		Pl	両親 (複数のみ)
+2B	Geschwister	noun		Pl	兄弟姉妹 (複数のみ)
+2B	Großvater	noun	m	Großväter	祖父
+2B	Großmutter	noun	f	Großmütter	祖母
+2B	Großeltern	noun		Pl	祖父母 (複数のみ)
+2B	Onkel	noun	m	Onkel	おじ
+2B	Tante	noun	f	Tanten	おば
+2B	Einzelkind	noun	n	Einzelkinder	一人っ子
+2B	Beruf	noun	m	Berufe	職業
+2B	Name	noun	m	Namen	名前 ※2格 Namens
+2B	Arzt	noun	m	Ärzte	医者(男性)
+2B	Ärztin	noun	f	Ärztinnen	医者(女性)
+2B	Apotheker	noun	m	Apotheker	薬剤師(男性)
+2B	Apothekerin	noun	f	Apothekerinnen	薬剤師(女性)
+2B	Verkäufer	noun	m	Verkäufer	店員(男性)
+2B	Verkäuferin	noun	f	Verkäuferinnen	店員(女性)
+2B	Krankenpfleger	noun	m	Krankenpfleger	看護師(男性)
+2B	Krankenpflegerin	noun	f	Krankenpflegerinnen	看護師(女性)
+2B	Bundeskanzlerin	noun	f	Bundeskanzlerinnen	連邦首相(女性)
+2B	Schüler	noun	m	Schüler	生徒(男性)
+2B	Medikament	noun	n	Medikamente	薬
+2B	Angst	noun	f	Ängste	不安、恐れ
+2B	Musik	noun	f	Musiken	音楽
+2B	Auto	noun	n	Autos	自動車
+2B	Bleistift	noun	m	Bleistifte	鉛筆
+2B	Smartphone	noun	n	Smartphones	スマートフォン
+2B	CD	noun	f	CDs	CD
+2B	Heft	noun	n	Hefte	ノート
+2B	Telefon	noun	n	Telefone	電話
+2B	Telefonnummer	noun	f	Telefonnummern	電話番号
+2B	Nummer	noun	f	Nummern	番号
+2B	Jahr	noun	n	Jahre	年、〜歳
+2B	Zigarette	noun	f	Zigaretten	たばこ
+2B	Wein	noun	m	Weine	ワイン
+2B	Wasser	noun	n	Wasser	水
+2B	Milch	noun	f		牛乳
+2B	Butter	noun	f		バター
+2B	Reis	noun	m		米、ご飯
+2B	Kartoffel	noun	f	Kartoffeln	じゃがいも
+2B	Getränk	noun	n	Getränke	飲み物
+2B	Ei	noun	n	Eier	卵
+2B	Papier	noun	n	Papiere	紙
+2B	ähnlich	adj			(〜³に)似ている
+2B	mein	det			私の
+2B	dein	det			君の
+2B	unser	det			私たちの
+2B	euer	det			君たちの
+2B	Ihr	det			あなた(がた)の
+2B	kein	det			ひとつも〜ない(否定冠詞)
+2B	schon	adv			すでに、もう
+2B	wer	pron			誰が
+3A	fahren	verb			(乗り物で)行く、運転する
+3A	tragen	verb			運ぶ、身につけている
+3A	laufen	verb			走る、歩く
+3A	schlafen	verb			眠る
+3A	sprechen	verb			話す
+3A	treffen	verb			会う
+3A	lesen	verb			読む
+3A	sehen	verb			見る、見える
+3A	werden	verb			〜になる
+3A	nehmen	verb			取る、(乗り物に)乗る
+3A	wissen	verb			(知識として)知っている
+3A	warten	verb			待つ
+3A	beginnen	verb			始まる、始める
+3A	sagen	verb			言う
+3A	Brille	noun	f	Brillen	めがね
+3A	Bus	noun	m	Busse	バス
+3A	Zug	noun	m	Züge	列車
+3A	Taxi	noun	n	Taxis	タクシー
+3A	Motorrad	noun	n	Motorräder	オートバイ
+3A	Fahrkarte	noun	f	Fahrkarten	乗車券
+3A	Reise	noun	f	Reisen	旅行
+3A	Dame	noun	f	Damen	ご婦人
+3A	Hausaufgabe	noun	f	Hausaufgaben	宿題
+3A	Anwalt	noun	m	Anwälte	弁護士(男性)
+3A	Deutschunterricht	noun	m		ドイツ語の授業
+3A	Viertel	noun	n	Viertel	4分の1、15分
+3A	bald	adv			まもなく、じきに
+3A	gesund	adj			健康な
+3A	leise	adj			静かな、小声の
+3A	schnell	adj			速い
+3A	später	adv			後で
+3A	wirklich	adv			本当に
+3A	gerade	adv			ちょうど今
+3A	oft	adv			しばしば、よく
+3A	doch	adv			(否定疑問に対して)いいえ〜です、〜だよ
+3A	halb	adj			半分の (halb acht = 7時半)
+3A	vor	prep			〜の前に
+3A	nach	prep			〜の後で、〜へ
+3A	um	prep			〜時に、〜の周りに
+3A	gegen	prep			〜頃に、〜に反対して
+3A	wann	adv			いつ
+3A	vorsichtig	adj			慎重な、注意深い
+3A	Warte mal!	phrase			ちょっと待って！
+3B	gefallen	verb			(〜³の)気に入る
+3B	leihen	verb			貸す
+3B	empfehlen	verb			勧める
+3B	danken	verb			(〜³に)感謝する
+3B	kaufen	verb			買う
+3B	leben	verb			生きる、暮らす
+3B	passieren	verb			起こる
+3B	dieser	det			この
+3B	jeder	det			どの〜も、各々の
+3B	jener	det			あの
+3B	solcher	det			そのような
+3B	welcher	det			どの
+3B	aller	det			すべての
+3B	Stadt	noun	f	Städte	都市、町
+3B	Reiseführer	noun	m	Reiseführer	旅行ガイドブック
+3B	Atmosphäre	noun	f	Atmosphären	雰囲気
+3B	Sehenswürdigkeit	noun	f	Sehenswürdigkeiten	名所
+3B	Idee	noun	f	Ideen	考え、アイディア
+3B	Schlüssel	noun	m	Schlüssel	鍵
+3B	Anzug	noun	m	Anzüge	スーツ
+3B	Mantel	noun	m	Mäntel	コート
+3B	Kleid	noun	n	Kleider	ワンピース、(複数で)衣服
+3B	Rock	noun	m	Röcke	スカート
+3B	Bluse	noun	f	Blusen	ブラウス
+3B	Hose	noun	f	Hosen	ズボン
+3B	Krawatte	noun	f	Krawatten	ネクタイ
+3B	Schal	noun	m	Schals	スカーフ、マフラー
+3B	Mütze	noun	f	Mützen	(縁なしの)帽子
+3B	Handschuh	noun	m	Handschuhe	手袋
+3B	Rucksack	noun	m	Rucksäcke	リュックサック
+3B	Spielzeug	noun	n	Spielzeuge	おもちゃ
+3B	Titel	noun	m	Titel	タイトル、題名
+3B	Restaurant	noun	n	Restaurants	レストラン
+3B	Märchen	noun	n	Märchen	童話、メルヒェン
+3B	Wald	noun	m	Wälder	森
+3B	besonders	adv			特に
+3B	schick	adj			シックな、おしゃれな
+3B	weit	adj			遠い、広い
+3B	weg	adv			離れて、去って
+3B	wessen	pron			誰の
+3B	wem	pron			誰に
+3B	wen	pron			誰を
+3B	mit	prep			〜と一緒に、〜で(手段)
+3B	von	prep			〜から、〜の
+4A	Bahnhof	noun	m	Bahnhöfe	駅
+4A	Hauptbahnhof	noun	m	Hauptbahnhöfe	中央駅
+4A	Straßenbahn	noun	f	Straßenbahnen	路面電車
+4A	U-Bahn	noun	f	U-Bahnen	地下鉄
+4A	Stadtplan	noun	m	Stadtpläne	市街地図
+4A	Parkplatz	noun	m	Parkplätze	駐車場
+4A	Abendessen	noun	n	Abendessen	夕食
+4A	Oper	noun	f	Opern	オペラ、オペラ座
+4A	Uni	noun	f	Unis	大学(口語)
+4A	Tunnel	noun	m	Tunnel	トンネル
+4A	Park	noun	m	Parks	公園
+4A	Tor	noun	n	Tore	門、ゴール
+4A	Geschenk	noun	n	Geschenke	プレゼント
+4A	Regenschirm	noun	m	Regenschirme	傘
+4A	Tür	noun	f	Türen	ドア
+4A	Bett	noun	n	Betten	ベッド
+4A	Schule	noun	f	Schulen	学校
+4A	Bild	noun	n	Bilder	絵、写真
+4A	Wand	noun	f	Wände	壁
+4A	Schloss	noun	n	Schlösser	城、宮殿、錠
+4A	Berg	noun	m	Berge	山
+4A	Katze	noun	f	Katzen	猫
+4A	Sofa	noun	n	Sofas	ソファ
+4A	Stuhl	noun	m	Stühle	椅子
+4A	Post	noun	f		郵便局、郵便
+4A	Hotel	noun	n	Hotels	ホテル
+4A	Baum	noun	m	Bäume	木
+4A	Kirche	noun	f	Kirchen	教会
+4A	Rathaus	noun	n	Rathäuser	市庁舎
+4A	Haus	noun	n	Häuser	家
+4A	Hund	noun	m	Hunde	犬
+4A	Kino	noun	n	Kinos	映画館
+4A	Meer	noun	n	Meere	海
+4A	Fenster	noun	n	Fenster	窓
+4A	See	noun	m	Seen	湖
+4A	Prüfung	noun	f	Prüfungen	試験
+4A	Pause	noun	f	Pausen	休憩
+4A	Hilfe	noun	f	Hilfen	助け、手伝い
+4A	Arbeit	noun	f	Arbeiten	仕事、勉強
+4A	Besuch	noun	m	Besuche	訪問
+4A	Leute	noun		Pl	人々 (複数のみ)
+4A	Montag	noun	m	Montage	月曜日
+4A	Dienstag	noun	m	Dienstage	火曜日
+4A	Mittwoch	noun	m	Mittwoche	水曜日
+4A	Donnerstag	noun	m	Donnerstage	木曜日
+4A	Freitag	noun	m	Freitage	金曜日
+4A	Samstag	noun	m	Samstage	土曜日
+4A	Sonntag	noun	m	Sonntage	日曜日
+4A	Januar	noun	m	Januare	1月
+4A	Februar	noun	m	Februare	2月
+4A	März	noun	m	Märze	3月
+4A	April	noun	m	Aprile	4月
+4A	Mai	noun	m	Maie	5月
+4A	Juni	noun	m	Junis	6月
+4A	Juli	noun	m	Julis	7月
+4A	August	noun	m	Auguste	8月
+4A	September	noun	m	September	9月
+4A	Oktober	noun	m	Oktober	10月
+4A	November	noun	m	November	11月
+4A	Dezember	noun	m	Dezember	12月
+4A	Frühling	noun	m	Frühlinge	春
+4A	Sommer	noun	m	Sommer	夏
+4A	Herbst	noun	m	Herbste	秋
+4A	Winter	noun	m	Winter	冬
+4A	stellen	verb			(立てて)置く
+4A	stehen	verb			立っている
+4A	legen	verb			(横にして)置く
+4A	liegen	verb			横たわっている、ある
+4A	hängen	verb			掛かっている／掛ける
+4A	denken	verb			考える、思う (an+4格: 〜のことを考える)
+4A	schwimmen	verb			泳ぐ
+4A	zufrieden	adj			満足した (mit+3格)
+4A	herzlich	adj			心からの
+4A	immer	adv			いつも
+4A	gleich	adv			すぐに
+4A	bei	prep			〜のところで
+4A	seit	prep			〜以来
+4A	durch	prep			〜を通って
+4A	für	prep			〜のために
+4A	ohne	prep			〜なしで
+4A	an	prep			〜のきわに(接して)
+4A	auf	prep			〜の上に(接して)
+4A	über	prep			〜の上方に、〜について
+4A	unter	prep			〜の下に
+4A	neben	prep			〜の隣に
+4A	hinter	prep			〜の後ろに
+4A	zwischen	prep			〜の間に
+4B	können	verb			〜できる
+4B	müssen	verb			〜しなければならない
+4B	sollen	verb			〜すべきだ、〜しましょうか
+4B	wollen	verb			〜するつもりだ、〜したい
+4B	dürfen	verb			〜してもよい
+4B	mögen	verb			好む (möchte: 〜したい)
+4B	an|fangen	verb			始まる、始める
+4B	an|kommen	verb			到着する
+4B	an|rufen	verb			(〜⁴に)電話する
+4B	auf|stehen	verb			起きる、立ち上がる
+4B	ab|fahren	verb			出発する
+4B	ab|holen	verb			迎えに行く、受け取りに行く
+4B	fern|sehen	verb			テレビを見る
+4B	mit|kommen	verb			一緒に来る
+4B	statt|finden	verb			開催される
+4B	teil|nehmen	verb			(an+3格に)参加する
+4B	vor|haben	verb			予定している
+4B	vor|stellen	verb			紹介する
+4B	mit|bringen	verb			持ってくる
+4B	parken	verb			駐車する
+4B	rauchen	verb			たばこを吸う
+4B	fliegen	verb			飛ぶ、飛行機で行く
+4B	telefonieren	verb			電話で話す
+4B	schließen	verb			閉める
+4B	Picknick	noun	n	Picknicks	ピクニック
+4B	Saft	noun	m	Säfte	ジュース
+4B	Vormittag	noun	m	Vormittage	午前
+4B	Nachmittag	noun	m	Nachmittage	午後
+4B	Wochenende	noun	n	Wochenenden	週末
+4B	Museum	noun	n	Museen	博物館、美術館
+4B	Eintrittskarte	noun	f	Eintrittskarten	入場券
+4B	Fest	noun	n	Feste	祭り、祝宴
+4B	Sprachkurs	noun	m	Sprachkurse	語学コース
+4B	Fluss	noun	m	Flüsse	川
+4B	Französisch	noun	n		フランス語
+4B	genau	adj			正確な、ちょうど
+4B	leider	adv			残念ながら
+4B	schade	adj			残念な
+4B	erst	adv			やっと、〜になってはじめて
+4B	frei	adj			自由な、暇な、空いている
+4B	Das macht nichts.	phrase			かまいません
+4B	Schade!	phrase			残念！
+5A	bleiben	verb			とどまる
+5A	bringen	verb			持っていく、連れていく
+5A	besichtigen	verb			見物する
+5A	verstehen	verb			理解する
+5A	fallen	verb			落ちる
+5A	steigen	verb			登る、上がる
+5A	ein|schlafen	verb			眠り込む
+5A	geschehen	verb			起こる
+5A	sterben	verb			死ぬ
+5A	Sommerferien	noun		Pl	夏休み (複数のみ)
+5A	Woche	noun	f	Wochen	週
+5A	Film	noun	m	Filme	映画
+5A	Wintersemester	noun	n	Wintersemester	冬学期
+5A	Kindheit	noun	f		子ども時代
+5A	gestern	adv			昨日
+5A	früher	adv			以前は
+5A	ganz	adj			全体の、まったく
+5A	wenig	adj			少ない、少し
+5A	zu Hause	phrase			家で
+5A	nach Hause	phrase			家へ
+5A	Lange nicht gesehen!	phrase			久しぶり！
+5B	brauchen	verb			必要とする
+5B	bestehen	verb			(試験に)合格する
+5B	ein|kaufen	verb			買い物をする
+5B	ziehen	verb			引く、引っ越す
+5B	Wohnung	noun	f	Wohnungen	住まい、アパート
+5B	Bibliothek	noun	f	Bibliotheken	図書館
+5B	Glück	noun	n		幸運、幸福
+5B	Kopfschmerzen	noun		Pl	頭痛 (複数のみ)
+5B	Wetter	noun	n		天気
+5B	Semester	noun	n	Semester	学期
+5B	Mittag	noun	m	Mittage	正午、昼
+5B	Erkältung	noun	f	Erkältungen	風邪
+5B	Firma	noun	f	Firmen	会社
+5B	Stelle	noun	f	Stellen	職、場所
+5B	Fußballspiel	noun	n	Fußballspiele	サッカーの試合
+5B	schlecht	adj			悪い
+5B	sicher	adj			確かな、安全な
+5B	damals	adv			当時
+5B	vorgestern	adv			おととい
+5B	deshalb	adv			だから、それゆえ
+5B	letzt	adj			最後の、この前の (letzte Woche 先週)
+5B	nächst	adj			次の (nächstes Jahr 来年)
+5B	erkältet	adj			風邪をひいた
+5B	als	conj			〜したとき(過去の1回)、〜よりも
+5B	dass	conj			〜ということ
+5B	weil	conj			〜なので
+5B	ob	conj			〜かどうか
+5B	wenn	conj			〜するとき、もし〜ならば
+5B	obwohl	conj			〜にもかかわらず
+5B	wegen	prep			〜のために(理由、2格支配)
+5B	tausend	num			1000
+5B	Million	noun	f	Millionen	100万
+5B	Tut mir leid.	phrase			ごめんなさい
+6A	feiern	verb			祝う
+6A	backen	verb			(パン・ケーキを)焼く
+6A	kochen	verb			料理する
+6A	ein|laden	verb			招待する
+6A	öffnen	verb			開ける
+6A	auf|machen	verb			開ける
+6A	an|ziehen	verb			着る、着せる
+6A	bedecken	verb			覆う
+6A	ab|fliegen	verb			(飛行機で)出発する
+6A	verbinden	verb			結びつける
+6A	betragen	verb			(数量が)〜になる
+6A	gratulieren	verb			(〜³を)祝う、お祝いを言う
+6A	bekommen	verb			もらう、受け取る
+6A	Einladung	noun	f	Einladungen	招待
+6A	Blume	noun	f	Blumen	花
+6A	Geburtstagsparty	noun	f	Geburtstagspartys	誕生日パーティー
+6A	Geschäft	noun	n	Geschäfte	店、商売
+6A	Himmel	noun	m	Himmel	空
+6A	Mauer	noun	f	Mauern	壁、塀
+6A	Krieg	noun	m	Kriege	戦争
+6A	Höhe	noun	f	Höhen	高さ
+6A	Kirchturm	noun	m	Kirchtürme	教会の塔
+6A	Geschwindigkeit	noun	f	Geschwindigkeiten	速度
+6A	Distanz	noun	f	Distanzen	距離
+6A	Einwohner	noun	m	Einwohner	住民
+6A	Großstadt	noun	f	Großstädte	大都市
+6A	Welt	noun	f	Welten	世界
+6A	Ziel	noun	n	Ziele	目的地、目標
+6A	eigentlich	adv			本来、ところで
+6A	elegant	adj			上品な、エレガントな
+6A	sofort	adv			すぐに
+6A	geboren	adj			生まれた (Ich bin am ... geboren.)
+6A	erst	num			第1の、最初の
+6A	zweit	num			第2の
+6A	dritt	num			第3の
+6A	Alles Gute zum Geburtstag!	phrase			誕生日おめでとう！
+6A	Den Wievielten haben wir heute?	phrase			今日は何日？
+6B	regnen	verb			雨が降る
+6B	schneien	verb			雪が降る
+6B	entdecken	verb			発見する
+6B	erfahren	verb			(聞いて)知る、経験する
+6B	spüren	verb			感じる
+6B	vergessen	verb			忘れる
+6B	versprechen	verb			約束する
+6B	versuchen	verb			試みる
+6B	verbieten	verb			禁止する
+6B	auf|räumen	verb			片付ける
+6B	aus|machen	verb			(電気などを)消す
+6B	mit|nehmen	verb			持っていく、連れていく
+6B	erreichen	verb			到達する、間に合う
+6B	lösen	verb			解く、解決する
+6B	schaffen	verb			成し遂げる
+6B	tun	verb			する
+6B	Dach	noun	n	Dächer	屋根
+6B	Solaranlage	noun	f	Solaranlagen	太陽光発電設備
+6B	Umweltschutz	noun	m		環境保護
+6B	Klimawandel	noun	m		気候変動
+6B	Spaß	noun	m	Späße	楽しみ、冗談
+6B	Gesundheit	noun	f		健康
+6B	Gemüse	noun	n	Gemüse	野菜
+6B	Licht	noun	n	Lichter	光、明かり
+6B	Lust	noun	f	Lüste	(〜したい)気持ち
+6B	Nähe	noun	f		近所、近さ
+6B	Spielplatz	noun	m	Spielplätze	遊び場
+6B	Toilette	noun	f	Toiletten	トイレ
+6B	Kaufhaus	noun	n	Kaufhäuser	デパート
+6B	Supermarkt	noun	m	Supermärkte	スーパーマーケット
+6B	Universität	noun	f	Universitäten	(総合)大学
+6B	Wort	noun	n	Wörter	単語 (複数 Worte は「言葉」)
+6B	Zimmer	noun	n	Zimmer	部屋
+6B	Frühstück	noun	n	Frühstücke	朝食
+6B	Problem	noun	n	Probleme	問題
+6B	sonnig	adj			晴れた
+6B	wolkig	adj			曇った
+6B	bewölkt	adj			曇った
+6B	windig	adj			風の強い
+6B	heiß	adj			暑い、熱い
+6B	warm	adj			暖かい
+6B	kühl	adj			涼しい
+6B	kalt	adj			寒い、冷たい
+6B	stark	adj			強い、激しく
+6B	deutlich	adj			はっきりした
+6B	merkwürdig	adj			奇妙な
+6B	glücklich	adj			幸せな
+6B	früh	adj			早い
+6B	überall	adv			いたるところで
+6B	es gibt	phrase			〜がある (+4格)
+7A	passen	verb			(〜³に)合う、似合う
+7A	an|probieren	verb			試着する
+7A	aus|sehen	verb			〜のように見える
+7A	glauben	verb			信じる、思う
+7A	T-Shirt	noun	n	T-Shirts	Tシャツ
+7A	Jeans	noun		Pl	ジーンズ
+7A	Socke	noun	f	Socken	靴下
+7A	Gürtel	noun	m	Gürtel	ベルト
+7A	Schokolade	noun	f	Schokoladen	チョコレート
+7A	Klasse	noun	f	Klassen	クラス、学級
+7A	Läufer	noun	m	Läufer	走者
+7A	Größe	noun	f	Größen	大きさ、サイズ
+7A	Mode	noun	f	Moden	ファッション、流行
+7A	rot	adj			赤い
+7A	gelb	adj			黄色い
+7A	grün	adj			緑の
+7A	weiß	adj			白い
+7A	grau	adj			灰色の
+7A	schwarz	adj			黒い
+7A	blau	adj			青い
+7A	braun	adj			茶色の
+7A	klein	adj			小さい
+7A	teuer	adj			高価な
+7A	jung	adj			若い
+7A	lang	adj			長い
+7A	hoch	adj			高い
+7A	schwierig	adj			難しい
+7A	bitter	adj			苦い
+7A	günstig	adj			手頃な、有利な
+7A	bekannt	adj			有名な、知られた
+7A	besser	adj			よりよい (gut の比較級)
+7A	lieber	adv			むしろ〜のほうがよい (gern の比較級)
+7A	mehr	adj			より多くの (viel の比較級)
+7B	sich erkälten	verb			風邪をひく
+7B	sich fühlen	verb			(〜と)感じる
+7B	sich bewerben	verb			(um+4格に)応募する
+7B	sich legen	verb			横になる
+7B	sich setzen	verb			座る
+7B	sich schämen	verb			恥ずかしく思う
+7B	sich erinnern	verb			(an+4格を)覚えている、思い出す
+7B	sich freuen	verb			(auf+4格を)楽しみにする／(über+4格を)喜ぶ
+7B	sich interessieren	verb			(für+4格に)興味がある
+7B	sich beschäftigen	verb			(mit+3格に)取り組む
+7B	sich kümmern	verb			(um+4格の)面倒を見る
+7B	sich fürchten	verb			(vor+3格を)怖がる
+7B	sich unterhalten	verb			(mit+3格と)歓談する
+7B	sich waschen	verb			体を洗う (sich³ die Hände waschen 手を洗う)
+7B	sich rasieren	verb			ひげを剃る
+7B	sich schminken	verb			化粧する
+7B	putzen	verb			磨く、掃除する
+7B	Stipendium	noun	n	Stipendien	奨学金
+7B	Kräutertee	noun	m	Kräutertees	ハーブティー
+7B	Besserung	noun	f		回復
+7B	Ausflug	noun	m	Ausflüge	遠足、ハイキング
+7B	Baby	noun	n	Babys	赤ちゃん
+7B	Politiker	noun	m	Politiker	政治家
+7B	Rolle	noun	f	Rollen	役割、役
+7B	Schauspieler	noun	m	Schauspieler	俳優
+7B	Thema	noun	n	Themen	テーマ
+7B	Nachbar	noun	m	Nachbarn	隣人
+7B	Zahnarzt	noun	m	Zahnärzte	歯医者
+7B	Gesicht	noun	n	Gesichter	顔
+7B	Kopf	noun	m	Köpfe	頭
+7B	Auge	noun	n	Augen	目
+7B	Ohr	noun	n	Ohren	耳
+7B	Nase	noun	f	Nasen	鼻
+7B	Mund	noun	m	Münder	口
+7B	Hand	noun	f	Hände	手
+7B	Arm	noun	m	Arme	腕
+7B	Bein	noun	n	Beine	脚
+7B	Fuß	noun	m	Füße	足
+7B	Bauch	noun	m	Bäuche	腹
+7B	Finger	noun	m	Finger	指
+7B	Haar	noun	n	Haare	髪
+7B	Husten	noun	m		咳
+7B	wohl	adv			元気で、よく、たぶん
+7B	überhaupt	adv			そもそも、全然
+7B	unterwegs	adv			途中で
+7B	irgendwie	adv			なんとかして、何となく
+7B	Gute Besserung!	phrase			お大事に！
+8A	kennen|lernen	verb			知り合いになる
+8A	mit|spielen	verb			一緒に演奏する、出演する
+8A	heiraten	verb			結婚する
+8A	erzählen	verb			語る、話す
+8A	auf|wachsen	verb			成長する、育つ
+8A	vergehen	verb			(時が)過ぎ去る
+8A	malen	verb			(絵を)描く
+8A	Weihnachten	noun	n	Weihnachten	クリスマス
+8A	Weihnachtsmarkt	noun	m	Weihnachtsmärkte	クリスマスマーケット
+8A	Weihnachtsbaum	noun	m	Weihnachtsbäume	クリスマスツリー
+8A	Frage	noun	f	Fragen	質問、問題
+8A	Musikstudentin	noun	f	Musikstudentinnen	音大生(女性)
+8A	Professor	noun	m	Professoren	教授
+8A	Mensch	noun	m	Menschen	人間 ※男性弱変化名詞
+8A	Schriftsteller	noun	m	Schriftsteller	作家
+8A	Sprache	noun	f	Sprachen	言語
+8A	Schulzeit	noun	f		学校時代
+8A	berühmt	adj			有名な
+8A	fremd	adj			外国の、見知らぬ
+8A	einzig	adj			唯一の
+8A	positiv	adj			肯定的な
+8A	alles	pron			すべてのもの
+8A	nichts	pron			何も〜ない
+8A	etwas	pron			何か、少し
+8B	Ferien	noun		Pl	休暇 (複数のみ)
+8B	Tasse	noun	f	Tassen	カップ
+8B	Hausarbeit	noun	f	Hausarbeiten	レポート、家事
+8B	Referat	noun	n	Referate	研究発表
+8B	Vogel	noun	m	Vögel	鳥
+8B	Sorge	noun	f	Sorgen	心配、悩み
+8B	Bank	noun	f	Banken	銀行 (ベンチは複数 Bänke)
+8B	müde	adj			疲れた、眠い
+8B	dankbar	adj			感謝している
+8B	unbedingt	adv			ぜひとも、絶対に
+8B	als ob	conj			あたかも〜のように
+8B	Frohe Weihnachten!	phrase			メリークリスマス！
+8B	Frohes neues Jahr!	phrase			明けましておめでとう！
+8B	Einen guten Rutsch!	phrase			よいお年を！
+8B	Gute Reise!	phrase			よい旅を！
+8B	Guten Appetit!	phrase			召し上がれ／いただきます
+8B	Prost!	intj			乾杯！
+8B	Gute Nacht!	phrase			おやすみなさい
+8B	Schönes Wochenende!	phrase			よい週末を！
+8B	Viel Glück!	phrase			幸運を祈る！
+8B	Herzlichen Glückwunsch!	phrase			おめでとう！

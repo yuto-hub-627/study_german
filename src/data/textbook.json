@@ -1,0 +1,13460 @@
+[
+{
+"id": "tb:kommen",
+"de": "kommen",
+"pos": "verb",
+"ja": "来る",
+"lesson": "1A",
+"src": "textbook",
+"en": "to come; to arrive",
+"ipa": "/ˈkɔmən/",
+"v": {
+"pp": "gekommen",
+"ax": "sein",
+"pr": [
+"komme",
+"kommst",
+"kommt",
+"kommen",
+"kommt",
+"kommen"
+],
+"pt": [
+"kam",
+"kamst",
+"kam",
+"kamen",
+"kamt",
+"kamen"
+],
+"k2": [
+"käme",
+"kämest",
+"käme",
+"kämen",
+"kämet",
+"kämen"
+],
+"im": [
+"komm",
+"kommt"
+]
+}
+},
+{
+"id": "tb:wohnen",
+"de": "wohnen",
+"pos": "verb",
+"ja": "住む",
+"lesson": "1A",
+"src": "textbook",
+"en": "to live, reside, dwell (to remain or be settled permanently, or for a considerab",
+"ipa": "/ˈvoːnən/",
+"v": {
+"pp": "gewohnt",
+"ax": "haben",
+"pr": [
+"wohne",
+"wohnst",
+"wohnt",
+"wohnen",
+"wohnt",
+"wohnen"
+],
+"pt": [
+"wohnte",
+"wohntest",
+"wohnte",
+"wohnten",
+"wohntet",
+"wohnten"
+],
+"k2": [
+"wohnte",
+"wohntest",
+"wohnte",
+"wohnten",
+"wohntet",
+"wohnten"
+],
+"im": [
+"wohn",
+"wohnt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:lernen",
+"de": "lernen",
+"pos": "verb",
+"ja": "学ぶ、勉強する",
+"lesson": "1A",
+"src": "textbook",
+"en": "to learn, to acquire knowledge",
+"ipa": "/ˈlɛrnən/",
+"v": {
+"pp": "gelernt",
+"ax": "haben",
+"pr": [
+"lerne",
+"lernst",
+"lernt",
+"lernen",
+"lernt",
+"lernen"
+],
+"pt": [
+"lernte",
+"lerntest",
+"lernte",
+"lernten",
+"lerntet",
+"lernten"
+],
+"k2": [
+"lernte",
+"lerntest",
+"lernte",
+"lernten",
+"lerntet",
+"lernten"
+],
+"im": [
+"lern",
+"lernt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:machen",
+"de": "machen",
+"pos": "verb",
+"ja": "する、作る",
+"lesson": "1A",
+"src": "textbook",
+"en": "to make, to produce, to create (an object, arrangement, situation, etc.)",
+"ipa": "/ˈmaxən/",
+"v": {
+"pp": "gemacht",
+"ax": "haben",
+"pr": [
+"mache",
+"machst",
+"macht",
+"machen",
+"macht",
+"machen"
+],
+"pt": [
+"machte",
+"machtest",
+"machte",
+"machten",
+"machtet",
+"machten"
+],
+"k2": [
+"machte",
+"machtest",
+"machte",
+"machten",
+"machtet",
+"machten"
+],
+"im": [
+"mach",
+"macht"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:studieren",
+"de": "studieren",
+"pos": "verb",
+"ja": "(大学で)専攻する、勉強する",
+"lesson": "1A",
+"src": "textbook",
+"en": "to study at university or college level; to be a student (of)",
+"ipa": "/ʃtuˈdiːrən/",
+"v": {
+"pp": "studiert",
+"ax": "haben",
+"pr": [
+"studiere",
+"studierst",
+"studiert",
+"studieren",
+"studiert",
+"studieren"
+],
+"pt": [
+"studierte",
+"studiertest",
+"studierte",
+"studierten",
+"studiertet",
+"studierten"
+],
+"k2": [
+"studierte",
+"studiertest",
+"studierte",
+"studierten",
+"studiertet",
+"studierten"
+],
+"im": [
+"studier",
+"studiert"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:spielen",
+"de": "spielen",
+"pos": "verb",
+"ja": "(スポーツ・ゲームを)する、(楽器を)演奏する",
+"lesson": "1A",
+"src": "textbook",
+"en": "to play (engage in some activity for fun or entertainment)",
+"ipa": "/ˈʃpiːlən/",
+"v": {
+"pp": "gespielt",
+"ax": "haben",
+"pr": [
+"spiele",
+"spielst",
+"spielt",
+"spielen",
+"spielt",
+"spielen"
+],
+"pt": [
+"spielte",
+"spieltest",
+"spielte",
+"spielten",
+"spieltet",
+"spielten"
+],
+"k2": [
+"spielte",
+"spieltest",
+"spielte",
+"spielten",
+"spieltet",
+"spielten"
+],
+"im": [
+"spiel",
+"spielt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:kennen",
+"de": "kennen",
+"pos": "verb",
+"ja": "知っている(見聞きして)",
+"lesson": "1A",
+"src": "textbook",
+"en": "to know; to be acquainted with; to be familiar with",
+"ipa": "/ˈkɛnən/",
+"v": {
+"pp": "gekannt",
+"ax": "haben",
+"pr": [
+"kenne",
+"kennst",
+"kennt",
+"kennen",
+"kennt",
+"kennen"
+],
+"pt": [
+"kannte",
+"kanntest",
+"kannte",
+"kannten",
+"kanntet",
+"kannten"
+],
+"k2": [
+"kennte",
+"kenntest",
+"kennte",
+"kennten",
+"kenntet",
+"kennten"
+],
+"im": [
+"kenn",
+"kennt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:ich:pron",
+"de": "ich",
+"pos": "pron",
+"ja": "私は",
+"lesson": "1A",
+"src": "textbook",
+"en": "I (first person singular nominative (subject) pronoun)",
+"ipa": "/ɪç/"
+},
+{
+"id": "tb:du:pron",
+"de": "du",
+"pos": "pron",
+"ja": "君は",
+"lesson": "1A",
+"src": "textbook",
+"en": "you (singular familiar), thou",
+"ipa": "/duː/"
+},
+{
+"id": "tb:er:pron",
+"de": "er",
+"pos": "pron",
+"ja": "彼は、それは",
+"lesson": "1A",
+"src": "textbook",
+"en": "he",
+"ipa": "/eːr/"
+},
+{
+"id": "tb:sie:pron",
+"de": "sie",
+"pos": "pron",
+"ja": "彼女は、それは／彼らは",
+"lesson": "1A",
+"src": "textbook",
+"en": "she; her",
+"ipa": "/ziː/"
+},
+{
+"id": "tb:es:pron",
+"de": "es",
+"pos": "pron",
+"ja": "それは",
+"lesson": "1A",
+"src": "textbook",
+"en": "Refers to a neuter noun (person, animal, thing or abstract)",
+"ipa": "/ɛs/"
+},
+{
+"id": "tb:wir:pron",
+"de": "wir",
+"pos": "pron",
+"ja": "私たちは",
+"lesson": "1A",
+"src": "textbook",
+"en": "we",
+"ipa": "/viːɐ̯/"
+},
+{
+"id": "tb:ihr:pron",
+"de": "ihr",
+"pos": "pron",
+"ja": "君たちは",
+"lesson": "1A",
+"src": "textbook",
+"en": "you, ye (plural, familiar)",
+"ipa": "/iːr/"
+},
+{
+"id": "tb:Sie:pron",
+"de": "Sie",
+"pos": "pron",
+"ja": "あなた(がた)は",
+"lesson": "1A",
+"src": "textbook",
+"en": "you (polite, singular and plural)",
+"ipa": "/ziː/"
+},
+{
+"id": "tb:ja:adv",
+"de": "ja",
+"pos": "adv",
+"ja": "はい",
+"lesson": "1A",
+"src": "textbook",
+"en": "obviously; certainly; of course; as you know; as is generally known (indicates a",
+"ipa": "[jäː]"
+},
+{
+"id": "tb:nein:adv",
+"de": "nein",
+"pos": "adv",
+"ja": "いいえ",
+"lesson": "1A",
+"src": "textbook",
+"en": "no",
+"ipa": "/naɪ̯n/"
+},
+{
+"id": "tb:nicht:adv",
+"de": "nicht",
+"pos": "adv",
+"ja": "〜ない",
+"lesson": "1A",
+"src": "textbook",
+"en": "not, non- (negates the meaning of a verb, adjective, or adverb)",
+"ipa": "/nɪçt/"
+},
+{
+"id": "tb:wo:adv",
+"de": "wo",
+"pos": "adv",
+"ja": "どこに、どこで",
+"lesson": "1A",
+"src": "textbook",
+"en": "where (at what place)",
+"ipa": "/voː/"
+},
+{
+"id": "tb:woher:adv",
+"de": "woher",
+"pos": "adv",
+"ja": "どこから",
+"lesson": "1A",
+"src": "textbook",
+"en": "where from, whence",
+"ipa": "/voˈheːɐ̯/"
+},
+{
+"id": "tb:was:pron",
+"de": "was",
+"pos": "pron",
+"ja": "何が、何を",
+"lesson": "1A",
+"src": "textbook",
+"en": "what",
+"ipa": "/vas/"
+},
+{
+"id": "tb:aus",
+"de": "aus",
+"pos": "prep",
+"ja": "〜から(出身・中から)",
+"lesson": "1A",
+"src": "textbook",
+"en": "out of; from (from the inside of something)",
+"ipa": "/aʊ̯s/"
+},
+{
+"id": "tb:in",
+"de": "in",
+"pos": "prep",
+"ja": "〜の中に／〜の中へ",
+"lesson": "1A",
+"src": "textbook",
+"en": "[with dative] in, inside, within, at (inside a building)",
+"ipa": "/ʔɪn/"
+},
+{
+"id": "tb:und",
+"de": "und",
+"pos": "conj",
+"ja": "そして、〜と",
+"lesson": "1A",
+"src": "textbook",
+"en": "and",
+"ipa": "/ʊnt/"
+},
+{
+"id": "tb:heute:adv",
+"de": "heute",
+"pos": "adv",
+"ja": "今日",
+"lesson": "1A",
+"src": "textbook",
+"en": "today",
+"ipa": "/ˈhɔʏ̯tə/"
+},
+{
+"id": "tb:Japan",
+"de": "Japan",
+"pos": "noun",
+"ja": "日本",
+"lesson": "1A",
+"src": "textbook",
+"g": "n"
+},
+{
+"id": "tb:Japanisch",
+"de": "Japanisch",
+"pos": "noun",
+"ja": "日本語",
+"lesson": "1A",
+"src": "textbook",
+"g": "n"
+},
+{
+"id": "tb:Deutsch",
+"de": "Deutsch",
+"pos": "noun",
+"ja": "ドイツ語",
+"lesson": "1A",
+"src": "textbook",
+"g": "n"
+},
+{
+"id": "tb:Jura",
+"de": "Jura",
+"pos": "noun",
+"ja": "法学 (無冠詞・複数扱いの語)",
+"lesson": "1A",
+"src": "textbook",
+"en": "law (study)",
+"g": "n"
+},
+{
+"id": "tb:Politik",
+"de": "Politik",
+"pos": "noun",
+"ja": "政治、政治学",
+"lesson": "1A",
+"src": "textbook",
+"en": "politics (profession of conducting political affairs)",
+"ipa": "/poliˈtiːk/",
+"g": "f",
+"pl": "Politiken",
+"gen": "Politik"
+},
+{
+"id": "tb:Mathematik",
+"de": "Mathematik",
+"pos": "noun",
+"ja": "数学",
+"lesson": "1A",
+"src": "textbook",
+"en": "mathematics (study)",
+"ipa": "/ˌmatəmaˈtɪk/",
+"g": "f",
+"gen": "Mathematik"
+},
+{
+"id": "tb:Soziologie",
+"de": "Soziologie",
+"pos": "noun",
+"ja": "社会学",
+"lesson": "1A",
+"src": "textbook",
+"en": "sociology",
+"ipa": "/zotsi̯oloˈɡiː/",
+"g": "f",
+"pl": "Soziologien",
+"gen": "Soziologie"
+},
+{
+"id": "tb:Tennis",
+"de": "Tennis",
+"pos": "noun",
+"ja": "テニス",
+"lesson": "1A",
+"src": "textbook",
+"en": "tennis",
+"ipa": "/ˈtɛnɪs/",
+"g": "n",
+"gen": "Tennis"
+},
+{
+"id": "tb:Fußball",
+"de": "Fußball",
+"pos": "noun",
+"ja": "サッカー",
+"lesson": "1A",
+"src": "textbook",
+"en": "soccer; association football",
+"ipa": "/ˈfuːsˌbal/",
+"g": "m",
+"pl": "Fußbälle",
+"gen": "Fußballs"
+},
+{
+"id": "tb:Klavier",
+"de": "Klavier",
+"pos": "noun",
+"ja": "ピアノ",
+"lesson": "1A",
+"src": "textbook",
+"en": "piano",
+"ipa": "/klaˈviːɐ̯/",
+"g": "n",
+"pl": "Klaviere",
+"gen": "Klavieres"
+},
+{
+"id": "tb:Frau",
+"de": "Frau",
+"pos": "noun",
+"ja": "女性、妻、〜さん(女性)",
+"lesson": "1A",
+"src": "textbook",
+"en": "woman (adult female human)",
+"ipa": "/fʁaʊ̯/",
+"g": "f",
+"pl": "Frauen",
+"gen": "Frau"
+},
+{
+"id": "tb:Herr",
+"de": "Herr",
+"pos": "noun",
+"ja": "紳士、〜さん(男性)",
+"lesson": "1A",
+"src": "textbook",
+"en": "man, gentleman",
+"ipa": "/hɛr/",
+"g": "m",
+"pl": "Herren",
+"gen": "Herrn",
+"weak": true
+},
+{
+"id": "tb:null:num",
+"de": "null",
+"pos": "num",
+"ja": "0",
+"lesson": "1A",
+"src": "textbook",
+"en": "zero; nil; nought; (tennis) love (integer number between −1 and 1, denoting no q",
+"ipa": "/nʊl/"
+},
+{
+"id": "tb:eins:num",
+"de": "eins",
+"pos": "num",
+"ja": "1",
+"lesson": "1A",
+"src": "textbook",
+"en": "one (numerical value represented by the Arabic numeral 1; first positive number ",
+"ipa": "/aɪ̯ns/"
+},
+{
+"id": "tb:zwei:num",
+"de": "zwei",
+"pos": "num",
+"ja": "2",
+"lesson": "1A",
+"src": "textbook",
+"en": "two (numerical value represented by the Arabic numeral 2; or describing a set wi",
+"ipa": "/t͡svaɪ̯/"
+},
+{
+"id": "tb:drei:num",
+"de": "drei",
+"pos": "num",
+"ja": "3",
+"lesson": "1A",
+"src": "textbook",
+"en": "three (numerical value represented by the Arabic numeral 3; or describing a set ",
+"ipa": "/dʁaɪ̯/"
+},
+{
+"id": "tb:vier:num",
+"de": "vier",
+"pos": "num",
+"ja": "4",
+"lesson": "1A",
+"src": "textbook",
+"en": "four (numerical value represented by the Arabic numeral 4; or describing a set w",
+"ipa": "/fiːr/"
+},
+{
+"id": "tb:fünf:num",
+"de": "fünf",
+"pos": "num",
+"ja": "5",
+"lesson": "1A",
+"src": "textbook",
+"en": "five (numerical value represented by the Arabic numeral 5; or describing a set w",
+"ipa": "/fʏnf/"
+},
+{
+"id": "tb:sechs:num",
+"de": "sechs",
+"pos": "num",
+"ja": "6",
+"lesson": "1A",
+"src": "textbook",
+"en": "six (numerical value represented by the Arabic numeral 6; or describing a set wi",
+"ipa": "/zɛks/"
+},
+{
+"id": "tb:sieben:num",
+"de": "sieben",
+"pos": "num",
+"ja": "7",
+"lesson": "1A",
+"src": "textbook",
+"en": "seven (numerical value represented by the Arabic numeral 7; or describing a set ",
+"ipa": "/ˈziːbən/"
+},
+{
+"id": "tb:acht:num",
+"de": "acht",
+"pos": "num",
+"ja": "8",
+"lesson": "1A",
+"src": "textbook",
+"en": "eight (numerical value represented by the Arabic numeral 8; or describing a set ",
+"ipa": "/axt/"
+},
+{
+"id": "tb:neun:num",
+"de": "neun",
+"pos": "num",
+"ja": "9",
+"lesson": "1A",
+"src": "textbook",
+"en": "nine",
+"ipa": "/nɔʏ̯n/"
+},
+{
+"id": "tb:zehn:num",
+"de": "zehn",
+"pos": "num",
+"ja": "10",
+"lesson": "1A",
+"src": "textbook",
+"en": "ten (numerical value represented in Arabic numerals as 10)",
+"ipa": "/t͡seːn/"
+},
+{
+"id": "tb:elf:num",
+"de": "elf",
+"pos": "num",
+"ja": "11",
+"lesson": "1A",
+"src": "textbook",
+"en": "eleven",
+"ipa": "/ɛlf/"
+},
+{
+"id": "tb:zwölf:num",
+"de": "zwölf",
+"pos": "num",
+"ja": "12",
+"lesson": "1A",
+"src": "textbook",
+"en": "twelve",
+"ipa": "/t͡svœlf/"
+},
+{
+"id": "tb:dreizehn:num",
+"de": "dreizehn",
+"pos": "num",
+"ja": "13",
+"lesson": "1A",
+"src": "textbook",
+"en": "thirteen",
+"ipa": "/ˈdʁaɪ̯t͡seːn/"
+},
+{
+"id": "tb:sechzehn:num",
+"de": "sechzehn",
+"pos": "num",
+"ja": "16",
+"lesson": "1A",
+"src": "textbook",
+"en": "sixteen",
+"ipa": "/ˈzɛçt͡seːn/"
+},
+{
+"id": "tb:siebzehn:num",
+"de": "siebzehn",
+"pos": "num",
+"ja": "17",
+"lesson": "1A",
+"src": "textbook",
+"en": "seventeen",
+"ipa": "/ˈziːp.tseːn/"
+},
+{
+"id": "tb:zwanzig:num",
+"de": "zwanzig",
+"pos": "num",
+"ja": "20",
+"lesson": "1A",
+"src": "textbook",
+"en": "twenty",
+"ipa": "/ˈtsvantsɪç/"
+},
+{
+"id": "tb:sein",
+"de": "sein",
+"pos": "verb",
+"ja": "〜である、いる、ある",
+"lesson": "1B",
+"src": "textbook",
+"en": "forms the present perfect and past perfect tenses of certain verbs",
+"ipa": "/zaɪ̯n/",
+"v": {
+"pp": "gewesen",
+"ax": "sein",
+"pr": [
+"bin",
+"bist",
+"ist",
+"sind",
+"seid",
+"sind"
+],
+"pt": [
+"war",
+"warst",
+"war",
+"waren",
+"wart",
+"waren"
+],
+"k2": [
+"wäre",
+"wärst",
+"wäre",
+"wären",
+"wärt",
+"wären"
+],
+"im": [
+"sei",
+"seid"
+]
+}
+},
+{
+"id": "tb:haben",
+"de": "haben",
+"pos": "verb",
+"ja": "持っている",
+"lesson": "1B",
+"src": "textbook",
+"en": "forms the perfect aspect (have)",
+"ipa": "/ˈhaːbən/",
+"v": {
+"pp": "gehabt",
+"ax": "haben",
+"pr": [
+"habe",
+"hast",
+"hat",
+"haben",
+"habt",
+"haben"
+],
+"pt": [
+"hatte",
+"hattest",
+"hatte",
+"hatten",
+"hattet",
+"hatten"
+],
+"k2": [
+"hätte",
+"hättest",
+"hätte",
+"hätten",
+"hättet",
+"hätten"
+],
+"im": [
+"hab",
+"habt"
+]
+}
+},
+{
+"id": "tb:arbeiten",
+"de": "arbeiten",
+"pos": "verb",
+"ja": "働く",
+"lesson": "1B",
+"src": "textbook",
+"en": "to work (to do a specific task by employing physical or mental powers)",
+"ipa": "/ˈaʁbaɪ̯tən/",
+"v": {
+"pp": "gearbeitet",
+"ax": "haben",
+"pr": [
+"arbeite",
+"arbeitest",
+"arbeitet",
+"arbeiten",
+"arbeitet",
+"arbeiten"
+],
+"pt": [
+"arbeitete",
+"arbeitetest",
+"arbeitete",
+"arbeiteten",
+"arbeitetet",
+"arbeiteten"
+],
+"k2": [
+"arbeitete",
+"arbeitetest",
+"arbeitete",
+"arbeiteten",
+"arbeitetet",
+"arbeiteten"
+],
+"im": [
+"arbeit",
+"arbeitet"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:finden",
+"de": "finden",
+"pos": "verb",
+"ja": "見つける、〜だと思う",
+"lesson": "1B",
+"src": "textbook",
+"en": "to find; to discover",
+"ipa": "[ˈfɪndn̩]",
+"v": {
+"pp": "gefunden",
+"ax": "haben",
+"pr": [
+"finde",
+"findest",
+"findet",
+"finden",
+"findet",
+"finden"
+],
+"pt": [
+"fand",
+"fandest",
+"fand",
+"fanden",
+"fandet",
+"fanden"
+],
+"k2": [
+"fände",
+"fändest",
+"fände",
+"fänden",
+"fändet",
+"fänden"
+],
+"im": [
+"find",
+"findet"
+]
+}
+},
+{
+"id": "tb:reisen",
+"de": "reisen",
+"pos": "verb",
+"ja": "旅行する",
+"lesson": "1B",
+"src": "textbook",
+"en": "to travel",
+"ipa": "[ˈʁaɪ̯zn̩]",
+"v": {
+"pp": "gereist",
+"ax": "sein",
+"pr": [
+"reise",
+"reist",
+"reist",
+"reisen",
+"reist",
+"reisen"
+],
+"pt": [
+"reiste",
+"reistest",
+"reiste",
+"reisten",
+"reistet",
+"reisten"
+],
+"k2": [
+"reiste",
+"reistest",
+"reiste",
+"reisten",
+"reistet",
+"reisten"
+],
+"im": [
+"reis",
+"reist"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:heißen",
+"de": "heißen",
+"pos": "verb",
+"ja": "〜という名前である",
+"lesson": "1B",
+"src": "textbook",
+"en": "to have a name; to be named; to be called; but implying that one “owns” this nam",
+"ipa": "/ˈhaɪ̯sən/",
+"v": {
+"pp": "geheißen",
+"ax": "haben",
+"pr": [
+"heiße",
+"heißt",
+"heißt",
+"heißen",
+"heißt",
+"heißen"
+],
+"pt": [
+"hieß",
+"hießest",
+"hieß",
+"hießen",
+"hießt",
+"hießen"
+],
+"k2": [
+"hieße",
+"hießest",
+"hieße",
+"hießen",
+"hießet",
+"hießen"
+],
+"im": [
+"heiß",
+"heißt"
+]
+}
+},
+{
+"id": "tb:besuchen",
+"de": "besuchen",
+"pos": "verb",
+"ja": "訪ねる、(学校に)通う",
+"lesson": "1B",
+"src": "textbook",
+"en": "to visit, to see",
+"ipa": "/bəˈzuːxn̩/",
+"v": {
+"pp": "besucht",
+"ax": "haben",
+"pr": [
+"besuche",
+"besuchst",
+"besucht",
+"besuchen",
+"besucht",
+"besuchen"
+],
+"pt": [
+"besuchte",
+"besuchtest",
+"besuchte",
+"besuchten",
+"besuchtet",
+"besuchten"
+],
+"k2": [
+"besuchte",
+"besuchtest",
+"besuchte",
+"besuchten",
+"besuchtet",
+"besuchten"
+],
+"im": [
+"besuch",
+"besucht"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:gehen",
+"de": "gehen",
+"pos": "verb",
+"ja": "行く",
+"lesson": "1B",
+"src": "textbook",
+"en": "to go, to walk",
+"ipa": "/ˈɡeːən/",
+"v": {
+"pp": "gegangen",
+"ax": "sein",
+"pr": [
+"gehe",
+"gehst",
+"geht",
+"gehen",
+"geht",
+"gehen"
+],
+"pt": [
+"ging",
+"gingst",
+"ging",
+"gingen",
+"gingt",
+"gingen"
+],
+"k2": [
+"ginge",
+"gingest",
+"ginge",
+"gingen",
+"ginget",
+"gingen"
+],
+"im": [
+"geh",
+"geht"
+]
+}
+},
+{
+"id": "tb:Abend",
+"de": "Abend",
+"pos": "noun",
+"ja": "晩、夕方",
+"lesson": "1B",
+"src": "textbook",
+"en": "evening; the time from dusk until midnight",
+"ipa": "/ˈaːbənt/",
+"g": "m",
+"pl": "Abende",
+"gen": "Abends"
+},
+{
+"id": "tb:Morgen",
+"de": "Morgen",
+"pos": "noun",
+"ja": "朝",
+"lesson": "1B",
+"src": "textbook",
+"en": "morning (part of the day from dawn to noon)",
+"ipa": "/ˈmɔrɡən/",
+"g": "m",
+"pl": "Morgen",
+"gen": "Morgens"
+},
+{
+"id": "tb:morgen:adv",
+"de": "morgen",
+"pos": "adv",
+"ja": "明日",
+"lesson": "1B",
+"src": "textbook",
+"en": "tomorrow",
+"ipa": "/ˈmɔrɡən/"
+},
+{
+"id": "tb:Tag",
+"de": "Tag",
+"pos": "noun",
+"ja": "日、昼",
+"lesson": "1B",
+"src": "textbook",
+"en": "day (a 24-hour period)",
+"ipa": "/taːk/",
+"g": "m",
+"pl": "Tage",
+"gen": "Tages"
+},
+{
+"id": "tb:Zeit",
+"de": "Zeit",
+"pos": "noun",
+"ja": "時間",
+"lesson": "1B",
+"src": "textbook",
+"en": "time (as a concept)",
+"ipa": "[t͡saɪ̯t]",
+"g": "f",
+"pl": "Zeiten",
+"gen": "Zeit"
+},
+{
+"id": "tb:Durst",
+"de": "Durst",
+"pos": "noun",
+"ja": "のどの渇き",
+"lesson": "1B",
+"src": "textbook",
+"en": "thirst",
+"ipa": "/dʊʁst/",
+"g": "m",
+"gen": "Durstes"
+},
+{
+"id": "tb:Hunger",
+"de": "Hunger",
+"pos": "noun",
+"ja": "空腹",
+"lesson": "1B",
+"src": "textbook",
+"en": "hunger",
+"ipa": "/ˈhʊŋɐ/",
+"g": "m",
+"gen": "Hungers"
+},
+{
+"id": "tb:Fieber",
+"de": "Fieber",
+"pos": "noun",
+"ja": "熱",
+"lesson": "1B",
+"src": "textbook",
+"en": "fever (heightened body temperature)",
+"ipa": "/ˈfiːbər/",
+"g": "n",
+"pl": "Fieber",
+"gen": "Fiebers"
+},
+{
+"id": "tb:Geld",
+"de": "Geld",
+"pos": "noun",
+"ja": "お金",
+"lesson": "1B",
+"src": "textbook",
+"en": "money",
+"ipa": "/ɡɛlt/",
+"g": "n",
+"pl": "Gelder",
+"gen": "Geldes"
+},
+{
+"id": "tb:Geburtstag",
+"de": "Geburtstag",
+"pos": "noun",
+"ja": "誕生日",
+"lesson": "1B",
+"src": "textbook",
+"en": "birthday",
+"ipa": "/ɡəˈbuːɐ̯t͡sˌtaːk/",
+"g": "m",
+"pl": "Geburtstage",
+"gen": "Geburtstages"
+},
+{
+"id": "tb:Party",
+"de": "Party",
+"pos": "noun",
+"ja": "パーティー",
+"lesson": "1B",
+"src": "textbook",
+"en": "party (social gathering)",
+"ipa": "/ˈpaːɐ̯ti/",
+"g": "f",
+"pl": "Partys",
+"gen": "Party"
+},
+{
+"id": "tb:Konzert",
+"de": "Konzert",
+"pos": "noun",
+"ja": "コンサート",
+"lesson": "1B",
+"src": "textbook",
+"en": "concert (musical event)",
+"ipa": "/kɔnˈtsɛɐ̯t/",
+"g": "n",
+"pl": "Konzerte",
+"gen": "Konzertes"
+},
+{
+"id": "tb:Deutschland",
+"de": "Deutschland",
+"pos": "noun",
+"ja": "ドイツ",
+"lesson": "1B",
+"src": "textbook",
+"g": "n"
+},
+{
+"id": "tb:Japaner",
+"de": "Japaner",
+"pos": "noun",
+"ja": "日本人(男性)",
+"lesson": "1B",
+"src": "textbook",
+"en": "Japanese (person)",
+"ipa": "/jaˈpaːnɐ/",
+"g": "m",
+"pl": "Japaner",
+"gen": "Japaners"
+},
+{
+"id": "tb:Japanerin",
+"de": "Japanerin",
+"pos": "noun",
+"ja": "日本人(女性)",
+"lesson": "1B",
+"src": "textbook",
+"g": "f",
+"pl": "Japanerinnen"
+},
+{
+"id": "tb:Lehrer",
+"de": "Lehrer",
+"pos": "noun",
+"ja": "教師(男性)",
+"lesson": "1B",
+"src": "textbook",
+"g": "m",
+"pl": "Lehrer"
+},
+{
+"id": "tb:Lehrerin",
+"de": "Lehrerin",
+"pos": "noun",
+"ja": "教師(女性)",
+"lesson": "1B",
+"src": "textbook",
+"g": "f",
+"pl": "Lehrerinnen"
+},
+{
+"id": "tb:Student",
+"de": "Student",
+"pos": "noun",
+"ja": "大学生(男性) ※男性弱変化名詞",
+"lesson": "1B",
+"src": "textbook",
+"en": "student (person attending lectures at a university; male or of unspecified sex)",
+"ipa": "/ʃtuˈdɛnt/",
+"g": "m",
+"pl": "Studenten",
+"gen": "Studenten",
+"weak": true
+},
+{
+"id": "tb:Studentin",
+"de": "Studentin",
+"pos": "noun",
+"ja": "大学生(女性)",
+"lesson": "1B",
+"src": "textbook",
+"g": "f",
+"pl": "Studentinnen"
+},
+{
+"id": "tb:Koreaner",
+"de": "Koreaner",
+"pos": "noun",
+"ja": "韓国人(男性)",
+"lesson": "1B",
+"src": "textbook",
+"en": "Korean (person)",
+"g": "m",
+"pl": "Koreaner",
+"gen": "Koreaners"
+},
+{
+"id": "tb:Amerikaner",
+"de": "Amerikaner",
+"pos": "noun",
+"ja": "アメリカ人(男性)",
+"lesson": "1B",
+"src": "textbook",
+"en": "American (from America, the Americas, the American continent(s))",
+"ipa": "/ameʁiˈkaːnɐ/",
+"g": "m",
+"pl": "Amerikaner",
+"gen": "Amerikaners"
+},
+{
+"id": "tb:Französisch",
+"de": "Französisch",
+"pos": "noun",
+"ja": "フランス語",
+"lesson": "1B",
+"src": "textbook",
+"en": "French, fellatio",
+"ipa": "/fʁanˈtsøːzɪʃ/",
+"g": "n",
+"gen": "Französischs"
+},
+{
+"id": "tb:Kunst",
+"de": "Kunst",
+"pos": "noun",
+"ja": "芸術、美術",
+"lesson": "1B",
+"src": "textbook",
+"en": "art",
+"ipa": "/kʊnst/",
+"g": "f",
+"pl": "Künste",
+"gen": "Kunst"
+},
+{
+"id": "tb:nett",
+"de": "nett",
+"pos": "adj",
+"ja": "親切な、感じのよい",
+"lesson": "1B",
+"src": "textbook",
+"en": "nice; friendly; likable",
+"ipa": "/nɛt/",
+"c": [
+"netter",
+"am nettesten"
+]
+},
+{
+"id": "tb:freundlich",
+"de": "freundlich",
+"pos": "adj",
+"ja": "親切な、友好的な",
+"lesson": "1B",
+"src": "textbook",
+"en": "friendly, benign",
+"ipa": "/ˈfʁɔɪ̯ntlɪç/",
+"c": [
+"freundlicher",
+"am freundlichsten"
+]
+},
+{
+"id": "tb:interessant",
+"de": "interessant",
+"pos": "adj",
+"ja": "興味深い、面白い",
+"lesson": "1B",
+"src": "textbook",
+"en": "interesting",
+"ipa": "/ˌɪn.tə.ʁɛˈsant/",
+"c": [
+"interessanter",
+"am interessantesten"
+]
+},
+{
+"id": "tb:krank",
+"de": "krank",
+"pos": "adj",
+"ja": "病気の",
+"lesson": "1B",
+"src": "textbook",
+"en": "ill, sick (in bad health)",
+"ipa": "/kʁaŋk/",
+"c": [
+"kränker",
+"am kränksten"
+]
+},
+{
+"id": "tb:groß",
+"de": "groß",
+"pos": "adj",
+"ja": "大きい、背が高い",
+"lesson": "1B",
+"src": "textbook",
+"en": "big, large, large-scale",
+"ipa": "/ɡʁoːs/",
+"c": [
+"größer",
+"am größten"
+]
+},
+{
+"id": "tb:gut",
+"de": "gut",
+"pos": "adj",
+"ja": "よい、上手に",
+"lesson": "1B",
+"src": "textbook",
+"en": "good (acting in the interest of what is beneficial, ethical, or moral)",
+"ipa": "/ɡuːt/",
+"c": [
+"besser",
+"am besten"
+]
+},
+{
+"id": "tb:schwer",
+"de": "schwer",
+"pos": "adj",
+"ja": "重い、難しい",
+"lesson": "1B",
+"src": "textbook",
+"en": "heavy, weighty",
+"ipa": "/ʃveːr/",
+"c": [
+"schwerer",
+"am schwersten"
+]
+},
+{
+"id": "tb:auch:adv",
+"de": "auch",
+"pos": "adv",
+"ja": "〜も",
+"lesson": "1B",
+"src": "textbook",
+"en": "also, too, as well (in addition to whatever or whoever has previously been liste",
+"ipa": "/aʊ̯x/"
+},
+{
+"id": "tb:gern:adv",
+"de": "gern",
+"pos": "adv",
+"ja": "好んで、喜んで",
+"lesson": "1B",
+"src": "textbook",
+"en": "willingly; gladly; with pleasure; usually expressed with a verb in English, as i",
+"ipa": "/ɡɛrn/"
+},
+{
+"id": "tb:sehr:adv",
+"de": "sehr",
+"pos": "adv",
+"ja": "とても",
+"lesson": "1B",
+"src": "textbook",
+"en": "very",
+"ipa": "/zeːr/"
+},
+{
+"id": "tb:jetzt:adv",
+"de": "jetzt",
+"pos": "adv",
+"ja": "今",
+"lesson": "1B",
+"src": "textbook",
+"en": "now (at this moment, right now)",
+"ipa": "/jɛtst/"
+},
+{
+"id": "tb:viel",
+"de": "viel",
+"pos": "adj",
+"ja": "たくさんの、多く",
+"lesson": "1B",
+"src": "textbook",
+"en": "much, a lot",
+"ipa": "/fiːl/"
+},
+{
+"id": "tb:zu:adv",
+"de": "zu",
+"pos": "adv",
+"ja": "〜すぎる",
+"lesson": "1B",
+"src": "textbook",
+"en": "to",
+"ipa": "/t͡suː/"
+},
+{
+"id": "tb:wie:adv",
+"de": "wie",
+"pos": "adv",
+"ja": "どのように、どう",
+"lesson": "1B",
+"src": "textbook",
+"en": "how",
+"ipa": "/viː/"
+},
+{
+"id": "tb:wohin:adv",
+"de": "wohin",
+"pos": "adv",
+"ja": "どこへ",
+"lesson": "1B",
+"src": "textbook",
+"en": "where to, whither",
+"ipa": "/voˈhɪn/"
+},
+{
+"id": "tb:warum:adv",
+"de": "warum",
+"pos": "adv",
+"ja": "なぜ",
+"lesson": "1B",
+"src": "textbook",
+"en": "why; for what reason",
+"ipa": "/vaˈʁʊm/"
+},
+{
+"id": "tb:dort:adv",
+"de": "dort",
+"pos": "adv",
+"ja": "そこで、あそこで",
+"lesson": "1B",
+"src": "textbook",
+"en": "there, yonder",
+"ipa": "/dɔʁt/"
+},
+{
+"id": "tb:aber",
+"de": "aber",
+"pos": "conj",
+"ja": "しかし",
+"lesson": "1B",
+"src": "textbook",
+"en": "but; however; though",
+"ipa": "/ˈaːbɐ/"
+},
+{
+"id": "tb:denn",
+"de": "denn",
+"pos": "conj",
+"ja": "というのは〜だから",
+"lesson": "1B",
+"src": "textbook",
+"en": "for; because; since",
+"ipa": "/dɛn/"
+},
+{
+"id": "tb:oder",
+"de": "oder",
+"pos": "conj",
+"ja": "あるいは、または",
+"lesson": "1B",
+"src": "textbook",
+"en": "or",
+"ipa": "/ˈoːdər/"
+},
+{
+"id": "tb:Hallo",
+"de": "Hallo",
+"pos": "intj",
+"ja": "やあ、こんにちは",
+"lesson": "1B",
+"src": "textbook",
+"en": "hullabaloo, cheering (often welcoming or celebratory)",
+"ipa": "/haˈloː/"
+},
+{
+"id": "tb:Guten_Tag",
+"de": "Guten Tag",
+"pos": "phrase",
+"ja": "こんにちは",
+"lesson": "1B",
+"src": "textbook"
+},
+{
+"id": "tb:Guten_Morgen",
+"de": "Guten Morgen",
+"pos": "phrase",
+"ja": "おはよう",
+"lesson": "1B",
+"src": "textbook"
+},
+{
+"id": "tb:Guten_Abend",
+"de": "Guten Abend",
+"pos": "phrase",
+"ja": "こんばんは",
+"lesson": "1B",
+"src": "textbook"
+},
+{
+"id": "tb:Auf_Wiedersehen",
+"de": "Auf Wiedersehen",
+"pos": "phrase",
+"ja": "さようなら",
+"lesson": "1B",
+"src": "textbook"
+},
+{
+"id": "tb:Tschüs",
+"de": "Tschüs",
+"pos": "intj",
+"ja": "じゃあね、バイバイ",
+"lesson": "1B",
+"src": "textbook"
+},
+{
+"id": "tb:Danke",
+"de": "Danke",
+"pos": "intj",
+"ja": "ありがとう",
+"lesson": "1B",
+"src": "textbook"
+},
+{
+"id": "tb:Bitte",
+"de": "Bitte",
+"pos": "intj",
+"ja": "どうぞ、どういたしまして",
+"lesson": "1B",
+"src": "textbook",
+"en": "request, plea",
+"ipa": "/ˈbɪtə/"
+},
+{
+"id": "tb:Entschuldigung",
+"de": "Entschuldigung",
+"pos": "noun",
+"ja": "すみません、ごめんなさい",
+"lesson": "1B",
+"src": "textbook",
+"en": "apology (expression of remorse or regret)",
+"ipa": "/ɛntˈʃʊldiɡʊŋ/",
+"g": "f",
+"pl": "Entschuldigungen",
+"gen": "Entschuldigung"
+},
+{
+"id": "tb:Wie_geht_es_Ihnen?",
+"de": "Wie geht es Ihnen?",
+"pos": "phrase",
+"ja": "ご機嫌いかがですか？",
+"lesson": "1B",
+"src": "textbook"
+},
+{
+"id": "tb:Wie_geht's?",
+"de": "Wie geht's?",
+"pos": "phrase",
+"ja": "調子はどう？",
+"lesson": "1B",
+"src": "textbook"
+},
+{
+"id": "tb:Es_geht.",
+"de": "Es geht.",
+"pos": "phrase",
+"ja": "まあまあです",
+"lesson": "1B",
+"src": "textbook"
+},
+{
+"id": "tb:Viel_Spaß!",
+"de": "Viel Spaß!",
+"pos": "phrase",
+"ja": "楽しんでね！",
+"lesson": "1B",
+"src": "textbook"
+},
+{
+"id": "tb:bis_morgen",
+"de": "bis morgen",
+"pos": "phrase",
+"ja": "また明日",
+"lesson": "1B",
+"src": "textbook"
+},
+{
+"id": "tb:trinken",
+"de": "trinken",
+"pos": "verb",
+"ja": "飲む",
+"lesson": "2A",
+"src": "textbook",
+"en": "to drink (to drink liquids (in bottles, glasses, etc.) by mouth)",
+"ipa": "/ˈtʁɪŋkən/",
+"v": {
+"pp": "getrunken",
+"ax": "haben",
+"pr": [
+"trinke",
+"trinkst",
+"trinkt",
+"trinken",
+"trinkt",
+"trinken"
+],
+"pt": [
+"trank",
+"trankst",
+"trank",
+"tranken",
+"trankt",
+"tranken"
+],
+"k2": [
+"tränke",
+"tränkest",
+"tränke",
+"tränken",
+"tränket",
+"tränken"
+],
+"im": [
+"trink",
+"trinkt"
+]
+}
+},
+{
+"id": "tb:essen",
+"de": "essen",
+"pos": "verb",
+"ja": "食べる",
+"lesson": "2A",
+"src": "textbook",
+"en": "to eat",
+"ipa": "/ˈɛsən/",
+"v": {
+"pp": "gegessen",
+"ax": "haben",
+"pr": [
+"esse",
+"isst",
+"isst",
+"essen",
+"esst",
+"essen"
+],
+"pt": [
+"aß",
+"aßest",
+"aß",
+"aßen",
+"aßt",
+"aßen"
+],
+"k2": [
+"äße",
+"äßest",
+"äße",
+"äßen",
+"äßet",
+"äßen"
+],
+"im": [
+"iss",
+"esst"
+]
+}
+},
+{
+"id": "tb:probieren",
+"de": "probieren",
+"pos": "verb",
+"ja": "試す、試食する",
+"lesson": "2A",
+"src": "textbook",
+"en": "to try",
+"ipa": "/pʁoˈbiːʁən/",
+"v": {
+"pp": "probiert",
+"ax": "haben",
+"pr": [
+"probiere",
+"probierst",
+"probiert",
+"probieren",
+"probiert",
+"probieren"
+],
+"pt": [
+"probierte",
+"probiertest",
+"probierte",
+"probierten",
+"probiertet",
+"probierten"
+],
+"k2": [
+"probierte",
+"probiertest",
+"probierte",
+"probierten",
+"probiertet",
+"probierten"
+],
+"im": [
+"probier",
+"probiert"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:schmecken",
+"de": "schmecken",
+"pos": "verb",
+"ja": "(〜³にとって)おいしい、〜の味がする",
+"lesson": "2A",
+"src": "textbook",
+"en": "to taste",
+"ipa": "[ˈʃmɛkn̩]",
+"v": {
+"pp": "geschmeckt",
+"ax": "haben",
+"pr": [
+"schmecke",
+"schmeckst",
+"schmeckt",
+"schmecken",
+"schmeckt",
+"schmecken"
+],
+"pt": [
+"schmeckte",
+"schmecktest",
+"schmeckte",
+"schmeckten",
+"schmecktet",
+"schmeckten"
+],
+"k2": [
+"schmeckte",
+"schmecktest",
+"schmeckte",
+"schmeckten",
+"schmecktet",
+"schmeckten"
+],
+"im": [
+"schmeck",
+"schmeckt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:kosten",
+"de": "kosten",
+"pos": "verb",
+"ja": "(値段が)〜である",
+"lesson": "2A",
+"src": "textbook",
+"en": "to cost",
+"ipa": "/ˈkɔstən/",
+"v": {
+"pp": "gekostet",
+"ax": "haben",
+"pr": [
+"koste",
+"kostest",
+"kostet",
+"kosten",
+"kostet",
+"kosten"
+],
+"pt": [
+"kostete",
+"kostetest",
+"kostete",
+"kosteten",
+"kostetet",
+"kosteten"
+],
+"k2": [
+"kostete",
+"kostetest",
+"kostete",
+"kosteten",
+"kostetet",
+"kosteten"
+],
+"im": [
+"kost",
+"kostet"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:suchen",
+"de": "suchen",
+"pos": "verb",
+"ja": "探す",
+"lesson": "2A",
+"src": "textbook",
+"en": "to search, to look for",
+"ipa": "/ˈzuːxən/",
+"v": {
+"pp": "gesucht",
+"ax": "haben",
+"pr": [
+"suche",
+"suchst",
+"sucht",
+"suchen",
+"sucht",
+"suchen"
+],
+"pt": [
+"suchte",
+"suchtest",
+"suchte",
+"suchten",
+"suchtet",
+"suchten"
+],
+"k2": [
+"suchte",
+"suchtest",
+"suchte",
+"suchten",
+"suchtet",
+"suchten"
+],
+"im": [
+"such",
+"sucht"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:geben",
+"de": "geben",
+"pos": "verb",
+"ja": "与える、渡す",
+"lesson": "2A",
+"src": "textbook",
+"en": "to give (changing ownership)",
+"ipa": "[ˈɡeːb(ə)n]",
+"v": {
+"pp": "gegeben",
+"ax": "haben",
+"pr": [
+"gebe",
+"gibst",
+"gibt",
+"geben",
+"gebt",
+"geben"
+],
+"pt": [
+"gab",
+"gabst",
+"gab",
+"gaben",
+"gabt",
+"gaben"
+],
+"k2": [
+"gäbe",
+"gäbest",
+"gäbe",
+"gäben",
+"gäbet",
+"gäben"
+],
+"im": [
+"gib",
+"gebt"
+]
+}
+},
+{
+"id": "tb:zeigen",
+"de": "zeigen",
+"pos": "verb",
+"ja": "見せる",
+"lesson": "2A",
+"src": "textbook",
+"en": "to show, make see",
+"ipa": "/ˈt͡saɪ̯ɡən/",
+"v": {
+"pp": "gezeigt",
+"ax": "haben",
+"pr": [
+"zeige",
+"zeigst",
+"zeigt",
+"zeigen",
+"zeigt",
+"zeigen"
+],
+"pt": [
+"zeigte",
+"zeigtest",
+"zeigte",
+"zeigten",
+"zeigtet",
+"zeigten"
+],
+"k2": [
+"zeigte",
+"zeigtest",
+"zeigte",
+"zeigten",
+"zeigtet",
+"zeigten"
+],
+"im": [
+"zeig",
+"zeigt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:schicken",
+"de": "schicken",
+"pos": "verb",
+"ja": "送る",
+"lesson": "2A",
+"src": "textbook",
+"en": "to send, to dispatch (a person, letter, money etc. to a destination or a person)",
+"ipa": "/ˈʃɪkən/",
+"v": {
+"pp": "geschickt",
+"ax": "haben",
+"pr": [
+"schicke",
+"schickst",
+"schickt",
+"schicken",
+"schickt",
+"schicken"
+],
+"pt": [
+"schickte",
+"schicktest",
+"schickte",
+"schickten",
+"schicktet",
+"schickten"
+],
+"k2": [
+"schickte",
+"schicktest",
+"schickte",
+"schickten",
+"schicktet",
+"schickten"
+],
+"im": [
+"schick",
+"schickt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:schreiben",
+"de": "schreiben",
+"pos": "verb",
+"ja": "書く",
+"lesson": "2A",
+"src": "textbook",
+"en": "to write, to write out (use letters to make words and texts)",
+"ipa": "/ˈʃraɪ̯bən/",
+"v": {
+"pp": "geschrieben",
+"ax": "haben",
+"pr": [
+"schreibe",
+"schreibst",
+"schreibt",
+"schreiben",
+"schreibt",
+"schreiben"
+],
+"pt": [
+"schrieb",
+"schriebst",
+"schrieb",
+"schrieben",
+"schriebt",
+"schrieben"
+],
+"k2": [
+"schriebe",
+"schriebest",
+"schriebe",
+"schrieben",
+"schriebet",
+"schrieben"
+],
+"im": [
+"schreib",
+"schreibt"
+]
+}
+},
+{
+"id": "tb:gehören",
+"de": "gehören",
+"pos": "verb",
+"ja": "(〜³の)ものである",
+"lesson": "2A",
+"src": "textbook",
+"en": "to belong to, be the property of",
+"ipa": "/ɡəˈhøːʁən/",
+"v": {
+"pp": "gehört",
+"ax": "haben",
+"pr": [
+"gehöre",
+"gehörst",
+"gehört",
+"gehören",
+"gehört",
+"gehören"
+],
+"pt": [
+"gehörte",
+"gehörtest",
+"gehörte",
+"gehörten",
+"gehörtet",
+"gehörten"
+],
+"k2": [
+"gehörte",
+"gehörtest",
+"gehörte",
+"gehörten",
+"gehörtet",
+"gehörten"
+],
+"im": [
+"gehör",
+"gehört"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:helfen",
+"de": "helfen",
+"pos": "verb",
+"ja": "(〜³を)手伝う、助ける",
+"lesson": "2A",
+"src": "textbook",
+"en": "to help (someone); to assist; to aid",
+"ipa": "/ˈhɛlfn̩/",
+"v": {
+"pp": "geholfen",
+"ax": "haben",
+"pr": [
+"helfe",
+"hilfst",
+"hilft",
+"helfen",
+"helft",
+"helfen"
+],
+"pt": [
+"half",
+"halfst",
+"half",
+"halfen",
+"halft",
+"halfen"
+],
+"k2": [
+"hülfe",
+"hülfest",
+"hülfe",
+"hülfen",
+"hülfet",
+"hülfen"
+],
+"im": [
+"hilf",
+"helft"
+]
+}
+},
+{
+"id": "tb:scheinen",
+"de": "scheinen",
+"pos": "verb",
+"ja": "輝く、〜のように見える",
+"lesson": "2A",
+"src": "textbook",
+"en": "to shine; to gleam",
+"ipa": "/ˈʃaɪnən/",
+"v": {
+"pp": "geschienen",
+"ax": "haben",
+"pr": [
+"scheine",
+"scheinst",
+"scheint",
+"scheinen",
+"scheint",
+"scheinen"
+],
+"pt": [
+"schien",
+"schienst",
+"schien",
+"schienen",
+"schient",
+"schienen"
+],
+"k2": [
+"schiene",
+"schienest",
+"schiene",
+"schienen",
+"schienet",
+"schienen"
+],
+"im": [
+"schein",
+"scheint"
+]
+}
+},
+{
+"id": "tb:Café",
+"de": "Café",
+"pos": "noun",
+"ja": "カフェ",
+"lesson": "2A",
+"src": "textbook",
+"en": "a café, a coffee shop",
+"ipa": "/kaˈfeː/",
+"g": "n",
+"pl": "Cafés",
+"gen": "Cafés"
+},
+{
+"id": "tb:Kaffee",
+"de": "Kaffee",
+"pos": "noun",
+"ja": "コーヒー",
+"lesson": "2A",
+"src": "textbook",
+"en": "coffee (beverage made by infusing coffee beans in hot water)",
+"ipa": "/ˈkafe/",
+"g": "m",
+"pl": "Kaffees",
+"gen": "Kaffees"
+},
+{
+"id": "tb:Tee",
+"de": "Tee",
+"pos": "noun",
+"ja": "紅茶、お茶",
+"lesson": "2A",
+"src": "textbook",
+"en": "tea (drink made by infusing parts of a plant, especially leaves or buds of Camel",
+"ipa": "/teː/",
+"g": "m",
+"pl": "Tees",
+"gen": "Tees"
+},
+{
+"id": "tb:Kuchen",
+"de": "Kuchen",
+"pos": "noun",
+"ja": "ケーキ",
+"lesson": "2A",
+"src": "textbook",
+"en": "pie; cake; tart (foodstuff made of baked dough, other than bread)",
+"ipa": "/ˈkuːxən/",
+"g": "m",
+"pl": "Kuchen",
+"gen": "Kuchens"
+},
+{
+"id": "tb:Eis",
+"de": "Eis",
+"pos": "noun",
+"ja": "アイスクリーム、氷",
+"lesson": "2A",
+"src": "textbook",
+"en": "ice",
+"ipa": "/aɪ̯s/",
+"g": "n",
+"pl": "Eis",
+"gen": "Eises"
+},
+{
+"id": "tb:Bier",
+"de": "Bier",
+"pos": "noun",
+"ja": "ビール",
+"lesson": "2A",
+"src": "textbook",
+"en": "beer (alcoholic beverage fermented from starch material; a serving of this bever",
+"ipa": "/biːr/",
+"g": "n",
+"pl": "Biere",
+"gen": "Bieres"
+},
+{
+"id": "tb:Orangensaft",
+"de": "Orangensaft",
+"pos": "noun",
+"ja": "オレンジジュース",
+"lesson": "2A",
+"src": "textbook",
+"en": "orange juice",
+"ipa": "/oˈʁãːʒənˌzaft/",
+"g": "m",
+"pl": "Orangensäfte",
+"gen": "Orangensaftes"
+},
+{
+"id": "tb:Mineralwasser",
+"de": "Mineralwasser",
+"pos": "noun",
+"ja": "ミネラルウォーター",
+"lesson": "2A",
+"src": "textbook",
+"en": "mineral water, carbonated water",
+"ipa": "/mɪnəˈʁaːlˌvasɐ/",
+"g": "n",
+"pl": "Mineralwässer",
+"gen": "Mineralwassers"
+},
+{
+"id": "tb:Bratwurst",
+"de": "Bratwurst",
+"pos": "noun",
+"ja": "焼きソーセージ",
+"lesson": "2A",
+"src": "textbook",
+"en": "a sausage which has been or is suited to be fried or grilled; a bratwurst",
+"ipa": "/ˈbʁaːtvʊʁst/",
+"g": "f",
+"pl": "Bratwürste",
+"gen": "Bratwurst"
+},
+{
+"id": "tb:Brot",
+"de": "Brot",
+"pos": "noun",
+"ja": "パン",
+"lesson": "2A",
+"src": "textbook",
+"en": "bread",
+"ipa": "/bʁoːt/",
+"g": "n",
+"pl": "Brote",
+"gen": "Brotes"
+},
+{
+"id": "tb:Suppe",
+"de": "Suppe",
+"pos": "noun",
+"ja": "スープ",
+"lesson": "2A",
+"src": "textbook",
+"en": "soup",
+"ipa": "/ˈzʊpə/",
+"g": "f",
+"pl": "Suppen",
+"gen": "Suppe"
+},
+{
+"id": "tb:Pommes_frites",
+"de": "Pommes frites",
+"pos": "noun",
+"ja": "フライドポテト (複数扱い)",
+"lesson": "2A",
+"src": "textbook",
+"plOnly": true
+},
+{
+"id": "tb:Vater",
+"de": "Vater",
+"pos": "noun",
+"ja": "父",
+"lesson": "2A",
+"src": "textbook",
+"en": "father",
+"ipa": "/ˈfaːtər/",
+"g": "m",
+"pl": "Väter",
+"gen": "Vaters"
+},
+{
+"id": "tb:Mutter",
+"de": "Mutter",
+"pos": "noun",
+"ja": "母",
+"lesson": "2A",
+"src": "textbook",
+"en": "mother",
+"ipa": "/ˈmʊtər/",
+"g": "f",
+"pl": "Mütter",
+"gen": "Mutter"
+},
+{
+"id": "tb:Kind",
+"de": "Kind",
+"pos": "noun",
+"ja": "子ども",
+"lesson": "2A",
+"src": "textbook",
+"en": "kid; child (young person)",
+"ipa": "/kɪnt/",
+"g": "n",
+"pl": "Kinder",
+"gen": "Kindes"
+},
+{
+"id": "tb:Mann",
+"de": "Mann",
+"pos": "noun",
+"ja": "男性、夫",
+"lesson": "2A",
+"src": "textbook",
+"en": "man, male human being",
+"ipa": "/man/",
+"g": "m",
+"pl": "Männer",
+"gen": "Mannes"
+},
+{
+"id": "tb:Mädchen",
+"de": "Mädchen",
+"pos": "noun",
+"ja": "少女",
+"lesson": "2A",
+"src": "textbook",
+"en": "girl",
+"ipa": "/ˈmɛːtçən/",
+"g": "n",
+"pl": "Mädchen",
+"gen": "Mädchens"
+},
+{
+"id": "tb:Bruder",
+"de": "Bruder",
+"pos": "noun",
+"ja": "兄弟、兄、弟",
+"lesson": "2A",
+"src": "textbook",
+"en": "brother",
+"ipa": "/ˈbruːdɐ/",
+"g": "m",
+"pl": "Brüder",
+"gen": "Bruders"
+},
+{
+"id": "tb:Schwester",
+"de": "Schwester",
+"pos": "noun",
+"ja": "姉妹、姉、妹",
+"lesson": "2A",
+"src": "textbook",
+"en": "sister",
+"ipa": "/ˈʃvɛstɐ/",
+"g": "f",
+"pl": "Schwestern",
+"gen": "Schwester"
+},
+{
+"id": "tb:Sohn",
+"de": "Sohn",
+"pos": "noun",
+"ja": "息子",
+"lesson": "2A",
+"src": "textbook",
+"en": "son",
+"ipa": "/zoːn/",
+"g": "m",
+"pl": "Söhne",
+"gen": "Sohnes"
+},
+{
+"id": "tb:Tochter",
+"de": "Tochter",
+"pos": "noun",
+"ja": "娘",
+"lesson": "2A",
+"src": "textbook",
+"en": "daughter",
+"ipa": "/ˈtɔx.tɐ/",
+"g": "f",
+"pl": "Töchter",
+"gen": "Tochter"
+},
+{
+"id": "tb:Freund",
+"de": "Freund",
+"pos": "noun",
+"ja": "友人(男性)、ボーイフレンド",
+"lesson": "2A",
+"src": "textbook",
+"en": "friend",
+"ipa": "/frɔʏ̯nt/",
+"g": "m",
+"pl": "Freunde",
+"gen": "Freundes"
+},
+{
+"id": "tb:Freundin",
+"de": "Freundin",
+"pos": "noun",
+"ja": "友人(女性)、ガールフレンド",
+"lesson": "2A",
+"src": "textbook",
+"g": "f",
+"pl": "Freundinnen"
+},
+{
+"id": "tb:Buch",
+"de": "Buch",
+"pos": "noun",
+"ja": "本",
+"lesson": "2A",
+"src": "textbook",
+"en": "book (collection of sheets of paper bound together to hinge at one edge; long wo",
+"ipa": "/buːx/",
+"g": "n",
+"pl": "Bücher",
+"gen": "Buches"
+},
+{
+"id": "tb:Unterricht",
+"de": "Unterricht",
+"pos": "noun",
+"ja": "授業",
+"lesson": "2A",
+"src": "textbook",
+"en": "lesson, class, instruction, education",
+"ipa": "/ˈʊntɐˌʁɪçt/",
+"g": "m",
+"pl": "Unterrichte",
+"gen": "Unterrichtes"
+},
+{
+"id": "tb:Uhr",
+"de": "Uhr",
+"pos": "noun",
+"ja": "時計、〜時",
+"lesson": "2A",
+"src": "textbook",
+"en": "hours, o'clock (indicates the time within a twelve- or twenty-four-hour period)",
+"ipa": "/uːr/",
+"g": "f",
+"pl": "Uhren",
+"gen": "Uhr"
+},
+{
+"id": "tb:Tisch",
+"de": "Tisch",
+"pos": "noun",
+"ja": "机、テーブル",
+"lesson": "2A",
+"src": "textbook",
+"en": "table (a piece of furniture with a relatively deep surface at roughly waist or k",
+"ipa": "/tɪʃ/",
+"g": "m",
+"pl": "Tische",
+"gen": "Tisches"
+},
+{
+"id": "tb:Computer",
+"de": "Computer",
+"pos": "noun",
+"ja": "コンピューター",
+"lesson": "2A",
+"src": "textbook",
+"en": "computer (programmable electronic device that performs mathematical calculations",
+"ipa": "/kɔmˈpjuːtɐ/",
+"g": "m",
+"pl": "Computer",
+"gen": "Computers"
+},
+{
+"id": "tb:Tasche",
+"de": "Tasche",
+"pos": "noun",
+"ja": "かばん、ポケット",
+"lesson": "2A",
+"src": "textbook",
+"en": "bag",
+"ipa": "/ˈtaʃə/",
+"g": "f",
+"pl": "Taschen",
+"gen": "Tasche"
+},
+{
+"id": "tb:Handy",
+"de": "Handy",
+"pos": "noun",
+"ja": "携帯電話",
+"lesson": "2A",
+"src": "textbook",
+"en": "mobile phone, mobile, cell phone, phone (portable, wireless telephone)",
+"ipa": "/ˈhɛndi/",
+"g": "n",
+"pl": "Handys",
+"gen": "Handys"
+},
+{
+"id": "tb:Schuh",
+"de": "Schuh",
+"pos": "noun",
+"ja": "靴",
+"lesson": "2A",
+"src": "textbook",
+"en": "shoe",
+"ipa": "/ʃuː/",
+"g": "m",
+"pl": "Schuhe",
+"gen": "Schuhes"
+},
+{
+"id": "tb:Kugelschreiber",
+"de": "Kugelschreiber",
+"pos": "noun",
+"ja": "ボールペン",
+"lesson": "2A",
+"src": "textbook",
+"en": "ballpoint pen, biro",
+"ipa": "/ˈkuːɡəlˌʃraɪ̯bər/",
+"g": "m",
+"pl": "Kugelschreiber",
+"gen": "Kugelschreibers"
+},
+{
+"id": "tb:Hut",
+"de": "Hut",
+"pos": "noun",
+"ja": "(縁のある)帽子",
+"lesson": "2A",
+"src": "textbook",
+"en": "hat",
+"ipa": "/huːt/",
+"g": "m",
+"pl": "Hüte",
+"gen": "Hutes"
+},
+{
+"id": "tb:Fahrrad",
+"de": "Fahrrad",
+"pos": "noun",
+"ja": "自転車",
+"lesson": "2A",
+"src": "textbook",
+"en": "bicycle",
+"ipa": "/ˈfaːrˌra(ː)t/",
+"g": "n",
+"pl": "Fahrräder",
+"gen": "Fahrrads"
+},
+{
+"id": "tb:Jacke",
+"de": "Jacke",
+"pos": "noun",
+"ja": "上着、ジャケット",
+"lesson": "2A",
+"src": "textbook",
+"en": "jacket",
+"ipa": "/ˈjakə/",
+"g": "f",
+"pl": "Jacken",
+"gen": "Jacke"
+},
+{
+"id": "tb:Hemd",
+"de": "Hemd",
+"pos": "noun",
+"ja": "シャツ",
+"lesson": "2A",
+"src": "textbook",
+"en": "shirt",
+"ipa": "/hɛmt/",
+"g": "n",
+"pl": "Hemden",
+"gen": "Hemdes"
+},
+{
+"id": "tb:Foto",
+"de": "Foto",
+"pos": "noun",
+"ja": "写真",
+"lesson": "2A",
+"src": "textbook",
+"en": "photograph (picture created by projecting an image onto a photosensitive surface",
+"ipa": "/ˈfoːto/",
+"g": "n",
+"pl": "Fotos",
+"gen": "Fotos"
+},
+{
+"id": "tb:Zeitung",
+"de": "Zeitung",
+"pos": "noun",
+"ja": "新聞",
+"lesson": "2A",
+"src": "textbook",
+"en": "newspaper",
+"ipa": "/ˈt͡saɪ̯tʊŋ/",
+"g": "f",
+"pl": "Zeitungen",
+"gen": "Zeitung"
+},
+{
+"id": "tb:Brief",
+"de": "Brief",
+"pos": "noun",
+"ja": "手紙",
+"lesson": "2A",
+"src": "textbook",
+"en": "letter (written message)",
+"ipa": "/ˈbʁiːf/",
+"g": "m",
+"pl": "Briefe",
+"gen": "Briefes"
+},
+{
+"id": "tb:Karte",
+"de": "Karte",
+"pos": "noun",
+"ja": "カード、はがき、切符",
+"lesson": "2A",
+"src": "textbook",
+"en": "card (flat, normally rectangular piece of stiff paper, plastic etc.)",
+"ipa": "/ˈkartə/",
+"g": "f",
+"pl": "Karten",
+"gen": "Karte"
+},
+{
+"id": "tb:Pullover",
+"de": "Pullover",
+"pos": "noun",
+"ja": "セーター",
+"lesson": "2A",
+"src": "textbook",
+"en": "sweater; pullover; jumper (UK)",
+"ipa": "/pʊˈloːvɐ/",
+"g": "m",
+"pl": "Pullover",
+"gen": "Pullovers"
+},
+{
+"id": "tb:E-Mail",
+"de": "E-Mail",
+"pos": "noun",
+"ja": "電子メール",
+"lesson": "2A",
+"src": "textbook",
+"en": "e-mail (system; letter)",
+"ipa": "/ˈiːˌmɛɪ̯l/",
+"g": "f",
+"pl": "E-Mails",
+"gen": "E-Mail"
+},
+{
+"id": "tb:Sonne",
+"de": "Sonne",
+"pos": "noun",
+"ja": "太陽",
+"lesson": "2A",
+"src": "textbook",
+"en": "a sun (a star, especially when being the center of a solar system)",
+"ipa": "/ˈzɔnə/",
+"g": "f",
+"pl": "Sonnen",
+"gen": "Sonne"
+},
+{
+"id": "tb:Euro",
+"de": "Euro",
+"pos": "noun",
+"ja": "ユーロ",
+"lesson": "2A",
+"src": "textbook",
+"en": "euro (currency)",
+"ipa": "/ˈɔʏ̯ro/",
+"g": "m",
+"pl": "Euro",
+"gen": "Euros"
+},
+{
+"id": "tb:Cent",
+"de": "Cent",
+"pos": "noun",
+"ja": "セント",
+"lesson": "2A",
+"src": "textbook",
+"en": "cent, the smaller unit of the euro",
+"ipa": "/(t)sɛnt/",
+"g": "m",
+"pl": "Cent",
+"gen": "Cents"
+},
+{
+"id": "tb:Essen",
+"de": "Essen",
+"pos": "noun",
+"ja": "食事、料理",
+"lesson": "2A",
+"src": "textbook",
+"en": "meal",
+"ipa": "[ˈʔɛsn̩]",
+"g": "n",
+"pl": "Essen",
+"gen": "Essens"
+},
+{
+"id": "tb:praktisch",
+"de": "praktisch",
+"pos": "adj",
+"ja": "実用的な",
+"lesson": "2A",
+"src": "textbook",
+"en": "practical",
+"ipa": "/ˈpʁaktɪʃ/",
+"c": [
+"praktischer",
+"am praktischsten"
+]
+},
+{
+"id": "tb:neu",
+"de": "neu",
+"pos": "adj",
+"ja": "新しい",
+"lesson": "2A",
+"src": "textbook",
+"en": "new",
+"ipa": "/nɔʏ̯/",
+"c": [
+"neuer",
+"am neuesten"
+]
+},
+{
+"id": "tb:alt",
+"de": "alt",
+"pos": "adj",
+"ja": "古い、年をとった",
+"lesson": "2A",
+"src": "textbook",
+"en": "old",
+"ipa": "/alt/",
+"c": [
+"älter",
+"am ältesten"
+]
+},
+{
+"id": "tb:kaputt",
+"de": "kaputt",
+"pos": "adj",
+"ja": "壊れた",
+"lesson": "2A",
+"src": "textbook",
+"en": "destroyed, broken, out of order",
+"ipa": "/kaˈpʊt/",
+"c": [
+"kaputter",
+"am kaputtesten"
+]
+},
+{
+"id": "tb:leicht",
+"de": "leicht",
+"pos": "adj",
+"ja": "軽い、簡単な",
+"lesson": "2A",
+"src": "textbook",
+"en": "light (not heavy)",
+"ipa": "/laɪ̯çt/",
+"c": [
+"leichter",
+"am leichtesten"
+]
+},
+{
+"id": "tb:schön",
+"de": "schön",
+"pos": "adj",
+"ja": "美しい、すてきな",
+"lesson": "2A",
+"src": "textbook",
+"en": "beautiful, lovely, pretty, handsome",
+"ipa": "/ʃøːn/",
+"c": [
+"schöner",
+"am schönsten"
+]
+},
+{
+"id": "tb:billig",
+"de": "billig",
+"pos": "adj",
+"ja": "安い",
+"lesson": "2A",
+"src": "textbook",
+"en": "appropriate, meet, fair",
+"ipa": "[ˈbɪlɪç]",
+"c": [
+"billiger",
+"am billigsten"
+]
+},
+{
+"id": "tb:toll",
+"de": "toll",
+"pos": "adj",
+"ja": "すごい、すばらしい",
+"lesson": "2A",
+"src": "textbook",
+"en": "great, nice, wonderful",
+"ipa": "/tɔl/",
+"c": [
+"toller",
+"am tollsten"
+]
+},
+{
+"id": "tb:gemütlich",
+"de": "gemütlich",
+"pos": "adj",
+"ja": "居心地のよい",
+"lesson": "2A",
+"src": "textbook",
+"en": "cosy, gemütlich",
+"ipa": "/ɡəˈmyːtlɪç/",
+"c": [
+"gemütlicher",
+"am gemütlichsten"
+]
+},
+{
+"id": "tb:hier:adv",
+"de": "hier",
+"pos": "adv",
+"ja": "ここで",
+"lesson": "2A",
+"src": "textbook",
+"en": "here; in this place; refers to an environment one is currently in, or to somethi",
+"ipa": "/hiːr/"
+},
+{
+"id": "tb:dann:adv",
+"de": "dann",
+"pos": "adv",
+"ja": "それから、それなら",
+"lesson": "2A",
+"src": "textbook",
+"en": "then, after that",
+"ipa": "/dan/"
+},
+{
+"id": "tb:zusammen:adv",
+"de": "zusammen",
+"pos": "adv",
+"ja": "一緒に",
+"lesson": "2A",
+"src": "textbook",
+"en": "together, jointly",
+"ipa": "/tsuˈzamən/"
+},
+{
+"id": "tb:getrennt:adv",
+"de": "getrennt",
+"pos": "adv",
+"ja": "別々に",
+"lesson": "2A",
+"src": "textbook",
+"en": "separately"
+},
+{
+"id": "tb:Zahlen_bitte!",
+"de": "Zahlen bitte!",
+"pos": "phrase",
+"ja": "お勘定をお願いします",
+"lesson": "2A",
+"src": "textbook"
+},
+{
+"id": "tb:Stimmt_so!",
+"de": "Stimmt so!",
+"pos": "phrase",
+"ja": "おつりは結構です",
+"lesson": "2A",
+"src": "textbook"
+},
+{
+"id": "tb:Was_kostet_das?",
+"de": "Was kostet das?",
+"pos": "phrase",
+"ja": "これはいくらですか？",
+"lesson": "2A",
+"src": "textbook"
+},
+{
+"id": "tb:dreißig:num",
+"de": "dreißig",
+"pos": "num",
+"ja": "30",
+"lesson": "2A",
+"src": "textbook",
+"en": "thirty",
+"ipa": "/ˈdʁaɪ̯sɪç/"
+},
+{
+"id": "tb:vierzig:num",
+"de": "vierzig",
+"pos": "num",
+"ja": "40",
+"lesson": "2A",
+"src": "textbook",
+"en": "forty",
+"ipa": "/ˈfɪʁt͡sɪç/"
+},
+{
+"id": "tb:fünfzig:num",
+"de": "fünfzig",
+"pos": "num",
+"ja": "50",
+"lesson": "2A",
+"src": "textbook",
+"en": "fifty",
+"ipa": "/ˈfʏnftsɪç/"
+},
+{
+"id": "tb:sechzig:num",
+"de": "sechzig",
+"pos": "num",
+"ja": "60",
+"lesson": "2A",
+"src": "textbook",
+"en": "sixty",
+"ipa": "/ˈzɛçt͡sɪç/"
+},
+{
+"id": "tb:siebzig:num",
+"de": "siebzig",
+"pos": "num",
+"ja": "70",
+"lesson": "2A",
+"src": "textbook",
+"en": "seventy (70)",
+"ipa": "/ˈziːpt͡sɪç/"
+},
+{
+"id": "tb:achtzig:num",
+"de": "achtzig",
+"pos": "num",
+"ja": "80",
+"lesson": "2A",
+"src": "textbook",
+"en": "eighty",
+"ipa": "/ˈʔaxt͡sɪç/"
+},
+{
+"id": "tb:neunzig:num",
+"de": "neunzig",
+"pos": "num",
+"ja": "90",
+"lesson": "2A",
+"src": "textbook",
+"en": "ninety",
+"ipa": "/nɔɪ̯ntsɪç/"
+},
+{
+"id": "tb:hundert:num",
+"de": "hundert",
+"pos": "num",
+"ja": "100",
+"lesson": "2A",
+"src": "textbook",
+"en": "one hundred",
+"ipa": "/ˈhʊndɐt/"
+},
+{
+"id": "tb:hören",
+"de": "hören",
+"pos": "verb",
+"ja": "聞く",
+"lesson": "2B",
+"src": "textbook",
+"en": "to hear (to perceive sounds (or a sound) through the ear)",
+"ipa": "/ˈhøːrən/",
+"v": {
+"pp": "gehört",
+"ax": "haben",
+"pr": [
+"höre",
+"hörst",
+"hört",
+"hören",
+"hört",
+"hören"
+],
+"pt": [
+"hörte",
+"hörtest",
+"hörte",
+"hörten",
+"hörtet",
+"hörten"
+],
+"k2": [
+"hörte",
+"hörtest",
+"hörte",
+"hörten",
+"hörtet",
+"hörten"
+],
+"im": [
+"hör",
+"hört"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:lieben",
+"de": "lieben",
+"pos": "verb",
+"ja": "愛する",
+"lesson": "2B",
+"src": "textbook",
+"en": "to love, to have a strong affection for (someone or something)",
+"ipa": "/ˈliːbən/",
+"v": {
+"pp": "geliebt",
+"ax": "haben",
+"pr": [
+"liebe",
+"liebst",
+"liebt",
+"lieben",
+"liebt",
+"lieben"
+],
+"pt": [
+"liebte",
+"liebtest",
+"liebte",
+"liebten",
+"liebtet",
+"liebten"
+],
+"k2": [
+"liebte",
+"liebtest",
+"liebte",
+"liebten",
+"liebtet",
+"liebten"
+],
+"im": [
+"lieb",
+"liebt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:schenken",
+"de": "schenken",
+"pos": "verb",
+"ja": "贈る、プレゼントする",
+"lesson": "2B",
+"src": "textbook",
+"en": "to give as a present, to gift",
+"ipa": "/ˈʃɛŋkən/",
+"v": {
+"pp": "geschenkt",
+"ax": "haben",
+"pr": [
+"schenke",
+"schenkst",
+"schenkt",
+"schenken",
+"schenkt",
+"schenken"
+],
+"pt": [
+"schenkte",
+"schenktest",
+"schenkte",
+"schenkten",
+"schenktet",
+"schenkten"
+],
+"k2": [
+"schenkte",
+"schenktest",
+"schenkte",
+"schenkten",
+"schenktet",
+"schenkten"
+],
+"im": [
+"schenk",
+"schenkt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:Familie",
+"de": "Familie",
+"pos": "noun",
+"ja": "家族",
+"lesson": "2B",
+"src": "textbook",
+"en": "family",
+"ipa": "/faˈmiːli̯ə/",
+"g": "f",
+"pl": "Familien",
+"gen": "Familie"
+},
+{
+"id": "tb:Eltern",
+"de": "Eltern",
+"pos": "noun",
+"ja": "両親 (複数のみ)",
+"lesson": "2B",
+"src": "textbook",
+"en": "parents",
+"ipa": "/ˈɛltərn/",
+"plOnly": true
+},
+{
+"id": "tb:Geschwister",
+"de": "Geschwister",
+"pos": "noun",
+"ja": "兄弟姉妹 (複数のみ)",
+"lesson": "2B",
+"src": "textbook",
+"en": "sibling",
+"ipa": "/ɡəˈʃvɪstər/",
+"plOnly": true
+},
+{
+"id": "tb:Großvater",
+"de": "Großvater",
+"pos": "noun",
+"ja": "祖父",
+"lesson": "2B",
+"src": "textbook",
+"en": "grandfather",
+"ipa": "/ˈɡʁoːsfatɐ/",
+"g": "m",
+"pl": "Großväter",
+"gen": "Großvaters"
+},
+{
+"id": "tb:Großmutter",
+"de": "Großmutter",
+"pos": "noun",
+"ja": "祖母",
+"lesson": "2B",
+"src": "textbook",
+"en": "grandmother",
+"ipa": "/ˈɡʁoːsˌmʊtɐ/",
+"g": "f",
+"pl": "Großmütter",
+"gen": "Großmutter"
+},
+{
+"id": "tb:Großeltern",
+"de": "Großeltern",
+"pos": "noun",
+"ja": "祖父母 (複数のみ)",
+"lesson": "2B",
+"src": "textbook",
+"en": "grandparents",
+"plOnly": true
+},
+{
+"id": "tb:Onkel",
+"de": "Onkel",
+"pos": "noun",
+"ja": "おじ",
+"lesson": "2B",
+"src": "textbook",
+"en": "uncle",
+"ipa": "/ˈɔŋkəl/",
+"g": "m",
+"pl": "Onkel",
+"gen": "Onkels"
+},
+{
+"id": "tb:Tante",
+"de": "Tante",
+"pos": "noun",
+"ja": "おば",
+"lesson": "2B",
+"src": "textbook",
+"en": "aunt",
+"ipa": "/ˈtantə/",
+"g": "f",
+"pl": "Tanten",
+"gen": "Tante"
+},
+{
+"id": "tb:Einzelkind",
+"de": "Einzelkind",
+"pos": "noun",
+"ja": "一人っ子",
+"lesson": "2B",
+"src": "textbook",
+"en": "only child",
+"ipa": "/ˈʔaɪntsl̩ˌkɪnt/",
+"g": "n",
+"pl": "Einzelkinder",
+"gen": "Einzelkindes"
+},
+{
+"id": "tb:Beruf",
+"de": "Beruf",
+"pos": "noun",
+"ja": "職業",
+"lesson": "2B",
+"src": "textbook",
+"en": "occupation, profession, trade, job, career",
+"ipa": "/bəˈʁuːf/",
+"g": "m",
+"pl": "Berufe",
+"gen": "Berufes"
+},
+{
+"id": "tb:Name",
+"de": "Name",
+"pos": "noun",
+"ja": "名前 ※2格 Namens",
+"lesson": "2B",
+"src": "textbook",
+"en": "name (forename, Christian name, given name)",
+"ipa": "/ˈnaːmə/",
+"g": "m",
+"pl": "Namen",
+"gen": "Namens",
+"weak": true
+},
+{
+"id": "tb:Arzt",
+"de": "Arzt",
+"pos": "noun",
+"ja": "医者(男性)",
+"lesson": "2B",
+"src": "textbook",
+"en": "doctor, physician (male or of unspecified gender) (without necessarily having a ",
+"ipa": "[aːɐ̯tst]",
+"g": "m",
+"pl": "Ärzte",
+"gen": "Arztes"
+},
+{
+"id": "tb:Ärztin",
+"de": "Ärztin",
+"pos": "noun",
+"ja": "医者(女性)",
+"lesson": "2B",
+"src": "textbook",
+"en": "doctor, physician (female)",
+"g": "f",
+"pl": "Ärztinnen",
+"gen": "Ärztin"
+},
+{
+"id": "tb:Apotheker",
+"de": "Apotheker",
+"pos": "noun",
+"ja": "薬剤師(男性)",
+"lesson": "2B",
+"src": "textbook",
+"en": "pharmacist, druggist, (dispensing) chemist (Brit.), apothecary (archaic) (male o",
+"ipa": "/ˌapoˈteːkɐ/",
+"g": "m",
+"pl": "Apotheker",
+"gen": "Apothekers"
+},
+{
+"id": "tb:Apothekerin",
+"de": "Apothekerin",
+"pos": "noun",
+"ja": "薬剤師(女性)",
+"lesson": "2B",
+"src": "textbook",
+"g": "f",
+"pl": "Apothekerinnen"
+},
+{
+"id": "tb:Verkäufer",
+"de": "Verkäufer",
+"pos": "noun",
+"ja": "店員(男性)",
+"lesson": "2B",
+"src": "textbook",
+"en": "agent noun of verkaufen",
+"ipa": "/fɛɐ̯ˈkɔɪ̯fɐ/",
+"g": "m",
+"pl": "Verkäufer",
+"gen": "Verkäufers"
+},
+{
+"id": "tb:Verkäuferin",
+"de": "Verkäuferin",
+"pos": "noun",
+"ja": "店員(女性)",
+"lesson": "2B",
+"src": "textbook",
+"en": "seller, vendor",
+"g": "f",
+"pl": "Verkäuferinnen",
+"gen": "Verkäuferin"
+},
+{
+"id": "tb:Krankenpfleger",
+"de": "Krankenpfleger",
+"pos": "noun",
+"ja": "看護師(男性)",
+"lesson": "2B",
+"src": "textbook",
+"en": "nurse (male or of unspecified gender) (person who cares for the ill)",
+"ipa": "[ˈkʁaŋkn̩ˌpfleːɡɐ]",
+"g": "m",
+"pl": "Krankenpfleger",
+"gen": "Krankenpflegers"
+},
+{
+"id": "tb:Krankenpflegerin",
+"de": "Krankenpflegerin",
+"pos": "noun",
+"ja": "看護師(女性)",
+"lesson": "2B",
+"src": "textbook",
+"g": "f",
+"pl": "Krankenpflegerinnen"
+},
+{
+"id": "tb:Bundeskanzlerin",
+"de": "Bundeskanzlerin",
+"pos": "noun",
+"ja": "連邦首相(女性)",
+"lesson": "2B",
+"src": "textbook",
+"en": "federal chancellor (female head of the German or Austrian federal government)",
+"ipa": "/ˈbʊndəsˌkant͡sləʁɪn/",
+"g": "f",
+"pl": "Bundeskanzlerinnen",
+"gen": "Bundeskanzlerin"
+},
+{
+"id": "tb:Schüler",
+"de": "Schüler",
+"pos": "noun",
+"ja": "生徒(男性)",
+"lesson": "2B",
+"src": "textbook",
+"en": "pupil, student, schoolboy (male or of unspecified gender)",
+"ipa": "/ˈʃyːlɐ/",
+"g": "m",
+"pl": "Schüler",
+"gen": "Schülers"
+},
+{
+"id": "tb:Medikament",
+"de": "Medikament",
+"pos": "noun",
+"ja": "薬",
+"lesson": "2B",
+"src": "textbook",
+"en": "drug, medicine",
+"ipa": "[medikaˈmɛnt]",
+"g": "n",
+"pl": "Medikamente",
+"gen": "Medikamentes"
+},
+{
+"id": "tb:Angst",
+"de": "Angst",
+"pos": "noun",
+"ja": "不安、恐れ",
+"lesson": "2B",
+"src": "textbook",
+"en": "fear; fright; anxiety",
+"ipa": "/aŋst/",
+"g": "f",
+"pl": "Ängste",
+"gen": "Angst"
+},
+{
+"id": "tb:Musik",
+"de": "Musik",
+"pos": "noun",
+"ja": "音楽",
+"lesson": "2B",
+"src": "textbook",
+"en": "music",
+"ipa": "/muˈziːk/",
+"g": "f",
+"pl": "Musiken",
+"gen": "Musik"
+},
+{
+"id": "tb:Auto",
+"de": "Auto",
+"pos": "noun",
+"ja": "自動車",
+"lesson": "2B",
+"src": "textbook",
+"en": "car",
+"ipa": "/ˈaʊ̯to/",
+"g": "n",
+"pl": "Autos",
+"gen": "Autos"
+},
+{
+"id": "tb:Bleistift",
+"de": "Bleistift",
+"pos": "noun",
+"ja": "鉛筆",
+"lesson": "2B",
+"src": "textbook",
+"en": "pencil (writing utensil with a graphite shaft)",
+"ipa": "/ˈblaɪ̯ʃtɪft/",
+"g": "m",
+"pl": "Bleistifte",
+"gen": "Bleistiftes"
+},
+{
+"id": "tb:Smartphone",
+"de": "Smartphone",
+"pos": "noun",
+"ja": "スマートフォン",
+"lesson": "2B",
+"src": "textbook",
+"en": "smartphone",
+"ipa": "/ˈsma(ː)ʁtˌfoːn/",
+"g": "n",
+"pl": "Smartphones",
+"gen": "Smartphones"
+},
+{
+"id": "tb:CD",
+"de": "CD",
+"pos": "noun",
+"ja": "CD",
+"lesson": "2B",
+"src": "textbook",
+"en": "CD (compact disc)",
+"ipa": "/tseˈdeː/",
+"g": "f",
+"pl": "CDs",
+"gen": "CD"
+},
+{
+"id": "tb:Heft",
+"de": "Heft",
+"pos": "noun",
+"ja": "ノート",
+"lesson": "2B",
+"src": "textbook",
+"en": "notebook, writing booklet, cahier, composition book (book in which notes or memo",
+"ipa": "/hɛft/",
+"g": "n",
+"pl": "Hefte",
+"gen": "Heftes"
+},
+{
+"id": "tb:Telefon",
+"de": "Telefon",
+"pos": "noun",
+"ja": "電話",
+"lesson": "2B",
+"src": "textbook",
+"en": "telephone",
+"ipa": "/ˌteːləˈfoːn/",
+"g": "n",
+"pl": "Telefone",
+"gen": "Telefons"
+},
+{
+"id": "tb:Telefonnummer",
+"de": "Telefonnummer",
+"pos": "noun",
+"ja": "電話番号",
+"lesson": "2B",
+"src": "textbook",
+"en": "telephone number",
+"ipa": "/teleˈfoːnnʊmɐ/",
+"g": "f",
+"pl": "Telefonnummern",
+"gen": "Telefonnummer"
+},
+{
+"id": "tb:Nummer",
+"de": "Nummer",
+"pos": "noun",
+"ja": "番号",
+"lesson": "2B",
+"src": "textbook",
+"en": "number; see usage notes below",
+"ipa": "/ˈnʊmɐ/",
+"g": "f",
+"pl": "Nummern",
+"gen": "Nummer"
+},
+{
+"id": "tb:Jahr",
+"de": "Jahr",
+"pos": "noun",
+"ja": "年、〜歳",
+"lesson": "2B",
+"src": "textbook",
+"en": "year (solar year, the time it takes the Earth to complete one orbit of the Sun)",
+"ipa": "/jaːr/",
+"g": "n",
+"pl": "Jahre",
+"gen": "Jahres"
+},
+{
+"id": "tb:Zigarette",
+"de": "Zigarette",
+"pos": "noun",
+"ja": "たばこ",
+"lesson": "2B",
+"src": "textbook",
+"en": "cigarette",
+"ipa": "/ˌtsi(ː).ɡaˈʁɛ.tə/",
+"g": "f",
+"pl": "Zigaretten",
+"gen": "Zigarette"
+},
+{
+"id": "tb:Wein",
+"de": "Wein",
+"pos": "noun",
+"ja": "ワイン",
+"lesson": "2B",
+"src": "textbook",
+"en": "wine",
+"ipa": "/vaɪ̯n/",
+"g": "m",
+"pl": "Weine",
+"gen": "Weines"
+},
+{
+"id": "tb:Wasser",
+"de": "Wasser",
+"pos": "noun",
+"ja": "水",
+"lesson": "2B",
+"src": "textbook",
+"en": "water (H₂O)",
+"ipa": "/ˈvasər/",
+"g": "n",
+"pl": "Wasser",
+"gen": "Wassers"
+},
+{
+"id": "tb:Milch",
+"de": "Milch",
+"pos": "noun",
+"ja": "牛乳",
+"lesson": "2B",
+"src": "textbook",
+"en": "milk (white liquid produced by female mammals for their young to consume)",
+"ipa": "/mɪlç/",
+"g": "f",
+"pl": "Milchen",
+"gen": "Milch"
+},
+{
+"id": "tb:Butter",
+"de": "Butter",
+"pos": "noun",
+"ja": "バター",
+"lesson": "2B",
+"src": "textbook",
+"en": "butter",
+"ipa": "/ˈbʊtɐ/",
+"g": "f",
+"gen": "Butter"
+},
+{
+"id": "tb:Reis",
+"de": "Reis",
+"pos": "noun",
+"ja": "米、ご飯",
+"lesson": "2B",
+"src": "textbook",
+"en": "rice",
+"ipa": "/ʁaɪ̯s/",
+"g": "m",
+"pl": "Reise",
+"gen": "Reises"
+},
+{
+"id": "tb:Kartoffel",
+"de": "Kartoffel",
+"pos": "noun",
+"ja": "じゃがいも",
+"lesson": "2B",
+"src": "textbook",
+"en": "potato",
+"ipa": "/kaʁˈtɔfəl/",
+"g": "f",
+"pl": "Kartoffeln",
+"gen": "Kartoffel"
+},
+{
+"id": "tb:Getränk",
+"de": "Getränk",
+"pos": "noun",
+"ja": "飲み物",
+"lesson": "2B",
+"src": "textbook",
+"en": "drink, beverage (liquid for consumption)",
+"ipa": "/ɡəˈtʁɛŋk/",
+"g": "n",
+"pl": "Getränke",
+"gen": "Getränkes"
+},
+{
+"id": "tb:Ei",
+"de": "Ei",
+"pos": "noun",
+"ja": "卵",
+"lesson": "2B",
+"src": "textbook",
+"en": "egg (all biological senses)",
+"ipa": "/aɪ̯/",
+"g": "n",
+"pl": "Eier",
+"gen": "Eies"
+},
+{
+"id": "tb:Papier",
+"de": "Papier",
+"pos": "noun",
+"ja": "紙",
+"lesson": "2B",
+"src": "textbook",
+"en": "paper (material)",
+"ipa": "/paˈpiːɐ̯/",
+"g": "n",
+"pl": "Papiere",
+"gen": "Papieres"
+},
+{
+"id": "tb:ähnlich",
+"de": "ähnlich",
+"pos": "adj",
+"ja": "(〜³に)似ている",
+"lesson": "2B",
+"src": "textbook",
+"en": "similar, alike, resembling",
+"ipa": "/ˈɛːnlɪç/",
+"c": [
+"ähnlicher",
+"am ähnlichsten"
+]
+},
+{
+"id": "tb:mein:det",
+"de": "mein",
+"pos": "det",
+"ja": "私の",
+"lesson": "2B",
+"src": "textbook",
+"en": "my",
+"ipa": "/maɪ̯n/"
+},
+{
+"id": "tb:dein:det",
+"de": "dein",
+"pos": "det",
+"ja": "君の",
+"lesson": "2B",
+"src": "textbook",
+"en": "thy, your (esp. to friends, relatives, children, etc.).",
+"ipa": "/daɪ̯n/"
+},
+{
+"id": "tb:unser:det",
+"de": "unser",
+"pos": "det",
+"ja": "私たちの",
+"lesson": "2B",
+"src": "textbook",
+"en": "our",
+"ipa": "/ˈʔʊnzɐ/"
+},
+{
+"id": "tb:euer:det",
+"de": "euer",
+"pos": "det",
+"ja": "君たちの",
+"lesson": "2B",
+"src": "textbook",
+"en": "your (addressing two or more people informally)",
+"ipa": "/ˈɔʏ̯ɐ/"
+},
+{
+"id": "tb:Ihr:det",
+"de": "Ihr",
+"pos": "det",
+"ja": "あなた(がた)の",
+"lesson": "2B",
+"src": "textbook",
+"en": "your (that belongs to you (when formally or politely addressing one or more peop",
+"ipa": "/ʔiːɐ̯/"
+},
+{
+"id": "tb:kein:det",
+"de": "kein",
+"pos": "det",
+"ja": "ひとつも〜ない(否定冠詞)",
+"lesson": "2B",
+"src": "textbook",
+"en": "no; not a(n); not one; not any",
+"ipa": "/kaɪ̯n/"
+},
+{
+"id": "tb:schon:adv",
+"de": "schon",
+"pos": "adv",
+"ja": "すでに、もう",
+"lesson": "2B",
+"src": "textbook",
+"en": "already (happening rather early, continuing rather long)",
+"ipa": "/ʃoːn/"
+},
+{
+"id": "tb:wer:pron",
+"de": "wer",
+"pos": "pron",
+"ja": "誰が",
+"lesson": "2B",
+"src": "textbook",
+"en": "who (what person or people)",
+"ipa": "/veːr/"
+},
+{
+"id": "tb:fahren",
+"de": "fahren",
+"pos": "verb",
+"ja": "(乗り物で)行く、運転する",
+"lesson": "3A",
+"src": "textbook",
+"en": "to go at speed",
+"ipa": "[ˈfaːʁən]",
+"v": {
+"pp": "gefahren",
+"ax": "sein",
+"pr": [
+"fahre",
+"fährst",
+"fährt",
+"fahren",
+"fahrt",
+"fahren"
+],
+"pt": [
+"fuhr",
+"fuhrst",
+"fuhr",
+"fuhren",
+"fuhrt",
+"fuhren"
+],
+"k2": [
+"führe",
+"führest",
+"führe",
+"führen",
+"führet",
+"führen"
+],
+"im": [
+"fahr",
+"fahrt"
+]
+}
+},
+{
+"id": "tb:tragen",
+"de": "tragen",
+"pos": "verb",
+"ja": "運ぶ、身につけている",
+"lesson": "3A",
+"src": "textbook",
+"en": "to carry, to bear (something on one's person)",
+"ipa": "/ˈtʁaːɡn̩/",
+"v": {
+"pp": "getragen",
+"ax": "haben",
+"pr": [
+"trage",
+"trägst",
+"trägt",
+"tragen",
+"tragt",
+"tragen"
+],
+"pt": [
+"trug",
+"trugst",
+"trug",
+"trugen",
+"trugt",
+"trugen"
+],
+"k2": [
+"trüge",
+"trügest",
+"trüge",
+"trügen",
+"trüget",
+"trügen"
+],
+"im": [
+"trag",
+"tragt"
+]
+}
+},
+{
+"id": "tb:laufen",
+"de": "laufen",
+"pos": "verb",
+"ja": "走る、歩く",
+"lesson": "3A",
+"src": "textbook",
+"en": "to walk; to jog; to run (to move on foot; either at a normal or an increased spe",
+"ipa": "/ˈlaʊ̯fən/",
+"v": {
+"pp": "gelaufen",
+"ax": "sein",
+"pr": [
+"laufe",
+"läufst",
+"läuft",
+"laufen",
+"lauft",
+"laufen"
+],
+"pt": [
+"lief",
+"liefst",
+"lief",
+"liefen",
+"lieft",
+"liefen"
+],
+"k2": [
+"liefe",
+"liefest",
+"liefe",
+"liefen",
+"liefet",
+"liefen"
+],
+"im": [
+"lauf",
+"lauft"
+]
+}
+},
+{
+"id": "tb:schlafen",
+"de": "schlafen",
+"pos": "verb",
+"ja": "眠る",
+"lesson": "3A",
+"src": "textbook",
+"en": "to sleep",
+"ipa": "[ˈʃlaːfn̩]",
+"v": {
+"pp": "geschlafen",
+"ax": "haben",
+"pr": [
+"schlafe",
+"schläfst",
+"schläft",
+"schlafen",
+"schlaft",
+"schlafen"
+],
+"pt": [
+"schlief",
+"schliefst",
+"schlief",
+"schliefen",
+"schlieft",
+"schliefen"
+],
+"k2": [
+"schliefe",
+"schliefest",
+"schliefe",
+"schliefen",
+"schliefet",
+"schliefen"
+],
+"im": [
+"schlaf",
+"schlaft"
+]
+}
+},
+{
+"id": "tb:sprechen",
+"de": "sprechen",
+"pos": "verb",
+"ja": "話す",
+"lesson": "3A",
+"src": "textbook",
+"en": "to speak (some language, the truth, etc.)",
+"ipa": "/ˈʃprɛçən/",
+"v": {
+"pp": "gesprochen",
+"ax": "haben",
+"pr": [
+"spreche",
+"sprichst",
+"spricht",
+"sprechen",
+"sprecht",
+"sprechen"
+],
+"pt": [
+"sprach",
+"sprachst",
+"sprach",
+"sprachen",
+"spracht",
+"sprachen"
+],
+"k2": [
+"spräche",
+"sprächest",
+"spräche",
+"sprächen",
+"sprächet",
+"sprächen"
+],
+"im": [
+"sprich",
+"sprecht"
+]
+}
+},
+{
+"id": "tb:treffen",
+"de": "treffen",
+"pos": "verb",
+"ja": "会う",
+"lesson": "3A",
+"src": "textbook",
+"en": "to meet; to encounter",
+"ipa": "/ˈtʁɛfən/",
+"v": {
+"pp": "getroffen",
+"ax": "haben",
+"pr": [
+"treffe",
+"triffst",
+"trifft",
+"treffen",
+"trefft",
+"treffen"
+],
+"pt": [
+"traf",
+"trafst",
+"traf",
+"trafen",
+"traft",
+"trafen"
+],
+"k2": [
+"träfe",
+"träfest",
+"träfe",
+"träfen",
+"träfet",
+"träfen"
+],
+"im": [
+"triff",
+"trefft"
+]
+}
+},
+{
+"id": "tb:lesen",
+"de": "lesen",
+"pos": "verb",
+"ja": "読む",
+"lesson": "3A",
+"src": "textbook",
+"en": "to read (to look at and understand symbols, words, or data)",
+"ipa": "/ˈleːzn̩/",
+"v": {
+"pp": "gelesen",
+"ax": "haben",
+"pr": [
+"lese",
+"liest",
+"liest",
+"lesen",
+"lest",
+"lesen"
+],
+"pt": [
+"las",
+"lasest",
+"las",
+"lasen",
+"last",
+"lasen"
+],
+"k2": [
+"läse",
+"läsest",
+"läse",
+"läsen",
+"läset",
+"läsen"
+],
+"im": [
+"lies",
+"lest"
+]
+}
+},
+{
+"id": "tb:sehen",
+"de": "sehen",
+"pos": "verb",
+"ja": "見る、見える",
+"lesson": "3A",
+"src": "textbook",
+"en": "to see; to have sight",
+"ipa": "/ˈzeː.ən/",
+"v": {
+"pp": "gesehen",
+"ax": "haben",
+"pr": [
+"sehe",
+"siehst",
+"sieht",
+"sehen",
+"seht",
+"sehen"
+],
+"pt": [
+"sah",
+"sahst",
+"sah",
+"sahen",
+"saht",
+"sahen"
+],
+"k2": [
+"sähe",
+"sähest",
+"sähe",
+"sähen",
+"sähet",
+"sähen"
+],
+"im": [
+"sieh",
+"seht"
+]
+}
+},
+{
+"id": "tb:werden",
+"de": "werden",
+"pos": "verb",
+"ja": "〜になる",
+"lesson": "3A",
+"src": "textbook",
+"en": "will, to be going to, forms the future tense",
+"ipa": "/ˈveːʁdən/",
+"v": {
+"pp": "geworden",
+"ax": "sein",
+"pr": [
+"werde",
+"wirst",
+"wird",
+"werden",
+"werdet",
+"werden"
+],
+"pt": [
+"wurde",
+"wurdest",
+"wurde",
+"wurden",
+"wurdet",
+"wurden"
+],
+"k2": [
+"würde",
+"würdest",
+"würde",
+"würden",
+"würdet",
+"würden"
+],
+"im": [
+"werd",
+"werdet"
+]
+}
+},
+{
+"id": "tb:nehmen",
+"de": "nehmen",
+"pos": "verb",
+"ja": "取る、(乗り物に)乗る",
+"lesson": "3A",
+"src": "textbook",
+"en": "to take (something into one's possession or on one's body)",
+"ipa": "/ˈneːmən/",
+"v": {
+"pp": "genommen",
+"ax": "haben",
+"pr": [
+"nehme",
+"nimmst",
+"nimmt",
+"nehmen",
+"nehmt",
+"nehmen"
+],
+"pt": [
+"nahm",
+"nahmst",
+"nahm",
+"nahmen",
+"nahmt",
+"nahmen"
+],
+"k2": [
+"nähme",
+"nähmest",
+"nähme",
+"nähmen",
+"nähmet",
+"nähmen"
+],
+"im": [
+"nimm",
+"nehmt"
+]
+}
+},
+{
+"id": "tb:wissen",
+"de": "wissen",
+"pos": "verb",
+"ja": "(知識として)知っている",
+"lesson": "3A",
+"src": "textbook",
+"en": "to know; to be aware of (a fact)",
+"ipa": "/ˈvɪsn̩/",
+"v": {
+"pp": "gewusst",
+"ax": "haben",
+"pr": [
+"weiß",
+"weißt",
+"weiß",
+"wissen",
+"wisst",
+"wissen"
+],
+"pt": [
+"wusste",
+"wusstest",
+"wusste",
+"wussten",
+"wusstet",
+"wussten"
+],
+"k2": [
+"wüsste",
+"wüsstest",
+"wüsste",
+"wüssten",
+"wüsstet",
+"wüssten"
+],
+"im": [
+"wisse",
+"wisst"
+]
+}
+},
+{
+"id": "tb:warten",
+"de": "warten",
+"pos": "verb",
+"ja": "待つ",
+"lesson": "3A",
+"src": "textbook",
+"en": "to wait (for)",
+"ipa": "/ˈvartən/",
+"v": {
+"pp": "gewartet",
+"ax": "haben",
+"pr": [
+"warte",
+"wartest",
+"wartet",
+"warten",
+"wartet",
+"warten"
+],
+"pt": [
+"wartete",
+"wartetest",
+"wartete",
+"warteten",
+"wartetet",
+"warteten"
+],
+"k2": [
+"wartete",
+"wartetest",
+"wartete",
+"warteten",
+"wartetet",
+"warteten"
+],
+"im": [
+"wart",
+"wartet"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:beginnen",
+"de": "beginnen",
+"pos": "verb",
+"ja": "始まる、始める",
+"lesson": "3A",
+"src": "textbook",
+"en": "to begin; to commence; to be started",
+"ipa": "/bəˈɡɪnən/",
+"v": {
+"pp": "begonnen",
+"ax": "haben",
+"pr": [
+"beginne",
+"beginnst",
+"beginnt",
+"beginnen",
+"beginnt",
+"beginnen"
+],
+"pt": [
+"begann",
+"begannst",
+"begann",
+"begannen",
+"begannt",
+"begannen"
+],
+"k2": [
+"begänne",
+"begännest",
+"begänne",
+"begännen",
+"begännet",
+"begännen"
+],
+"im": [
+"beginn",
+"beginnt"
+]
+}
+},
+{
+"id": "tb:sagen",
+"de": "sagen",
+"pos": "verb",
+"ja": "言う",
+"lesson": "3A",
+"src": "textbook",
+"en": "to say (to pronounce; communicate verbally)",
+"ipa": "/zaːɡən/",
+"v": {
+"pp": "gesagt",
+"ax": "haben",
+"pr": [
+"sage",
+"sagst",
+"sagt",
+"sagen",
+"sagt",
+"sagen"
+],
+"pt": [
+"sagte",
+"sagtest",
+"sagte",
+"sagten",
+"sagtet",
+"sagten"
+],
+"k2": [
+"sagte",
+"sagtest",
+"sagte",
+"sagten",
+"sagtet",
+"sagten"
+],
+"im": [
+"sag",
+"sagt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:Brille",
+"de": "Brille",
+"pos": "noun",
+"ja": "めがね",
+"lesson": "3A",
+"src": "textbook",
+"en": "glasses, spectacles (frames bearing two lenses worn in front of the eyes to corr",
+"ipa": "/ˈbʁɪlə/",
+"g": "f",
+"pl": "Brillen",
+"gen": "Brille"
+},
+{
+"id": "tb:Bus",
+"de": "Bus",
+"pos": "noun",
+"ja": "バス",
+"lesson": "3A",
+"src": "textbook",
+"en": "bus (public transport)",
+"ipa": "/bʊs/",
+"g": "m",
+"pl": "Busse",
+"gen": "Busses"
+},
+{
+"id": "tb:Zug",
+"de": "Zug",
+"pos": "noun",
+"ja": "列車",
+"lesson": "3A",
+"src": "textbook",
+"en": "procession (larger group moving together along a common route)",
+"ipa": "/t͡suːk/",
+"g": "m",
+"pl": "Züge",
+"gen": "Zuges"
+},
+{
+"id": "tb:Taxi",
+"de": "Taxi",
+"pos": "noun",
+"ja": "タクシー",
+"lesson": "3A",
+"src": "textbook",
+"en": "taxi, cab",
+"ipa": "/ˈtaksi/",
+"g": "n",
+"pl": "Taxis",
+"gen": "Taxis"
+},
+{
+"id": "tb:Motorrad",
+"de": "Motorrad",
+"pos": "noun",
+"ja": "オートバイ",
+"lesson": "3A",
+"src": "textbook",
+"en": "motorcycle",
+"ipa": "[ˈmoːtoːɐ̯ˌʁaːt]",
+"g": "n",
+"pl": "Motorräder",
+"gen": "Motorrades"
+},
+{
+"id": "tb:Fahrkarte",
+"de": "Fahrkarte",
+"pos": "noun",
+"ja": "乗車券",
+"lesson": "3A",
+"src": "textbook",
+"en": "fare ticket",
+"ipa": "[ˈfaːɐ̯ˌkaʁtə]",
+"g": "f",
+"pl": "Fahrkarten",
+"gen": "Fahrkarte"
+},
+{
+"id": "tb:Reise",
+"de": "Reise",
+"pos": "noun",
+"ja": "旅行",
+"lesson": "3A",
+"src": "textbook",
+"en": "journey, travel",
+"ipa": "/ˈʁaɪ̯zə/",
+"g": "f",
+"pl": "Reisen",
+"gen": "Reise"
+},
+{
+"id": "tb:Dame",
+"de": "Dame",
+"pos": "noun",
+"ja": "ご婦人",
+"lesson": "3A",
+"src": "textbook",
+"en": "lady (woman of good breeding and manners)",
+"ipa": "/ˈdaːmə/",
+"g": "f",
+"pl": "Damen",
+"gen": "Dame"
+},
+{
+"id": "tb:Hausaufgabe",
+"de": "Hausaufgabe",
+"pos": "noun",
+"ja": "宿題",
+"lesson": "3A",
+"src": "textbook",
+"en": "homework assignment, a piece of exercise or examination by which a teacher or ex",
+"ipa": "/ˈhaʊ̯sʔaʊ̯fˌɡaːbə/",
+"g": "f",
+"pl": "Hausaufgaben",
+"gen": "Hausaufgabe"
+},
+{
+"id": "tb:Anwalt",
+"de": "Anwalt",
+"pos": "noun",
+"ja": "弁護士(男性)",
+"lesson": "3A",
+"src": "textbook",
+"en": "attorney, lawyer",
+"ipa": "/ˈanvalt/",
+"g": "m",
+"pl": "Anwälte",
+"gen": "Anwaltes"
+},
+{
+"id": "tb:Deutschunterricht",
+"de": "Deutschunterricht",
+"pos": "noun",
+"ja": "ドイツ語の授業",
+"lesson": "3A",
+"src": "textbook",
+"g": "m"
+},
+{
+"id": "tb:Viertel",
+"de": "Viertel",
+"pos": "noun",
+"ja": "4分の1、15分",
+"lesson": "3A",
+"src": "textbook",
+"en": "quarter, fourth",
+"ipa": "/ˈfɪʁtəl/",
+"g": "n",
+"pl": "Viertel",
+"gen": "Viertels"
+},
+{
+"id": "tb:bald:adv",
+"de": "bald",
+"pos": "adv",
+"ja": "まもなく、じきに",
+"lesson": "3A",
+"src": "textbook",
+"en": "soon (near in time)",
+"ipa": "/balt/"
+},
+{
+"id": "tb:gesund",
+"de": "gesund",
+"pos": "adj",
+"ja": "健康な",
+"lesson": "3A",
+"src": "textbook",
+"en": "healthy (enjoying health)",
+"ipa": "/ɡəˈzʊnt/",
+"c": [
+"gesünder",
+"am gesündesten"
+]
+},
+{
+"id": "tb:leise",
+"de": "leise",
+"pos": "adj",
+"ja": "静かな、小声の",
+"lesson": "3A",
+"src": "textbook",
+"en": "quiet, soft, low",
+"ipa": "/ˈlaɪ.zə/",
+"c": [
+"leiser",
+"am leisesten"
+]
+},
+{
+"id": "tb:schnell",
+"de": "schnell",
+"pos": "adj",
+"ja": "速い",
+"lesson": "3A",
+"src": "textbook",
+"en": "quick, fast",
+"ipa": "/ʃnɛl/",
+"c": [
+"schneller",
+"am schnellsten"
+]
+},
+{
+"id": "tb:später:adv",
+"de": "später",
+"pos": "adv",
+"ja": "後で",
+"lesson": "3A",
+"src": "textbook",
+"en": "later",
+"ipa": "/ˈʃpɛːtɐ/"
+},
+{
+"id": "tb:wirklich:adv",
+"de": "wirklich",
+"pos": "adv",
+"ja": "本当に",
+"lesson": "3A",
+"src": "textbook",
+"en": "really, actually",
+"ipa": "/ˈvɪʁklɪç/"
+},
+{
+"id": "tb:gerade:adv",
+"de": "gerade",
+"pos": "adv",
+"ja": "ちょうど今",
+"lesson": "3A",
+"src": "textbook",
+"en": "now (at the moment)",
+"ipa": "/ɡəˈraːdə/"
+},
+{
+"id": "tb:oft:adv",
+"de": "oft",
+"pos": "adv",
+"ja": "しばしば、よく",
+"lesson": "3A",
+"src": "textbook",
+"en": "often",
+"ipa": "/ɔft/"
+},
+{
+"id": "tb:doch:adv",
+"de": "doch",
+"pos": "adv",
+"ja": "(否定疑問に対して)いいえ〜です、〜だよ",
+"lesson": "3A",
+"src": "textbook",
+"en": "yes; surely; really; on the contrary",
+"ipa": "/dɔx/"
+},
+{
+"id": "tb:halb",
+"de": "halb",
+"pos": "adj",
+"ja": "半分の (halb acht = 7時半)",
+"lesson": "3A",
+"src": "textbook",
+"en": "half, halfway",
+"ipa": "/halp/"
+},
+{
+"id": "tb:vor",
+"de": "vor",
+"pos": "prep",
+"ja": "〜の前に",
+"lesson": "3A",
+"src": "textbook",
+"en": "in front of, ahead of (relative location in space)",
+"ipa": "/foːr/"
+},
+{
+"id": "tb:nach",
+"de": "nach",
+"pos": "prep",
+"ja": "〜の後で、〜へ",
+"lesson": "3A",
+"src": "textbook",
+"en": "after, past (later in time)",
+"ipa": "/naːx/"
+},
+{
+"id": "tb:um",
+"de": "um",
+"pos": "prep",
+"ja": "〜時に、〜の周りに",
+"lesson": "3A",
+"src": "textbook",
+"en": "about",
+"ipa": "/ʊm/"
+},
+{
+"id": "tb:gegen",
+"de": "gegen",
+"pos": "prep",
+"ja": "〜頃に、〜に反対して",
+"lesson": "3A",
+"src": "textbook",
+"en": "against",
+"ipa": "/ˈɡe.ɡən/"
+},
+{
+"id": "tb:wann:adv",
+"de": "wann",
+"pos": "adv",
+"ja": "いつ",
+"lesson": "3A",
+"src": "textbook",
+"en": "when",
+"ipa": "/van/"
+},
+{
+"id": "tb:vorsichtig",
+"de": "vorsichtig",
+"pos": "adj",
+"ja": "慎重な、注意深い",
+"lesson": "3A",
+"src": "textbook",
+"en": "deliberate (not hasty or sudden); careful, cautious, wary, circumspect",
+"ipa": "/ˈfoːɐ̯ˌzɪçtɪç/",
+"c": [
+"vorsichtiger",
+"am vorsichtigsten"
+]
+},
+{
+"id": "tb:Warte_mal!",
+"de": "Warte mal!",
+"pos": "phrase",
+"ja": "ちょっと待って！",
+"lesson": "3A",
+"src": "textbook"
+},
+{
+"id": "tb:gefallen",
+"de": "gefallen",
+"pos": "verb",
+"ja": "(〜³の)気に入る",
+"lesson": "3B",
+"src": "textbook",
+"en": "to please; to appeal to [with dative ‘someone’] (idiomatically translated by Eng",
+"ipa": "/ɡəˈfaln̩/",
+"v": {
+"pp": "gefallen",
+"ax": "haben",
+"pr": [
+"gefalle",
+"gefällst",
+"gefällt",
+"gefallen",
+"gefallt",
+"gefallen"
+],
+"pt": [
+"gefiel",
+"gefielst",
+"gefiel",
+"gefielen",
+"gefielt",
+"gefielen"
+],
+"k2": [
+"gefiele",
+"gefielest",
+"gefiele",
+"gefielen",
+"gefielet",
+"gefielen"
+],
+"im": [
+"gefall",
+"gefallt"
+]
+}
+},
+{
+"id": "tb:leihen",
+"de": "leihen",
+"pos": "verb",
+"ja": "貸す",
+"lesson": "3B",
+"src": "textbook",
+"en": "to borrow",
+"ipa": "/ˈlaɪ̯ən/",
+"v": {
+"pp": "geliehen",
+"ax": "haben",
+"pr": [
+"leihe",
+"leihst",
+"leiht",
+"leihen",
+"leiht",
+"leihen"
+],
+"pt": [
+"lieh",
+"liehst",
+"lieh",
+"liehen",
+"lieht",
+"liehen"
+],
+"k2": [
+"liehe",
+"liehest",
+"liehe",
+"liehen",
+"liehet",
+"liehen"
+],
+"im": [
+"leih",
+"leiht"
+]
+}
+},
+{
+"id": "tb:empfehlen",
+"de": "empfehlen",
+"pos": "verb",
+"ja": "勧める",
+"lesson": "3B",
+"src": "textbook",
+"en": "to propose, to advise in favor of",
+"ipa": "/ʔɛmˈpfeːlən/",
+"v": {
+"pp": "empfohlen",
+"ax": "haben",
+"pr": [
+"empfehle",
+"empfiehlst",
+"empfiehlt",
+"empfehlen",
+"empfehlt",
+"empfehlen"
+],
+"pt": [
+"empfahl",
+"empfahlst",
+"empfahl",
+"empfahlen",
+"empfahlt",
+"empfahlen"
+],
+"k2": [
+"empfähle",
+"empfählest",
+"empfähle",
+"empfählen",
+"empfählet",
+"empfählen"
+],
+"im": [
+"empfiehl",
+"empfehlt"
+]
+}
+},
+{
+"id": "tb:danken",
+"de": "danken",
+"pos": "verb",
+"ja": "(〜³に)感謝する",
+"lesson": "3B",
+"src": "textbook",
+"en": "to thank",
+"ipa": "[ˈdaŋkn̩]",
+"v": {
+"pp": "gedankt",
+"ax": "haben",
+"pr": [
+"danke",
+"dankst",
+"dankt",
+"danken",
+"dankt",
+"danken"
+],
+"pt": [
+"dankte",
+"danktest",
+"dankte",
+"dankten",
+"danktet",
+"dankten"
+],
+"k2": [
+"dankte",
+"danktest",
+"dankte",
+"dankten",
+"danktet",
+"dankten"
+],
+"im": [
+"dank",
+"dankt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:kaufen",
+"de": "kaufen",
+"pos": "verb",
+"ja": "買う",
+"lesson": "3B",
+"src": "textbook",
+"en": "to buy, to purchase",
+"ipa": "[ˈkaʊ̯fn̩]",
+"v": {
+"pp": "gekauft",
+"ax": "haben",
+"pr": [
+"kaufe",
+"kaufst",
+"kauft",
+"kaufen",
+"kauft",
+"kaufen"
+],
+"pt": [
+"kaufte",
+"kauftest",
+"kaufte",
+"kauften",
+"kauftet",
+"kauften"
+],
+"k2": [
+"kaufte",
+"kauftest",
+"kaufte",
+"kauften",
+"kauftet",
+"kauften"
+],
+"im": [
+"kauf",
+"kauft"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:leben",
+"de": "leben",
+"pos": "verb",
+"ja": "生きる、暮らす",
+"lesson": "3B",
+"src": "textbook",
+"en": "to live, to be alive",
+"ipa": "/ˈleːbən/",
+"v": {
+"pp": "gelebt",
+"ax": "haben",
+"pr": [
+"lebe",
+"lebst",
+"lebt",
+"leben",
+"lebt",
+"leben"
+],
+"pt": [
+"lebte",
+"lebtest",
+"lebte",
+"lebten",
+"lebtet",
+"lebten"
+],
+"k2": [
+"lebte",
+"lebtest",
+"lebte",
+"lebten",
+"lebtet",
+"lebten"
+],
+"im": [
+"leb",
+"lebt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:passieren",
+"de": "passieren",
+"pos": "verb",
+"ja": "起こる",
+"lesson": "3B",
+"src": "textbook",
+"en": "to happen",
+"ipa": "/paˈsiːʁən/",
+"v": {
+"pp": "passiert",
+"ax": "sein",
+"pr": [
+"passiere",
+"passierst",
+"passiert",
+"passieren",
+"passiert",
+"passieren"
+],
+"pt": [
+"passierte",
+"passiertest",
+"passierte",
+"passierten",
+"passiertet",
+"passierten"
+],
+"k2": [
+"passierte",
+"passiertest",
+"passierte",
+"passierten",
+"passiertet",
+"passierten"
+],
+"im": [
+"passier",
+"passiert"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:dieser:det",
+"de": "dieser",
+"pos": "det",
+"ja": "この",
+"lesson": "3B",
+"src": "textbook",
+"en": "this one, this",
+"ipa": "/ˈdiːzər/"
+},
+{
+"id": "tb:jeder:det",
+"de": "jeder",
+"pos": "det",
+"ja": "どの〜も、各々の",
+"lesson": "3B",
+"src": "textbook",
+"en": "each, every",
+"ipa": "/ˈjeːdɐ/"
+},
+{
+"id": "tb:jener:det",
+"de": "jener",
+"pos": "det",
+"ja": "あの",
+"lesson": "3B",
+"src": "textbook",
+"en": "that, that one",
+"ipa": "/ˈjeːnɐ/"
+},
+{
+"id": "tb:solcher:det",
+"de": "solcher",
+"pos": "det",
+"ja": "そのような",
+"lesson": "3B",
+"src": "textbook"
+},
+{
+"id": "tb:welcher:det",
+"de": "welcher",
+"pos": "det",
+"ja": "どの",
+"lesson": "3B",
+"src": "textbook",
+"en": "which; what",
+"ipa": "/ˈvɛlçər/"
+},
+{
+"id": "tb:aller:det",
+"de": "aller",
+"pos": "det",
+"ja": "すべての",
+"lesson": "3B",
+"src": "textbook"
+},
+{
+"id": "tb:Stadt",
+"de": "Stadt",
+"pos": "noun",
+"ja": "都市、町",
+"lesson": "3B",
+"src": "textbook",
+"en": "city (a large settlement)",
+"ipa": "/ʃtat/",
+"g": "f",
+"pl": "Städte",
+"gen": "Stadt"
+},
+{
+"id": "tb:Reiseführer",
+"de": "Reiseführer",
+"pos": "noun",
+"ja": "旅行ガイドブック",
+"lesson": "3B",
+"src": "textbook",
+"en": "tourist guide, tour guide",
+"ipa": "[ˈʁaɪ̯zəˌfyːʁɐ]",
+"g": "m",
+"pl": "Reiseführer",
+"gen": "Reiseführers"
+},
+{
+"id": "tb:Atmosphäre",
+"de": "Atmosphäre",
+"pos": "noun",
+"ja": "雰囲気",
+"lesson": "3B",
+"src": "textbook",
+"en": "atmosphere",
+"ipa": "/atmoˈsfɛːʁə/",
+"g": "f",
+"pl": "Atmosphären",
+"gen": "Atmosphäre"
+},
+{
+"id": "tb:Sehenswürdigkeit",
+"de": "Sehenswürdigkeit",
+"pos": "noun",
+"ja": "名所",
+"lesson": "3B",
+"src": "textbook",
+"g": "f",
+"pl": "Sehenswürdigkeiten"
+},
+{
+"id": "tb:Idee",
+"de": "Idee",
+"pos": "noun",
+"ja": "考え、アイディア",
+"lesson": "3B",
+"src": "textbook",
+"en": "idea",
+"ipa": "/iˈdeː/",
+"g": "f",
+"pl": "Ideen",
+"gen": "Idee"
+},
+{
+"id": "tb:Schlüssel",
+"de": "Schlüssel",
+"pos": "noun",
+"ja": "鍵",
+"lesson": "3B",
+"src": "textbook",
+"en": "a key",
+"ipa": "/ˈʃlʏsl̩/",
+"g": "m",
+"pl": "Schlüssel",
+"gen": "Schlüssels"
+},
+{
+"id": "tb:Anzug",
+"de": "Anzug",
+"pos": "noun",
+"ja": "スーツ",
+"lesson": "3B",
+"src": "textbook",
+"en": "suit (of clothes), outfit",
+"ipa": "/ˈantsuːk/",
+"g": "m",
+"pl": "Anzüge",
+"gen": "Anzuges"
+},
+{
+"id": "tb:Mantel",
+"de": "Mantel",
+"pos": "noun",
+"ja": "コート",
+"lesson": "3B",
+"src": "textbook",
+"en": "coat, overcoat (long jacket that covers at least part of the thighs)",
+"ipa": "/ˈmantəl/",
+"g": "m",
+"pl": "Mäntel",
+"gen": "Mantels"
+},
+{
+"id": "tb:Kleid",
+"de": "Kleid",
+"pos": "noun",
+"ja": "ワンピース、(複数で)衣服",
+"lesson": "3B",
+"src": "textbook",
+"en": "dress, gown (kind of woman's garment)",
+"ipa": "/klaɪ̯t/",
+"g": "n",
+"pl": "Kleider",
+"gen": "Kleides"
+},
+{
+"id": "tb:Rock",
+"de": "Rock",
+"pos": "noun",
+"ja": "スカート",
+"lesson": "3B",
+"src": "textbook",
+"en": "skirt (garment)",
+"ipa": "/ʁɔk/",
+"g": "m",
+"pl": "Röcke",
+"gen": "Rockes"
+},
+{
+"id": "tb:Bluse",
+"de": "Bluse",
+"pos": "noun",
+"ja": "ブラウス",
+"lesson": "3B",
+"src": "textbook",
+"en": "blouse",
+"ipa": "/bluːzə/",
+"g": "f",
+"pl": "Blusen",
+"gen": "Bluse"
+},
+{
+"id": "tb:Hose",
+"de": "Hose",
+"pos": "noun",
+"ja": "ズボン",
+"lesson": "3B",
+"src": "textbook",
+"en": "trousers",
+"ipa": "/ˈhoːzə/",
+"g": "f",
+"pl": "Hosen",
+"gen": "Hose"
+},
+{
+"id": "tb:Krawatte",
+"de": "Krawatte",
+"pos": "noun",
+"ja": "ネクタイ",
+"lesson": "3B",
+"src": "textbook",
+"en": "necktie",
+"ipa": "/kʁaˈvatə/",
+"g": "f",
+"pl": "Krawatten",
+"gen": "Krawatte"
+},
+{
+"id": "tb:Schal",
+"de": "Schal",
+"pos": "noun",
+"ja": "スカーフ、マフラー",
+"lesson": "3B",
+"src": "textbook",
+"en": "scarf",
+"ipa": "/ʃaːl/",
+"g": "m",
+"pl": "Schals",
+"gen": "Schals"
+},
+{
+"id": "tb:Mütze",
+"de": "Mütze",
+"pos": "noun",
+"ja": "(縁なしの)帽子",
+"lesson": "3B",
+"src": "textbook",
+"en": "cap",
+"ipa": "/ˈmʏt͡sə/",
+"g": "f",
+"pl": "Mützen",
+"gen": "Mütze"
+},
+{
+"id": "tb:Handschuh",
+"de": "Handschuh",
+"pos": "noun",
+"ja": "手袋",
+"lesson": "3B",
+"src": "textbook",
+"en": "any handwear; glove, mitten, mitt, gauntlet",
+"ipa": "/ˈhantʃuː/",
+"g": "m",
+"pl": "Handschuhe",
+"gen": "Handschuhs"
+},
+{
+"id": "tb:Rucksack",
+"de": "Rucksack",
+"pos": "noun",
+"ja": "リュックサック",
+"lesson": "3B",
+"src": "textbook",
+"en": "backpack",
+"ipa": "/ˈʁʊkzak/",
+"g": "m",
+"pl": "Rucksäcke",
+"gen": "Rucksackes"
+},
+{
+"id": "tb:Spielzeug",
+"de": "Spielzeug",
+"pos": "noun",
+"ja": "おもちゃ",
+"lesson": "3B",
+"src": "textbook",
+"en": "toy",
+"ipa": "/ˈʃpiːlˌt͡sɔʏk/",
+"g": "n",
+"pl": "Spielzeuge",
+"gen": "Spielzeuges"
+},
+{
+"id": "tb:Titel",
+"de": "Titel",
+"pos": "noun",
+"ja": "タイトル、題名",
+"lesson": "3B",
+"src": "textbook",
+"en": "title",
+"ipa": "/ˈtiːtl/",
+"g": "m",
+"pl": "Titel",
+"gen": "Titels"
+},
+{
+"id": "tb:Restaurant",
+"de": "Restaurant",
+"pos": "noun",
+"ja": "レストラン",
+"lesson": "3B",
+"src": "textbook",
+"en": "restaurant",
+"ipa": "/rɛs.toˈrãː/",
+"g": "n",
+"pl": "Restaurants",
+"gen": "Restaurants"
+},
+{
+"id": "tb:Märchen",
+"de": "Märchen",
+"pos": "noun",
+"ja": "童話、メルヒェン",
+"lesson": "3B",
+"src": "textbook",
+"en": "fairy tale (folk tale)",
+"ipa": "/ˈmɛːɐ̯çn̩/",
+"g": "n",
+"pl": "Märchen",
+"gen": "Märchens"
+},
+{
+"id": "tb:Wald",
+"de": "Wald",
+"pos": "noun",
+"ja": "森",
+"lesson": "3B",
+"src": "textbook",
+"en": "forest; woods; woodland",
+"ipa": "/valt/",
+"g": "m",
+"pl": "Wälder",
+"gen": "Waldes"
+},
+{
+"id": "tb:besonders:adv",
+"de": "besonders",
+"pos": "adv",
+"ja": "特に",
+"lesson": "3B",
+"src": "textbook",
+"en": "especially, particularly",
+"ipa": "[bəˈzɔndɐs]"
+},
+{
+"id": "tb:schick",
+"de": "schick",
+"pos": "adj",
+"ja": "シックな、おしゃれな",
+"lesson": "3B",
+"src": "textbook",
+"en": "elegant, dressy",
+"ipa": "/ʃɪk/",
+"c": [
+"schicker",
+"am schicksten"
+]
+},
+{
+"id": "tb:weit",
+"de": "weit",
+"pos": "adj",
+"ja": "遠い、広い",
+"lesson": "3B",
+"src": "textbook",
+"en": "wide",
+"ipa": "/vaɪ̯t/",
+"c": [
+"weiter",
+"am weitesten"
+]
+},
+{
+"id": "tb:weg:adv",
+"de": "weg",
+"pos": "adv",
+"ja": "離れて、去って",
+"lesson": "3B",
+"src": "textbook",
+"en": "away",
+"ipa": "/vɛk/"
+},
+{
+"id": "tb:wessen:pron",
+"de": "wessen",
+"pos": "pron",
+"ja": "誰の",
+"lesson": "3B",
+"src": "textbook"
+},
+{
+"id": "tb:wem:pron",
+"de": "wem",
+"pos": "pron",
+"ja": "誰に",
+"lesson": "3B",
+"src": "textbook"
+},
+{
+"id": "tb:wen:pron",
+"de": "wen",
+"pos": "pron",
+"ja": "誰を",
+"lesson": "3B",
+"src": "textbook"
+},
+{
+"id": "tb:mit",
+"de": "mit",
+"pos": "prep",
+"ja": "〜と一緒に、〜で(手段)",
+"lesson": "3B",
+"src": "textbook",
+"en": "with (in the company of, alongside)",
+"ipa": "/mɪt/"
+},
+{
+"id": "tb:von",
+"de": "von",
+"pos": "prep",
+"ja": "〜から、〜の",
+"lesson": "3B",
+"src": "textbook",
+"en": "from",
+"ipa": "/fɔn/"
+},
+{
+"id": "tb:Bahnhof",
+"de": "Bahnhof",
+"pos": "noun",
+"ja": "駅",
+"lesson": "4A",
+"src": "textbook",
+"en": "railway depot, railroad station, railway station, train station",
+"ipa": "/ˈbaːnˌhoːf/",
+"g": "m",
+"pl": "Bahnhöfe",
+"gen": "Bahnhofs"
+},
+{
+"id": "tb:Hauptbahnhof",
+"de": "Hauptbahnhof",
+"pos": "noun",
+"ja": "中央駅",
+"lesson": "4A",
+"src": "textbook",
+"en": "central/main train station",
+"ipa": "/ˈhaʊ̯pt.baːnˌhoːf/",
+"g": "m",
+"pl": "Hauptbahnhöfe",
+"gen": "Hauptbahnhofes"
+},
+{
+"id": "tb:Straßenbahn",
+"de": "Straßenbahn",
+"pos": "noun",
+"ja": "路面電車",
+"lesson": "4A",
+"src": "textbook",
+"en": "streetcar, tramway",
+"ipa": "/ˈʃtraːsənˌbaːn/",
+"g": "f",
+"pl": "Straßenbahnen",
+"gen": "Straßenbahn"
+},
+{
+"id": "tb:U-Bahn",
+"de": "U-Bahn",
+"pos": "noun",
+"ja": "地下鉄",
+"lesson": "4A",
+"src": "textbook",
+"en": "underground railway; subway",
+"ipa": "/ˈʔuːbaːn/",
+"g": "f",
+"pl": "U-Bahnen",
+"gen": "U-Bahn"
+},
+{
+"id": "tb:Stadtplan",
+"de": "Stadtplan",
+"pos": "noun",
+"ja": "市街地図",
+"lesson": "4A",
+"src": "textbook",
+"en": "street map, city map",
+"ipa": "[ˈʃtatˌplaːn]",
+"g": "m",
+"pl": "Stadtpläne",
+"gen": "Stadtplanes"
+},
+{
+"id": "tb:Parkplatz",
+"de": "Parkplatz",
+"pos": "noun",
+"ja": "駐車場",
+"lesson": "4A",
+"src": "textbook",
+"en": "parking lot, outdoor car park",
+"ipa": "/ˈparkˌplats/",
+"g": "m",
+"pl": "Parkplätze",
+"gen": "Parkplatzes"
+},
+{
+"id": "tb:Abendessen",
+"de": "Abendessen",
+"pos": "noun",
+"ja": "夕食",
+"lesson": "4A",
+"src": "textbook",
+"en": "dinner, supper (the evening meal)",
+"ipa": "[ˈʔaːbəntˌʔɛsn̩]",
+"g": "n",
+"pl": "Abendessen",
+"gen": "Abendessens"
+},
+{
+"id": "tb:Oper",
+"de": "Oper",
+"pos": "noun",
+"ja": "オペラ、オペラ座",
+"lesson": "4A",
+"src": "textbook",
+"en": "opera (theatrical work, combining drama, music, song and sometimes dance)",
+"ipa": "/ˈoːpəʁ/",
+"g": "f",
+"pl": "Opern",
+"gen": "Oper"
+},
+{
+"id": "tb:Uni",
+"de": "Uni",
+"pos": "noun",
+"ja": "大学(口語)",
+"lesson": "4A",
+"src": "textbook",
+"en": "uni; university",
+"ipa": "/ˈʊni/",
+"g": "f",
+"pl": "Unis",
+"gen": "Uni"
+},
+{
+"id": "tb:Tunnel",
+"de": "Tunnel",
+"pos": "noun",
+"ja": "トンネル",
+"lesson": "4A",
+"src": "textbook",
+"en": "tunnel",
+"ipa": "/ˈtʊnəl/",
+"g": "m",
+"pl": "Tunnel",
+"gen": "Tunnels"
+},
+{
+"id": "tb:Park",
+"de": "Park",
+"pos": "noun",
+"ja": "公園",
+"lesson": "4A",
+"src": "textbook",
+"en": "park (piece of ground in or near a city or town, enclosed and kept for ornament ",
+"ipa": "/paʁk/",
+"g": "m",
+"pl": "Parks",
+"gen": "Parks"
+},
+{
+"id": "tb:Tor",
+"de": "Tor",
+"pos": "noun",
+"ja": "門、ゴール",
+"lesson": "4A",
+"src": "textbook",
+"en": "gate, archway (passageway covered by an arch, particularly one made of masonry)",
+"ipa": "/toːr/",
+"g": "n",
+"pl": "Tore",
+"gen": "Tores"
+},
+{
+"id": "tb:Geschenk",
+"de": "Geschenk",
+"pos": "noun",
+"ja": "プレゼント",
+"lesson": "4A",
+"src": "textbook",
+"en": "present, gift",
+"ipa": "/ɡəˈʃɛŋk/",
+"g": "n",
+"pl": "Geschenke",
+"gen": "Geschenkes"
+},
+{
+"id": "tb:Regenschirm",
+"de": "Regenschirm",
+"pos": "noun",
+"ja": "傘",
+"lesson": "4A",
+"src": "textbook",
+"en": "umbrella (used for protection against rain)",
+"ipa": "[ˈʁeːɡn̩ʃɪɐ̯m]",
+"g": "m",
+"pl": "Regenschirme",
+"gen": "Regenschirmes"
+},
+{
+"id": "tb:Tür",
+"de": "Tür",
+"pos": "noun",
+"ja": "ドア",
+"lesson": "4A",
+"src": "textbook",
+"en": "door (rigid plane on a hinge)",
+"ipa": "/tyːr/",
+"g": "f",
+"pl": "Türen",
+"gen": "Tür"
+},
+{
+"id": "tb:Bett",
+"de": "Bett",
+"pos": "noun",
+"ja": "ベッド",
+"lesson": "4A",
+"src": "textbook",
+"en": "bed (piece of furniture, usually flat and soft, for resting or sleeping on; one'",
+"ipa": "/bɛt/",
+"g": "n",
+"pl": "Betten",
+"gen": "Bettes"
+},
+{
+"id": "tb:Schule",
+"de": "Schule",
+"pos": "noun",
+"ja": "学校",
+"lesson": "4A",
+"src": "textbook",
+"en": "school (an institution dedicated to teaching and learning (especially before uni",
+"ipa": "/ˈʃuːlə/",
+"g": "f",
+"pl": "Schulen",
+"gen": "Schule"
+},
+{
+"id": "tb:Bild",
+"de": "Bild",
+"pos": "noun",
+"ja": "絵、写真",
+"lesson": "4A",
+"src": "textbook",
+"en": "depiction, image, picture",
+"ipa": "/bɪlt/",
+"g": "n",
+"pl": "Bilder",
+"gen": "Bildes"
+},
+{
+"id": "tb:Wand",
+"de": "Wand",
+"pos": "noun",
+"ja": "壁",
+"lesson": "4A",
+"src": "textbook",
+"en": "wall, partition",
+"ipa": "/vant/",
+"g": "f",
+"pl": "Wände",
+"gen": "Wand"
+},
+{
+"id": "tb:Schloss",
+"de": "Schloss",
+"pos": "noun",
+"ja": "城、宮殿、錠",
+"lesson": "4A",
+"src": "textbook",
+"en": "lock, padlock (something used for fastening)",
+"ipa": "/ʃlɔs/",
+"g": "n",
+"pl": "Schlösser",
+"gen": "Schlosses"
+},
+{
+"id": "tb:Berg",
+"de": "Berg",
+"pos": "noun",
+"ja": "山",
+"lesson": "4A",
+"src": "textbook",
+"en": "a mountain, hill",
+"ipa": "/bɛrk/",
+"g": "m",
+"pl": "Berge",
+"gen": "Berges"
+},
+{
+"id": "tb:Katze",
+"de": "Katze",
+"pos": "noun",
+"ja": "猫",
+"lesson": "4A",
+"src": "textbook",
+"en": "house cat, Felis silvestris catus",
+"ipa": "/ˈkatsə/",
+"g": "f",
+"pl": "Katzen",
+"gen": "Katze"
+},
+{
+"id": "tb:Sofa",
+"de": "Sofa",
+"pos": "noun",
+"ja": "ソファ",
+"lesson": "4A",
+"src": "textbook",
+"en": "sofa, couch (upholstered seat with a raised back that accommodates at least two ",
+"ipa": "/ˈzoːfa/",
+"g": "n",
+"pl": "Sofas",
+"gen": "Sofas"
+},
+{
+"id": "tb:Stuhl",
+"de": "Stuhl",
+"pos": "noun",
+"ja": "椅子",
+"lesson": "4A",
+"src": "textbook",
+"en": "a chair (to sit on)",
+"ipa": "/ʃtuːl/",
+"g": "m",
+"pl": "Stühle",
+"gen": "Stuhles"
+},
+{
+"id": "tb:Post",
+"de": "Post",
+"pos": "noun",
+"ja": "郵便局、郵便",
+"lesson": "4A",
+"src": "textbook",
+"en": "mail, post (sent and received letters etc.)",
+"ipa": "/pɔst/",
+"g": "f",
+"gen": "Post"
+},
+{
+"id": "tb:Hotel",
+"de": "Hotel",
+"pos": "noun",
+"ja": "ホテル",
+"lesson": "4A",
+"src": "textbook",
+"en": "hotel",
+"ipa": "/hoˈtɛl/",
+"g": "n",
+"pl": "Hotels",
+"gen": "Hotels"
+},
+{
+"id": "tb:Baum",
+"de": "Baum",
+"pos": "noun",
+"ja": "木",
+"lesson": "4A",
+"src": "textbook",
+"en": "tree",
+"ipa": "/baʊ̯m/",
+"g": "m",
+"pl": "Bäume",
+"gen": "Baumes"
+},
+{
+"id": "tb:Kirche",
+"de": "Kirche",
+"pos": "noun",
+"ja": "教会",
+"lesson": "4A",
+"src": "textbook",
+"en": "church (building)",
+"ipa": "/ˈkɪʁçə/",
+"g": "f",
+"pl": "Kirchen",
+"gen": "Kirche"
+},
+{
+"id": "tb:Rathaus",
+"de": "Rathaus",
+"pos": "noun",
+"ja": "市庁舎",
+"lesson": "4A",
+"src": "textbook",
+"en": "city hall, town hall (city council meeting house)",
+"ipa": "[ˈʁaːthaʊ̯s]",
+"g": "n",
+"pl": "Rathäuser",
+"gen": "Rathauses"
+},
+{
+"id": "tb:Haus",
+"de": "Haus",
+"pos": "noun",
+"ja": "家",
+"lesson": "4A",
+"src": "textbook",
+"en": "house, building",
+"ipa": "[haʊ̯s]",
+"g": "n",
+"pl": "Häuser",
+"gen": "Hauses"
+},
+{
+"id": "tb:Hund",
+"de": "Hund",
+"pos": "noun",
+"ja": "犬",
+"lesson": "4A",
+"src": "textbook",
+"en": "dog, hound",
+"ipa": "/hʊnt/",
+"g": "m",
+"pl": "Hunde",
+"gen": "Hundes"
+},
+{
+"id": "tb:Kino",
+"de": "Kino",
+"pos": "noun",
+"ja": "映画館",
+"lesson": "4A",
+"src": "textbook",
+"en": "cinema",
+"ipa": "/ˈkiːnoː/",
+"g": "n",
+"pl": "Kinos",
+"gen": "Kinos"
+},
+{
+"id": "tb:Meer",
+"de": "Meer",
+"pos": "noun",
+"ja": "海",
+"lesson": "4A",
+"src": "textbook",
+"en": "sea",
+"ipa": "/meːr/",
+"g": "n",
+"pl": "Meere",
+"gen": "Meeres"
+},
+{
+"id": "tb:Fenster",
+"de": "Fenster",
+"pos": "noun",
+"ja": "窓",
+"lesson": "4A",
+"src": "textbook",
+"en": "window",
+"ipa": "/ˈfɛnstɐ/",
+"g": "n",
+"pl": "Fenster",
+"gen": "Fensters"
+},
+{
+"id": "tb:See",
+"de": "See",
+"pos": "noun",
+"ja": "湖",
+"lesson": "4A",
+"src": "textbook",
+"en": "lake",
+"ipa": "/zeː/",
+"g": "m",
+"pl": "Seen",
+"gen": "Sees"
+},
+{
+"id": "tb:Prüfung",
+"de": "Prüfung",
+"pos": "noun",
+"ja": "試験",
+"lesson": "4A",
+"src": "textbook",
+"en": "an official test or examination on a subject",
+"ipa": "/ˈpʁyːfʊŋ/",
+"g": "f",
+"pl": "Prüfungen",
+"gen": "Prüfung"
+},
+{
+"id": "tb:Pause",
+"de": "Pause",
+"pos": "noun",
+"ja": "休憩",
+"lesson": "4A",
+"src": "textbook",
+"en": "pause (temporary interruption in speech or an activity)",
+"ipa": "/ˈpaʊ̯zə/",
+"g": "f",
+"pl": "Pausen",
+"gen": "Pause"
+},
+{
+"id": "tb:Hilfe",
+"de": "Hilfe",
+"pos": "noun",
+"ja": "助け、手伝い",
+"lesson": "4A",
+"src": "textbook",
+"en": "help, aid",
+"ipa": "/ˈhɪlfə/",
+"g": "f",
+"pl": "Hilfen",
+"gen": "Hilfe"
+},
+{
+"id": "tb:Arbeit",
+"de": "Arbeit",
+"pos": "noun",
+"ja": "仕事、勉強",
+"lesson": "4A",
+"src": "textbook",
+"en": "toil, regularly performed work, regularly pursued economic activity, labor, job,",
+"ipa": "/ˈaʁbaɪ̯t/",
+"g": "f",
+"pl": "Arbeiten",
+"gen": "Arbeit"
+},
+{
+"id": "tb:Besuch",
+"de": "Besuch",
+"pos": "noun",
+"ja": "訪問",
+"lesson": "4A",
+"src": "textbook",
+"en": "visit, call",
+"ipa": "/bəˈzuːχ/",
+"g": "m",
+"pl": "Besuche",
+"gen": "Besuches"
+},
+{
+"id": "tb:Leute",
+"de": "Leute",
+"pos": "noun",
+"ja": "人々 (複数のみ)",
+"lesson": "4A",
+"src": "textbook",
+"en": "people (several individual persons, a group of people in general, esp. of one ki",
+"ipa": "/ˈlɔɪ.tə/ [ˈlɔe̠.t(ʰ)ə]",
+"plOnly": true
+},
+{
+"id": "tb:Montag",
+"de": "Montag",
+"pos": "noun",
+"ja": "月曜日",
+"lesson": "4A",
+"src": "textbook",
+"en": "Monday",
+"ipa": "/ˈmoːnˌtaːk/",
+"g": "m",
+"pl": "Montage",
+"gen": "Montages"
+},
+{
+"id": "tb:Dienstag",
+"de": "Dienstag",
+"pos": "noun",
+"ja": "火曜日",
+"lesson": "4A",
+"src": "textbook",
+"en": "Tuesday",
+"ipa": "/ˈdiːnsˌtaːk/",
+"g": "m",
+"pl": "Dienstage",
+"gen": "Dienstages"
+},
+{
+"id": "tb:Mittwoch",
+"de": "Mittwoch",
+"pos": "noun",
+"ja": "水曜日",
+"lesson": "4A",
+"src": "textbook",
+"en": "Wednesday",
+"ipa": "/ˈmɪtvɔx/",
+"g": "m",
+"pl": "Mittwoche",
+"gen": "Mittwochs"
+},
+{
+"id": "tb:Donnerstag",
+"de": "Donnerstag",
+"pos": "noun",
+"ja": "木曜日",
+"lesson": "4A",
+"src": "textbook",
+"en": "Thursday",
+"ipa": "/ˈdɔnɐsˌtaːk/",
+"g": "m",
+"pl": "Donnerstage",
+"gen": "Donnerstages"
+},
+{
+"id": "tb:Freitag",
+"de": "Freitag",
+"pos": "noun",
+"ja": "金曜日",
+"lesson": "4A",
+"src": "textbook",
+"en": "Friday",
+"ipa": "/ˈfʁaɪ̯taːk/",
+"g": "m",
+"pl": "Freitage",
+"gen": "Freitages"
+},
+{
+"id": "tb:Samstag",
+"de": "Samstag",
+"pos": "noun",
+"ja": "土曜日",
+"lesson": "4A",
+"src": "textbook",
+"en": "Saturday",
+"ipa": "/ˈzamstaːk/",
+"g": "m",
+"pl": "Samstage",
+"gen": "Samstages"
+},
+{
+"id": "tb:Sonntag",
+"de": "Sonntag",
+"pos": "noun",
+"ja": "日曜日",
+"lesson": "4A",
+"src": "textbook",
+"en": "Sunday (the first day of the week in many religious traditions, and the seventh ",
+"ipa": "/ˈzɔntaːk/",
+"g": "m",
+"pl": "Sonntage",
+"gen": "Sonntages"
+},
+{
+"id": "tb:Januar",
+"de": "Januar",
+"pos": "noun",
+"ja": "1月",
+"lesson": "4A",
+"src": "textbook",
+"en": "January (the first month of the Gregorian calendar, following the December of th",
+"ipa": "/ˈjanuaːr/",
+"g": "m",
+"pl": "Januare",
+"gen": "Januars"
+},
+{
+"id": "tb:Februar",
+"de": "Februar",
+"pos": "noun",
+"ja": "2月",
+"lesson": "4A",
+"src": "textbook",
+"en": "February (the short month following January and preceding March in the Roman, Ju",
+"ipa": "/ˈfeːbruaːr/",
+"g": "m",
+"pl": "Februare",
+"gen": "Februars"
+},
+{
+"id": "tb:März",
+"de": "März",
+"pos": "noun",
+"ja": "3月",
+"lesson": "4A",
+"src": "textbook",
+"en": "March (the third month of the Gregorian calendar, following February and precedi",
+"ipa": "/mɛrts/",
+"g": "m",
+"pl": "Märze",
+"gen": "März",
+"weak": true
+},
+{
+"id": "tb:April",
+"de": "April",
+"pos": "noun",
+"ja": "4月",
+"lesson": "4A",
+"src": "textbook",
+"en": "April (the fourth month of the Gregorian calendar, following March and preceding",
+"ipa": "/aˈpʁɪl/",
+"g": "m",
+"pl": "Aprile",
+"gen": "April"
+},
+{
+"id": "tb:Mai",
+"de": "Mai",
+"pos": "noun",
+"ja": "5月",
+"lesson": "4A",
+"src": "textbook",
+"en": "May (the fifth month of the Gregorian calendar, following April and preceding Ju",
+"ipa": "/maɪ̯/",
+"g": "m",
+"pl": "Maie",
+"gen": "Mais"
+},
+{
+"id": "tb:Juni",
+"de": "Juni",
+"pos": "noun",
+"ja": "6月",
+"lesson": "4A",
+"src": "textbook",
+"en": "June (the sixth month of the Gregorian calendar, following May and preceding Jul",
+"ipa": "/ˈjuːni/",
+"g": "m",
+"pl": "Junis",
+"gen": "Junis"
+},
+{
+"id": "tb:Juli",
+"de": "Juli",
+"pos": "noun",
+"ja": "7月",
+"lesson": "4A",
+"src": "textbook",
+"en": "July (the seventh month of the Gregorian calendar, following June and preceding ",
+"ipa": "/ˈjuːli/",
+"g": "m",
+"pl": "Julis",
+"gen": "Julis"
+},
+{
+"id": "tb:August",
+"de": "August",
+"pos": "noun",
+"ja": "8月",
+"lesson": "4A",
+"src": "textbook",
+"en": "August (the eighth month of the Roman, Julian, and Gregorian calendars, followin",
+"ipa": "/aʊ̯ˈɡʊst/",
+"g": "m",
+"pl": "Auguste",
+"gen": "August"
+},
+{
+"id": "tb:September",
+"de": "September",
+"pos": "noun",
+"ja": "9月",
+"lesson": "4A",
+"src": "textbook",
+"en": "September (the ninth month of the Gregorian calendar, following August and prece",
+"ipa": "/zɛpˈtɛmbɐ/",
+"g": "m",
+"pl": "September",
+"gen": "Septembers"
+},
+{
+"id": "tb:Oktober",
+"de": "Oktober",
+"pos": "noun",
+"ja": "10月",
+"lesson": "4A",
+"src": "textbook",
+"en": "October (the tenth month of the Gregorian calendar, following September and prec",
+"ipa": "/ɔkˈtoːbɐ/",
+"g": "m",
+"pl": "Oktober",
+"gen": "Oktobers"
+},
+{
+"id": "tb:November",
+"de": "November",
+"pos": "noun",
+"ja": "11月",
+"lesson": "4A",
+"src": "textbook",
+"en": "November (the eleventh month of the Gregorian calendar, following October and pr",
+"ipa": "/noˈfɛmbɐ/",
+"g": "m",
+"pl": "November",
+"gen": "Novembers"
+},
+{
+"id": "tb:Dezember",
+"de": "Dezember",
+"pos": "noun",
+"ja": "12月",
+"lesson": "4A",
+"src": "textbook",
+"en": "December (the twelfth and last month of the Gregorian calendar, following Novemb",
+"ipa": "/deˈtsɛmbɐ/",
+"g": "m",
+"pl": "Dezember",
+"gen": "Dezembers"
+},
+{
+"id": "tb:Frühling",
+"de": "Frühling",
+"pos": "noun",
+"ja": "春",
+"lesson": "4A",
+"src": "textbook",
+"en": "spring",
+"ipa": "/ˈfʁyːlɪŋ/",
+"g": "m",
+"pl": "Frühlinge",
+"gen": "Frühlings"
+},
+{
+"id": "tb:Sommer",
+"de": "Sommer",
+"pos": "noun",
+"ja": "夏",
+"lesson": "4A",
+"src": "textbook",
+"en": "summer",
+"ipa": "/ˈzɔmɐ/",
+"g": "m",
+"pl": "Sommer",
+"gen": "Sommers"
+},
+{
+"id": "tb:Herbst",
+"de": "Herbst",
+"pos": "noun",
+"ja": "秋",
+"lesson": "4A",
+"src": "textbook",
+"en": "autumn, fall",
+"ipa": "/hɛʁpst/",
+"g": "m",
+"pl": "Herbste",
+"gen": "Herbstes"
+},
+{
+"id": "tb:Winter",
+"de": "Winter",
+"pos": "noun",
+"ja": "冬",
+"lesson": "4A",
+"src": "textbook",
+"en": "winter",
+"ipa": "/ˈvɪntɐ/",
+"g": "m",
+"pl": "Winter",
+"gen": "Winters"
+},
+{
+"id": "tb:stellen",
+"de": "stellen",
+"pos": "verb",
+"ja": "(立てて)置く",
+"lesson": "4A",
+"src": "textbook",
+"en": "causative of stehen: to put, place, position (someone or something) such that it",
+"ipa": "/ˈʃtɛlən/",
+"v": {
+"pp": "gestellt",
+"ax": "haben",
+"pr": [
+"stelle",
+"stellst",
+"stellt",
+"stellen",
+"stellt",
+"stellen"
+],
+"pt": [
+"stellte",
+"stelltest",
+"stellte",
+"stellten",
+"stelltet",
+"stellten"
+],
+"k2": [
+"stellte",
+"stelltest",
+"stellte",
+"stellten",
+"stelltet",
+"stellten"
+],
+"im": [
+"stell",
+"stellt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:stehen",
+"de": "stehen",
+"pos": "verb",
+"ja": "立っている",
+"lesson": "4A",
+"src": "textbook",
+"en": "to stand (to be upright, support oneself in an erect position)",
+"ipa": "/ˈʃteː.ən/",
+"v": {
+"pp": "gestanden",
+"ax": "haben",
+"pr": [
+"stehe",
+"stehst",
+"steht",
+"stehen",
+"steht",
+"stehen"
+],
+"pt": [
+"stand",
+"standest",
+"stand",
+"standen",
+"standet",
+"standen"
+],
+"k2": [
+"stände",
+"ständest",
+"stände",
+"ständen",
+"ständet",
+"ständen"
+],
+"im": [
+"steh",
+"steht"
+]
+}
+},
+{
+"id": "tb:legen",
+"de": "legen",
+"pos": "verb",
+"ja": "(横にして)置く",
+"lesson": "4A",
+"src": "textbook",
+"en": "to lie down",
+"ipa": "/ˈleːɡən/",
+"v": {
+"pp": "gelegt",
+"ax": "haben",
+"pr": [
+"lege",
+"legst",
+"legt",
+"legen",
+"legt",
+"legen"
+],
+"pt": [
+"legte",
+"legtest",
+"legte",
+"legten",
+"legtet",
+"legten"
+],
+"k2": [
+"legte",
+"legtest",
+"legte",
+"legten",
+"legtet",
+"legten"
+],
+"im": [
+"leg",
+"legt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:liegen",
+"de": "liegen",
+"pos": "verb",
+"ja": "横たわっている、ある",
+"lesson": "4A",
+"src": "textbook",
+"en": "to lie (to be in a horizontal position)",
+"ipa": "/ˈliːɡən/",
+"v": {
+"pp": "gelegen",
+"ax": "haben",
+"pr": [
+"liege",
+"liegst",
+"liegt",
+"liegen",
+"liegt",
+"liegen"
+],
+"pt": [
+"lag",
+"lagst",
+"lag",
+"lagen",
+"lagt",
+"lagen"
+],
+"k2": [
+"läge",
+"lägest",
+"läge",
+"lägen",
+"läget",
+"lägen"
+],
+"im": [
+"lieg",
+"liegt"
+]
+}
+},
+{
+"id": "tb:hängen",
+"de": "hängen",
+"pos": "verb",
+"ja": "掛かっている／掛ける",
+"lesson": "4A",
+"src": "textbook",
+"en": "to hang, to be suspended",
+"ipa": "/ˈhɛŋən/",
+"v": {
+"pp": "gehangen",
+"ax": "haben",
+"pr": [
+"hänge",
+"hängst",
+"hängt",
+"hängen",
+"hängt",
+"hängen"
+],
+"pt": [
+"hing",
+"hingst",
+"hing",
+"hingen",
+"hingt",
+"hingen"
+],
+"k2": [
+"hinge",
+"hingest",
+"hinge",
+"hingen",
+"hinget",
+"hingen"
+],
+"im": [
+"häng",
+"hängt"
+]
+}
+},
+{
+"id": "tb:denken",
+"de": "denken",
+"pos": "verb",
+"ja": "考える、思う (an+4格: 〜のことを考える)",
+"lesson": "4A",
+"src": "textbook",
+"en": "to think",
+"ipa": "/ˈdɛŋkən/",
+"v": {
+"pp": "gedacht",
+"ax": "haben",
+"pr": [
+"denke",
+"denkst",
+"denkt",
+"denken",
+"denkt",
+"denken"
+],
+"pt": [
+"dachte",
+"dachtest",
+"dachte",
+"dachten",
+"dachtet",
+"dachten"
+],
+"k2": [
+"dächte",
+"dächtest",
+"dächte",
+"dächten",
+"dächtet",
+"dächten"
+],
+"im": [
+"denk",
+"denkt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:schwimmen",
+"de": "schwimmen",
+"pos": "verb",
+"ja": "泳ぐ",
+"lesson": "4A",
+"src": "textbook",
+"en": "to swim (to use swimming motions to move in the water)",
+"ipa": "/ˈʃvɪmən/",
+"v": {
+"pp": "geschwommen",
+"ax": "sein",
+"pr": [
+"schwimme",
+"schwimmst",
+"schwimmt",
+"schwimmen",
+"schwimmt",
+"schwimmen"
+],
+"pt": [
+"schwamm",
+"schwammst",
+"schwamm",
+"schwammen",
+"schwammt",
+"schwammen"
+],
+"k2": [
+"schwämme",
+"schwämmest",
+"schwämme",
+"schwämmen",
+"schwämmet",
+"schwämmen"
+],
+"im": [
+"schwimm",
+"schwimmt"
+]
+}
+},
+{
+"id": "tb:zufrieden",
+"de": "zufrieden",
+"pos": "adj",
+"ja": "満足した (mit+3格)",
+"lesson": "4A",
+"src": "textbook",
+"en": "satisfied, content, happy (with something)",
+"ipa": "[t͡suˈfʁiːdn̩]",
+"c": [
+"zufriedener",
+"am zufriedensten"
+]
+},
+{
+"id": "tb:herzlich",
+"de": "herzlich",
+"pos": "adj",
+"ja": "心からの",
+"lesson": "4A",
+"src": "textbook",
+"en": "warm, warmhearted, friendly, affectionate, cordial",
+"ipa": "/ˈhɛʁt͡s.lɪç/",
+"c": [
+"herzlicher",
+"am herzlichsten"
+]
+},
+{
+"id": "tb:immer:adv",
+"de": "immer",
+"pos": "adv",
+"ja": "いつも",
+"lesson": "4A",
+"src": "textbook",
+"en": "always",
+"ipa": "/ˈɪmɐ/"
+},
+{
+"id": "tb:gleich:adv",
+"de": "gleich",
+"pos": "adv",
+"ja": "すぐに",
+"lesson": "4A",
+"src": "textbook",
+"en": "alike",
+"ipa": "/ɡlaɪ̯ç/"
+},
+{
+"id": "tb:bei",
+"de": "bei",
+"pos": "prep",
+"ja": "〜のところで",
+"lesson": "4A",
+"src": "textbook",
+"en": "by, near",
+"ipa": "/baɪ̯/"
+},
+{
+"id": "tb:seit",
+"de": "seit",
+"pos": "prep",
+"ja": "〜以来",
+"lesson": "4A",
+"src": "textbook",
+"en": "since",
+"ipa": "/zaɪ̯t/"
+},
+{
+"id": "tb:durch",
+"de": "durch",
+"pos": "prep",
+"ja": "〜を通って",
+"lesson": "4A",
+"src": "textbook",
+"en": "by means of; by; through",
+"ipa": "/dʊʁç/"
+},
+{
+"id": "tb:für",
+"de": "für",
+"pos": "prep",
+"ja": "〜のために",
+"lesson": "4A",
+"src": "textbook",
+"en": "describes an abstract directionality towards a person or matter",
+"ipa": "/fyːɐ̯/"
+},
+{
+"id": "tb:ohne",
+"de": "ohne",
+"pos": "prep",
+"ja": "〜なしで",
+"lesson": "4A",
+"src": "textbook",
+"en": "without",
+"ipa": "/ˈoːnə/"
+},
+{
+"id": "tb:an",
+"de": "an",
+"pos": "prep",
+"ja": "〜のきわに(接して)",
+"lesson": "4A",
+"src": "textbook",
+"en": "on, upon, at, in, against",
+"ipa": "/an/"
+},
+{
+"id": "tb:auf",
+"de": "auf",
+"pos": "prep",
+"ja": "〜の上に(接して)",
+"lesson": "4A",
+"src": "textbook",
+"en": "[with dative] on, upon (positioned at the top of)",
+"ipa": "/aʊ̯f/"
+},
+{
+"id": "tb:über",
+"de": "über",
+"pos": "prep",
+"ja": "〜の上方に、〜について",
+"lesson": "4A",
+"src": "textbook",
+"en": "[with accusative or dative] above, over (spatially)",
+"ipa": "/ˈyːbɐ/"
+},
+{
+"id": "tb:unter",
+"de": "unter",
+"pos": "prep",
+"ja": "〜の下に",
+"lesson": "4A",
+"src": "textbook",
+"en": "under",
+"ipa": "/ˈʊntɐ/"
+},
+{
+"id": "tb:neben",
+"de": "neben",
+"pos": "prep",
+"ja": "〜の隣に",
+"lesson": "4A",
+"src": "textbook",
+"en": "next to, beside, alongside, adjacent to, near, near to",
+"ipa": "/ˈneːbən/"
+},
+{
+"id": "tb:hinter",
+"de": "hinter",
+"pos": "prep",
+"ja": "〜の後ろに",
+"lesson": "4A",
+"src": "textbook",
+"en": "behind, after",
+"ipa": "/ˈhɪntər/"
+},
+{
+"id": "tb:zwischen",
+"de": "zwischen",
+"pos": "prep",
+"ja": "〜の間に",
+"lesson": "4A",
+"src": "textbook",
+"en": "between",
+"ipa": "/ˈtsvɪʃən/"
+},
+{
+"id": "tb:können",
+"de": "können",
+"pos": "verb",
+"ja": "〜できる",
+"lesson": "4B",
+"src": "textbook",
+"en": "to be able (to do or be something), to have the possibility of, can.",
+"ipa": "/ˈkœnən/",
+"v": {
+"pp": "gekonnt",
+"ax": "haben",
+"pr": [
+"kann",
+"kannst",
+"kann",
+"können",
+"könnt",
+"können"
+],
+"pt": [
+"konnte",
+"konntest",
+"konnte",
+"konnten",
+"konntet",
+"konnten"
+],
+"k2": [
+"könnte",
+"könntest",
+"könnte",
+"könnten",
+"könntet",
+"könnten"
+],
+"im": [
+"-",
+"-"
+]
+}
+},
+{
+"id": "tb:müssen",
+"de": "müssen",
+"pos": "verb",
+"ja": "〜しなければならない",
+"lesson": "4B",
+"src": "textbook",
+"en": "to have to (do something); must; to be obliged (to do something); to need (to do",
+"ipa": "/ˈmʏsən/",
+"v": {
+"pp": "gemusst",
+"ax": "haben",
+"pr": [
+"muss",
+"musst",
+"muss",
+"müssen",
+"müsst",
+"müssen"
+],
+"pt": [
+"musste",
+"musstest",
+"musste",
+"mussten",
+"musstet",
+"mussten"
+],
+"k2": [
+"müsste",
+"müsstest",
+"müsste",
+"müssten",
+"müsstet",
+"müssten"
+],
+"im": [
+"-",
+"-"
+]
+}
+},
+{
+"id": "tb:sollen",
+"de": "sollen",
+"pos": "verb",
+"ja": "〜すべきだ、〜しましょうか",
+"lesson": "4B",
+"src": "textbook",
+"en": "should; to be obligated (to do something); ought; shall",
+"ipa": "/ˈzɔlən/",
+"v": {
+"pp": "gesollt",
+"ax": "haben",
+"pr": [
+"soll",
+"sollst",
+"soll",
+"sollen",
+"sollt",
+"sollen"
+],
+"pt": [
+"sollte",
+"solltest",
+"sollte",
+"sollten",
+"solltet",
+"sollten"
+],
+"k2": [
+"sollte",
+"solltest",
+"sollte",
+"sollten",
+"solltet",
+"sollten"
+],
+"im": [
+"-",
+"-"
+]
+}
+},
+{
+"id": "tb:wollen",
+"de": "wollen",
+"pos": "verb",
+"ja": "〜するつもりだ、〜したい",
+"lesson": "4B",
+"src": "textbook",
+"en": "to want; to wish; to desire; to demand",
+"ipa": "/ˈvɔlən/",
+"v": {
+"pp": "gewollt",
+"ax": "haben",
+"pr": [
+"will",
+"willst",
+"will",
+"wollen",
+"wollt",
+"wollen"
+],
+"pt": [
+"wollte",
+"wolltest",
+"wollte",
+"wollten",
+"wolltet",
+"wollten"
+],
+"k2": [
+"wollte",
+"wolltest",
+"wollte",
+"wollten",
+"wolltet",
+"wollten"
+],
+"im": [
+"-",
+"-"
+]
+}
+},
+{
+"id": "tb:dürfen",
+"de": "dürfen",
+"pos": "verb",
+"ja": "〜してもよい",
+"lesson": "4B",
+"src": "textbook",
+"en": "to be allowed (to do something); to be permitted (to do something); may",
+"ipa": "/ˈdʏrfən/",
+"v": {
+"pp": "gedurft",
+"ax": "haben",
+"pr": [
+"darf",
+"darfst",
+"darf",
+"dürfen",
+"dürft",
+"dürfen"
+],
+"pt": [
+"durfte",
+"durftest",
+"durfte",
+"durften",
+"durftet",
+"durften"
+],
+"k2": [
+"dürfte",
+"dürftest",
+"dürfte",
+"dürften",
+"dürftet",
+"dürften"
+],
+"im": [
+"-",
+"-"
+]
+}
+},
+{
+"id": "tb:mögen",
+"de": "mögen",
+"pos": "verb",
+"ja": "好む (möchte: 〜したい)",
+"lesson": "4B",
+"src": "textbook",
+"en": "to like (something or someone)",
+"ipa": "/ˈmøːɡən/",
+"v": {
+"pp": "gemocht",
+"ax": "haben",
+"pr": [
+"mag",
+"magst",
+"mag",
+"mögen",
+"mögt",
+"mögen"
+],
+"pt": [
+"mochte",
+"mochtest",
+"mochte",
+"mochten",
+"mochtet",
+"mochten"
+],
+"k2": [
+"möchte",
+"möchtest",
+"möchte",
+"möchten",
+"möchtet",
+"möchten"
+],
+"im": [
+"-",
+"-"
+]
+}
+},
+{
+"id": "tb:anfangen",
+"de": "anfangen",
+"pos": "verb",
+"ja": "始まる、始める",
+"lesson": "4B",
+"src": "textbook",
+"en": "to begin; to commence",
+"ipa": "/ˈanˌfaŋən/",
+"sep": "an",
+"v": {
+"pp": "angefangen",
+"ax": "haben",
+"pr": [
+"fange an",
+"fängst an",
+"fängt an",
+"fangen an",
+"fangt an",
+"fangen an"
+],
+"pt": [
+"fing an",
+"fingst an",
+"fing an",
+"fingen an",
+"fingt an",
+"fingen an"
+],
+"k2": [
+"finge an",
+"fingest an",
+"finge an",
+"fingen an",
+"finget an",
+"fingen an"
+],
+"im": [
+"fang an",
+"fangt an"
+]
+}
+},
+{
+"id": "tb:ankommen",
+"de": "ankommen",
+"pos": "verb",
+"ja": "到着する",
+"lesson": "4B",
+"src": "textbook",
+"en": "to arrive",
+"ipa": "/ˈʔanˌkɔmən/",
+"sep": "an",
+"v": {
+"pp": "angekommen",
+"ax": "sein",
+"pr": [
+"komme an",
+"kommst an",
+"kommt an",
+"kommen an",
+"kommt an",
+"kommen an"
+],
+"pt": [
+"kam an",
+"kamst an",
+"kam an",
+"kamen an",
+"kamt an",
+"kamen an"
+],
+"k2": [
+"käme an",
+"kämest an",
+"käme an",
+"kämen an",
+"kämet an",
+"kämen an"
+],
+"im": [
+"komm an",
+"kommt an"
+]
+}
+},
+{
+"id": "tb:anrufen",
+"de": "anrufen",
+"pos": "verb",
+"ja": "(〜⁴に)電話する",
+"lesson": "4B",
+"src": "textbook",
+"en": "to call, to ring (by telephone or similar technology)",
+"ipa": "[ˈʔanʁuːfɱ̩]",
+"sep": "an",
+"v": {
+"pp": "angerufen",
+"ax": "haben",
+"pr": [
+"rufe an",
+"rufst an",
+"ruft an",
+"rufen an",
+"ruft an",
+"rufen an"
+],
+"pt": [
+"rief an",
+"riefst an",
+"rief an",
+"riefen an",
+"rieft an",
+"riefen an"
+],
+"k2": [
+"riefe an",
+"riefest an",
+"riefe an",
+"riefen an",
+"riefet an",
+"riefen an"
+],
+"im": [
+"ruf an",
+"ruft an"
+]
+}
+},
+{
+"id": "tb:aufstehen",
+"de": "aufstehen",
+"pos": "verb",
+"ja": "起きる、立ち上がる",
+"lesson": "4B",
+"src": "textbook",
+"en": "to get up (move from a sitting or lying position to a standing position; to get ",
+"ipa": "/ˈʔaufˌʃteːən/",
+"sep": "auf",
+"v": {
+"pp": "aufgestanden",
+"ax": "sein",
+"pr": [
+"stehe auf",
+"stehst auf",
+"steht auf",
+"stehen auf",
+"steht auf",
+"stehen auf"
+],
+"pt": [
+"stand auf",
+"standest auf",
+"stand auf",
+"standen auf",
+"standet auf",
+"standen auf"
+],
+"k2": [
+"stände auf",
+"ständest auf",
+"stände auf",
+"ständen auf",
+"ständet auf",
+"ständen auf"
+],
+"im": [
+"steh auf",
+"steht auf"
+]
+}
+},
+{
+"id": "tb:abfahren",
+"de": "abfahren",
+"pos": "verb",
+"ja": "出発する",
+"lesson": "4B",
+"src": "textbook",
+"en": "to depart, to leave",
+"ipa": "[ˈapfaːrən]",
+"sep": "ab",
+"v": {
+"pp": "abgefahren",
+"ax": "sein",
+"pr": [
+"fahre ab",
+"fährst ab",
+"fährt ab",
+"fahren ab",
+"fahrt ab",
+"fahren ab"
+],
+"pt": [
+"fuhr ab",
+"fuhrst ab",
+"fuhr ab",
+"fuhren ab",
+"fuhrt ab",
+"fuhren ab"
+],
+"k2": [
+"führe ab",
+"führest ab",
+"führe ab",
+"führen ab",
+"führet ab",
+"führen ab"
+],
+"im": [
+"fahr ab",
+"fahrt ab"
+]
+}
+},
+{
+"id": "tb:abholen",
+"de": "abholen",
+"pos": "verb",
+"ja": "迎えに行く、受け取りに行く",
+"lesson": "4B",
+"src": "textbook",
+"en": "to collect, to pick up (e.g. a person or package waiting at a location, with one",
+"ipa": "/ˈʔaphoːln̩/",
+"sep": "ab",
+"v": {
+"pp": "abgeholt",
+"ax": "haben",
+"pr": [
+"hole ab",
+"holst ab",
+"holt ab",
+"holen ab",
+"holt ab",
+"holen ab"
+],
+"pt": [
+"holte ab",
+"holtest ab",
+"holte ab",
+"holten ab",
+"holtet ab",
+"holten ab"
+],
+"k2": [
+"holte ab",
+"holtest ab",
+"holte ab",
+"holten ab",
+"holtet ab",
+"holten ab"
+],
+"im": [
+"hol ab",
+"holt ab"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:fernsehen",
+"de": "fernsehen",
+"pos": "verb",
+"ja": "テレビを見る",
+"lesson": "4B",
+"src": "textbook",
+"en": "to watch television",
+"ipa": "/ˈfɛʁnˌzeː.ən/",
+"sep": "fern",
+"v": {
+"pp": "ferngesehen",
+"ax": "haben",
+"pr": [
+"sehe fern",
+"siehst fern",
+"sieht fern",
+"sehen fern",
+"seht fern",
+"sehen fern"
+],
+"pt": [
+"sah fern",
+"sahst fern",
+"sah fern",
+"sahen fern",
+"saht fern",
+"sahen fern"
+],
+"k2": [
+"sähe fern",
+"sähest fern",
+"sähe fern",
+"sähen fern",
+"sähet fern",
+"sähen fern"
+],
+"im": [
+"sieh fern",
+"seht fern"
+]
+}
+},
+{
+"id": "tb:mitkommen",
+"de": "mitkommen",
+"pos": "verb",
+"ja": "一緒に来る",
+"lesson": "4B",
+"src": "textbook",
+"en": "to come with, to join and come along with (another person)",
+"ipa": "/ˈmɪtˌkɔmən/",
+"sep": "mit",
+"v": {
+"pp": "mitgekommen",
+"ax": "sein",
+"pr": [
+"komme mit",
+"kommst mit",
+"kommt mit",
+"kommen mit",
+"kommt mit",
+"kommen mit"
+],
+"pt": [
+"kam mit",
+"kamst mit",
+"kam mit",
+"kamen mit",
+"kamt mit",
+"kamen mit"
+],
+"k2": [
+"käme mit",
+"kämest mit",
+"käme mit",
+"kämen mit",
+"kämet mit",
+"kämen mit"
+],
+"im": [
+"komm mit",
+"kommt mit"
+]
+}
+},
+{
+"id": "tb:stattfinden",
+"de": "stattfinden",
+"pos": "verb",
+"ja": "開催される",
+"lesson": "4B",
+"src": "textbook",
+"en": "to take place, to happen",
+"ipa": "[ˈʃtatfɪndn̩]",
+"sep": "statt",
+"v": {
+"pp": "stattgefunden",
+"ax": "haben",
+"pr": [
+"finde statt",
+"findest statt",
+"findet statt",
+"finden statt",
+"findet statt",
+"finden statt"
+],
+"pt": [
+"fand statt",
+"fandest statt",
+"fand statt",
+"fanden statt",
+"fandet statt",
+"fanden statt"
+],
+"k2": [
+"fände statt",
+"fändest statt",
+"fände statt",
+"fänden statt",
+"fändet statt",
+"fänden statt"
+],
+"im": [
+"find statt",
+"findet statt"
+]
+}
+},
+{
+"id": "tb:teilnehmen",
+"de": "teilnehmen",
+"pos": "verb",
+"ja": "(an+3格に)参加する",
+"lesson": "4B",
+"src": "textbook",
+"en": "to participate (in)",
+"ipa": "[ˈtaɪ̯lneːmən]",
+"sep": "teil",
+"v": {
+"pp": "teilgenommen",
+"ax": "haben",
+"pr": [
+"nehme teil",
+"nimmst teil",
+"nimmt teil",
+"nehmen teil",
+"nehmt teil",
+"nehmen teil"
+],
+"pt": [
+"nahm teil",
+"nahmst teil",
+"nahm teil",
+"nahmen teil",
+"nahmt teil",
+"nahmen teil"
+],
+"k2": [
+"nähme teil",
+"nähmest teil",
+"nähme teil",
+"nähmen teil",
+"nähmet teil",
+"nähmen teil"
+],
+"im": [
+"nimm teil",
+"nehmt teil"
+]
+}
+},
+{
+"id": "tb:vorhaben",
+"de": "vorhaben",
+"pos": "verb",
+"ja": "予定している",
+"lesson": "4B",
+"src": "textbook",
+"en": "to intend, to have (something) planned, to have (something) to do",
+"ipa": "/ˈfoːʁˌhaːbən/",
+"sep": "vor",
+"v": {
+"pp": "vorgehabt",
+"ax": "haben",
+"pr": [
+"habe vor",
+"hast vor",
+"hat vor",
+"haben vor",
+"habt vor",
+"haben vor"
+],
+"pt": [
+"hatte vor",
+"hattest vor",
+"hatte vor",
+"hatten vor",
+"hattet vor",
+"hatten vor"
+],
+"k2": [
+"hätte vor",
+"hättest vor",
+"hätte vor",
+"hätten vor",
+"hättet vor",
+"hätten vor"
+],
+"im": [
+"hab vor",
+"habt vor"
+]
+}
+},
+{
+"id": "tb:vorstellen",
+"de": "vorstellen",
+"pos": "verb",
+"ja": "紹介する",
+"lesson": "4B",
+"src": "textbook",
+"en": "to introduce (someone), to present",
+"ipa": "[ˈfoːɐ̯ʃtɛln̩]",
+"sep": "vor",
+"v": {
+"pp": "vorgestellt",
+"ax": "haben",
+"pr": [
+"stelle vor",
+"stellst vor",
+"stellt vor",
+"stellen vor",
+"stellt vor",
+"stellen vor"
+],
+"pt": [
+"stellte vor",
+"stelltest vor",
+"stellte vor",
+"stellten vor",
+"stelltet vor",
+"stellten vor"
+],
+"k2": [
+"stellte vor",
+"stelltest vor",
+"stellte vor",
+"stellten vor",
+"stelltet vor",
+"stellten vor"
+],
+"im": [
+"stell vor",
+"stellt vor"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:mitbringen",
+"de": "mitbringen",
+"pos": "verb",
+"ja": "持ってくる",
+"lesson": "4B",
+"src": "textbook",
+"en": "to bring (along, with), to accompany",
+"ipa": "/ˈmɪtˌbʁɪŋən/",
+"sep": "mit",
+"v": {
+"pp": "mitgebracht",
+"ax": "haben",
+"pr": [
+"bringe mit",
+"bringst mit",
+"bringt mit",
+"bringen mit",
+"bringt mit",
+"bringen mit"
+],
+"pt": [
+"brachte mit",
+"brachtest mit",
+"brachte mit",
+"brachten mit",
+"brachtet mit",
+"brachten mit"
+],
+"k2": [
+"brächte mit",
+"brächtest mit",
+"brächte mit",
+"brächten mit",
+"brächtet mit",
+"brächten mit"
+],
+"im": [
+"bring mit",
+"bringt mit"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:parken",
+"de": "parken",
+"pos": "verb",
+"ja": "駐車する",
+"lesson": "4B",
+"src": "textbook",
+"en": "to park",
+"ipa": "/paʁkən/",
+"v": {
+"pp": "geparkt",
+"ax": "haben",
+"pr": [
+"parke",
+"parkst",
+"parkt",
+"parken",
+"parkt",
+"parken"
+],
+"pt": [
+"parkte",
+"parktest",
+"parkte",
+"parkten",
+"parktet",
+"parkten"
+],
+"k2": [
+"parkte",
+"parktest",
+"parkte",
+"parkten",
+"parktet",
+"parkten"
+],
+"im": [
+"park",
+"parkt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:rauchen",
+"de": "rauchen",
+"pos": "verb",
+"ja": "たばこを吸う",
+"lesson": "4B",
+"src": "textbook",
+"en": "to smoke, give off smoke",
+"ipa": "/ˈʁaʊ̯xən/",
+"v": {
+"pp": "geraucht",
+"ax": "haben",
+"pr": [
+"rauche",
+"rauchst",
+"raucht",
+"rauchen",
+"raucht",
+"rauchen"
+],
+"pt": [
+"rauchte",
+"rauchtest",
+"rauchte",
+"rauchten",
+"rauchtet",
+"rauchten"
+],
+"k2": [
+"rauchte",
+"rauchtest",
+"rauchte",
+"rauchten",
+"rauchtet",
+"rauchten"
+],
+"im": [
+"rauch",
+"raucht"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:fliegen",
+"de": "fliegen",
+"pos": "verb",
+"ja": "飛ぶ、飛行機で行く",
+"lesson": "4B",
+"src": "textbook",
+"en": "to fly; to travel by air",
+"ipa": "/ˈfliːɡn̩/",
+"v": {
+"pp": "geflogen",
+"ax": "sein",
+"pr": [
+"fliege",
+"fliegst",
+"fliegt",
+"fliegen",
+"fliegt",
+"fliegen"
+],
+"pt": [
+"flog",
+"flogst",
+"flog",
+"flogen",
+"flogt",
+"flogen"
+],
+"k2": [
+"flöge",
+"flögest",
+"flöge",
+"flögen",
+"flöget",
+"flögen"
+],
+"im": [
+"flieg",
+"fliegt"
+]
+}
+},
+{
+"id": "tb:telefonieren",
+"de": "telefonieren",
+"pos": "verb",
+"ja": "電話で話す",
+"lesson": "4B",
+"src": "textbook",
+"en": "to have a telephone call",
+"ipa": "/telefoˈniːʁən/",
+"v": {
+"pp": "telefoniert",
+"ax": "haben",
+"pr": [
+"telefoniere",
+"telefonierst",
+"telefoniert",
+"telefonieren",
+"telefoniert",
+"telefonieren"
+],
+"pt": [
+"telefonierte",
+"telefoniertest",
+"telefonierte",
+"telefonierten",
+"telefoniertet",
+"telefonierten"
+],
+"k2": [
+"telefonierte",
+"telefoniertest",
+"telefonierte",
+"telefonierten",
+"telefoniertet",
+"telefonierten"
+],
+"im": [
+"telefonier",
+"telefoniert"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:schließen",
+"de": "schließen",
+"pos": "verb",
+"ja": "閉める",
+"lesson": "4B",
+"src": "textbook",
+"en": "to shut; to close; to shut down",
+"ipa": "[ˈʃliːsn̩]",
+"v": {
+"pp": "geschlossen",
+"ax": "haben",
+"pr": [
+"schließe",
+"schließt",
+"schließt",
+"schließen",
+"schließt",
+"schließen"
+],
+"pt": [
+"schloss",
+"schlossest",
+"schloss",
+"schlossen",
+"schlosst",
+"schlossen"
+],
+"k2": [
+"schlösse",
+"schlössest",
+"schlösse",
+"schlössen",
+"schlösset",
+"schlössen"
+],
+"im": [
+"schließ",
+"schließt"
+]
+}
+},
+{
+"id": "tb:Picknick",
+"de": "Picknick",
+"pos": "noun",
+"ja": "ピクニック",
+"lesson": "4B",
+"src": "textbook",
+"en": "picnic",
+"ipa": "/ˈpɪkˌnɪk/",
+"g": "n",
+"pl": "Picknicks",
+"gen": "Picknicks"
+},
+{
+"id": "tb:Saft",
+"de": "Saft",
+"pos": "noun",
+"ja": "ジュース",
+"lesson": "4B",
+"src": "textbook",
+"en": "juice",
+"ipa": "/zaft/",
+"g": "m",
+"pl": "Säfte",
+"gen": "Saftes"
+},
+{
+"id": "tb:Vormittag",
+"de": "Vormittag",
+"pos": "noun",
+"ja": "午前",
+"lesson": "4B",
+"src": "textbook",
+"en": "mid-morning, late morning, forenoon (time of day roughly between 9 a.m. and noon",
+"ipa": "/ˈfoːɐ̯.mɪˌtaːk/",
+"g": "m",
+"pl": "Vormittage",
+"gen": "Vormittages"
+},
+{
+"id": "tb:Nachmittag",
+"de": "Nachmittag",
+"pos": "noun",
+"ja": "午後",
+"lesson": "4B",
+"src": "textbook",
+"en": "afternoon (part of the day from about 2 p.m. to about 6 p.m.)",
+"ipa": "/ˈnaːx.mɪˌtaːk/",
+"g": "m",
+"pl": "Nachmittage",
+"gen": "Nachmittages"
+},
+{
+"id": "tb:Wochenende",
+"de": "Wochenende",
+"pos": "noun",
+"ja": "週末",
+"lesson": "4B",
+"src": "textbook",
+"en": "weekend (break in the working week, usually Saturday and Sunday)",
+"ipa": "/ˈvɔxənˌɛndə/",
+"g": "n",
+"pl": "Wochenenden",
+"gen": "Wochenendes"
+},
+{
+"id": "tb:Museum",
+"de": "Museum",
+"pos": "noun",
+"ja": "博物館、美術館",
+"lesson": "4B",
+"src": "textbook",
+"en": "museum (building or institution dedicated to the protection and exhibition of it",
+"ipa": "/muˈzeːʊm/",
+"g": "n",
+"pl": "Museen",
+"gen": "Museums"
+},
+{
+"id": "tb:Eintrittskarte",
+"de": "Eintrittskarte",
+"pos": "noun",
+"ja": "入場券",
+"lesson": "4B",
+"src": "textbook",
+"en": "admission ticket",
+"g": "f",
+"pl": "Eintrittskarten",
+"gen": "Eintrittskarte"
+},
+{
+"id": "tb:Fest",
+"de": "Fest",
+"pos": "noun",
+"ja": "祭り、祝宴",
+"lesson": "4B",
+"src": "textbook",
+"en": "feast, celebration, festival, party",
+"ipa": "/fɛst/",
+"g": "n",
+"pl": "Feste",
+"gen": "Festes"
+},
+{
+"id": "tb:Sprachkurs",
+"de": "Sprachkurs",
+"pos": "noun",
+"ja": "語学コース",
+"lesson": "4B",
+"src": "textbook",
+"g": "m",
+"pl": "Sprachkurse"
+},
+{
+"id": "tb:Fluss",
+"de": "Fluss",
+"pos": "noun",
+"ja": "川",
+"lesson": "4B",
+"src": "textbook",
+"en": "river",
+"ipa": "/flʊs/",
+"g": "m",
+"pl": "Flüsse",
+"gen": "Flusses"
+},
+{
+"id": "tb:genau",
+"de": "genau",
+"pos": "adj",
+"ja": "正確な、ちょうど",
+"lesson": "4B",
+"src": "textbook",
+"en": "exact",
+"ipa": "/ɡəˈnaʊ̯/",
+"c": [
+"genauer",
+"am genauesten"
+]
+},
+{
+"id": "tb:leider:adv",
+"de": "leider",
+"pos": "adv",
+"ja": "残念ながら",
+"lesson": "4B",
+"src": "textbook",
+"en": "unfortunately",
+"ipa": "/ˈlaɪ̯dɐ/"
+},
+{
+"id": "tb:schade",
+"de": "schade",
+"pos": "adj",
+"ja": "残念な",
+"lesson": "4B",
+"src": "textbook",
+"en": "a pity, a shame; bummer; unfortunate; disappointing",
+"ipa": "/ˈʃaːdə/"
+},
+{
+"id": "tb:erst:adv",
+"de": "erst",
+"pos": "adv",
+"ja": "やっと、〜になってはじめて",
+"lesson": "4B",
+"src": "textbook",
+"en": "first, at first",
+"ipa": "/eːrst/"
+},
+{
+"id": "tb:frei",
+"de": "frei",
+"pos": "adj",
+"ja": "自由な、暇な、空いている",
+"lesson": "4B",
+"src": "textbook",
+"en": "free; unenslaved; unimprisoned",
+"ipa": "/fʁaɪ̯/",
+"c": [
+"freier",
+"am freiesten"
+]
+},
+{
+"id": "tb:Das_macht_nichts.",
+"de": "Das macht nichts.",
+"pos": "phrase",
+"ja": "かまいません",
+"lesson": "4B",
+"src": "textbook"
+},
+{
+"id": "tb:Schade!",
+"de": "Schade!",
+"pos": "phrase",
+"ja": "残念！",
+"lesson": "4B",
+"src": "textbook"
+},
+{
+"id": "tb:bleiben",
+"de": "bleiben",
+"pos": "verb",
+"ja": "とどまる",
+"lesson": "5A",
+"src": "textbook",
+"en": "to remain (to continue to be)",
+"ipa": "/ˈblaɪ̯bən/",
+"v": {
+"pp": "geblieben",
+"ax": "sein",
+"pr": [
+"bleibe",
+"bleibst",
+"bleibt",
+"bleiben",
+"bleibt",
+"bleiben"
+],
+"pt": [
+"blieb",
+"bliebst",
+"blieb",
+"blieben",
+"bliebt",
+"blieben"
+],
+"k2": [
+"bliebe",
+"bliebest",
+"bliebe",
+"blieben",
+"bliebet",
+"blieben"
+],
+"im": [
+"bleib",
+"bleibt"
+]
+}
+},
+{
+"id": "tb:bringen",
+"de": "bringen",
+"pos": "verb",
+"ja": "持っていく、連れていく",
+"lesson": "5A",
+"src": "textbook",
+"en": "to bring, to fetch, to take, to convey, to bear",
+"ipa": "/ˈbrɪŋən/",
+"v": {
+"pp": "gebracht",
+"ax": "haben",
+"pr": [
+"bringe",
+"bringst",
+"bringt",
+"bringen",
+"bringt",
+"bringen"
+],
+"pt": [
+"brachte",
+"brachtest",
+"brachte",
+"brachten",
+"brachtet",
+"brachten"
+],
+"k2": [
+"brächte",
+"brächtest",
+"brächte",
+"brächten",
+"brächtet",
+"brächten"
+],
+"im": [
+"bring",
+"bringt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:besichtigen",
+"de": "besichtigen",
+"pos": "verb",
+"ja": "見物する",
+"lesson": "5A",
+"src": "textbook",
+"en": "to visit (a city, tourist site, monument etc.)",
+"ipa": "/bəˈzɪçtɪɡən/",
+"v": {
+"pp": "besichtigt",
+"ax": "haben",
+"pr": [
+"besichtige",
+"besichtigst",
+"besichtigt",
+"besichtigen",
+"besichtigt",
+"besichtigen"
+],
+"pt": [
+"besichtigte",
+"besichtigtest",
+"besichtigte",
+"besichtigten",
+"besichtigtet",
+"besichtigten"
+],
+"k2": [
+"besichtigte",
+"besichtigtest",
+"besichtigte",
+"besichtigten",
+"besichtigtet",
+"besichtigten"
+],
+"im": [
+"besichtig",
+"besichtigt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:verstehen",
+"de": "verstehen",
+"pos": "verb",
+"ja": "理解する",
+"lesson": "5A",
+"src": "textbook",
+"en": "to understand",
+"ipa": "/fərˈʃteːən/",
+"v": {
+"pp": "verstanden",
+"ax": "haben",
+"pr": [
+"verstehe",
+"verstehst",
+"versteht",
+"verstehen",
+"versteht",
+"verstehen"
+],
+"pt": [
+"verstand",
+"verstandest",
+"verstand",
+"verstanden",
+"verstandet",
+"verstanden"
+],
+"k2": [
+"verstände",
+"verständest",
+"verstände",
+"verständen",
+"verständet",
+"verständen"
+],
+"im": [
+"versteh",
+"versteht"
+]
+}
+},
+{
+"id": "tb:fallen",
+"de": "fallen",
+"pos": "verb",
+"ja": "落ちる",
+"lesson": "5A",
+"src": "textbook",
+"en": "to fall, to drop",
+"ipa": "/ˈfalən/",
+"v": {
+"pp": "gefallen",
+"ax": "sein",
+"pr": [
+"falle",
+"fällst",
+"fällt",
+"fallen",
+"fallt",
+"fallen"
+],
+"pt": [
+"fiel",
+"fielst",
+"fiel",
+"fielen",
+"fielt",
+"fielen"
+],
+"k2": [
+"fiele",
+"fielest",
+"fiele",
+"fielen",
+"fielet",
+"fielen"
+],
+"im": [
+"fall",
+"fallt"
+]
+}
+},
+{
+"id": "tb:steigen",
+"de": "steigen",
+"pos": "verb",
+"ja": "登る、上がる",
+"lesson": "5A",
+"src": "textbook",
+"en": "to ascend, to climb, to rise",
+"ipa": "/ˈʃtaɪ̯ɡən/",
+"v": {
+"pp": "gestiegen",
+"ax": "sein",
+"pr": [
+"steige",
+"steigst",
+"steigt",
+"steigen",
+"steigt",
+"steigen"
+],
+"pt": [
+"stieg",
+"stiegst",
+"stieg",
+"stiegen",
+"stiegt",
+"stiegen"
+],
+"k2": [
+"stiege",
+"stiegest",
+"stiege",
+"stiegen",
+"stieget",
+"stiegen"
+],
+"im": [
+"steig",
+"steigt"
+]
+}
+},
+{
+"id": "tb:einschlafen",
+"de": "einschlafen",
+"pos": "verb",
+"ja": "眠り込む",
+"lesson": "5A",
+"src": "textbook",
+"en": "to fall asleep",
+"ipa": "/ˈaɪ̯nˌʃlaːfən/",
+"sep": "ein",
+"v": {
+"pp": "eingeschlafen",
+"ax": "sein",
+"pr": [
+"schlafe ein",
+"schläfst ein",
+"schläft ein",
+"schlafen ein",
+"schlaft ein",
+"schlafen ein"
+],
+"pt": [
+"schlief ein",
+"schliefst ein",
+"schlief ein",
+"schliefen ein",
+"schlieft ein",
+"schliefen ein"
+],
+"k2": [
+"schliefe ein",
+"schliefest ein",
+"schliefe ein",
+"schliefen ein",
+"schliefet ein",
+"schliefen ein"
+],
+"im": [
+"schlaf ein",
+"schlaft ein"
+]
+}
+},
+{
+"id": "tb:geschehen",
+"de": "geschehen",
+"pos": "verb",
+"ja": "起こる",
+"lesson": "5A",
+"src": "textbook",
+"en": "to occur; to happen",
+"ipa": "/ɡəˈʃeːən/",
+"v": {
+"pp": "geschehen",
+"ax": "sein",
+"pr": [
+"geschehe",
+"geschiehst",
+"geschieht",
+"geschehen",
+"gescheht",
+"geschehen"
+],
+"pt": [
+"geschah",
+"geschahst",
+"geschah",
+"geschahen",
+"geschaht",
+"geschahen"
+],
+"k2": [
+"geschähe",
+"geschähest",
+"geschähe",
+"geschähen",
+"geschähet",
+"geschähen"
+],
+"im": [
+"geschieh",
+"gescheht"
+]
+}
+},
+{
+"id": "tb:sterben",
+"de": "sterben",
+"pos": "verb",
+"ja": "死ぬ",
+"lesson": "5A",
+"src": "textbook",
+"en": "to die",
+"ipa": "/ˈʃtɛrbən/",
+"v": {
+"pp": "gestorben",
+"ax": "sein",
+"pr": [
+"sterbe",
+"stirbst",
+"stirbt",
+"sterben",
+"sterbt",
+"sterben"
+],
+"pt": [
+"starb",
+"starbst",
+"starb",
+"starben",
+"starbt",
+"starben"
+],
+"k2": [
+"stürbe",
+"stürbest",
+"stürbe",
+"stürben",
+"stürbet",
+"stürben"
+],
+"im": [
+"stirb",
+"sterbt"
+]
+}
+},
+{
+"id": "tb:Sommerferien",
+"de": "Sommerferien",
+"pos": "noun",
+"ja": "夏休み (複数のみ)",
+"lesson": "5A",
+"src": "textbook",
+"en": "summer holidays, summer vacation, summer break",
+"ipa": "[ˈzɔmɐˌfeːʁiən]",
+"plOnly": true
+},
+{
+"id": "tb:Woche",
+"de": "Woche",
+"pos": "noun",
+"ja": "週",
+"lesson": "5A",
+"src": "textbook",
+"en": "week (period of seven days counting from Monday to Sunday, or from Sunday to Sat",
+"ipa": "/ˈvɔxə/",
+"g": "f",
+"pl": "Wochen",
+"gen": "Woche"
+},
+{
+"id": "tb:Film",
+"de": "Film",
+"pos": "noun",
+"ja": "映画",
+"lesson": "5A",
+"src": "textbook",
+"en": "film (a thin layer of some substance)",
+"ipa": "/ˈfɪlm/",
+"g": "m",
+"pl": "Filme",
+"gen": "Filmes"
+},
+{
+"id": "tb:Wintersemester",
+"de": "Wintersemester",
+"pos": "noun",
+"ja": "冬学期",
+"lesson": "5A",
+"src": "textbook",
+"g": "n",
+"pl": "Wintersemester"
+},
+{
+"id": "tb:Kindheit",
+"de": "Kindheit",
+"pos": "noun",
+"ja": "子ども時代",
+"lesson": "5A",
+"src": "textbook",
+"en": "childhood",
+"ipa": "/ˈkɪnt.haɪ̯t/",
+"g": "f",
+"pl": "Kindheiten",
+"gen": "Kindheit"
+},
+{
+"id": "tb:gestern:adv",
+"de": "gestern",
+"pos": "adv",
+"ja": "昨日",
+"lesson": "5A",
+"src": "textbook",
+"en": "yesterday",
+"ipa": "/ˈɡɛstərn/"
+},
+{
+"id": "tb:früher:adv",
+"de": "früher",
+"pos": "adv",
+"ja": "以前は",
+"lesson": "5A",
+"src": "textbook",
+"en": "formerly, in the past (often years ago, in contrast to nowadays)"
+},
+{
+"id": "tb:ganz",
+"de": "ganz",
+"pos": "adj",
+"ja": "全体の、まったく",
+"lesson": "5A",
+"src": "textbook",
+"en": "entire, whole, complete",
+"ipa": "/ɡan(t)s/"
+},
+{
+"id": "tb:wenig",
+"de": "wenig",
+"pos": "adj",
+"ja": "少ない、少し",
+"lesson": "5A",
+"src": "textbook",
+"en": "little, few (a small amount, a small number)",
+"ipa": "/ˈveːnɪç/",
+"c": [
+"weniger",
+"am wenigsten"
+]
+},
+{
+"id": "tb:zu_Hause",
+"de": "zu Hause",
+"pos": "phrase",
+"ja": "家で",
+"lesson": "5A",
+"src": "textbook"
+},
+{
+"id": "tb:nach_Hause",
+"de": "nach Hause",
+"pos": "phrase",
+"ja": "家へ",
+"lesson": "5A",
+"src": "textbook"
+},
+{
+"id": "tb:Lange_nicht_gesehen!",
+"de": "Lange nicht gesehen!",
+"pos": "phrase",
+"ja": "久しぶり！",
+"lesson": "5A",
+"src": "textbook"
+},
+{
+"id": "tb:brauchen",
+"de": "brauchen",
+"pos": "verb",
+"ja": "必要とする",
+"lesson": "5B",
+"src": "textbook",
+"en": "to need, to be in need of, to require",
+"ipa": "/ˈbʁaʊ̯xən/",
+"v": {
+"pp": "gebraucht",
+"ax": "haben",
+"pr": [
+"brauche",
+"brauchst",
+"braucht",
+"brauchen",
+"braucht",
+"brauchen"
+],
+"pt": [
+"brauchte",
+"brauchtest",
+"brauchte",
+"brauchten",
+"brauchtet",
+"brauchten"
+],
+"k2": [
+"brauchte",
+"brauchtest",
+"brauchte",
+"brauchten",
+"brauchtet",
+"brauchten"
+],
+"im": [
+"brauch",
+"braucht"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:bestehen",
+"de": "bestehen",
+"pos": "verb",
+"ja": "(試験に)合格する",
+"lesson": "5B",
+"src": "textbook",
+"en": "to succeed, to pass (an exam)",
+"ipa": "/bəˈʃteːən/",
+"v": {
+"pp": "bestanden",
+"ax": "haben",
+"pr": [
+"bestehe",
+"bestehst",
+"besteht",
+"bestehen",
+"besteht",
+"bestehen"
+],
+"pt": [
+"bestand",
+"bestandest",
+"bestand",
+"bestanden",
+"bestandet",
+"bestanden"
+],
+"k2": [
+"bestände",
+"beständest",
+"bestände",
+"beständen",
+"beständet",
+"beständen"
+],
+"im": [
+"besteh",
+"besteht"
+]
+}
+},
+{
+"id": "tb:einkaufen",
+"de": "einkaufen",
+"pos": "verb",
+"ja": "買い物をする",
+"lesson": "5B",
+"src": "textbook",
+"en": "to shop",
+"ipa": "/ˈaɪ̯nˌkaʊ̯fən/",
+"sep": "ein",
+"v": {
+"pp": "eingekauft",
+"ax": "haben",
+"pr": [
+"kaufe ein",
+"kaufst ein",
+"kauft ein",
+"kaufen ein",
+"kauft ein",
+"kaufen ein"
+],
+"pt": [
+"kaufte ein",
+"kauftest ein",
+"kaufte ein",
+"kauften ein",
+"kauftet ein",
+"kauften ein"
+],
+"k2": [
+"kaufte ein",
+"kauftest ein",
+"kaufte ein",
+"kauften ein",
+"kauftet ein",
+"kauften ein"
+],
+"im": [
+"kauf ein",
+"kauft ein"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:ziehen",
+"de": "ziehen",
+"pos": "verb",
+"ja": "引く、引っ越す",
+"lesson": "5B",
+"src": "textbook",
+"en": "to pull; to drag",
+"ipa": "/ˈt͡siːən/",
+"v": {
+"pp": "gezogen",
+"ax": "sein",
+"pr": [
+"ziehe",
+"ziehst",
+"zieht",
+"ziehen",
+"zieht",
+"ziehen"
+],
+"pt": [
+"zog",
+"zogst",
+"zog",
+"zogen",
+"zogt",
+"zogen"
+],
+"k2": [
+"zöge",
+"zögest",
+"zöge",
+"zögen",
+"zöget",
+"zögen"
+],
+"im": [
+"zieh",
+"zieht"
+]
+}
+},
+{
+"id": "tb:Wohnung",
+"de": "Wohnung",
+"pos": "noun",
+"ja": "住まい、アパート",
+"lesson": "5B",
+"src": "textbook",
+"en": "domicile; dwelling; lodging; abode; accommodation (any place someone lives in fo",
+"ipa": "/ˈvoːnʊŋ/",
+"g": "f",
+"pl": "Wohnungen",
+"gen": "Wohnung"
+},
+{
+"id": "tb:Bibliothek",
+"de": "Bibliothek",
+"pos": "noun",
+"ja": "図書館",
+"lesson": "5B",
+"src": "textbook",
+"en": "library",
+"ipa": "/bibljoˈteːk/",
+"g": "f",
+"pl": "Bibliotheken",
+"gen": "Bibliothek"
+},
+{
+"id": "tb:Glück",
+"de": "Glück",
+"pos": "noun",
+"ja": "幸運、幸福",
+"lesson": "5B",
+"src": "textbook",
+"en": "happiness, joy, bliss (state or emotion)",
+"ipa": "/ɡlʏk/",
+"g": "n",
+"gen": "Glückes"
+},
+{
+"id": "tb:Kopfschmerzen",
+"de": "Kopfschmerzen",
+"pos": "noun",
+"ja": "頭痛 (複数のみ)",
+"lesson": "5B",
+"src": "textbook",
+"en": "headache",
+"ipa": "[ˈkɔp͡fˌʃmɛʁt͡sən]",
+"plOnly": true
+},
+{
+"id": "tb:Wetter",
+"de": "Wetter",
+"pos": "noun",
+"ja": "天気",
+"lesson": "5B",
+"src": "textbook",
+"en": "weather",
+"ipa": "/ˈvɛtər/",
+"g": "n",
+"pl": "Wetter",
+"gen": "Wetters"
+},
+{
+"id": "tb:Semester",
+"de": "Semester",
+"pos": "noun",
+"ja": "学期",
+"lesson": "5B",
+"src": "textbook",
+"en": "semester",
+"ipa": "/zeˈmɛstɐ/",
+"g": "n",
+"pl": "Semester",
+"gen": "Semesters"
+},
+{
+"id": "tb:Mittag",
+"de": "Mittag",
+"pos": "noun",
+"ja": "正午、昼",
+"lesson": "5B",
+"src": "textbook",
+"en": "noon, midday, late morning, early afternoon (time from about 11 a.m. to 2 p.m)",
+"ipa": "/ˈmɪtaːk/",
+"g": "m",
+"pl": "Mittage",
+"gen": "Mittags"
+},
+{
+"id": "tb:Erkältung",
+"de": "Erkältung",
+"pos": "noun",
+"ja": "風邪",
+"lesson": "5B",
+"src": "textbook",
+"en": "cold (illness)",
+"ipa": "/ɛrˈkɛltʊŋ/",
+"g": "f",
+"pl": "Erkältungen",
+"gen": "Erkältung"
+},
+{
+"id": "tb:Firma",
+"de": "Firma",
+"pos": "noun",
+"ja": "会社",
+"lesson": "5B",
+"src": "textbook",
+"en": "A company, a business.",
+"ipa": "/fɪrma/",
+"g": "f",
+"pl": "Firmen",
+"gen": "Firma"
+},
+{
+"id": "tb:Stelle",
+"de": "Stelle",
+"pos": "noun",
+"ja": "職、場所",
+"lesson": "5B",
+"src": "textbook",
+"en": "location, spot (specific location in space, relevant in context but typically ot",
+"ipa": "/ˈʃtɛlə/",
+"g": "f",
+"pl": "Stellen",
+"gen": "Stelle"
+},
+{
+"id": "tb:Fußballspiel",
+"de": "Fußballspiel",
+"pos": "noun",
+"ja": "サッカーの試合",
+"lesson": "5B",
+"src": "textbook",
+"en": "football, soccer",
+"ipa": "/ˈfuːsbalʃpiːl/",
+"g": "n",
+"pl": "Fußballspiele",
+"gen": "Fußballspieles"
+},
+{
+"id": "tb:schlecht",
+"de": "schlecht",
+"pos": "adj",
+"ja": "悪い",
+"lesson": "5B",
+"src": "textbook",
+"en": "bad, evil, wicked (the opposite of good; immoral)",
+"ipa": "/ʃlɛçt/",
+"c": [
+"schlechter",
+"am schlechtesten"
+]
+},
+{
+"id": "tb:sicher",
+"de": "sicher",
+"pos": "adj",
+"ja": "確かな、安全な",
+"lesson": "5B",
+"src": "textbook",
+"en": "safe, secure (not dangerous or in danger)",
+"ipa": "/ˈzɪçər/",
+"c": [
+"sicherer",
+"am sichersten"
+]
+},
+{
+"id": "tb:damals:adv",
+"de": "damals",
+"pos": "adv",
+"ja": "当時",
+"lesson": "5B",
+"src": "textbook",
+"en": "at that time (in the past); at the time, then",
+"ipa": "/ˈdaːmaːls/"
+},
+{
+"id": "tb:vorgestern:adv",
+"de": "vorgestern",
+"pos": "adv",
+"ja": "おととい",
+"lesson": "5B",
+"src": "textbook",
+"en": "ereyesterday, the day before yesterday"
+},
+{
+"id": "tb:deshalb:adv",
+"de": "deshalb",
+"pos": "adv",
+"ja": "だから、それゆえ",
+"lesson": "5B",
+"src": "textbook",
+"en": "therefore; for that (reason), because of that",
+"ipa": "/ˈdɛshalp/"
+},
+{
+"id": "tb:letzt",
+"de": "letzt",
+"pos": "adj",
+"ja": "最後の、この前の (letzte Woche 先週)",
+"lesson": "5B",
+"src": "textbook"
+},
+{
+"id": "tb:nächst",
+"de": "nächst",
+"pos": "adj",
+"ja": "次の (nächstes Jahr 来年)",
+"lesson": "5B",
+"src": "textbook"
+},
+{
+"id": "tb:erkältet",
+"de": "erkältet",
+"pos": "adj",
+"ja": "風邪をひいた",
+"lesson": "5B",
+"src": "textbook"
+},
+{
+"id": "tb:als",
+"de": "als",
+"pos": "conj",
+"ja": "〜したとき(過去の1回)、〜よりも",
+"lesson": "5B",
+"src": "textbook",
+"en": "at (approximately) the same moment, when, while, as",
+"ipa": "/als/"
+},
+{
+"id": "tb:dass",
+"de": "dass",
+"pos": "conj",
+"ja": "〜ということ",
+"lesson": "5B",
+"src": "textbook",
+"en": "that",
+"ipa": "/das/"
+},
+{
+"id": "tb:weil",
+"de": "weil",
+"pos": "conj",
+"ja": "〜なので",
+"lesson": "5B",
+"src": "textbook",
+"en": "because, given that",
+"ipa": "/vaɪ̯l/"
+},
+{
+"id": "tb:ob",
+"de": "ob",
+"pos": "conj",
+"ja": "〜かどうか",
+"lesson": "5B",
+"src": "textbook",
+"en": "Introduces an indirect question, a doubt. if, whether.",
+"ipa": "/ɔp/"
+},
+{
+"id": "tb:wenn",
+"de": "wenn",
+"pos": "conj",
+"ja": "〜するとき、もし〜ならば",
+"lesson": "5B",
+"src": "textbook",
+"en": "when, whenever",
+"ipa": "/vɛn/"
+},
+{
+"id": "tb:obwohl",
+"de": "obwohl",
+"pos": "conj",
+"ja": "〜にもかかわらず",
+"lesson": "5B",
+"src": "textbook",
+"en": "although, though, while",
+"ipa": "/ɔpˈvoːl/"
+},
+{
+"id": "tb:wegen",
+"de": "wegen",
+"pos": "prep",
+"ja": "〜のために(理由、2格支配)",
+"lesson": "5B",
+"src": "textbook",
+"en": "for, because of",
+"ipa": "/ˈveːɡən/"
+},
+{
+"id": "tb:tausend:num",
+"de": "tausend",
+"pos": "num",
+"ja": "1000",
+"lesson": "5B",
+"src": "textbook",
+"en": "thousand",
+"ipa": "/ˈtaʊ̯zənt/"
+},
+{
+"id": "tb:Million",
+"de": "Million",
+"pos": "noun",
+"ja": "100万",
+"lesson": "5B",
+"src": "textbook",
+"en": "million (10⁶)",
+"ipa": "/mɪˈli̯oːn/",
+"g": "f",
+"pl": "Millionen",
+"gen": "Million"
+},
+{
+"id": "tb:Tut_mir_leid.",
+"de": "Tut mir leid.",
+"pos": "phrase",
+"ja": "ごめんなさい",
+"lesson": "5B",
+"src": "textbook"
+},
+{
+"id": "tb:feiern",
+"de": "feiern",
+"pos": "verb",
+"ja": "祝う",
+"lesson": "6A",
+"src": "textbook",
+"en": "to celebrate; to party; applicable from the most solemn to the most revelrous fo",
+"ipa": "/ˈfaɪ̯ɐn/",
+"v": {
+"pp": "gefeiert",
+"ax": "haben",
+"pr": [
+"feire",
+"feierst",
+"feiert",
+"feiern",
+"feiert",
+"feiern"
+],
+"pt": [
+"feierte",
+"feiertest",
+"feierte",
+"feierten",
+"feiertet",
+"feierten"
+],
+"k2": [
+"feierte",
+"feiertest",
+"feierte",
+"feierten",
+"feiertet",
+"feierten"
+],
+"im": [
+"feire",
+"feiert"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:backen",
+"de": "backen",
+"pos": "verb",
+"ja": "(パン・ケーキを)焼く",
+"lesson": "6A",
+"src": "textbook",
+"en": "to bake; to roast",
+"ipa": "/ˈbakən/",
+"v": {
+"pp": "gebacken",
+"ax": "haben",
+"pr": [
+"backe",
+"backst",
+"backt",
+"backen",
+"backt",
+"backen"
+],
+"pt": [
+"backte",
+"backtest",
+"backte",
+"backten",
+"backtet",
+"backten"
+],
+"k2": [
+"backte",
+"backtest",
+"backte",
+"backten",
+"backtet",
+"backten"
+],
+"im": [
+"back",
+"backt"
+]
+}
+},
+{
+"id": "tb:kochen",
+"de": "kochen",
+"pos": "verb",
+"ja": "料理する",
+"lesson": "6A",
+"src": "textbook",
+"en": "to cook, to prepare food (chiefly hot food for lunch or supper)",
+"ipa": "/ˈkɔχən/",
+"v": {
+"pp": "gekocht",
+"ax": "haben",
+"pr": [
+"koche",
+"kochst",
+"kocht",
+"kochen",
+"kocht",
+"kochen"
+],
+"pt": [
+"kochte",
+"kochtest",
+"kochte",
+"kochten",
+"kochtet",
+"kochten"
+],
+"k2": [
+"kochte",
+"kochtest",
+"kochte",
+"kochten",
+"kochtet",
+"kochten"
+],
+"im": [
+"koch",
+"kocht"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:einladen",
+"de": "einladen",
+"pos": "verb",
+"ja": "招待する",
+"lesson": "6A",
+"src": "textbook",
+"en": "to invite (to ask someone to come)",
+"ipa": "/ˈaɪ̯nˌlaːdən/",
+"sep": "ein",
+"v": {
+"pp": "eingeladen",
+"ax": "haben",
+"pr": [
+"lade ein",
+"lädst ein",
+"lädt ein",
+"laden ein",
+"ladet ein",
+"laden ein"
+],
+"pt": [
+"lud ein",
+"ludest ein",
+"lud ein",
+"luden ein",
+"ludet ein",
+"luden ein"
+],
+"k2": [
+"lüde ein",
+"lüdest ein",
+"lüde ein",
+"lüden ein",
+"lüdet ein",
+"lüden ein"
+],
+"im": [
+"lad ein",
+"ladet ein"
+]
+}
+},
+{
+"id": "tb:öffnen",
+"de": "öffnen",
+"pos": "verb",
+"ja": "開ける",
+"lesson": "6A",
+"src": "textbook",
+"en": "to open (to make something accessible or allow for passage by moving from a shut",
+"ipa": "/ˈœfnən/",
+"v": {
+"pp": "geöffnet",
+"ax": "haben",
+"pr": [
+"öffne",
+"öffnest",
+"öffnet",
+"öffnen",
+"öffnet",
+"öffnen"
+],
+"pt": [
+"öffnete",
+"öffnetest",
+"öffnete",
+"öffneten",
+"öffnetet",
+"öffneten"
+],
+"k2": [
+"öffnete",
+"öffnetest",
+"öffnete",
+"öffneten",
+"öffnetet",
+"öffneten"
+],
+"im": [
+"öffne",
+"öffnet"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:aufmachen",
+"de": "aufmachen",
+"pos": "verb",
+"ja": "開ける",
+"lesson": "6A",
+"src": "textbook",
+"en": "to open (a container, a door or window)",
+"ipa": "/ˈaʊ̯fˌmaxən/",
+"sep": "auf",
+"v": {
+"pp": "aufgemacht",
+"ax": "haben",
+"pr": [
+"mache auf",
+"machst auf",
+"macht auf",
+"machen auf",
+"macht auf",
+"machen auf"
+],
+"pt": [
+"machte auf",
+"machtest auf",
+"machte auf",
+"machten auf",
+"machtet auf",
+"machten auf"
+],
+"k2": [
+"machte auf",
+"machtest auf",
+"machte auf",
+"machten auf",
+"machtet auf",
+"machten auf"
+],
+"im": [
+"mach auf",
+"macht auf"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:anziehen",
+"de": "anziehen",
+"pos": "verb",
+"ja": "着る、着せる",
+"lesson": "6A",
+"src": "textbook",
+"en": "senses related to dressing",
+"ipa": "/ˈantsiːən/",
+"sep": "an",
+"v": {
+"pp": "angezogen",
+"ax": "sein",
+"pr": [
+"ziehe an",
+"ziehst an",
+"zieht an",
+"ziehen an",
+"zieht an",
+"ziehen an"
+],
+"pt": [
+"zog an",
+"zogst an",
+"zog an",
+"zogen an",
+"zogt an",
+"zogen an"
+],
+"k2": [
+"zöge an",
+"zögest an",
+"zöge an",
+"zögen an",
+"zöget an",
+"zögen an"
+],
+"im": [
+"zieh an",
+"zieht an"
+]
+}
+},
+{
+"id": "tb:bedecken",
+"de": "bedecken",
+"pos": "verb",
+"ja": "覆う",
+"lesson": "6A",
+"src": "textbook",
+"en": "to cover",
+"ipa": "/bəˈdɛkən/",
+"v": {
+"pp": "bedeckt",
+"ax": "haben",
+"pr": [
+"bedecke",
+"bedeckst",
+"bedeckt",
+"bedecken",
+"bedeckt",
+"bedecken"
+],
+"pt": [
+"bedeckte",
+"bedecktest",
+"bedeckte",
+"bedeckten",
+"bedecktet",
+"bedeckten"
+],
+"k2": [
+"bedeckte",
+"bedecktest",
+"bedeckte",
+"bedeckten",
+"bedecktet",
+"bedeckten"
+],
+"im": [
+"bedeck",
+"bedeckt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:abfliegen",
+"de": "abfliegen",
+"pos": "verb",
+"ja": "(飛行機で)出発する",
+"lesson": "6A",
+"src": "textbook",
+"en": "to take off (from the ground), to fly away",
+"ipa": "/ˈʔapˌfliːɡŋ̩/",
+"sep": "ab",
+"v": {
+"pp": "abgeflogen",
+"ax": "sein",
+"pr": [
+"fliege ab",
+"fliegst ab",
+"fliegt ab",
+"fliegen ab",
+"fliegt ab",
+"fliegen ab"
+],
+"pt": [
+"flog ab",
+"flogst ab",
+"flog ab",
+"flogen ab",
+"flogt ab",
+"flogen ab"
+],
+"k2": [
+"flöge ab",
+"flögest ab",
+"flöge ab",
+"flögen ab",
+"flöget ab",
+"flögen ab"
+],
+"im": [
+"flieg ab",
+"fliegt ab"
+]
+}
+},
+{
+"id": "tb:verbinden",
+"de": "verbinden",
+"pos": "verb",
+"ja": "結びつける",
+"lesson": "6A",
+"src": "textbook",
+"en": "to join, to combine, to connect, to interlink",
+"ipa": "[fɛɐ̯ˈbɪndn̩]",
+"v": {
+"pp": "verbunden",
+"ax": "haben",
+"pr": [
+"verbinde",
+"verbindest",
+"verbindet",
+"verbinden",
+"verbindet",
+"verbinden"
+],
+"pt": [
+"verband",
+"verbandest",
+"verband",
+"verbanden",
+"verbandet",
+"verbanden"
+],
+"k2": [
+"verbände",
+"verbändest",
+"verbände",
+"verbänden",
+"verbändet",
+"verbänden"
+],
+"im": [
+"verbind",
+"verbindet"
+]
+}
+},
+{
+"id": "tb:betragen",
+"de": "betragen",
+"pos": "verb",
+"ja": "(数量が)〜になる",
+"lesson": "6A",
+"src": "textbook",
+"en": "to amount to, to be (a numerical value)",
+"ipa": "/bəˈtʁaːɡŋ̩/",
+"v": {
+"pp": "betragen",
+"ax": "haben",
+"pr": [
+"betrage",
+"beträgst",
+"beträgt",
+"betragen",
+"betragt",
+"betragen"
+],
+"pt": [
+"betrug",
+"betrugst",
+"betrug",
+"betrugen",
+"betrugt",
+"betrugen"
+],
+"k2": [
+"betrüge",
+"betrügest",
+"betrüge",
+"betrügen",
+"betrüget",
+"betrügen"
+],
+"im": [
+"betrag",
+"betragt"
+]
+}
+},
+{
+"id": "tb:gratulieren",
+"de": "gratulieren",
+"pos": "verb",
+"ja": "(〜³を)祝う、お祝いを言う",
+"lesson": "6A",
+"src": "textbook",
+"en": "to congratulate",
+"ipa": "/ɡʁatuˈliːʁən/",
+"v": {
+"pp": "gratuliert",
+"ax": "haben",
+"pr": [
+"gratuliere",
+"gratulierst",
+"gratuliert",
+"gratulieren",
+"gratuliert",
+"gratulieren"
+],
+"pt": [
+"gratulierte",
+"gratuliertest",
+"gratulierte",
+"gratulierten",
+"gratuliertet",
+"gratulierten"
+],
+"k2": [
+"gratulierte",
+"gratuliertest",
+"gratulierte",
+"gratulierten",
+"gratuliertet",
+"gratulierten"
+],
+"im": [
+"gratulier",
+"gratuliert"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:bekommen",
+"de": "bekommen",
+"pos": "verb",
+"ja": "もらう、受け取る",
+"lesson": "6A",
+"src": "textbook",
+"en": "to receive; to get",
+"ipa": "/bəˈkɔmən/",
+"v": {
+"pp": "bekommen",
+"ax": "haben",
+"pr": [
+"bekomme",
+"bekommst",
+"bekommt",
+"bekommen",
+"bekommt",
+"bekommen"
+],
+"pt": [
+"bekam",
+"bekamst",
+"bekam",
+"bekamen",
+"bekamt",
+"bekamen"
+],
+"k2": [
+"bekäme",
+"bekämest",
+"bekäme",
+"bekämen",
+"bekämet",
+"bekämen"
+],
+"im": [
+"bekomm",
+"bekommt"
+]
+}
+},
+{
+"id": "tb:Einladung",
+"de": "Einladung",
+"pos": "noun",
+"ja": "招待",
+"lesson": "6A",
+"src": "textbook",
+"en": "invitation",
+"ipa": "[ˈaɪ̯nˌlaːdʊŋ]",
+"g": "f",
+"pl": "Einladungen",
+"gen": "Einladung"
+},
+{
+"id": "tb:Blume",
+"de": "Blume",
+"pos": "noun",
+"ja": "花",
+"lesson": "6A",
+"src": "textbook",
+"en": "flower (small, often woodless plant with blossoms; a stalk thereof)",
+"ipa": "/ˈbluːmə/",
+"g": "f",
+"pl": "Blumen",
+"gen": "Blume"
+},
+{
+"id": "tb:Geburtstagsparty",
+"de": "Geburtstagsparty",
+"pos": "noun",
+"ja": "誕生日パーティー",
+"lesson": "6A",
+"src": "textbook",
+"en": "birthday party",
+"ipa": "/ɡəˈbuːɐ̯t͡staːksˌpaːɐ̯ti/",
+"g": "f",
+"pl": "Geburtstagspartys",
+"gen": "Geburtstagsparty"
+},
+{
+"id": "tb:Geschäft",
+"de": "Geschäft",
+"pos": "noun",
+"ja": "店、商売",
+"lesson": "6A",
+"src": "textbook",
+"en": "shop, store (establishment that sells goods or services to the public; originall",
+"ipa": "/ɡəˈʃɛft/",
+"g": "n",
+"pl": "Geschäfte",
+"gen": "Geschäftes"
+},
+{
+"id": "tb:Himmel",
+"de": "Himmel",
+"pos": "noun",
+"ja": "空",
+"lesson": "6A",
+"src": "textbook",
+"en": "sky",
+"ipa": "/ˈhɪməl/",
+"g": "m",
+"pl": "Himmel",
+"gen": "Himmels"
+},
+{
+"id": "tb:Mauer",
+"de": "Mauer",
+"pos": "noun",
+"ja": "壁、塀",
+"lesson": "6A",
+"src": "textbook",
+"en": "a wall, usually one made of stone or concrete",
+"ipa": "/ˈmaʊ̯ər/",
+"g": "f",
+"pl": "Mauern",
+"gen": "Mauer"
+},
+{
+"id": "tb:Krieg",
+"de": "Krieg",
+"pos": "noun",
+"ja": "戦争",
+"lesson": "6A",
+"src": "textbook",
+"en": "war, warfare",
+"ipa": "[kʁiːk]",
+"g": "m",
+"pl": "Kriege",
+"gen": "Krieges"
+},
+{
+"id": "tb:Höhe",
+"de": "Höhe",
+"pos": "noun",
+"ja": "高さ",
+"lesson": "6A",
+"src": "textbook",
+"en": "height, altitude",
+"ipa": "/ˈhøːə/",
+"g": "f",
+"pl": "Höhen",
+"gen": "Höhe"
+},
+{
+"id": "tb:Kirchturm",
+"de": "Kirchturm",
+"pos": "noun",
+"ja": "教会の塔",
+"lesson": "6A",
+"src": "textbook",
+"en": "steeple",
+"ipa": "[ˈkɪʁçˌtʊʁm]",
+"g": "m",
+"pl": "Kirchtürme",
+"gen": "Kirchturmes"
+},
+{
+"id": "tb:Geschwindigkeit",
+"de": "Geschwindigkeit",
+"pos": "noun",
+"ja": "速度",
+"lesson": "6A",
+"src": "textbook",
+"en": "speed, pace, tempo, velocity, rate",
+"ipa": "/ɡəˈʃvɪndɪçkaɪ̯t/",
+"g": "f",
+"pl": "Geschwindigkeiten",
+"gen": "Geschwindigkeit"
+},
+{
+"id": "tb:Distanz",
+"de": "Distanz",
+"pos": "noun",
+"ja": "距離",
+"lesson": "6A",
+"src": "textbook",
+"en": "distance",
+"ipa": "/dɪsˈtant͡s/",
+"g": "f",
+"pl": "Distanzen",
+"gen": "Distanz"
+},
+{
+"id": "tb:Einwohner",
+"de": "Einwohner",
+"pos": "noun",
+"ja": "住民",
+"lesson": "6A",
+"src": "textbook",
+"en": "inhabitant (anyone who lives or dwells in something, especially a country, regio",
+"ipa": "/ˈaɪ̯nˌvoːnər/",
+"g": "m",
+"pl": "Einwohner",
+"gen": "Einwohners"
+},
+{
+"id": "tb:Großstadt",
+"de": "Großstadt",
+"pos": "noun",
+"ja": "大都市",
+"lesson": "6A",
+"src": "textbook",
+"en": "large city, big city, major city (in Germany used for cities with a population g",
+"ipa": "/ˈɡʁoːsʃtat/",
+"g": "f",
+"pl": "Großstädte",
+"gen": "Großstadt"
+},
+{
+"id": "tb:Welt",
+"de": "Welt",
+"pos": "noun",
+"ja": "世界",
+"lesson": "6A",
+"src": "textbook",
+"en": "world",
+"ipa": "/vɛlt/",
+"g": "f",
+"pl": "Welten",
+"gen": "Welt"
+},
+{
+"id": "tb:Ziel",
+"de": "Ziel",
+"pos": "noun",
+"ja": "目的地、目標",
+"lesson": "6A",
+"src": "textbook",
+"en": "target",
+"ipa": "/tsiːl/",
+"g": "n",
+"pl": "Ziele",
+"gen": "Zieles"
+},
+{
+"id": "tb:eigentlich:adv",
+"de": "eigentlich",
+"pos": "adv",
+"ja": "本来、ところで",
+"lesson": "6A",
+"src": "textbook",
+"en": "Used to frame a statement as being a more (formally) truthful description of the",
+"ipa": "/ˈaɪ̯ɡəntlɪç/"
+},
+{
+"id": "tb:elegant",
+"de": "elegant",
+"pos": "adj",
+"ja": "上品な、エレガントな",
+"lesson": "6A",
+"src": "textbook",
+"en": "elegant",
+"ipa": "/eleˈɡant/",
+"c": [
+"eleganter",
+"am elegantesten"
+]
+},
+{
+"id": "tb:sofort:adv",
+"de": "sofort",
+"pos": "adv",
+"ja": "すぐに",
+"lesson": "6A",
+"src": "textbook",
+"en": "immediately, at once",
+"ipa": "/zoˈfɔʁt/"
+},
+{
+"id": "tb:geboren",
+"de": "geboren",
+"pos": "adj",
+"ja": "生まれた (Ich bin am ... geboren.)",
+"lesson": "6A",
+"src": "textbook"
+},
+{
+"id": "tb:erst:num",
+"de": "erst",
+"pos": "num",
+"ja": "第1の、最初の",
+"lesson": "6A",
+"src": "textbook",
+"en": "first, at first",
+"ipa": "/eːrst/"
+},
+{
+"id": "tb:zweit:num",
+"de": "zweit",
+"pos": "num",
+"ja": "第2の",
+"lesson": "6A",
+"src": "textbook",
+"en": "only used in zu zweit.",
+"ipa": "/tsvaɪ̯t/"
+},
+{
+"id": "tb:dritt:num",
+"de": "dritt",
+"pos": "num",
+"ja": "第3の",
+"lesson": "6A",
+"src": "textbook",
+"en": "only used in zu dritt."
+},
+{
+"id": "tb:Alles_Gute_zum_Geburtstag!",
+"de": "Alles Gute zum Geburtstag!",
+"pos": "phrase",
+"ja": "誕生日おめでとう！",
+"lesson": "6A",
+"src": "textbook"
+},
+{
+"id": "tb:Den_Wievielten_haben_wir_heute?",
+"de": "Den Wievielten haben wir heute?",
+"pos": "phrase",
+"ja": "今日は何日？",
+"lesson": "6A",
+"src": "textbook"
+},
+{
+"id": "tb:regnen",
+"de": "regnen",
+"pos": "verb",
+"ja": "雨が降る",
+"lesson": "6B",
+"src": "textbook",
+"en": "to rain",
+"ipa": "/ˈʁeː.ɡnən/",
+"v": {
+"pp": "geregnet",
+"ax": "haben",
+"pr": [
+"regne",
+"regnest",
+"regnet",
+"regnen",
+"regnet",
+"regnen"
+],
+"pt": [
+"regnete",
+"regnetest",
+"regnete",
+"regneten",
+"regnetet",
+"regneten"
+],
+"k2": [
+"regnete",
+"regnetest",
+"regnete",
+"regneten",
+"regnetet",
+"regneten"
+],
+"im": [
+"regne",
+"regnet"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:schneien",
+"de": "schneien",
+"pos": "verb",
+"ja": "雪が降る",
+"lesson": "6B",
+"src": "textbook",
+"en": "to snow",
+"ipa": "[ˈʃnaɪən]",
+"v": {
+"pp": "geschneit",
+"ax": "haben",
+"pr": [
+"schneie",
+"schneist",
+"schneit",
+"schneien",
+"schneit",
+"schneien"
+],
+"pt": [
+"schneite",
+"schneitest",
+"schneite",
+"schneiten",
+"schneitet",
+"schneiten"
+],
+"k2": [
+"schneite",
+"schneitest",
+"schneite",
+"schneiten",
+"schneitet",
+"schneiten"
+],
+"im": [
+"schnei",
+"schneit"
+]
+}
+},
+{
+"id": "tb:entdecken",
+"de": "entdecken",
+"pos": "verb",
+"ja": "発見する",
+"lesson": "6B",
+"src": "textbook",
+"en": "to discover, to spot, to learn for the first time",
+"ipa": "/ɛntˈdɛkən/",
+"v": {
+"pp": "entdeckt",
+"ax": "haben",
+"pr": [
+"entdecke",
+"entdeckst",
+"entdeckt",
+"entdecken",
+"entdeckt",
+"entdecken"
+],
+"pt": [
+"entdeckte",
+"entdecktest",
+"entdeckte",
+"entdeckten",
+"entdecktet",
+"entdeckten"
+],
+"k2": [
+"entdeckte",
+"entdecktest",
+"entdeckte",
+"entdeckten",
+"entdecktet",
+"entdeckten"
+],
+"im": [
+"entdeck",
+"entdeckt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:erfahren",
+"de": "erfahren",
+"pos": "verb",
+"ja": "(聞いて)知る、経験する",
+"lesson": "6B",
+"src": "textbook",
+"en": "to find out, learn, to come to know",
+"ipa": "/ʔɛɐ̯ˈfaːɐ̯n/",
+"v": {
+"pp": "erfahren",
+"ax": "haben",
+"pr": [
+"erfahre",
+"erfährst",
+"erfährt",
+"erfahren",
+"erfahrt",
+"erfahren"
+],
+"pt": [
+"erfuhr",
+"erfuhrst",
+"erfuhr",
+"erfuhren",
+"erfuhrt",
+"erfuhren"
+],
+"k2": [
+"erführe",
+"erführest",
+"erführe",
+"erführen",
+"erführet",
+"erführen"
+],
+"im": [
+"erfahr",
+"erfahrt"
+]
+}
+},
+{
+"id": "tb:spüren",
+"de": "spüren",
+"pos": "verb",
+"ja": "感じる",
+"lesson": "6B",
+"src": "textbook",
+"en": "to sense, to detect, to perceive",
+"ipa": "/ˈʃpyːʁən/",
+"v": {
+"pp": "gespürt",
+"ax": "haben",
+"pr": [
+"spüre",
+"spürst",
+"spürt",
+"spüren",
+"spürt",
+"spüren"
+],
+"pt": [
+"spürte",
+"spürtest",
+"spürte",
+"spürten",
+"spürtet",
+"spürten"
+],
+"k2": [
+"spürte",
+"spürtest",
+"spürte",
+"spürten",
+"spürtet",
+"spürten"
+],
+"im": [
+"spür",
+"spürt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:vergessen",
+"de": "vergessen",
+"pos": "verb",
+"ja": "忘れる",
+"lesson": "6B",
+"src": "textbook",
+"en": "to forget (lose remembrance of)",
+"ipa": "/fɛɐ̯ˈɡɛsən/",
+"v": {
+"pp": "vergessen",
+"ax": "haben",
+"pr": [
+"vergesse",
+"vergisst",
+"vergisst",
+"vergessen",
+"vergesst",
+"vergessen"
+],
+"pt": [
+"vergaß",
+"vergaßest",
+"vergaß",
+"vergaßen",
+"vergaßt",
+"vergaßen"
+],
+"k2": [
+"vergäße",
+"vergäßest",
+"vergäße",
+"vergäßen",
+"vergäßet",
+"vergäßen"
+],
+"im": [
+"vergiss",
+"vergesst"
+]
+}
+},
+{
+"id": "tb:versprechen",
+"de": "versprechen",
+"pos": "verb",
+"ja": "約束する",
+"lesson": "6B",
+"src": "textbook",
+"en": "to promise",
+"ipa": "/fərˈʃprɛçən/",
+"v": {
+"pp": "versprochen",
+"ax": "haben",
+"pr": [
+"verspreche",
+"versprichst",
+"verspricht",
+"versprechen",
+"versprecht",
+"versprechen"
+],
+"pt": [
+"versprach",
+"versprachst",
+"versprach",
+"versprachen",
+"verspracht",
+"versprachen"
+],
+"k2": [
+"verspräche",
+"versprächest",
+"verspräche",
+"versprächen",
+"versprächet",
+"versprächen"
+],
+"im": [
+"versprich",
+"versprecht"
+]
+}
+},
+{
+"id": "tb:versuchen",
+"de": "versuchen",
+"pos": "verb",
+"ja": "試みる",
+"lesson": "6B",
+"src": "textbook",
+"en": "to try, to attempt (often with an uncertain result)",
+"ipa": "/fɛɐ̯ˈzuːxən/",
+"v": {
+"pp": "versucht",
+"ax": "haben",
+"pr": [
+"versuche",
+"versuchst",
+"versucht",
+"versuchen",
+"versucht",
+"versuchen"
+],
+"pt": [
+"versuchte",
+"versuchtest",
+"versuchte",
+"versuchten",
+"versuchtet",
+"versuchten"
+],
+"k2": [
+"versuchte",
+"versuchtest",
+"versuchte",
+"versuchten",
+"versuchtet",
+"versuchten"
+],
+"im": [
+"versuch",
+"versucht"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:verbieten",
+"de": "verbieten",
+"pos": "verb",
+"ja": "禁止する",
+"lesson": "6B",
+"src": "textbook",
+"en": "to forbid, prohibit (someone from doing something)",
+"ipa": "[fɛɐ̯ˈbiːtn̩]",
+"v": {
+"pp": "verboten",
+"ax": "haben",
+"pr": [
+"verbiete",
+"verbietest",
+"verbietet",
+"verbieten",
+"verbietet",
+"verbieten"
+],
+"pt": [
+"verbot",
+"verbotest",
+"verbot",
+"verboten",
+"verbotet",
+"verboten"
+],
+"k2": [
+"verböte",
+"verbötest",
+"verböte",
+"verböten",
+"verbötet",
+"verböten"
+],
+"im": [
+"verbiet",
+"verbietet"
+]
+}
+},
+{
+"id": "tb:aufräumen",
+"de": "aufräumen",
+"pos": "verb",
+"ja": "片付ける",
+"lesson": "6B",
+"src": "textbook",
+"en": "to tidy up",
+"ipa": "[ˈʔaʊ̯fʁɔʏ̯mən]",
+"sep": "auf",
+"v": {
+"pp": "aufgeräumt",
+"ax": "haben",
+"pr": [
+"räume auf",
+"räumst auf",
+"räumt auf",
+"räumen auf",
+"räumt auf",
+"räumen auf"
+],
+"pt": [
+"räumte auf",
+"räumtest auf",
+"räumte auf",
+"räumten auf",
+"räumtet auf",
+"räumten auf"
+],
+"k2": [
+"räumte auf",
+"räumtest auf",
+"räumte auf",
+"räumten auf",
+"räumtet auf",
+"räumten auf"
+],
+"im": [
+"räum auf",
+"räumt auf"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:ausmachen",
+"de": "ausmachen",
+"pos": "verb",
+"ja": "(電気などを)消す",
+"lesson": "6B",
+"src": "textbook",
+"en": "to turn off, switch off",
+"ipa": "/ˈʔaʊ̯smaxn̩/",
+"sep": "aus",
+"v": {
+"pp": "ausgemacht",
+"ax": "haben",
+"pr": [
+"mache aus",
+"machst aus",
+"macht aus",
+"machen aus",
+"macht aus",
+"machen aus"
+],
+"pt": [
+"machte aus",
+"machtest aus",
+"machte aus",
+"machten aus",
+"machtet aus",
+"machten aus"
+],
+"k2": [
+"machte aus",
+"machtest aus",
+"machte aus",
+"machten aus",
+"machtet aus",
+"machten aus"
+],
+"im": [
+"mach aus",
+"macht aus"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:mitnehmen",
+"de": "mitnehmen",
+"pos": "verb",
+"ja": "持っていく、連れていく",
+"lesson": "6B",
+"src": "textbook",
+"en": "to take with; to carry along",
+"ipa": "/ˈmɪtˌneːmən/",
+"sep": "mit",
+"v": {
+"pp": "mitgenommen",
+"ax": "haben",
+"pr": [
+"nehme mit",
+"nimmst mit",
+"nimmt mit",
+"nehmen mit",
+"nehmt mit",
+"nehmen mit"
+],
+"pt": [
+"nahm mit",
+"nahmst mit",
+"nahm mit",
+"nahmen mit",
+"nahmt mit",
+"nahmen mit"
+],
+"k2": [
+"nähme mit",
+"nähmest mit",
+"nähme mit",
+"nähmen mit",
+"nähmet mit",
+"nähmen mit"
+],
+"im": [
+"nimm mit",
+"nehmt mit"
+]
+}
+},
+{
+"id": "tb:erreichen",
+"de": "erreichen",
+"pos": "verb",
+"ja": "到達する、間に合う",
+"lesson": "6B",
+"src": "textbook",
+"en": "to reach (to attain by stretching)",
+"ipa": "/ɛɐ̯ˈʁaɪ̯çən/",
+"v": {
+"pp": "erreicht",
+"ax": "haben",
+"pr": [
+"erreiche",
+"erreichst",
+"erreicht",
+"erreichen",
+"erreicht",
+"erreichen"
+],
+"pt": [
+"erreichte",
+"erreichtest",
+"erreichte",
+"erreichten",
+"erreichtet",
+"erreichten"
+],
+"k2": [
+"erreichte",
+"erreichtest",
+"erreichte",
+"erreichten",
+"erreichtet",
+"erreichten"
+],
+"im": [
+"erreich",
+"erreicht"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:lösen",
+"de": "lösen",
+"pos": "verb",
+"ja": "解く、解決する",
+"lesson": "6B",
+"src": "textbook",
+"en": "to loose; to loosen; to detach; to remove",
+"ipa": "[ˈløːzn̩]",
+"v": {
+"pp": "gelöst",
+"ax": "haben",
+"pr": [
+"löse",
+"löst",
+"löst",
+"lösen",
+"löst",
+"lösen"
+],
+"pt": [
+"löste",
+"löstest",
+"löste",
+"lösten",
+"löstet",
+"lösten"
+],
+"k2": [
+"löste",
+"löstest",
+"löste",
+"lösten",
+"löstet",
+"lösten"
+],
+"im": [
+"lös",
+"löst"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:schaffen",
+"de": "schaffen",
+"pos": "verb",
+"ja": "成し遂げる",
+"lesson": "6B",
+"src": "textbook",
+"en": "to create, to call into being",
+"ipa": "/ˈʃafən/",
+"v": {
+"pp": "geschaffen",
+"ax": "haben",
+"pr": [
+"schaffe",
+"schaffst",
+"schafft",
+"schaffen",
+"schafft",
+"schaffen"
+],
+"pt": [
+"schuf",
+"schufst",
+"schuf",
+"schufen",
+"schuft",
+"schufen"
+],
+"k2": [
+"schüfe",
+"schüfest",
+"schüfe",
+"schüfen",
+"schüfet",
+"schüfen"
+],
+"im": [
+"schaff",
+"schafft"
+]
+}
+},
+{
+"id": "tb:tun",
+"de": "tun",
+"pos": "verb",
+"ja": "する",
+"lesson": "6B",
+"src": "textbook",
+"en": "to do (to perform or execute an action)",
+"ipa": "/tuːn/",
+"v": {
+"pp": "getan",
+"ax": "haben",
+"pr": [
+"tue",
+"tust",
+"tut",
+"tun",
+"tut",
+"tun"
+],
+"pt": [
+"tat",
+"tatest",
+"tat",
+"taten",
+"tatet",
+"taten"
+],
+"k2": [
+"täte",
+"tätest",
+"täte",
+"täten",
+"tätet",
+"täten"
+],
+"im": [
+"tu",
+"tut"
+]
+}
+},
+{
+"id": "tb:Dach",
+"de": "Dach",
+"pos": "noun",
+"ja": "屋根",
+"lesson": "6B",
+"src": "textbook",
+"en": "roof",
+"ipa": "/dax/",
+"g": "n",
+"pl": "Dächer",
+"gen": "Daches"
+},
+{
+"id": "tb:Solaranlage",
+"de": "Solaranlage",
+"pos": "noun",
+"ja": "太陽光発電設備",
+"lesson": "6B",
+"src": "textbook",
+"g": "f",
+"pl": "Solaranlagen"
+},
+{
+"id": "tb:Umweltschutz",
+"de": "Umweltschutz",
+"pos": "noun",
+"ja": "環境保護",
+"lesson": "6B",
+"src": "textbook",
+"en": "environmentalism, protection of the environment, environmental protection",
+"ipa": "/ˈʊmvɛltʃʊts/",
+"g": "m",
+"gen": "Umweltschutzes"
+},
+{
+"id": "tb:Klimawandel",
+"de": "Klimawandel",
+"pos": "noun",
+"ja": "気候変動",
+"lesson": "6B",
+"src": "textbook",
+"en": "climate change (any large-scale, long-term climate change)",
+"g": "m",
+"pl": "Klimawandel",
+"gen": "Klimawandels"
+},
+{
+"id": "tb:Spaß",
+"de": "Spaß",
+"pos": "noun",
+"ja": "楽しみ、冗談",
+"lesson": "6B",
+"src": "textbook",
+"en": "fun",
+"ipa": "/ʃpaːs/",
+"g": "m",
+"pl": "Späße",
+"gen": "Spaßes"
+},
+{
+"id": "tb:Gesundheit",
+"de": "Gesundheit",
+"pos": "noun",
+"ja": "健康",
+"lesson": "6B",
+"src": "textbook",
+"en": "health (state of being in good physical condition and free from illness)",
+"ipa": "/ɡəˈzʊnthaɪ̯t/",
+"g": "f",
+"gen": "Gesundheit"
+},
+{
+"id": "tb:Gemüse",
+"de": "Gemüse",
+"pos": "noun",
+"ja": "野菜",
+"lesson": "6B",
+"src": "textbook",
+"en": "vegetable; vegetables (kinds of plants)",
+"ipa": "/ɡəˈmyːzə/",
+"g": "n",
+"pl": "Gemüse",
+"gen": "Gemüses"
+},
+{
+"id": "tb:Licht",
+"de": "Licht",
+"pos": "noun",
+"ja": "光、明かり",
+"lesson": "6B",
+"src": "textbook",
+"en": "light (electromagnetic radiation in the visible spectrum)",
+"ipa": "/lɪçt/",
+"g": "n",
+"pl": "Lichter",
+"gen": "Lichtes"
+},
+{
+"id": "tb:Lust",
+"de": "Lust",
+"pos": "noun",
+"ja": "(〜したい)気持ち",
+"lesson": "6B",
+"src": "textbook",
+"en": "desire; the wish to do or have something",
+"ipa": "/lʊst/",
+"g": "f",
+"pl": "Lüste",
+"gen": "Lust"
+},
+{
+"id": "tb:Nähe",
+"de": "Nähe",
+"pos": "noun",
+"ja": "近所、近さ",
+"lesson": "6B",
+"src": "textbook",
+"en": "nearness, closeness",
+"ipa": "/ˈnɛːə/",
+"g": "f",
+"gen": "Nähe"
+},
+{
+"id": "tb:Spielplatz",
+"de": "Spielplatz",
+"pos": "noun",
+"ja": "遊び場",
+"lesson": "6B",
+"src": "textbook",
+"en": "playground",
+"ipa": "/ˈʃpiːlˌplat͡s/",
+"g": "m",
+"pl": "Spielplätze",
+"gen": "Spielplatzes"
+},
+{
+"id": "tb:Toilette",
+"de": "Toilette",
+"pos": "noun",
+"ja": "トイレ",
+"lesson": "6B",
+"src": "textbook",
+"en": "toilet",
+"ipa": "/to̯aˈlɛtə/",
+"g": "f",
+"pl": "Toiletten",
+"gen": "Toilette"
+},
+{
+"id": "tb:Kaufhaus",
+"de": "Kaufhaus",
+"pos": "noun",
+"ja": "デパート",
+"lesson": "6B",
+"src": "textbook",
+"en": "department store",
+"ipa": "[ˈkaʊ̯fˌhaʊ̯s]",
+"g": "n",
+"pl": "Kaufhäuser",
+"gen": "Kaufhauses"
+},
+{
+"id": "tb:Supermarkt",
+"de": "Supermarkt",
+"pos": "noun",
+"ja": "スーパーマーケット",
+"lesson": "6B",
+"src": "textbook",
+"en": "supermarket",
+"ipa": "/ˈzuːpɐˌmaʁkt/",
+"g": "m",
+"pl": "Supermärkte",
+"gen": "Supermarktes"
+},
+{
+"id": "tb:Universität",
+"de": "Universität",
+"pos": "noun",
+"ja": "(総合)大学",
+"lesson": "6B",
+"src": "textbook",
+"en": "university",
+"ipa": "/ˌuni.vɛʁ.ziˈtɛːt/",
+"g": "f",
+"pl": "Universitäten",
+"gen": "Universität"
+},
+{
+"id": "tb:Wort",
+"de": "Wort",
+"pos": "noun",
+"ja": "単語 (複数 Worte は「言葉」)",
+"lesson": "6B",
+"src": "textbook",
+"en": "word as an isolated unit",
+"ipa": "/vɔrt/",
+"g": "n",
+"pl": "Wörter",
+"gen": "Wortes"
+},
+{
+"id": "tb:Zimmer",
+"de": "Zimmer",
+"pos": "noun",
+"ja": "部屋",
+"lesson": "6B",
+"src": "textbook",
+"en": "room (separate part of a building, enclosed by walls, a floor and a ceiling)",
+"ipa": "/ˈt͡sɪmɐ/",
+"g": "n",
+"pl": "Zimmer",
+"gen": "Zimmers"
+},
+{
+"id": "tb:Frühstück",
+"de": "Frühstück",
+"pos": "noun",
+"ja": "朝食",
+"lesson": "6B",
+"src": "textbook",
+"en": "breakfast",
+"ipa": "/ˈfʁyːʃtʏk/",
+"g": "n",
+"pl": "Frühstücke",
+"gen": "Frühstücks"
+},
+{
+"id": "tb:Problem",
+"de": "Problem",
+"pos": "noun",
+"ja": "問題",
+"lesson": "6B",
+"src": "textbook",
+"en": "problem",
+"ipa": "/pʁoˈbleːm/",
+"g": "n",
+"pl": "Probleme",
+"gen": "Problems"
+},
+{
+"id": "tb:sonnig",
+"de": "sonnig",
+"pos": "adj",
+"ja": "晴れた",
+"lesson": "6B",
+"src": "textbook",
+"en": "sunny",
+"ipa": "/ˈzɔnɪç/",
+"c": [
+"sonniger",
+"am sonnigsten"
+]
+},
+{
+"id": "tb:wolkig",
+"de": "wolkig",
+"pos": "adj",
+"ja": "曇った",
+"lesson": "6B",
+"src": "textbook"
+},
+{
+"id": "tb:bewölkt",
+"de": "bewölkt",
+"pos": "adj",
+"ja": "曇った",
+"lesson": "6B",
+"src": "textbook",
+"en": "cloudy (covered with or characterised by clouds)",
+"ipa": "[bəˈvœlkt]"
+},
+{
+"id": "tb:windig",
+"de": "windig",
+"pos": "adj",
+"ja": "風の強い",
+"lesson": "6B",
+"src": "textbook",
+"en": "windy",
+"ipa": "/ˈvɪndɪç/",
+"c": [
+"windiger",
+"am windigsten"
+]
+},
+{
+"id": "tb:heiß",
+"de": "heiß",
+"pos": "adj",
+"ja": "暑い、熱い",
+"lesson": "6B",
+"src": "textbook",
+"en": "hot (having a high temperature)",
+"ipa": "/haɪ̯s/",
+"c": [
+"heißer",
+"am heißesten"
+]
+},
+{
+"id": "tb:warm",
+"de": "warm",
+"pos": "adj",
+"ja": "暖かい",
+"lesson": "6B",
+"src": "textbook",
+"en": "warm; mildly hot",
+"ipa": "/varm/",
+"c": [
+"wärmer",
+"am wärmsten"
+]
+},
+{
+"id": "tb:kühl",
+"de": "kühl",
+"pos": "adj",
+"ja": "涼しい",
+"lesson": "6B",
+"src": "textbook",
+"en": "cool",
+"ipa": "/kyːl/",
+"c": [
+"kühler",
+"am kühlsten"
+]
+},
+{
+"id": "tb:kalt",
+"de": "kalt",
+"pos": "adj",
+"ja": "寒い、冷たい",
+"lesson": "6B",
+"src": "textbook",
+"en": "cold, chilly; the physical perception of something (objects, weather, body etc.)",
+"ipa": "/kalt/",
+"c": [
+"kälter",
+"am kältesten"
+]
+},
+{
+"id": "tb:stark",
+"de": "stark",
+"pos": "adj",
+"ja": "強い、激しく",
+"lesson": "6B",
+"src": "textbook",
+"en": "strong (intense, powerful, unyielding)",
+"ipa": "/ʃtark/",
+"c": [
+"stärker",
+"am stärksten"
+]
+},
+{
+"id": "tb:deutlich",
+"de": "deutlich",
+"pos": "adj",
+"ja": "はっきりした",
+"lesson": "6B",
+"src": "textbook",
+"en": "articulate, clear",
+"c": [
+"deutlicher",
+"am deutlichsten"
+]
+},
+{
+"id": "tb:merkwürdig",
+"de": "merkwürdig",
+"pos": "adj",
+"ja": "奇妙な",
+"lesson": "6B",
+"src": "textbook",
+"en": "strange, odd",
+"ipa": "/ˈmɛʁkˌvʏʁdɪç/",
+"c": [
+"merkwürdiger",
+"am merkwürdigsten"
+]
+},
+{
+"id": "tb:glücklich",
+"de": "glücklich",
+"pos": "adj",
+"ja": "幸せな",
+"lesson": "6B",
+"src": "textbook",
+"en": "happy; both momentarily and generally in life",
+"ipa": "/ˈɡlʏklɪç/",
+"c": [
+"glücklicher",
+"am glücklichsten"
+]
+},
+{
+"id": "tb:früh",
+"de": "früh",
+"pos": "adj",
+"ja": "早い",
+"lesson": "6B",
+"src": "textbook",
+"en": "early",
+"ipa": "/fʁyː/",
+"c": [
+"früher",
+"am frühesten"
+]
+},
+{
+"id": "tb:überall:adv",
+"de": "überall",
+"pos": "adv",
+"ja": "いたるところで",
+"lesson": "6B",
+"src": "textbook",
+"en": "everywhere",
+"ipa": "/ˌyːbɐˈʔal/"
+},
+{
+"id": "tb:es_gibt",
+"de": "es gibt",
+"pos": "phrase",
+"ja": "〜がある (+4格)",
+"lesson": "6B",
+"src": "textbook"
+},
+{
+"id": "tb:passen",
+"de": "passen",
+"pos": "verb",
+"ja": "(〜³に)合う、似合う",
+"lesson": "7A",
+"src": "textbook",
+"en": "to fit",
+"ipa": "/ˈpasən/",
+"v": {
+"pp": "gepasst",
+"ax": "haben",
+"pr": [
+"passe",
+"passt",
+"passt",
+"passen",
+"passt",
+"passen"
+],
+"pt": [
+"passte",
+"passtest",
+"passte",
+"passten",
+"passtet",
+"passten"
+],
+"k2": [
+"passte",
+"passtest",
+"passte",
+"passten",
+"passtet",
+"passten"
+],
+"im": [
+"pass",
+"passt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:anprobieren",
+"de": "anprobieren",
+"pos": "verb",
+"ja": "試着する",
+"lesson": "7A",
+"src": "textbook",
+"en": "to try on (clothes)",
+"ipa": "/ˈʔanpʁoˌbiːɐ̯n/",
+"sep": "an",
+"v": {
+"pp": "anprobiert",
+"ax": "haben",
+"pr": [
+"probiere an",
+"probierst an",
+"probiert an",
+"probieren an",
+"probiert an",
+"probieren an"
+],
+"pt": [
+"probierte an",
+"probiertest an",
+"probierte an",
+"probierten an",
+"probiertet an",
+"probierten an"
+],
+"k2": [
+"probierte an",
+"probiertest an",
+"probierte an",
+"probierten an",
+"probiertet an",
+"probierten an"
+],
+"im": [
+"probier an",
+"probiert an"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:aussehen",
+"de": "aussehen",
+"pos": "verb",
+"ja": "〜のように見える",
+"lesson": "7A",
+"src": "textbook",
+"en": "to look, seem",
+"ipa": "/ˈaʊ̯sˌzeː.ən/",
+"sep": "aus",
+"v": {
+"pp": "ausgesehen",
+"ax": "haben",
+"pr": [
+"sehe aus",
+"siehst aus",
+"sieht aus",
+"sehen aus",
+"seht aus",
+"sehen aus"
+],
+"pt": [
+"sah aus",
+"sahst aus",
+"sah aus",
+"sahen aus",
+"saht aus",
+"sahen aus"
+],
+"k2": [
+"sähe aus",
+"sähest aus",
+"sähe aus",
+"sähen aus",
+"sähet aus",
+"sähen aus"
+],
+"im": [
+"sieh aus",
+"seht aus"
+]
+}
+},
+{
+"id": "tb:glauben",
+"de": "glauben",
+"pos": "verb",
+"ja": "信じる、思う",
+"lesson": "7A",
+"src": "textbook",
+"en": "to believe something (to consider true)",
+"ipa": "/ˈɡlaʊ̯bən/",
+"v": {
+"pp": "geglaubt",
+"ax": "haben",
+"pr": [
+"glaube",
+"glaubst",
+"glaubt",
+"glauben",
+"glaubt",
+"glauben"
+],
+"pt": [
+"glaubte",
+"glaubtest",
+"glaubte",
+"glaubten",
+"glaubtet",
+"glaubten"
+],
+"k2": [
+"glaubte",
+"glaubtest",
+"glaubte",
+"glaubten",
+"glaubtet",
+"glaubten"
+],
+"im": [
+"glaub",
+"glaubt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:T-Shirt",
+"de": "T-Shirt",
+"pos": "noun",
+"ja": "Tシャツ",
+"lesson": "7A",
+"src": "textbook",
+"en": "T-shirt, tee",
+"ipa": "/ˈtiːˌʃøːɐ̯t/",
+"g": "n",
+"pl": "T-Shirts",
+"gen": "T-Shirts"
+},
+{
+"id": "tb:Jeans",
+"de": "Jeans",
+"pos": "noun",
+"ja": "ジーンズ",
+"lesson": "7A",
+"src": "textbook",
+"en": "A pair of jeans, denim trousers",
+"ipa": "/(d)ʒiːns/",
+"plOnly": true
+},
+{
+"id": "tb:Socke",
+"de": "Socke",
+"pos": "noun",
+"ja": "靴下",
+"lesson": "7A",
+"src": "textbook",
+"en": "sock",
+"ipa": "/ˈzɔkə/",
+"g": "f",
+"pl": "Socken",
+"gen": "Socke"
+},
+{
+"id": "tb:Gürtel",
+"de": "Gürtel",
+"pos": "noun",
+"ja": "ベルト",
+"lesson": "7A",
+"src": "textbook",
+"en": "belt (band worn around the waist)",
+"ipa": "/ˈɡʏʁtəl/",
+"g": "m",
+"pl": "Gürtel",
+"gen": "Gürtels"
+},
+{
+"id": "tb:Schokolade",
+"de": "Schokolade",
+"pos": "noun",
+"ja": "チョコレート",
+"lesson": "7A",
+"src": "textbook",
+"en": "chocolate (food made from ground roasted cocoa beans)",
+"ipa": "/ʃokoˈlaːdə/",
+"g": "f",
+"pl": "Schokoladen",
+"gen": "Schokolade"
+},
+{
+"id": "tb:Klasse",
+"de": "Klasse",
+"pos": "noun",
+"ja": "クラス、学級",
+"lesson": "7A",
+"src": "textbook",
+"en": "a class; a grouping",
+"ipa": "/ˈklasə/",
+"g": "f",
+"pl": "Klassen",
+"gen": "Klasse"
+},
+{
+"id": "tb:Läufer",
+"de": "Läufer",
+"pos": "noun",
+"ja": "走者",
+"lesson": "7A",
+"src": "textbook",
+"en": "runner (strip of fabric; narrow long carpet)",
+"ipa": "/ˈlɔʏ̯fɐ/",
+"g": "m",
+"pl": "Läufer",
+"gen": "Läufers"
+},
+{
+"id": "tb:Größe",
+"de": "Größe",
+"pos": "noun",
+"ja": "大きさ、サイズ",
+"lesson": "7A",
+"src": "textbook",
+"en": "size, height",
+"ipa": "/ˈɡʁøːsə/",
+"g": "f",
+"pl": "Größen",
+"gen": "Größe"
+},
+{
+"id": "tb:Mode",
+"de": "Mode",
+"pos": "noun",
+"ja": "ファッション、流行",
+"lesson": "7A",
+"src": "textbook",
+"en": "fashion, trend",
+"ipa": "/ˈmoːdə/",
+"g": "f",
+"pl": "Moden",
+"gen": "Mode"
+},
+{
+"id": "tb:rot",
+"de": "rot",
+"pos": "adj",
+"ja": "赤い",
+"lesson": "7A",
+"src": "textbook",
+"en": "red (colour)",
+"ipa": "/roːt/",
+"c": [
+"röter",
+"am rötesten"
+]
+},
+{
+"id": "tb:gelb",
+"de": "gelb",
+"pos": "adj",
+"ja": "黄色い",
+"lesson": "7A",
+"src": "textbook",
+"en": "yellow",
+"ipa": "/ɡɛlp/",
+"c": [
+"gelber",
+"am gelbsten"
+]
+},
+{
+"id": "tb:grün",
+"de": "grün",
+"pos": "adj",
+"ja": "緑の",
+"lesson": "7A",
+"src": "textbook",
+"en": "green (in colour)",
+"ipa": "/ɡʁyːn/",
+"c": [
+"grüner",
+"am grünsten"
+]
+},
+{
+"id": "tb:weiß",
+"de": "weiß",
+"pos": "adj",
+"ja": "白い",
+"lesson": "7A",
+"src": "textbook",
+"en": "white",
+"ipa": "/vaɪ̯s/",
+"c": [
+"weißer",
+"am weißesten"
+]
+},
+{
+"id": "tb:grau",
+"de": "grau",
+"pos": "adj",
+"ja": "灰色の",
+"lesson": "7A",
+"src": "textbook",
+"en": "grey, gray",
+"ipa": "/ɡʁaʊ̯/",
+"c": [
+"grauer",
+"am grauesten"
+]
+},
+{
+"id": "tb:schwarz",
+"de": "schwarz",
+"pos": "adj",
+"ja": "黒い",
+"lesson": "7A",
+"src": "textbook",
+"en": "black, reflecting little or no light",
+"ipa": "/ʃvarts/",
+"c": [
+"schwärzer",
+"am schwärzesten"
+]
+},
+{
+"id": "tb:blau",
+"de": "blau",
+"pos": "adj",
+"ja": "青い",
+"lesson": "7A",
+"src": "textbook",
+"en": "blue (color/colour)",
+"ipa": "/blaʊ̯/",
+"c": [
+"blauer",
+"am blauesten"
+]
+},
+{
+"id": "tb:braun",
+"de": "braun",
+"pos": "adj",
+"ja": "茶色の",
+"lesson": "7A",
+"src": "textbook",
+"en": "brown",
+"ipa": "/bʁaʊ̯n/",
+"c": [
+"brauner",
+"am braunsten"
+]
+},
+{
+"id": "tb:klein",
+"de": "klein",
+"pos": "adj",
+"ja": "小さい",
+"lesson": "7A",
+"src": "textbook",
+"en": "small, little, wee (in physical size or extent)",
+"ipa": "/klaɪ̯n/",
+"c": [
+"kleiner",
+"am kleinsten"
+]
+},
+{
+"id": "tb:teuer",
+"de": "teuer",
+"pos": "adj",
+"ja": "高価な",
+"lesson": "7A",
+"src": "textbook",
+"en": "expensive, dear (high in price)",
+"ipa": "/tɔʏ̯ɐ/",
+"c": [
+"teurer",
+"am teuersten"
+]
+},
+{
+"id": "tb:jung",
+"de": "jung",
+"pos": "adj",
+"ja": "若い",
+"lesson": "7A",
+"src": "textbook",
+"en": "young",
+"ipa": "/jʊŋ(k)/",
+"c": [
+"jünger",
+"am jüngsten"
+]
+},
+{
+"id": "tb:lang",
+"de": "lang",
+"pos": "adj",
+"ja": "長い",
+"lesson": "7A",
+"src": "textbook",
+"en": "long; lengthy (in space or time)",
+"ipa": "/laŋ(k)/",
+"c": [
+"länger",
+"am längsten"
+]
+},
+{
+"id": "tb:hoch",
+"de": "hoch",
+"pos": "adj",
+"ja": "高い",
+"lesson": "7A",
+"src": "textbook",
+"en": "high, tall",
+"ipa": "/hoːx/",
+"c": [
+"höher",
+"am höchsten"
+]
+},
+{
+"id": "tb:schwierig",
+"de": "schwierig",
+"pos": "adj",
+"ja": "難しい",
+"lesson": "7A",
+"src": "textbook",
+"en": "difficult, hard, challenging, tough",
+"ipa": "/ˈʃviːrɪç/",
+"c": [
+"schwieriger",
+"am schwierigsten"
+]
+},
+{
+"id": "tb:bitter",
+"de": "bitter",
+"pos": "adj",
+"ja": "苦い",
+"lesson": "7A",
+"src": "textbook",
+"en": "bitter (having a bitter taste)",
+"ipa": "/ˈbɪ.tɐ/",
+"c": [
+"bitterer",
+"am bittersten"
+]
+},
+{
+"id": "tb:günstig",
+"de": "günstig",
+"pos": "adj",
+"ja": "手頃な、有利な",
+"lesson": "7A",
+"src": "textbook",
+"en": "favourable, propitious, opportune",
+"ipa": "/ˈɡʏnstɪç/",
+"c": [
+"günstiger",
+"am günstigsten"
+]
+},
+{
+"id": "tb:bekannt",
+"de": "bekannt",
+"pos": "adj",
+"ja": "有名な、知られた",
+"lesson": "7A",
+"src": "textbook",
+"en": "known, familiar",
+"ipa": "/bəˈkant/",
+"c": [
+"bekannter",
+"am bekanntesten"
+]
+},
+{
+"id": "tb:besser",
+"de": "besser",
+"pos": "adj",
+"ja": "よりよい (gut の比較級)",
+"lesson": "7A",
+"src": "textbook"
+},
+{
+"id": "tb:lieber:adv",
+"de": "lieber",
+"pos": "adv",
+"ja": "むしろ〜のほうがよい (gern の比較級)",
+"lesson": "7A",
+"src": "textbook"
+},
+{
+"id": "tb:mehr",
+"de": "mehr",
+"pos": "adj",
+"ja": "より多くの (viel の比較級)",
+"lesson": "7A",
+"src": "textbook",
+"en": "something more",
+"ipa": "/meːr/"
+},
+{
+"id": "tb:sich_erkälten",
+"de": "erkälten",
+"pos": "verb",
+"ja": "風邪をひく",
+"lesson": "7B",
+"src": "textbook",
+"en": "to catch a cold",
+"ipa": "/ɛɐ̯ˈkɛltən/",
+"refl": true,
+"v": {
+"pp": "erkältet",
+"ax": "haben",
+"pr": [
+"erkälte",
+"erkältest",
+"erkältet",
+"erkälten",
+"erkältet",
+"erkälten"
+],
+"pt": [
+"erkältete",
+"erkältetest",
+"erkältete",
+"erkälteten",
+"erkältetet",
+"erkälteten"
+],
+"k2": [
+"erkältete",
+"erkältetest",
+"erkältete",
+"erkälteten",
+"erkältetet",
+"erkälteten"
+],
+"im": [
+"erkält",
+"erkältet"
+],
+"rf": 1,
+"wk": 1
+}
+},
+{
+"id": "tb:sich_fühlen",
+"de": "fühlen",
+"pos": "verb",
+"ja": "(〜と)感じる",
+"lesson": "7B",
+"src": "textbook",
+"en": "to feel (a thing, sensation, emotion - a noun)",
+"ipa": "/ˈfyːlən/",
+"refl": true,
+"v": {
+"pp": "gefühlt",
+"ax": "haben",
+"pr": [
+"fühle",
+"fühlst",
+"fühlt",
+"fühlen",
+"fühlt",
+"fühlen"
+],
+"pt": [
+"fühlte",
+"fühltest",
+"fühlte",
+"fühlten",
+"fühltet",
+"fühlten"
+],
+"k2": [
+"fühlte",
+"fühltest",
+"fühlte",
+"fühlten",
+"fühltet",
+"fühlten"
+],
+"im": [
+"fühl",
+"fühlt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:sich_bewerben",
+"de": "bewerben",
+"pos": "verb",
+"ja": "(um+4格に)応募する",
+"lesson": "7B",
+"src": "textbook",
+"en": "to apply (submit oneself as a candidate)",
+"ipa": "/bəˈvɛrbən/",
+"refl": true,
+"v": {
+"pp": "beworben",
+"ax": "haben",
+"pr": [
+"bewerbe",
+"bewirbst",
+"bewirbt",
+"bewerben",
+"bewerbt",
+"bewerben"
+],
+"pt": [
+"bewarb",
+"bewarbst",
+"bewarb",
+"bewarben",
+"bewarbt",
+"bewarben"
+],
+"k2": [
+"bewürbe",
+"bewürbest",
+"bewürbe",
+"bewürben",
+"bewürbet",
+"bewürben"
+],
+"im": [
+"bewirb",
+"bewerbt"
+]
+}
+},
+{
+"id": "tb:sich_legen",
+"de": "legen",
+"pos": "verb",
+"ja": "横になる",
+"lesson": "7B",
+"src": "textbook",
+"en": "to lie down",
+"ipa": "/ˈleːɡən/",
+"refl": true,
+"v": {
+"pp": "gelegt",
+"ax": "haben",
+"pr": [
+"lege",
+"legst",
+"legt",
+"legen",
+"legt",
+"legen"
+],
+"pt": [
+"legte",
+"legtest",
+"legte",
+"legten",
+"legtet",
+"legten"
+],
+"k2": [
+"legte",
+"legtest",
+"legte",
+"legten",
+"legtet",
+"legten"
+],
+"im": [
+"leg",
+"legt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:sich_setzen",
+"de": "setzen",
+"pos": "verb",
+"ja": "座る",
+"lesson": "7B",
+"src": "textbook",
+"en": "to sit down",
+"ipa": "/ˈzɛtsən/",
+"refl": true,
+"v": {
+"pp": "gesetzt",
+"ax": "haben",
+"pr": [
+"setze",
+"setzt",
+"setzt",
+"setzen",
+"setzt",
+"setzen"
+],
+"pt": [
+"setzte",
+"setztest",
+"setzte",
+"setzten",
+"setztet",
+"setzten"
+],
+"k2": [
+"setzte",
+"setztest",
+"setzte",
+"setzten",
+"setztet",
+"setzten"
+],
+"im": [
+"setz",
+"setzt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:sich_schämen",
+"de": "schämen",
+"pos": "verb",
+"ja": "恥ずかしく思う",
+"lesson": "7B",
+"src": "textbook",
+"en": "to be ashamed or (less often) embarrassed, bashful",
+"ipa": "/ˈʃɛːmən/",
+"refl": true,
+"v": {
+"pp": "geschämt",
+"ax": "haben",
+"pr": [
+"schäme",
+"schämst",
+"schämt",
+"schämen",
+"schämt",
+"schämen"
+],
+"pt": [
+"schämte",
+"schämtest",
+"schämte",
+"schämten",
+"schämtet",
+"schämten"
+],
+"k2": [
+"schämte",
+"schämtest",
+"schämte",
+"schämten",
+"schämtet",
+"schämten"
+],
+"im": [
+"schäm",
+"schämt"
+],
+"rf": 1,
+"wk": 1
+}
+},
+{
+"id": "tb:sich_erinnern",
+"de": "erinnern",
+"pos": "verb",
+"ja": "(an+4格を)覚えている、思い出す",
+"lesson": "7B",
+"src": "textbook",
+"en": "to remind",
+"ipa": "[ʔɛɐ̯ˈʔɪnɐn]",
+"refl": true,
+"v": {
+"pp": "erinnert",
+"ax": "haben",
+"pr": [
+"erinnre",
+"erinnerst",
+"erinnert",
+"erinnern",
+"erinnert",
+"erinnern"
+],
+"pt": [
+"erinnerte",
+"erinnertest",
+"erinnerte",
+"erinnerten",
+"erinnertet",
+"erinnerten"
+],
+"k2": [
+"erinnerte",
+"erinnertest",
+"erinnerte",
+"erinnerten",
+"erinnertet",
+"erinnerten"
+],
+"im": [
+"erinnre",
+"erinnert"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:sich_freuen",
+"de": "freuen",
+"pos": "verb",
+"ja": "(auf+4格を)楽しみにする／(über+4格を)喜ぶ",
+"lesson": "7B",
+"src": "textbook",
+"en": "to gladden, to make glad, to make pleased",
+"ipa": "/ˈfʁɔʏ̯ən/",
+"refl": true,
+"v": {
+"pp": "gefreut",
+"ax": "haben",
+"pr": [
+"freue",
+"freust",
+"freut",
+"freuen",
+"freut",
+"freuen"
+],
+"pt": [
+"freute",
+"freutest",
+"freute",
+"freuten",
+"freutet",
+"freuten"
+],
+"k2": [
+"freute",
+"freutest",
+"freute",
+"freuten",
+"freutet",
+"freuten"
+],
+"im": [
+"freu",
+"freut"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:sich_interessieren",
+"de": "interessieren",
+"pos": "verb",
+"ja": "(für+4格に)興味がある",
+"lesson": "7B",
+"src": "textbook",
+"en": "to interest",
+"ipa": "/ˌɪn.tə.ʁɛˈsiː.ʁən/",
+"refl": true,
+"v": {
+"pp": "interessiert",
+"ax": "haben",
+"pr": [
+"interessiere",
+"interessierst",
+"interessiert",
+"interessieren",
+"interessiert",
+"interessieren"
+],
+"pt": [
+"interessierte",
+"interessiertest",
+"interessierte",
+"interessierten",
+"interessiertet",
+"interessierten"
+],
+"k2": [
+"interessierte",
+"interessiertest",
+"interessierte",
+"interessierten",
+"interessiertet",
+"interessierten"
+],
+"im": [
+"interessier",
+"interessiert"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:sich_beschäftigen",
+"de": "beschäftigen",
+"pos": "verb",
+"ja": "(mit+3格に)取り組む",
+"lesson": "7B",
+"src": "textbook",
+"en": "to occupy, to keep occupied, to employ, to engage (possess or use the time, capa",
+"ipa": "[ˌbəˈʃɛftɪɡən]",
+"refl": true,
+"v": {
+"pp": "beschäftigt",
+"ax": "haben",
+"pr": [
+"beschäftige",
+"beschäftigst",
+"beschäftigt",
+"beschäftigen",
+"beschäftigt",
+"beschäftigen"
+],
+"pt": [
+"beschäftigte",
+"beschäftigtest",
+"beschäftigte",
+"beschäftigten",
+"beschäftigtet",
+"beschäftigten"
+],
+"k2": [
+"beschäftigte",
+"beschäftigtest",
+"beschäftigte",
+"beschäftigten",
+"beschäftigtet",
+"beschäftigten"
+],
+"im": [
+"beschäftig",
+"beschäftigt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:sich_kümmern",
+"de": "kümmern",
+"pos": "verb",
+"ja": "(um+4格の)面倒を見る",
+"lesson": "7B",
+"src": "textbook",
+"en": "to take care, to look after",
+"ipa": "/ˈkʏ.mɐn/",
+"refl": true,
+"v": {
+"pp": "gekümmert",
+"ax": "haben",
+"pr": [
+"kümmre",
+"kümmerst",
+"kümmert",
+"kümmern",
+"kümmert",
+"kümmern"
+],
+"pt": [
+"kümmerte",
+"kümmertest",
+"kümmerte",
+"kümmerten",
+"kümmertet",
+"kümmerten"
+],
+"k2": [
+"kümmerte",
+"kümmertest",
+"kümmerte",
+"kümmerten",
+"kümmertet",
+"kümmerten"
+],
+"im": [
+"kümmre",
+"kümmert"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:sich_fürchten",
+"de": "fürchten",
+"pos": "verb",
+"ja": "(vor+3格を)怖がる",
+"lesson": "7B",
+"src": "textbook",
+"en": "to fear",
+"ipa": "/ˈfʏʁçtən/",
+"refl": true,
+"v": {
+"pp": "gefürchtet",
+"ax": "haben",
+"pr": [
+"fürchte",
+"fürchtest",
+"fürchtet",
+"fürchten",
+"fürchtet",
+"fürchten"
+],
+"pt": [
+"fürchtete",
+"fürchtetest",
+"fürchtete",
+"fürchteten",
+"fürchtetet",
+"fürchteten"
+],
+"k2": [
+"fürchtete",
+"fürchtetest",
+"fürchtete",
+"fürchteten",
+"fürchtetet",
+"fürchteten"
+],
+"im": [
+"fürcht",
+"fürchtet"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:sich_unterhalten",
+"de": "unterhalten",
+"pos": "verb",
+"ja": "(mit+3格と)歓談する",
+"lesson": "7B",
+"src": "textbook",
+"en": "to maintain",
+"ipa": "/ˌʊntəʁˈhaltən/",
+"refl": true,
+"v": {
+"pp": "unterhalten",
+"ax": "haben",
+"pr": [
+"unterhalte",
+"unterhältst",
+"unterhält",
+"unterhalten",
+"unterhaltet",
+"unterhalten"
+],
+"pt": [
+"unterhielt",
+"unterhieltest",
+"unterhielt",
+"unterhielten",
+"unterhieltet",
+"unterhielten"
+],
+"k2": [
+"unterhielte",
+"unterhieltest",
+"unterhielte",
+"unterhielten",
+"unterhieltet",
+"unterhielten"
+],
+"im": [
+"unterhalt",
+"unterhaltet"
+]
+}
+},
+{
+"id": "tb:sich_waschen",
+"de": "waschen",
+"pos": "verb",
+"ja": "体を洗う (sich³ die Hände waschen 手を洗う)",
+"lesson": "7B",
+"src": "textbook",
+"en": "to wash",
+"ipa": "/ˈvaʃən/",
+"refl": true,
+"v": {
+"pp": "gewaschen",
+"ax": "haben",
+"pr": [
+"wasche",
+"wäschst",
+"wäscht",
+"waschen",
+"wascht",
+"waschen"
+],
+"pt": [
+"wusch",
+"wuschst",
+"wusch",
+"wuschen",
+"wuscht",
+"wuschen"
+],
+"k2": [
+"wüsche",
+"wüschest",
+"wüsche",
+"wüschen",
+"wüschet",
+"wüschen"
+],
+"im": [
+"wasch",
+"wascht"
+],
+"rf": 1
+}
+},
+{
+"id": "tb:sich_rasieren",
+"de": "rasieren",
+"pos": "verb",
+"ja": "ひげを剃る",
+"lesson": "7B",
+"src": "textbook",
+"en": "to shave",
+"ipa": "/ʁaˈziːʁən/",
+"refl": true,
+"v": {
+"pp": "rasiert",
+"ax": "haben",
+"pr": [
+"rasiere",
+"rasierst",
+"rasiert",
+"rasieren",
+"rasiert",
+"rasieren"
+],
+"pt": [
+"rasierte",
+"rasiertest",
+"rasierte",
+"rasierten",
+"rasiertet",
+"rasierten"
+],
+"k2": [
+"rasierte",
+"rasiertest",
+"rasierte",
+"rasierten",
+"rasiertet",
+"rasierten"
+],
+"im": [
+"rasier",
+"rasiert"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:sich_schminken",
+"de": "schminken",
+"pos": "verb",
+"ja": "化粧する",
+"lesson": "7B",
+"src": "textbook",
+"en": "to put on (make-up, lipstick, etc.), to make up one's face",
+"ipa": "/ˈʃmɪŋkən/",
+"refl": true,
+"v": {
+"pp": "geschminkt",
+"ax": "haben",
+"pr": [
+"schminke",
+"schminkst",
+"schminkt",
+"schminken",
+"schminkt",
+"schminken"
+],
+"pt": [
+"schminkte",
+"schminktest",
+"schminkte",
+"schminkten",
+"schminktet",
+"schminkten"
+],
+"k2": [
+"schminkte",
+"schminktest",
+"schminkte",
+"schminkten",
+"schminktet",
+"schminkten"
+],
+"im": [
+"schmink",
+"schminkt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:putzen",
+"de": "putzen",
+"pos": "verb",
+"ja": "磨く、掃除する",
+"lesson": "7B",
+"src": "textbook",
+"en": "to clean, especially by rubbing with something wet, to brush (one's teeth)",
+"ipa": "/ˈpʊt͡sn̩/",
+"v": {
+"pp": "geputzt",
+"ax": "haben",
+"pr": [
+"putze",
+"putzt",
+"putzt",
+"putzen",
+"putzt",
+"putzen"
+],
+"pt": [
+"putzte",
+"putztest",
+"putzte",
+"putzten",
+"putztet",
+"putzten"
+],
+"k2": [
+"putzte",
+"putztest",
+"putzte",
+"putzten",
+"putztet",
+"putzten"
+],
+"im": [
+"putz",
+"putzt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:Stipendium",
+"de": "Stipendium",
+"pos": "noun",
+"ja": "奨学金",
+"lesson": "7B",
+"src": "textbook",
+"en": "scholarship (grant-in-aid to a student)",
+"ipa": "/ʃtiˈpɛndi̯ʊm/",
+"g": "n",
+"pl": "Stipendien",
+"gen": "Stipendiums"
+},
+{
+"id": "tb:Kräutertee",
+"de": "Kräutertee",
+"pos": "noun",
+"ja": "ハーブティー",
+"lesson": "7B",
+"src": "textbook",
+"en": "herb tea, herbal tea, tisane",
+"ipa": "/ˈkʁɔɪ̯tɐˌteː/",
+"g": "m",
+"pl": "Kräutertees",
+"gen": "Kräutertees"
+},
+{
+"id": "tb:Besserung",
+"de": "Besserung",
+"pos": "noun",
+"ja": "回復",
+"lesson": "7B",
+"src": "textbook",
+"en": "amelioration",
+"ipa": "/ˈbɛsəʁʊŋ/",
+"g": "f",
+"gen": "Besserung"
+},
+{
+"id": "tb:Ausflug",
+"de": "Ausflug",
+"pos": "noun",
+"ja": "遠足、ハイキング",
+"lesson": "7B",
+"src": "textbook",
+"en": "excursion, outing, short trip",
+"ipa": "/ˈʔaʊ̯sfluːk/",
+"g": "m",
+"pl": "Ausflüge",
+"gen": "Ausfluges"
+},
+{
+"id": "tb:Baby",
+"de": "Baby",
+"pos": "noun",
+"ja": "赤ちゃん",
+"lesson": "7B",
+"src": "textbook",
+"en": "baby (infant)",
+"ipa": "/ˈbeːbi/",
+"g": "n",
+"pl": "Babys",
+"gen": "Babys"
+},
+{
+"id": "tb:Politiker",
+"de": "Politiker",
+"pos": "noun",
+"ja": "政治家",
+"lesson": "7B",
+"src": "textbook",
+"en": "politician",
+"ipa": "/poˈliːtikɐ/",
+"g": "m",
+"pl": "Politiker",
+"gen": "Politikers"
+},
+{
+"id": "tb:Rolle",
+"de": "Rolle",
+"pos": "noun",
+"ja": "役割、役",
+"lesson": "7B",
+"src": "textbook",
+"en": "roll, reel, spool",
+"ipa": "/ˈʁɔlə/",
+"g": "f",
+"pl": "Rollen",
+"gen": "Rolle"
+},
+{
+"id": "tb:Schauspieler",
+"de": "Schauspieler",
+"pos": "noun",
+"ja": "俳優",
+"lesson": "7B",
+"src": "textbook",
+"en": "actor",
+"ipa": "[ˈʃaʊ̯ˌʃpiːlɐ]",
+"g": "m",
+"pl": "Schauspieler",
+"gen": "Schauspielers"
+},
+{
+"id": "tb:Thema",
+"de": "Thema",
+"pos": "noun",
+"ja": "テーマ",
+"lesson": "7B",
+"src": "textbook",
+"en": "topic, subject, issue",
+"ipa": "/ˈteːma/",
+"g": "n",
+"pl": "Themen",
+"gen": "Themas"
+},
+{
+"id": "tb:Nachbar",
+"de": "Nachbar",
+"pos": "noun",
+"ja": "隣人",
+"lesson": "7B",
+"src": "textbook",
+"en": "neighbour",
+"ipa": "/ˈnaxbaːr/",
+"g": "m",
+"pl": "Nachbarn",
+"gen": "Nachbarn",
+"weak": true
+},
+{
+"id": "tb:Zahnarzt",
+"de": "Zahnarzt",
+"pos": "noun",
+"ja": "歯医者",
+"lesson": "7B",
+"src": "textbook",
+"en": "dentist",
+"ipa": "/ˈt͡saːnʔaɐ̯t͡st/",
+"g": "m",
+"pl": "Zahnärzte",
+"gen": "Zahnarztes"
+},
+{
+"id": "tb:Gesicht",
+"de": "Gesicht",
+"pos": "noun",
+"ja": "顔",
+"lesson": "7B",
+"src": "textbook",
+"en": "face",
+"ipa": "/ɡəˈzɪçt/",
+"g": "n",
+"pl": "Gesichter",
+"gen": "Gesichtes"
+},
+{
+"id": "tb:Kopf",
+"de": "Kopf",
+"pos": "noun",
+"ja": "頭",
+"lesson": "7B",
+"src": "textbook",
+"en": "head",
+"ipa": "/kɔpf/",
+"g": "m",
+"pl": "Köpfe",
+"gen": "Kopfes"
+},
+{
+"id": "tb:Auge",
+"de": "Auge",
+"pos": "noun",
+"ja": "目",
+"lesson": "7B",
+"src": "textbook",
+"en": "eye",
+"ipa": "/ˈaʊ̯ɡə/",
+"g": "n",
+"pl": "Augen",
+"gen": "Auges"
+},
+{
+"id": "tb:Ohr",
+"de": "Ohr",
+"pos": "noun",
+"ja": "耳",
+"lesson": "7B",
+"src": "textbook",
+"en": "ear (the auditory organ)",
+"ipa": "/oːr/",
+"g": "n",
+"pl": "Ohren",
+"gen": "Ohres"
+},
+{
+"id": "tb:Nase",
+"de": "Nase",
+"pos": "noun",
+"ja": "鼻",
+"lesson": "7B",
+"src": "textbook",
+"en": "nose",
+"ipa": "/ˈnaːzə/",
+"g": "f",
+"pl": "Nasen",
+"gen": "Nase"
+},
+{
+"id": "tb:Mund",
+"de": "Mund",
+"pos": "noun",
+"ja": "口",
+"lesson": "7B",
+"src": "textbook",
+"en": "mouth of a person",
+"ipa": "/mʊnt/",
+"g": "m",
+"pl": "Münder",
+"gen": "Mundes"
+},
+{
+"id": "tb:Hand",
+"de": "Hand",
+"pos": "noun",
+"ja": "手",
+"lesson": "7B",
+"src": "textbook",
+"en": "hand",
+"ipa": "/hant/",
+"g": "f",
+"pl": "Hände",
+"gen": "Hand"
+},
+{
+"id": "tb:Arm",
+"de": "Arm",
+"pos": "noun",
+"ja": "腕",
+"lesson": "7B",
+"src": "textbook",
+"en": "an arm",
+"ipa": "/arm/",
+"g": "m",
+"pl": "Arme",
+"gen": "Armes"
+},
+{
+"id": "tb:Bein",
+"de": "Bein",
+"pos": "noun",
+"ja": "脚",
+"lesson": "7B",
+"src": "textbook",
+"en": "leg of a person, animal, or object",
+"ipa": "/baɪ̯n/",
+"g": "n",
+"pl": "Beine",
+"gen": "Beines"
+},
+{
+"id": "tb:Fuß",
+"de": "Fuß",
+"pos": "noun",
+"ja": "足",
+"lesson": "7B",
+"src": "textbook",
+"en": "foot (body part)",
+"ipa": "/fuːs/",
+"g": "m",
+"pl": "Füße",
+"gen": "Fußes"
+},
+{
+"id": "tb:Bauch",
+"de": "Bauch",
+"pos": "noun",
+"ja": "腹",
+"lesson": "7B",
+"src": "textbook",
+"en": "abdomen, belly",
+"ipa": "/baʊ̯x/",
+"g": "m",
+"pl": "Bäuche",
+"gen": "Bauches"
+},
+{
+"id": "tb:Finger",
+"de": "Finger",
+"pos": "noun",
+"ja": "指",
+"lesson": "7B",
+"src": "textbook",
+"en": "finger",
+"ipa": "/ˈfɪŋɐ/",
+"g": "m",
+"pl": "Finger",
+"gen": "Fingers"
+},
+{
+"id": "tb:Haar",
+"de": "Haar",
+"pos": "noun",
+"ja": "髪",
+"lesson": "7B",
+"src": "textbook",
+"en": "hair (a singular hair, not limited to the head)",
+"ipa": "/haːr/",
+"g": "n",
+"pl": "Haare",
+"gen": "Haares"
+},
+{
+"id": "tb:Husten",
+"de": "Husten",
+"pos": "noun",
+"ja": "咳",
+"lesson": "7B",
+"src": "textbook",
+"en": "cough",
+"ipa": "/ˈhuːstən/",
+"g": "m",
+"pl": "Husten",
+"gen": "Hustens"
+},
+{
+"id": "tb:wohl:adv",
+"de": "wohl",
+"pos": "adv",
+"ja": "元気で、よく、たぶん",
+"lesson": "7B",
+"src": "textbook",
+"en": "possibly, probably; as I was told (modal particle expressing an assumption, ofte",
+"ipa": "/voːl/"
+},
+{
+"id": "tb:überhaupt:adv",
+"de": "überhaupt",
+"pos": "adv",
+"ja": "そもそも、全然",
+"lesson": "7B",
+"src": "textbook",
+"en": "overall, in general",
+"ipa": "/ˌyːbɐˈhaʊ̯pt/"
+},
+{
+"id": "tb:unterwegs:adv",
+"de": "unterwegs",
+"pos": "adv",
+"ja": "途中で",
+"lesson": "7B",
+"src": "textbook",
+"en": "on one’s way, underway, en route, in transit, going, travelling",
+"ipa": "/ʊntərˈveːks/"
+},
+{
+"id": "tb:irgendwie:adv",
+"de": "irgendwie",
+"pos": "adv",
+"ja": "なんとかして、何となく",
+"lesson": "7B",
+"src": "textbook",
+"en": "somehow (in some unknown or unspecific manner)",
+"ipa": "/ɪɐ̯ɡəntˈviː/"
+},
+{
+"id": "tb:Gute_Besserung!",
+"de": "Gute Besserung!",
+"pos": "phrase",
+"ja": "お大事に！",
+"lesson": "7B",
+"src": "textbook"
+},
+{
+"id": "tb:kennenlernen",
+"de": "kennenlernen",
+"pos": "verb",
+"ja": "知り合いになる",
+"lesson": "8A",
+"src": "textbook",
+"en": "to get to know, become acquainted with (a person, place, thing); to befriend.",
+"ipa": "[ˈkɛnənˌlɛɐ̯nən]",
+"sep": "kennen",
+"v": {
+"pp": "kennengelernt",
+"ax": "haben",
+"pr": [
+"lerne kennen",
+"lernst kennen",
+"lernt kennen",
+"lernen kennen",
+"lernt kennen",
+"lernen kennen"
+],
+"pt": [
+"lernte kennen",
+"lerntest kennen",
+"lernte kennen",
+"lernten kennen",
+"lerntet kennen",
+"lernten kennen"
+],
+"k2": [
+"lernte kennen",
+"lerntest kennen",
+"lernte kennen",
+"lernten kennen",
+"lerntet kennen",
+"lernten kennen"
+],
+"im": [
+"lern kennen",
+"lernt kennen"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:mitspielen",
+"de": "mitspielen",
+"pos": "verb",
+"ja": "一緒に演奏する、出演する",
+"lesson": "8A",
+"src": "textbook",
+"en": "to cooperate",
+"ipa": "/ˈmɪtˌʃpiːlən/",
+"sep": "mit",
+"v": {
+"pp": "mitgespielt",
+"ax": "haben",
+"pr": [
+"spiele mit",
+"spielst mit",
+"spielt mit",
+"spielen mit",
+"spielt mit",
+"spielen mit"
+],
+"pt": [
+"spielte mit",
+"spieltest mit",
+"spielte mit",
+"spielten mit",
+"spieltet mit",
+"spielten mit"
+],
+"k2": [
+"spielte mit",
+"spieltest mit",
+"spielte mit",
+"spielten mit",
+"spieltet mit",
+"spielten mit"
+],
+"im": [
+"spiel mit",
+"spielt mit"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:heiraten",
+"de": "heiraten",
+"pos": "verb",
+"ja": "結婚する",
+"lesson": "8A",
+"src": "textbook",
+"en": "to marry; to get married",
+"ipa": "/ˈhaɪ̯ˌraːtən/",
+"v": {
+"pp": "geheiratet",
+"ax": "haben",
+"pr": [
+"heirate",
+"heiratest",
+"heiratet",
+"heiraten",
+"heiratet",
+"heiraten"
+],
+"pt": [
+"heiratete",
+"heiratetest",
+"heiratete",
+"heirateten",
+"heiratetet",
+"heirateten"
+],
+"k2": [
+"heiratete",
+"heiratetest",
+"heiratete",
+"heirateten",
+"heiratetet",
+"heirateten"
+],
+"im": [
+"heirat",
+"heiratet"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:erzählen",
+"de": "erzählen",
+"pos": "verb",
+"ja": "語る、話す",
+"lesson": "8A",
+"src": "textbook",
+"en": "to tell, to narrate, to recount",
+"ipa": "/ɛɐ̯ˈt͡sɛːlən/",
+"v": {
+"pp": "erzählt",
+"ax": "haben",
+"pr": [
+"erzähle",
+"erzählst",
+"erzählt",
+"erzählen",
+"erzählt",
+"erzählen"
+],
+"pt": [
+"erzählte",
+"erzähltest",
+"erzählte",
+"erzählten",
+"erzähltet",
+"erzählten"
+],
+"k2": [
+"erzählte",
+"erzähltest",
+"erzählte",
+"erzählten",
+"erzähltet",
+"erzählten"
+],
+"im": [
+"erzähl",
+"erzählt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:aufwachsen",
+"de": "aufwachsen",
+"pos": "verb",
+"ja": "成長する、育つ",
+"lesson": "8A",
+"src": "textbook",
+"en": "to grow up",
+"ipa": "/ˈaʊ̯fˌvaksən/",
+"sep": "auf",
+"v": {
+"pp": "aufgewachsen",
+"ax": "sein",
+"pr": [
+"wachse auf",
+"wächst auf",
+"wächst auf",
+"wachsen auf",
+"wachst auf",
+"wachsen auf"
+],
+"pt": [
+"wuchs auf",
+"wuchsest auf",
+"wuchs auf",
+"wuchsen auf",
+"wuchst auf",
+"wuchsen auf"
+],
+"k2": [
+"wüchse auf",
+"wüchsest auf",
+"wüchse auf",
+"wüchsen auf",
+"wüchset auf",
+"wüchsen auf"
+],
+"im": [
+"wachs auf",
+"wachst auf"
+]
+}
+},
+{
+"id": "tb:vergehen",
+"de": "vergehen",
+"pos": "verb",
+"ja": "(時が)過ぎ去る",
+"lesson": "8A",
+"src": "textbook",
+"en": "to pass, to elapse",
+"ipa": "/fɛʁˈɡeːən/",
+"v": {
+"pp": "vergangen",
+"ax": "sein",
+"pr": [
+"vergehe",
+"vergehst",
+"vergeht",
+"vergehen",
+"vergeht",
+"vergehen"
+],
+"pt": [
+"verging",
+"vergingst",
+"verging",
+"vergingen",
+"vergingt",
+"vergingen"
+],
+"k2": [
+"verginge",
+"vergingest",
+"verginge",
+"vergingen",
+"verginget",
+"vergingen"
+],
+"im": [
+"vergeh",
+"vergeht"
+]
+}
+},
+{
+"id": "tb:malen",
+"de": "malen",
+"pos": "verb",
+"ja": "(絵を)描く",
+"lesson": "8A",
+"src": "textbook",
+"en": "to paint (do paintwork)",
+"ipa": "/ˈmaːlən/",
+"v": {
+"pp": "gemalt",
+"ax": "haben",
+"pr": [
+"male",
+"malst",
+"malt",
+"malen",
+"malt",
+"malen"
+],
+"pt": [
+"malte",
+"maltest",
+"malte",
+"malten",
+"maltet",
+"malten"
+],
+"k2": [
+"malte",
+"maltest",
+"malte",
+"malten",
+"maltet",
+"malten"
+],
+"im": [
+"mal",
+"malt"
+],
+"wk": 1
+}
+},
+{
+"id": "tb:Weihnachten",
+"de": "Weihnachten",
+"pos": "noun",
+"ja": "クリスマス",
+"lesson": "8A",
+"src": "textbook",
+"en": "Christmas",
+"ipa": "/ˈvaɪ̯ˌnaxtən/",
+"g": "n",
+"pl": "Weihnachten",
+"gen": "Weihnachten"
+},
+{
+"id": "tb:Weihnachtsmarkt",
+"de": "Weihnachtsmarkt",
+"pos": "noun",
+"ja": "クリスマスマーケット",
+"lesson": "8A",
+"src": "textbook",
+"g": "m",
+"pl": "Weihnachtsmärkte"
+},
+{
+"id": "tb:Weihnachtsbaum",
+"de": "Weihnachtsbaum",
+"pos": "noun",
+"ja": "クリスマスツリー",
+"lesson": "8A",
+"src": "textbook",
+"en": "Christmas tree",
+"ipa": "/ˈvaɪ̯naxt͡sˌbaʊ̯m/",
+"g": "m",
+"pl": "Weihnachtsbäume",
+"gen": "Weihnachtsbaumes"
+},
+{
+"id": "tb:Frage",
+"de": "Frage",
+"pos": "noun",
+"ja": "質問、問題",
+"lesson": "8A",
+"src": "textbook",
+"en": "question (interrogative sentence or phrase)",
+"ipa": "/ˈfʁaːɡə/",
+"g": "f",
+"pl": "Fragen",
+"gen": "Frage"
+},
+{
+"id": "tb:Musikstudentin",
+"de": "Musikstudentin",
+"pos": "noun",
+"ja": "音大生(女性)",
+"lesson": "8A",
+"src": "textbook",
+"g": "f",
+"pl": "Musikstudentinnen"
+},
+{
+"id": "tb:Professor",
+"de": "Professor",
+"pos": "noun",
+"ja": "教授",
+"lesson": "8A",
+"src": "textbook",
+"en": "professor",
+"ipa": "/pʁoˈfɛsoːɐ̯/",
+"g": "m",
+"pl": "Professoren",
+"gen": "Professors"
+},
+{
+"id": "tb:Mensch",
+"de": "Mensch",
+"pos": "noun",
+"ja": "人間 ※男性弱変化名詞",
+"lesson": "8A",
+"src": "textbook",
+"en": "human, human being, person, man",
+"ipa": "/mɛnʃ/",
+"g": "m",
+"pl": "Menschen",
+"gen": "Menschen",
+"weak": true
+},
+{
+"id": "tb:Schriftsteller",
+"de": "Schriftsteller",
+"pos": "noun",
+"ja": "作家",
+"lesson": "8A",
+"src": "textbook",
+"en": "author, writer",
+"ipa": "/ˈʃʁɪftˌʃtɛlɐ/",
+"g": "m",
+"pl": "Schriftsteller",
+"gen": "Schriftstellers"
+},
+{
+"id": "tb:Sprache",
+"de": "Sprache",
+"pos": "noun",
+"ja": "言語",
+"lesson": "8A",
+"src": "textbook",
+"en": "language (body of words, and set of methods of combining them)",
+"ipa": "/ˈʃpʁaːxə/",
+"g": "f",
+"pl": "Sprachen",
+"gen": "Sprache"
+},
+{
+"id": "tb:Schulzeit",
+"de": "Schulzeit",
+"pos": "noun",
+"ja": "学校時代",
+"lesson": "8A",
+"src": "textbook",
+"en": "schooldays (period of a person's life when they go to school)",
+"ipa": "/ˈʃuːlˌt͡saɪ̯t/",
+"g": "f",
+"pl": "Schulzeiten",
+"gen": "Schulzeit"
+},
+{
+"id": "tb:berühmt",
+"de": "berühmt",
+"pos": "adj",
+"ja": "有名な",
+"lesson": "8A",
+"src": "textbook",
+"en": "famous, well-known, renowned, celebrated, noted",
+"ipa": "[bəˈʁyːmtʰ]",
+"c": [
+"berühmter",
+"am berühmtesten"
+]
+},
+{
+"id": "tb:fremd",
+"de": "fremd",
+"pos": "adj",
+"ja": "外国の、見知らぬ",
+"lesson": "8A",
+"src": "textbook",
+"en": "strange",
+"ipa": "/fʁɛmt/",
+"c": [
+"fremder",
+"am fremdesten"
+]
+},
+{
+"id": "tb:einzig",
+"de": "einzig",
+"pos": "adj",
+"ja": "唯一の",
+"lesson": "8A",
+"src": "textbook",
+"en": "only, sole",
+"ipa": "/ˈaɪ̯nt͡sɪç/"
+},
+{
+"id": "tb:positiv",
+"de": "positiv",
+"pos": "adj",
+"ja": "肯定的な",
+"lesson": "8A",
+"src": "textbook",
+"en": "positive",
+"ipa": "/ˈpoːziˌtiːf/",
+"c": [
+"positiver",
+"am positivsten"
+]
+},
+{
+"id": "tb:alles:pron",
+"de": "alles",
+"pos": "pron",
+"ja": "すべてのもの",
+"lesson": "8A",
+"src": "textbook",
+"en": "everything; all",
+"ipa": "/ˈaləs/"
+},
+{
+"id": "tb:nichts:pron",
+"de": "nichts",
+"pos": "pron",
+"ja": "何も〜ない",
+"lesson": "8A",
+"src": "textbook",
+"en": "nothing",
+"ipa": "[nɪçt͡s]"
+},
+{
+"id": "tb:etwas:pron",
+"de": "etwas",
+"pos": "pron",
+"ja": "何か、少し",
+"lesson": "8A",
+"src": "textbook",
+"en": "something",
+"ipa": "/ˈɛtvas/"
+},
+{
+"id": "tb:Ferien",
+"de": "Ferien",
+"pos": "noun",
+"ja": "休暇 (複数のみ)",
+"lesson": "8B",
+"src": "textbook",
+"en": "holidays during which an institution (especially a school, university) or a busi",
+"ipa": "/ˈfeːri̯ən/",
+"plOnly": true
+},
+{
+"id": "tb:Tasse",
+"de": "Tasse",
+"pos": "noun",
+"ja": "カップ",
+"lesson": "8B",
+"src": "textbook",
+"en": "cup, mug (drinking vessel)",
+"ipa": "/ˈtasə/",
+"g": "f",
+"pl": "Tassen",
+"gen": "Tasse"
+},
+{
+"id": "tb:Hausarbeit",
+"de": "Hausarbeit",
+"pos": "noun",
+"ja": "レポート、家事",
+"lesson": "8B",
+"src": "textbook",
+"en": "housework, chore",
+"ipa": "/ˈhaʊ̯sˌʔaʁbaɪ̯t/",
+"g": "f",
+"pl": "Hausarbeiten",
+"gen": "Hausarbeit"
+},
+{
+"id": "tb:Referat",
+"de": "Referat",
+"pos": "noun",
+"ja": "研究発表",
+"lesson": "8B",
+"src": "textbook",
+"en": "oral report, presentation (brief verbal or slideshow-supported introduction to a",
+"ipa": "/ʁefeˈʁaːt/",
+"g": "n",
+"pl": "Referate",
+"gen": "Referates"
+},
+{
+"id": "tb:Vogel",
+"de": "Vogel",
+"pos": "noun",
+"ja": "鳥",
+"lesson": "8B",
+"src": "textbook",
+"en": "a bird",
+"ipa": "/ˈfoːɡəl/",
+"g": "m",
+"pl": "Vögel",
+"gen": "Vogels"
+},
+{
+"id": "tb:Sorge",
+"de": "Sorge",
+"pos": "noun",
+"ja": "心配、悩み",
+"lesson": "8B",
+"src": "textbook",
+"en": "concern, care, responsibility, aid",
+"ipa": "/ˈzɔr.ɡə/",
+"g": "f",
+"pl": "Sorgen",
+"gen": "Sorge"
+},
+{
+"id": "tb:Bank",
+"de": "Bank",
+"pos": "noun",
+"ja": "銀行 (ベンチは複数 Bänke)",
+"lesson": "8B",
+"src": "textbook",
+"en": "bench (which people sit on); pew",
+"ipa": "/baŋk/",
+"g": "f",
+"pl": "Banken",
+"gen": "Bank"
+},
+{
+"id": "tb:müde",
+"de": "müde",
+"pos": "adj",
+"ja": "疲れた、眠い",
+"lesson": "8B",
+"src": "textbook",
+"en": "tired",
+"ipa": "/ˈmyːdə/",
+"c": [
+"müder",
+"am müdesten"
+]
+},
+{
+"id": "tb:dankbar",
+"de": "dankbar",
+"pos": "adj",
+"ja": "感謝している",
+"lesson": "8B",
+"src": "textbook",
+"en": "grateful, thankful",
+"c": [
+"dankbarer",
+"am dankbarsten"
+]
+},
+{
+"id": "tb:unbedingt:adv",
+"de": "unbedingt",
+"pos": "adv",
+"ja": "ぜひとも、絶対に",
+"lesson": "8B",
+"src": "textbook",
+"en": "absolutely, definitely",
+"ipa": "/ˈʊnbəˌdɪŋt/"
+},
+{
+"id": "tb:als_ob",
+"de": "als ob",
+"pos": "conj",
+"ja": "あたかも〜のように",
+"lesson": "8B",
+"src": "textbook"
+},
+{
+"id": "tb:Frohe_Weihnachten!",
+"de": "Frohe Weihnachten!",
+"pos": "phrase",
+"ja": "メリークリスマス！",
+"lesson": "8B",
+"src": "textbook"
+},
+{
+"id": "tb:Frohes_neues_Jahr!",
+"de": "Frohes neues Jahr!",
+"pos": "phrase",
+"ja": "明けましておめでとう！",
+"lesson": "8B",
+"src": "textbook"
+},
+{
+"id": "tb:Einen_guten_Rutsch!",
+"de": "Einen guten Rutsch!",
+"pos": "phrase",
+"ja": "よいお年を！",
+"lesson": "8B",
+"src": "textbook"
+},
+{
+"id": "tb:Gute_Reise!",
+"de": "Gute Reise!",
+"pos": "phrase",
+"ja": "よい旅を！",
+"lesson": "8B",
+"src": "textbook"
+},
+{
+"id": "tb:Guten_Appetit!",
+"de": "Guten Appetit!",
+"pos": "phrase",
+"ja": "召し上がれ／いただきます",
+"lesson": "8B",
+"src": "textbook"
+},
+{
+"id": "tb:Prost!",
+"de": "Prost!",
+"pos": "intj",
+"ja": "乾杯！",
+"lesson": "8B",
+"src": "textbook"
+},
+{
+"id": "tb:Gute_Nacht!",
+"de": "Gute Nacht!",
+"pos": "phrase",
+"ja": "おやすみなさい",
+"lesson": "8B",
+"src": "textbook"
+},
+{
+"id": "tb:Schönes_Wochenende!",
+"de": "Schönes Wochenende!",
+"pos": "phrase",
+"ja": "よい週末を！",
+"lesson": "8B",
+"src": "textbook"
+},
+{
+"id": "tb:Viel_Glück!",
+"de": "Viel Glück!",
+"pos": "phrase",
+"ja": "幸運を祈る！",
+"lesson": "8B",
+"src": "textbook"
+},
+{
+"id": "tb:Herzlichen_Glückwunsch!",
+"de": "Herzlichen Glückwunsch!",
+"pos": "phrase",
+"ja": "おめでとう！",
+"lesson": "8B",
+"src": "textbook"
+}
+]
