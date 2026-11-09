@@ -36,6 +36,12 @@ export function Study() {
   const [onlyUser, setOnlyUser] = useState(false);
   const [queue, setQueue] = useState<string[] | null>(null);
   const [done, setDone] = useState({ total: 0, ok: 0 });
+  const [peek, setPeek] = useState<string | null>(null);
+  useEffect(() => {
+    if (!peek) return;
+    const t = setTimeout(() => setPeek(null), 2600);
+    return () => clearTimeout(t);
+  }, [peek]);
 
   const pool = useMemo(
     () =>
@@ -96,7 +102,8 @@ export function Study() {
         key={queue[0] + queue.length}
         queue={queue}
         mode={mode}
-        onGrade={async (id, g) => {
+        onGrade={async (id, g, answer) => {
+          setPeek(answer ?? null);
           await gradeWord(id, g);
           setDone((d) => ({ total: d.total + 1, ok: d.ok + (g > 0 ? 1 : 0) }));
           const rest = queue.slice(1);
@@ -105,6 +112,7 @@ export function Study() {
         }}
         onQuit={() => setQueue(null)}
         remaining={queue.length}
+        peek={peek}
       />
     );
   }
@@ -193,7 +201,7 @@ export function Study() {
   );
 }
 
-function Session({ queue, mode, onGrade, onQuit, remaining }: { queue: string[]; mode: Mode; onGrade: (id: string, g: Grade) => void; onQuit: () => void; remaining: number }) {
+function Session({ queue, mode, onGrade, onQuit, remaining, peek }: { queue: string[]; mode: Mode; onGrade: (id: string, g: Grade, answer?: string) => void; onQuit: () => void; remaining: number; peek: string | null }) {
   const w = useStore((s) => s.wordMap.get(queue[0]));
   const p = useStore((s) => s.progress.get(queue[0]));
   const [shown, setShown] = useState(false);
@@ -201,6 +209,26 @@ function Session({ queue, mode, onGrade, onQuit, remaining }: { queue: string[];
   const [result, setResult] = useState<null | { g: Grade; msg: string }>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const [initial] = useState(remaining);
+  const [drag, setDrag] = useState<{ x: number; y: number } | null>(null);
+  const [fly, setFly] = useState<0 | 1 | -1>(0);
+  const startRef = useRef<{ x: number; y: number; id: number } | null>(null);
+  const swipeable = mode !== 'type';
+
+  useEffect(() => {
+    if (!swipeable) return;
+    const on = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowRight') commitRef.current?.(true);
+      else if (e.key === 'ArrowLeft') commitRef.current?.(false);
+      else if (e.key === ' ' || e.key === 'Enter') {
+        e.preventDefault();
+        revealRef.current?.();
+      }
+    };
+    window.addEventListener('keydown', on);
+    return () => window.removeEventListener('keydown', on);
+  }, [swipeable]);
+  const commitRef = useRef<((k: boolean) => void) | null>(null);
+  const revealRef = useRef<(() => void) | null>(null);
 
   useEffect(() => {
     if (w && mode === 'de-ja') speak(speechText(w));
@@ -215,10 +243,48 @@ function Session({ queue, mode, onGrade, onQuit, remaining }: { queue: string[];
   const prog = p || newProgress(w.id);
   const isNew = !p?.last;
 
+  const commit = (known: boolean) => {
+    if (fly) return;
+    setFly(known ? 1 : -1);
+    setDrag(null);
+    const answer = !shown && !known ? `${headword(w)} ＝ ${w.ja}` : undefined;
+    setTimeout(() => onGrade(w.id, known ? 2 : 0, answer), 230);
+  };
+
+  const onDown = (e: React.PointerEvent) => {
+    if (!swipeable || fly) return;
+    if ((e.target as HTMLElement).closest('button, input, a')) return;
+    startRef.current = { x: e.clientX, y: e.clientY, id: e.pointerId };
+  };
+  const onMove = (e: React.PointerEvent) => {
+    const st = startRef.current;
+    if (!st || st.id !== e.pointerId) return;
+    const dx = e.clientX - st.x;
+    const dy = e.clientY - st.y;
+    if (!drag && Math.abs(dx) < 8) return;
+    if (!drag) (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+    setDrag({ x: dx, y: dy * 0.3 });
+  };
+  const onUp = (e: React.PointerEvent) => {
+    const st = startRef.current;
+    startRef.current = null;
+    if (!st) return;
+    const dx = e.clientX - st.x;
+    const dy = e.clientY - st.y;
+    if (Math.abs(dx) > 90) commit(dx > 0);
+    else {
+      setDrag(null);
+      if (Math.abs(dx) < 8 && Math.abs(dy) < 8 && !shown) reveal();
+    }
+  };
+
   const reveal = () => {
     setShown(true);
     if (mode !== 'de-ja') speak(speechText(w));
   };
+
+  commitRef.current = commit;
+  revealRef.current = () => !shown && reveal();
 
   const checkTyped = () => {
     const ans = norm(typed);
@@ -305,7 +371,40 @@ function Session({ queue, mode, onGrade, onQuit, remaining }: { queue: string[];
       <div className="progressbar">
         <div style={{ width: `${Math.max(4, (1 - remaining / Math.max(initial, remaining)) * 100)}%` }} />
       </div>
-      <div className="card flash" onClick={() => mode !== 'type' && !shown && reveal()}>
+      {swipeable && (
+        <div className="swipe-hint row tiny muted">
+          <span className="sh-l">← 知らない</span>
+          <span className="spacer" />
+          <span className="sh-r">知ってる →</span>
+        </div>
+      )}
+      <div
+        className={`card flash${swipeable ? ' swipe' : ''}${drag ? ' dragging' : ''}`}
+        onPointerDown={onDown}
+        onPointerMove={onMove}
+        onPointerUp={onUp}
+        onPointerCancel={() => {
+          startRef.current = null;
+          setDrag(null);
+        }}
+        style={
+          fly
+            ? { transform: `translateX(${fly * 140}%) rotate(${fly * 24}deg)`, opacity: 0 }
+            : drag
+              ? { transform: `translate(${drag.x}px, ${drag.y}px) rotate(${drag.x / 18}deg)` }
+              : undefined
+        }
+      >
+        {swipeable && (
+          <>
+            <div className="stamp stamp-yes" style={{ opacity: fly === 1 ? 1 : drag ? Math.max(0, Math.min(1, drag.x / 90)) : 0 }}>
+              知ってる
+            </div>
+            <div className="stamp stamp-no" style={{ opacity: fly === -1 ? 1 : drag ? Math.max(0, Math.min(1, -drag.x / 90)) : 0 }}>
+              知らない
+            </div>
+          </>
+        )}
         {front}
         {mode === 'type' && !shown && (
           <form
@@ -333,7 +432,7 @@ function Session({ queue, mode, onGrade, onQuit, remaining }: { queue: string[];
             </div>
           </form>
         )}
-        {mode !== 'type' && !shown && <div className="tiny muted">タップして答えを表示</div>}
+        {mode !== 'type' && !shown && <div className="tiny muted">タップで答え ・ 左右にスワイプで判定</div>}
         {shown && result && (
           <div className={`alert ${result.g === 0 ? 'ng' : result.g === 1 ? 'warn' : 'ok'}`} style={{ width: '100%' }}>
             {result.msg}
@@ -365,7 +464,7 @@ function Session({ queue, mode, onGrade, onQuit, remaining }: { queue: string[];
             </button>
           </div>
         ) : (
-          <div className="grades">
+          <div className="grades desktop-only">
             {grades.map((g) => (
               <button key={g.g} className={`btn ${g.cls}`} onClick={() => onGrade(w.id, g.g)}>
                 {g.label}
@@ -375,9 +474,32 @@ function Session({ queue, mode, onGrade, onQuit, remaining }: { queue: string[];
           </div>
         ))}
       {!shown && mode !== 'type' && (
-        <button className="btn primary block" onClick={reveal}>
+        <button className="btn primary block desktop-only" onClick={reveal}>
           答えを見る
         </button>
+      )}
+      {swipeable && !result && (
+        <div className="swipe-btns mobile-only">
+          <button className="btn sw-no" onClick={() => commit(false)} aria-label="知らない">
+            <Icon name="x" size={26} />
+            <span>知らない</span>
+          </button>
+          {!shown && (
+            <button className="btn sw-flip" onClick={reveal}>
+              答え
+            </button>
+          )}
+          <button className="btn sw-yes" onClick={() => commit(true)} aria-label="知ってる">
+            <Icon name="check" size={26} />
+            <span>知ってる</span>
+          </button>
+        </div>
+      )}
+      {swipeable && <div className="tiny muted center desktop-only">キーボード: ← 知らない ／ → 知ってる ／ Space 答え</div>}
+      {peek && (
+        <div className="toast" role="status">
+          <span className="de">{peek}</span>
+        </div>
       )}
     </div>
   );

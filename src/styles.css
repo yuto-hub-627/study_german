@@ -402,3 +402,22 @@ table.t .changed { color: var(--red); text-decoration: underline wavy var(--gold
   .sidebar:hover .lbl, .sidebar:has(:focus-visible) .lbl { opacity: 1; transition-delay: 0.06s; }
   .sidebar .foot { white-space: nowrap; }
 }
+
+/* スワイプ判定カード */
+.flash.swipe { touch-action: pan-y; position: relative; transition: transform 0.23s ease, opacity 0.23s ease; cursor: grab; }
+.flash.swipe.dragging { transition: none; cursor: grabbing; }
+.stamp { position: absolute; top: 18px; padding: 4px 14px; border: 3px solid; border-radius: 10px 14px 9px 13px; font-size: 1.4rem; font-weight: 600; pointer-events: none; background: var(--paper); }
+.stamp-yes { left: 16px; color: var(--black); border-color: var(--black); box-shadow: 3px 3px 0 var(--gold); transform: rotate(-12deg); }
+.stamp-no { right: 16px; color: var(--red); border-color: var(--red); transform: rotate(12deg); }
+.swipe-hint .sh-l { color: var(--red); }
+.swipe-hint .sh-r { color: var(--black); }
+.swipe-btns { display: flex; justify-content: center; align-items: center; gap: 22px; margin-top: 4px; }
+.swipe-btns .btn { flex-direction: column; gap: 0; width: 84px; height: 84px; border-radius: 50% 46% 52% 48% / 48% 52% 46% 50%; font-size: 0.75rem; padding: 0; }
+.swipe-btns .sw-no { color: var(--red); }
+.swipe-btns .sw-yes { background: var(--gold); color: var(--black); }
+.swipe-btns .sw-flip { width: 60px; height: 60px; font-size: 0.9rem; }
+.mobile-only { display: none !important; }
+@media (max-width: 899px) {
+  .mobile-only { display: flex !important; }
+  .desktop-only { display: none !important; }
+}
