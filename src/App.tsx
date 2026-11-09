@@ -50,7 +50,8 @@ export function App() {
       </svg>
       <nav className="sidebar" aria-label="メインメニュー">
         <div className="brand">
-          <span className="de" style={{ fontSize: 26 }}>Deutsch lernen</span>
+          <img src="/icons/icon.svg" alt="" width={40} height={40} style={{ flexShrink: 0 }} />
+          <span className="lbl de" style={{ fontSize: 24 }}>Deutsch lernen</span>
         </div>
         <div className="flagbar" style={{ margin: '-10px 12px 18px' }}>
           <i />
@@ -58,12 +59,12 @@ export function App() {
           <i />
         </div>
         {NAV.map((n) => (
-          <a key={n.path} href={`#${n.path}`} className={active(n.path) ? 'active' : ''}>
+          <a key={n.path} href={`#${n.path}`} className={active(n.path) ? 'active' : ''} title={n.label}>
             <Icon name={n.icon} />
-            {n.label}
+            <span className="lbl">{n.label}</span>
           </a>
         ))}
-        <div className="foot">基礎ドイツ語 学習アプリ</div>
+        <div className="foot lbl">基礎ドイツ語 学習アプリ</div>
       </nav>
       <main className="main">{ready ? page : <div className="empty">読み込み中…</div>}</main>
       <nav className="tabbar" aria-label="メインメニュー">
