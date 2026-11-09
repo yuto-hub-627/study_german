@@ -14,8 +14,7 @@
     {
       "binding": "DB",
       "database_name": "study-german",
-      // `npx wrangler d1 create study-german` の出力に表示される database_id に置き換えてください
-      "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID",
+      "database_id": "c54decdb-d4b5-4b0b-9955-797dbc013652",
       "migrations_dir": "migrations"
     }
   ],
