@@ -3,7 +3,7 @@ import { Icon } from '../components/Icon';
 import { fold } from '../lib/lexicon';
 import { headword } from '../lib/german';
 import { go } from '../lib/router';
-import { DEFAULT_FOLDER, deleteBook, folderOf, saveBook, setBookWords, useStore } from '../lib/store';
+import { deleteBook, saveBook, setBookWords, useStore } from '../lib/store';
 import type { Book, Word } from '../lib/types';
 import { WordList } from './Words';
 
@@ -22,18 +22,12 @@ function useUnfiled() {
 export function MyBooks() {
   const books = useStore((s) => s.books);
   const unfiled = useUnfiled();
-  const folders = books.filter((b) => b.kind === 'folder').sort((a, b) => (a.id === DEFAULT_FOLDER ? -1 : b.id === DEFAULT_FOLDER ? 1 : 0));
   const wordbooks = books.filter((b) => b.kind === 'book');
-  const [open, setOpen] = useState<Record<string, boolean>>({});
 
-  const newFolder = async () => {
-    const name = prompt('フォルダー名', '新しいフォルダー');
-    if (name?.trim()) await saveBook({ kind: 'folder', name: name.trim() });
-  };
-  const newBook = async (folderId: string) => {
+  const newBook = async () => {
     const name = prompt('単語帳の名前', '新しい単語帳');
     if (!name?.trim()) return;
-    const b = await saveBook({ kind: 'book', name: name.trim(), folderId });
+    const b = await saveBook({ kind: 'book', name: name.trim() });
     go(`/my/${encodeURIComponent(b.id)}`);
   };
 
@@ -41,44 +35,22 @@ export function MyBooks() {
     <div className="stack">
       <div className="topbar">
         <h1>MY単語帳</h1>
-        <div className="row">
-          <button className="btn primary small" onClick={newFolder}>
-            <Icon name="plus" size={16} /> フォルダー
-          </button>
-        </div>
+        <button className="btn primary small" onClick={newBook}>
+          <Icon name="plus" size={16} /> 単語帳
+        </button>
       </div>
 
-      {wordbooks.length === 0 && (
-        <div className="alert info small">単語帳はフォルダーの中に作ります。フォルダーの「＋」ボタンで単語帳を作成しましょう。</div>
-      )}
-
-      {folders.map((f) => {
-        const inside = wordbooks.filter((b) => folderOf(b, books) === f.id);
-        const isOpen = open[f.id] ?? true;
-        return (
-          <div key={f.id} className="card" style={{ padding: '10px 16px' }}>
-            <div className="row" style={{ flexWrap: 'nowrap' }}>
-              <button className="btn ghost" style={{ padding: '4px 0', justifyContent: 'flex-start', flex: 1 }} onClick={() => setOpen({ ...open, [f.id]: !isOpen })} aria-expanded={isOpen}>
-                <span style={{ fontSize: 22 }}>{isOpen ? '📂' : '📁'}</span>
-                <h3 style={{ margin: 0 }}>{f.name}</h3>
-                <span className="tag">{inside.length}</span>
-              </button>
-              <button className="btn small primary" onClick={() => newBook(f.id)} title="このフォルダーに単語帳を作成">
-                <Icon name="plus" size={16} /> 単語帳
-              </button>
-              <FolderMenu f={f} />
-            </div>
-            {isOpen && (
-              <div className="wlist" style={{ marginTop: 4, borderTop: '2px solid var(--black)' }}>
-                {inside.length === 0 && <div className="tiny muted" style={{ padding: '10px 4px' }}>単語帳がありません</div>}
-                {inside.map((b) => (
-                  <BookRow key={b.id} b={b} />
-                ))}
-              </div>
-            )}
+      <div className="card" style={{ padding: '4px 16px' }}>
+        {wordbooks.length === 0 ? (
+          <div className="empty small">まだ単語帳がありません。「＋ 単語帳」で作成しましょう。</div>
+        ) : (
+          <div className="wlist">
+            {wordbooks.map((b) => (
+              <BookRow key={b.id} b={b} />
+            ))}
           </div>
-        );
-      })}
+        )}
+      </div>
 
       {unfiled.length > 0 && (
         <div className="card lesson-card" onClick={() => go(`/my/${UNFILED}`)}>
@@ -95,32 +67,6 @@ export function MyBooks() {
   );
 }
 
-function FolderMenu({ f }: { f: Book }) {
-  return (
-    <>
-      <button
-        className="btn small ghost"
-        title="名前を変更"
-        onClick={async () => {
-          const name = prompt('フォルダー名', f.name);
-          if (name?.trim()) await saveBook({ ...f, name: name.trim() });
-        }}
-      >
-        <Icon name="edit" size={16} />
-      </button>
-      {f.id !== DEFAULT_FOLDER && <button
-        className="btn small ghost danger"
-        title="フォルダーを削除"
-        onClick={async () => {
-          if (confirm(`フォルダー「${f.name}」を削除しますか？\n中の単語帳は「MY単語」フォルダーに移動します。`)) await deleteBook(f);
-        }}
-      >
-        <Icon name="trash" size={16} />
-      </button>}
-    </>
-  );
-}
-
 function BookRow({ b }: { b: Book }) {
   return (
     <div className="witem book-row" onClick={() => go(`/my/${encodeURIComponent(b.id)}`)}>
@@ -134,7 +80,6 @@ function BookRow({ b }: { b: Book }) {
 
 export function BookDetail({ id }: { id: string }) {
   const book = useStore((s) => s.books.find((b) => b.id === id));
-  const books = useStore((s) => s.books);
   const wordMap = useStore((s) => s.wordMap);
   const all = useStore((s) => s.words);
   const progress = useStore((s) => s.progress);
@@ -153,7 +98,6 @@ export function BookDetail({ id }: { id: string }) {
   }, [q, all, book]);
 
   if (!book && !isUnfiled) return <div className="empty">単語帳が見つかりません</div>;
-  const folders = books.filter((b) => b.kind === 'folder');
 
   return (
     <div className="stack">
@@ -208,15 +152,6 @@ export function BookDetail({ id }: { id: string }) {
               <Icon name="search" size={16} /> 既存の単語から追加
             </button>
           </>
-        )}
-        {!isUnfiled && book && folders.length > 1 && (
-          <select className="input" style={{ width: 'auto', minHeight: 40 }} value={folderOf(book, books)} onChange={(e) => void saveBook({ ...book, folderId: e.target.value })} aria-label="フォルダー">
-            {folders.map((f) => (
-              <option key={f.id} value={f.id}>
-                📁 {f.name}
-              </option>
-            ))}
-          </select>
         )}
       </div>
 
