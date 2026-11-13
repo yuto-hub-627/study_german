@@ -459,3 +459,5 @@ table.t .changed { color: var(--red); text-decoration: underline wavy var(--gold
 /* 表は手描き風にせず、まっすぐ見やすく */
 .table-wrap { border-radius: 10px; }
 table.t .changed { text-decoration: none; background: linear-gradient(transparent 62%, var(--gold-soft) 62%); }
+
+input[type="range"] { accent-color: var(--red); width: 100%; }

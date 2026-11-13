@@ -74,14 +74,16 @@ export function Study({ query }: { query: URLSearchParams }) {
     .filter((w) => stage(progress.get(w.id)) === 'new')
     .sort((a, b) => (LESSON_INDEX.get(a.lesson || '') ?? 99) - (LESSON_INDEX.get(b.lesson || '') ?? 99));
 
-  const start = (extra = false) => {
-    let q: string[];
-    if (extra) {
-      const learned = pool.filter((w) => progress.get(w.id)?.last);
-      q = learned.sort(() => Math.random() - 0.5).slice(0, 20).map((w) => w.id);
-    } else {
-      q = [...due.sort((a, b) => progress.get(a.id)!.due - progress.get(b.id)!.due).map((w) => w.id), ...fresh.slice(0, newLeft).map((w) => w.id)];
-    }
+  const maxCount = Math.max(1, Math.min(pool.length, 200));
+  const count = Math.min(settings.studyCount ?? settings.dailyNew, maxCount);
+
+  /** 復習期限の語 → 未学習の語 → 学習済みの語(ランダム) の順に、スライダーで選んだ数だけ出題 */
+  const start = () => {
+    const dueIds = due.sort((a, b) => progress.get(a.id)!.due - progress.get(b.id)!.due).map((w) => w.id);
+    const freshIds = fresh.map((w) => w.id);
+    const used = new Set([...dueIds, ...freshIds]);
+    const rest = pool.filter((w) => !used.has(w.id)).sort(() => Math.random() - 0.5).map((w) => w.id);
+    const q = [...dueIds, ...freshIds, ...rest].slice(0, count);
     void saveSettings({ direction: mode === 'type' ? 'ja-de' : mode, lessonsFilter: lessons });
     setDone({ total: 0, ok: 0 });
     setSessionTotal(q.length);
@@ -191,34 +193,36 @@ export function Study({ query }: { query: URLSearchParams }) {
             <div className="value">{due.length}</div>
           </div>
           <div className="stat card">
-            <div className="label">新規（今日の残り）</div>
-            <div className="value">{Math.min(newLeft, fresh.length)}</div>
-            <div className="sub">1日 {settings.dailyNew} 語まで</div>
+            <div className="label">未学習</div>
+            <div className="value">{fresh.length}</div>
+            <div className="sub">今日の新規 あと{Math.min(newLeft, fresh.length)}語</div>
           </div>
           <div className="stat card">
             <div className="label">対象の語</div>
             <div className="value">{pool.length}</div>
           </div>
         </div>
-        {due.length + Math.min(newLeft, fresh.length) > 0 ? (
-          <button className="btn primary block" onClick={() => start()}>
-            はじめる（{due.length + Math.min(newLeft, fresh.length)} 語）
-          </button>
-        ) : (
-          <div className="stack">
-            <div className="alert ok small">今日の分は完了しています。</div>
-            {fresh.length > 0 && (
-              <button className="btn block" onClick={() => void saveSettings({ dailyNew: settings.dailyNew + 10 })}>
-                新規の上限を +10 語する
-              </button>
-            )}
-            {pool.some((w) => progress.get(w.id)?.last) && (
-              <button className="btn block" onClick={() => start(true)}>
-                学習済みの語からランダムに20語練習
-              </button>
-            )}
+        <div className="field">
+          <label htmlFor="count">出題する単語数：<b style={{ fontSize: '1.2rem' }}>{count}</b> 語</label>
+          <input
+            id="count"
+            type="range"
+            min={1}
+            max={maxCount}
+            step={1}
+            value={count}
+            disabled={pool.length === 0}
+            onChange={(e) => void saveSettings({ studyCount: Number(e.target.value) })}
+          />
+          <div className="row tiny muted" style={{ justifyContent: 'space-between' }}>
+            <span>1</span>
+            <span>復習 → 未学習 → 学習済みの順に出題</span>
+            <span>{maxCount}</span>
           </div>
-        )}
+        </div>
+        <button className="btn primary block" disabled={pool.length === 0} onClick={start}>
+          はじめる（{count} 語）
+        </button>
       </div>
     </div>
   );

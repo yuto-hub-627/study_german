@@ -88,6 +88,8 @@ export interface Settings {
   rate: number;
   voiceURI?: string;
   dailyNew: number;
+  /** 学習モードで1回に出題する語数 */
+  studyCount?: number;
   direction: 'de-ja' | 'ja-de' | 'mixed';
   lessonsFilter: string[];
   syncCode?: string;
