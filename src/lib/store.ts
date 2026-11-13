@@ -82,6 +82,12 @@ export async function reload() {
     db.getAll<Book>('books'),
   ]);
   const words = mergeWords(user);
+  // 最初から「MY単語」フォルダーを用意 (固定IDなので端末間で重複しない)
+  if (!books.some((b) => b.id === DEFAULT_FOLDER)) {
+    const def: Book = { id: DEFAULT_FOLDER, kind: 'folder', name: 'MY単語', createdAt: 0, updatedAt: 1 };
+    await db.put('books', def);
+    books.push(def);
+  }
   const s = kv.find((x) => x.id === 'settings')?.value as Partial<Settings> | undefined;
   set({
     ready: true,
@@ -93,6 +99,13 @@ export async function reload() {
     settings: { ...DEFAULT_SETTINGS, ...(s || {}) },
     books: books.filter((b) => !b.deleted).sort((a, b) => (a.createdAt ?? 0) - (b.createdAt ?? 0)),
   });
+}
+
+export const DEFAULT_FOLDER = 'f:default';
+
+/** 単語帳の所属フォルダー (未設定・存在しない場合は「MY単語」) */
+export function folderOf(b: Book, books: Book[]): string {
+  return b.folderId && books.some((f) => f.kind === 'folder' && f.id === b.folderId) ? b.folderId : DEFAULT_FOLDER;
 }
 
 function newId(prefix: string) {
@@ -112,8 +125,9 @@ export async function saveBook(b: Partial<Book> & { kind: Book['kind']; name: st
 export async function deleteBook(b: Book) {
   const now = Date.now();
   const recs: Book[] = [{ ...b, deleted: true, updatedAt: now }];
-  // フォルダーを消したら中の単語帳は「フォルダーなし」に移す
-  if (b.kind === 'folder') for (const x of state.books) if (x.folderId === b.id) recs.push({ ...x, folderId: undefined, updatedAt: now });
+  if (b.id === DEFAULT_FOLDER) return;
+  // フォルダーを消したら中の単語帳は「MY単語」フォルダーに移す
+  if (b.kind === 'folder') for (const x of state.books) if (x.folderId === b.id) recs.push({ ...x, folderId: DEFAULT_FOLDER, updatedAt: now });
   await db.putMany('books', recs);
   await reload();
   changed();
