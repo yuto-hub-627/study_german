@@ -3,6 +3,7 @@ import { Icon } from './components/Icon';
 import { EditWord } from './pages/EditWord';
 import { GrammarLesson, GrammarList } from './pages/Grammar';
 import { Home } from './pages/Home';
+import { Important } from './pages/Important';
 import { Separable } from './pages/Separable';
 import { BookDetail, MyBooks } from './pages/MyBooks';
 import { Settings } from './pages/Settings';
@@ -19,6 +20,7 @@ const NAV = [
   { path: '/my', label: 'MY単語帳', icon: 'folder' },
   { path: '/study', label: '学習', icon: 'study' },
   { path: '/grammar', label: '文法', icon: 'grammar' },
+  { path: '/important', label: '重要なこと', icon: 'star', desktopOnly: true },
   { path: '/settings', label: '設定', icon: 'settings' },
 ];
 
@@ -36,6 +38,7 @@ export function App() {
   else if (path === '/add') page = <EditWord bookId={query.get('book') || undefined} />;
   else if (path === '/my') page = <MyBooks />;
   else if (path === '/separable') page = <Separable />;
+  else if (path === '/important') page = <Important />;
   else if ((m = match('/my/:id', path))) page = <BookDetail id={m.id} />;
   else if ((m = match('/edit/:id', path))) page = <EditWord id={m.id} />;
   else if (path === '/study') page = <Study query={query} />;
@@ -74,7 +77,7 @@ export function App() {
       </nav>
       <main className="main">{ready ? page : <div className="empty">読み込み中…</div>}</main>
       <nav className="tabbar" aria-label="メインメニュー">
-        {NAV.map((n) => (
+        {NAV.filter((n) => !n.desktopOnly).map((n) => (
           <a key={n.path} href={`#${n.path}`} className={active(n.path) ? 'active' : ''}>
             <Icon name={n.icon} />
             {n.label}

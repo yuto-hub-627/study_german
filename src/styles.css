@@ -436,3 +436,21 @@ table.t .changed { color: var(--red); text-decoration: underline wavy var(--gold
 .sep-row { display: flex; align-items: center; gap: 10px; padding: 8px 2px; border-bottom: 1.5px dashed var(--line-soft); cursor: default; }
 .sep-row:last-child { border-bottom: 0; }
 .hidden-ja { color: var(--text-3); background: repeating-linear-gradient(-45deg, var(--bg-sunk), var(--bg-sunk) 4px, transparent 4px, transparent 8px); border-radius: 6px; padding: 0 6px; display: inline-block; cursor: pointer; }
+
+/* 重要なこと (付箋カード) */
+.note-grid { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); padding-top: 8px; }
+.note-card { position: relative; background: #fff7d1; border: 2px solid var(--black); border-radius: var(--wobble); box-shadow: 4px 5px 0 var(--black); padding: 22px 18px 16px; transform: rotate(var(--tilt, 0deg)); transition: transform 0.15s; }
+.note-card:hover { transform: rotate(0deg) scale(1.01); }
+.note-card.cat-grammar { background: #fff7d1; }
+.note-card.cat-word { background: #e9f3e6; }
+.note-card.cat-sound { background: #e7eef9; }
+.note-card.cat-test { background: #fbe1dc; }
+.note-card.cat-other { background: var(--paper); }
+.note-card .pin { position: absolute; top: -11px; left: 50%; width: 20px; height: 20px; margin-left: -10px; border-radius: 50%; background: var(--red); border: 2px solid var(--black); box-shadow: 1px 2px 0 var(--black); }
+.note-card .cat-tag { background: var(--black); color: var(--gold); }
+.note-title { font-size: 1.15rem; margin: 10px 0 6px; line-height: 1.4; }
+.note-body { margin: 0; line-height: 1.75; }
+.note-ex { margin-top: 10px; padding-top: 8px; border-top: 2px dashed var(--line-soft); display: flex; flex-direction: column; gap: 4px; }
+.note-ex .de { font-size: 1.1rem; }
+@media (min-width: 900px) { .nav-desktop-only { display: flex; } }
+@media (max-width: 899px) { .tabbar .nav-desktop-only { display: none; } }
