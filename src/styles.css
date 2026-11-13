@@ -455,3 +455,7 @@ table.t .changed { color: var(--red); text-decoration: underline wavy var(--gold
 @media (min-width: 900px) { .nav-desktop-only { display: flex; } }
 @media (max-width: 899px) { .tabbar .nav-desktop-only { display: none; } }
 .book-row { padding: 12px 6px; }
+
+/* 表は手描き風にせず、まっすぐ見やすく */
+.table-wrap { border-radius: 10px; }
+table.t .changed { text-decoration: none; background: linear-gradient(transparent 62%, var(--gold-soft) 62%); }
