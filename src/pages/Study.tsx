@@ -35,6 +35,7 @@ export function Study() {
   const [onlyUser, setOnlyUser] = useState(false);
   const [queue, setQueue] = useState<string[] | null>(null);
   const [done, setDone] = useState({ total: 0, ok: 0 });
+  const [sessionTotal, setSessionTotal] = useState(0);
   const [peek, setPeek] = useState<string | null>(null);
   useEffect(() => {
     if (!peek) return;
@@ -72,6 +73,7 @@ export function Study() {
     }
     void saveSettings({ direction: mode === 'type' ? 'ja-de' : mode, lessonsFilter: lessons });
     setDone({ total: 0, ok: 0 });
+    setSessionTotal(q.length);
     setQueue(q);
   };
 
@@ -111,6 +113,7 @@ export function Study() {
         }}
         onQuit={() => setQueue(null)}
         remaining={queue.length}
+        total={sessionTotal}
         peek={peek}
       />
     );
@@ -200,7 +203,7 @@ export function Study() {
   );
 }
 
-function Session({ queue, mode, onGrade, onQuit, remaining, peek }: { queue: string[]; mode: Mode; onGrade: (id: string, g: Grade, answer?: string) => void; onQuit: () => void; remaining: number; peek: string | null }) {
+function Session({ queue, mode, onGrade, onQuit, remaining, total, peek }: { queue: string[]; mode: Mode; onGrade: (id: string, g: Grade, answer?: string) => void; onQuit: () => void; remaining: number; total: number; peek: string | null }) {
   const w = useStore((s) => s.wordMap.get(queue[0]));
   const p = useStore((s) => s.progress.get(queue[0]));
   const [shown, setShown] = useState(false); // 裏面を一度でも見たか
@@ -208,7 +211,6 @@ function Session({ queue, mode, onGrade, onQuit, remaining, peek }: { queue: str
   const [typed, setTyped] = useState('');
   const [result, setResult] = useState<null | { g: Grade; msg: string }>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  const [initial] = useState(remaining);
   const [drag, setDrag] = useState<{ x: number; y: number } | null>(null);
   const [fly, setFly] = useState<0 | 1 | -1>(0);
   const startRef = useRef<{ x: number; y: number; id: number } | null>(null);
@@ -382,10 +384,10 @@ function Session({ queue, mode, onGrade, onQuit, remaining, peek }: { queue: str
           <Icon name="x" size={18} /> 終了
         </button>
         <div className="spacer" />
-        <span className="small muted">残り {remaining}</span>
+        <span className="small muted">{Math.max(0, Math.max(total, remaining) - remaining)} / {Math.max(total, remaining)} 語</span>
       </div>
       <div className="progressbar">
-        <div style={{ width: `${Math.max(4, (1 - remaining / Math.max(initial, remaining)) * 100)}%` }} />
+        <div style={{ width: `${Math.max(4, (1 - remaining / Math.max(total, remaining, 1)) * 100)}%` }} />
       </div>
       {swipeable && (
         <div className="swipe-hint row tiny muted">
