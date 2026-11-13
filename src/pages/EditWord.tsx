@@ -73,6 +73,14 @@ export function EditWord({ id, bookId }: { id?: string; bookId?: string }) {
     if (!d) return null;
     return words.find((x) => x.id !== w.id && x.de === d && x.pos === w.pos) || null;
   }, [w.de, w.pos, w.id, words]);
+  // 追加先の単語帳にすでに同じ単語があるか (1単語帳に同じ単語は1つまで)
+  const dupInBook = useMemo(() => {
+    if (!book) return null;
+    const d = w.de.trim();
+    if (!d) return null;
+    const ids = new Set(book.wordIds || []);
+    return words.find((x) => ids.has(x.id) && x.id !== w.id && x.de === d && x.pos === w.pos) || null;
+  }, [book, w.de, w.pos, w.id, words]);
 
   const onInput = (v: string) => {
     setInput(v);
@@ -82,11 +90,17 @@ export function EditWord({ id, bookId }: { id?: string; bookId?: string }) {
     if (picked && picked.w !== word) setPicked(null);
   };
 
-  const canSave = w.de.trim() && w.ja.trim() && !saving;
+  const canSave = w.de.trim() && w.ja.trim() && !saving && !dupInBook;
 
   const save = async () => {
     if (!canSave) return;
     setSaving(true);
+    // 単語帳への追加で、同じ単語がすでに登録済みなら新しく作らずにそれを入れる
+    if (book && !existing && dup) {
+      await setBookWords(book.id, (ids) => [...ids, dup.id]);
+      go(`/my/${encodeURIComponent(book.id)}`);
+      return;
+    }
     const rec: Word = { ...w, de: w.de.trim(), ja: w.ja.trim() };
     if (!rec.id) rec.id = `u:${Date.now().toString(36)}${Math.random().toString(36).slice(2, 7)}`;
     if (rec.pos !== 'noun') {
@@ -124,16 +138,6 @@ export function EditWord({ id, bookId }: { id?: string; bookId?: string }) {
           <GermanInput value={input} onChange={onInput} onPick={(e) => applyEntry(e)} lex={lex} autoFocus={!existing} placeholder="例: Tisch / der Tisch / fahren / sich freuen" />
           {!lex && !err && <div className="tiny muted">辞書を読み込み中…</div>}
           {err && <div className="alert ng small">{err}（オフラインでは初回のみ辞書を利用できません）</div>}
-          {check && check.ok && (
-            <div className="row small" style={{ color: 'var(--ok)' }}>
-              <Icon name="check" size={16} /> 辞書に載っている綴りです
-              {!picked && check.exact.length > 0 && (
-                <button className="btn small" onClick={() => applyEntry(check.exact[0], w.g)}>
-                  辞書の情報で自動入力
-                </button>
-              )}
-            </div>
-          )}
           {check && !check.ok && (
             <div className="alert warn small">
               {check.kind === 'case' ? '大文字・小文字が違うようです。' : '辞書に見つかりません。スペルを確認してください。'}
@@ -149,14 +153,14 @@ export function EditWord({ id, bookId }: { id?: string; bookId?: string }) {
               )}
             </div>
           )}
-          {dup && (
+          {book && dupInBook && (
+            <div className="alert warn small">
+              「{book.name}」にはすでに <b className="de">{dupInBook.de}</b>（{dupInBook.ja}）が入っています。同じ単語は追加できません。
+            </div>
+          )}
+          {!book && dup && (
             <div className="alert info small">
               すでに登録済みの単語です：<a href={`#/word/${encodeURIComponent(dup.id)}`}>{dup.de}（{dup.ja}）</a>
-              {book && !(book.wordIds || []).includes(dup.id) && (
-                <button className="btn small" style={{ marginLeft: 8 }} onClick={async () => { await setBookWords(book.id, (ids) => [...ids, dup.id]); go(`/my/${encodeURIComponent(book.id)}`); }}>
-                  この単語を「{book.name}」に入れる
-                </button>
-              )}
             </div>
           )}
         </div>

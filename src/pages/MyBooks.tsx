@@ -94,7 +94,8 @@ export function BookDetail({ id }: { id: string }) {
     const fq = fold(q);
     const jp = /[぀-ヿ一-鿿]/.test(q);
     const ids = new Set(book.wordIds);
-    return all.filter((w) => !ids.has(w.id) && (jp ? w.ja.includes(q) : fold(w.de).includes(fq))).slice(0, 30);
+    const inBook = new Set(all.filter((w) => ids.has(w.id)).map((w) => `${w.pos}:${w.de}`));
+    return all.filter((w) => !ids.has(w.id) && !inBook.has(`${w.pos}:${w.de}`) && (jp ? w.ja.includes(q) : fold(w.de).includes(fq))).slice(0, 30);
   }, [q, all, book]);
 
   if (!book && !isUnfiled) return <div className="empty">単語帳が見つかりません</div>;
