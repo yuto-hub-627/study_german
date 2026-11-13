@@ -69,8 +69,8 @@ export function MyBooks() {
               <FolderMenu f={f} />
             </div>
             {isOpen && (
-              <div className="stack" style={{ gap: 8, marginTop: 8, paddingLeft: 8 }}>
-                {inside.length === 0 && <div className="tiny muted">単語帳がありません</div>}
+              <div className="wlist" style={{ marginTop: 4, borderTop: '2px solid var(--black)' }}>
+                {inside.length === 0 && <div className="tiny muted" style={{ padding: '10px 4px' }}>単語帳がありません</div>}
                 {inside.map((b) => (
                   <BookRow key={b.id} b={b} />
                 ))}
@@ -123,10 +123,10 @@ function FolderMenu({ f }: { f: Book }) {
 
 function BookRow({ b }: { b: Book }) {
   return (
-    <div className="card lesson-card" style={{ marginTop: 0 }} onClick={() => go(`/my/${encodeURIComponent(b.id)}`)}>
-      <span style={{ fontSize: 22 }}>📘</span>
-      <div style={{ flex: 1, minWidth: 0, fontWeight: 700 }}>{b.name}</div>
-      <span className="tag">{b.wordIds?.length ?? 0}語</span>
+    <div className="witem book-row" onClick={() => go(`/my/${encodeURIComponent(b.id)}`)}>
+      <span style={{ fontSize: 20 }}>📘</span>
+      <div className="body" style={{ fontWeight: 600 }}>{b.name}</div>
+      <span className="tiny muted">{b.wordIds?.length ?? 0}語</span>
       <Icon name="chevron" size={18} />
     </div>
   );

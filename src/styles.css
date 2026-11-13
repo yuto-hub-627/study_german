@@ -454,3 +454,4 @@ table.t .changed { color: var(--red); text-decoration: underline wavy var(--gold
 .note-ex .de { font-size: 1.1rem; }
 @media (min-width: 900px) { .nav-desktop-only { display: flex; } }
 @media (max-width: 899px) { .tabbar .nav-desktop-only { display: none; } }
+.book-row { padding: 12px 6px; }
