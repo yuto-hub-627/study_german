@@ -7,6 +7,7 @@ import { go } from '../lib/router';
 import { newProgress, previewInterval, stage } from '../lib/srs';
 import { newLearnedToday } from '../lib/stats';
 import { grade as gradeWord, saveSettings, useStore } from '../lib/store';
+import { UNFILED } from './MyBooks';
 import { LESSONS, POS_LABEL, POS_ORDER, type Grade, type Pos, type Word } from '../lib/types';
 
 type Mode = 'de-ja' | 'ja-de' | 'type';
@@ -24,15 +25,17 @@ function norm(s: string) {
     .replace(/\s+/g, ' ');
 }
 
-export function Study() {
+export function Study({ query }: { query: URLSearchParams }) {
   const words = useStore((s) => s.words);
   const progress = useStore((s) => s.progress);
   const reviews = useStore((s) => s.reviews);
   const settings = useStore((s) => s.settings);
   const [mode, setMode] = useState<Mode>((settings.direction as Mode) || 'de-ja');
-  const [lessons, setLessons] = useState<string[]>(settings.lessonsFilter || []);
+  const [lessons, setLessons] = useState<string[]>(() => (query.get('book') ? [] : settings.lessonsFilter || []));
   const [poses, setPoses] = useState<Pos[]>([]);
-  const [onlyUser, setOnlyUser] = useState(false);
+  const allBooks = useStore((s) => s.books);
+  const books = useMemo(() => allBooks.filter((b) => b.kind === 'book'), [allBooks]);
+  const [bookSel, setBookSel] = useState<string[]>(() => (query.get('book') ? [query.get('book')!] : []));
   const [queue, setQueue] = useState<string[] | null>(null);
   const [done, setDone] = useState({ total: 0, ok: 0 });
   const [sessionTotal, setSessionTotal] = useState(0);
@@ -43,15 +46,23 @@ export function Study() {
     return () => clearTimeout(t);
   }, [peek]);
 
+  const bookWordIds = useMemo(() => {
+    const set = new Set<string>();
+    for (const b of books) if (bookSel.includes(b.id)) for (const x of b.wordIds || []) set.add(x);
+    if (bookSel.includes(UNFILED)) {
+      const inBook = new Set(books.flatMap((b) => b.wordIds || []));
+      for (const w of words) if (w.src === 'user' && !inBook.has(w.id)) set.add(w.id);
+    }
+    return set;
+  }, [books, bookSel, words]);
   const pool = useMemo(
     () =>
       words.filter(
         (w) =>
-          (!lessons.length || (w.lesson && lessons.includes(w.lesson)) || (lessons.includes('user') && w.src === 'user')) &&
-          (!poses.length || poses.includes(w.pos)) &&
-          (!onlyUser || w.src === 'user'),
+          (lessons.length + bookSel.length === 0 || (w.lesson && lessons.includes(w.lesson)) || bookWordIds.has(w.id)) &&
+          (!poses.length || poses.includes(w.pos)),
       ),
-    [words, lessons, poses, onlyUser],
+    [words, lessons, poses, bookSel, bookWordIds],
   );
   const now = Date.now();
   const due = pool.filter((w) => {
@@ -142,15 +153,25 @@ export function Study() {
           <div className="tiny muted">{mode === 'type' ? '日本語を見てドイツ語をタイプ（名詞は冠詞も）。自動で採点します。' : 'カードをめくって、思い出せたかを自己評価します。'}</div>
         </div>
         <div className="field">
-          <label>範囲（課） {lessons.length ? '' : '― すべて'}</label>
+          <label>範囲（教科書の課） {lessons.length + bookSel.length ? '' : '― 未選択ならすべて'}</label>
           <div className="chips">
             {LESSONS.map((l) => (
               <button key={l} className={`chip${lessons.includes(l) ? ' on' : ''}`} onClick={() => setLessons(toggle(lessons, l))}>
                 {l}
               </button>
             ))}
-            <button className={`chip${onlyUser ? ' on' : ''}`} onClick={() => setOnlyUser(!onlyUser)}>
-              自分で追加した語
+          </div>
+        </div>
+        <div className="field">
+          <label>範囲（MY単語帳）</label>
+          <div className="chips">
+            {books.map((b) => (
+              <button key={b.id} className={`chip${bookSel.includes(b.id) ? ' on' : ''}`} onClick={() => setBookSel(toggle(bookSel, b.id))}>
+                📘 {b.name}
+              </button>
+            ))}
+            <button className={`chip${bookSel.includes(UNFILED) ? ' on' : ''}`} onClick={() => setBookSel(toggle(bookSel, UNFILED))}>
+              🗂️ 未分類の追加単語
             </button>
           </div>
         </div>

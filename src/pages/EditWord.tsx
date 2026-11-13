@@ -4,7 +4,7 @@ import { Icon } from '../components/Icon';
 import { Speak } from '../components/Speak';
 import { detectSeparable, fold, suggest, type LexEntry } from '../lib/lexicon';
 import { go } from '../lib/router';
-import { saveWord, useStore } from '../lib/store';
+import { saveWord, setBookWords, useStore } from '../lib/store';
 import { POS_LABEL, POS_ORDER, type Gender, type Pos, type Word } from '../lib/types';
 
 const ARTS: Record<string, Gender> = { der: 'm', die: 'f', das: 'n' };
@@ -13,7 +13,8 @@ function blank(): Word {
   return { id: '', de: '', pos: 'noun', ja: '', src: 'user' };
 }
 
-export function EditWord({ id }: { id?: string }) {
+export function EditWord({ id, bookId }: { id?: string; bookId?: string }) {
+  const book = useStore((s) => (bookId ? s.books.find((b) => b.id === bookId) : undefined));
   const existing = useStore((s) => (id ? s.wordMap.get(id) : undefined));
   const words = useStore((s) => s.words);
   const { lex, err } = useLexicon();
@@ -101,7 +102,10 @@ export function EditWord({ id }: { id?: string }) {
       delete rec.refl;
     }
     await saveWord(rec);
-    go(`/word/${encodeURIComponent(rec.id)}`);
+    if (book) {
+      await setBookWords(book.id, (ids) => [...ids, rec.id]);
+      go(`/my/${encodeURIComponent(book.id)}`);
+    } else go(`/word/${encodeURIComponent(rec.id)}`);
   };
 
   return (
@@ -110,7 +114,7 @@ export function EditWord({ id }: { id?: string }) {
         <button className="back" onClick={() => history.back()}>
           <Icon name="back" size={18} /> 戻る
         </button>
-        <h1 style={{ fontSize: '1.15rem' }}>{existing ? '単語を編集' : '単語を追加'}</h1>
+        <h1 style={{ fontSize: '1.15rem' }}>{existing ? '単語を編集' : book ? `「${book.name}」に追加` : '単語を追加'}</h1>
         <span style={{ width: 60 }} />
       </div>
 
@@ -147,7 +151,12 @@ export function EditWord({ id }: { id?: string }) {
           )}
           {dup && (
             <div className="alert info small">
-              すでに単語帳にあります：<a href={`#/word/${encodeURIComponent(dup.id)}`}>{dup.de}（{dup.ja}）</a>
+              すでに登録済みの単語です：<a href={`#/word/${encodeURIComponent(dup.id)}`}>{dup.de}（{dup.ja}）</a>
+              {book && !(book.wordIds || []).includes(dup.id) && (
+                <button className="btn small" style={{ marginLeft: 8 }} onClick={async () => { await setBookWords(book.id, (ids) => [...ids, dup.id]); go(`/my/${encodeURIComponent(book.id)}`); }}>
+                  この単語を「{book.name}」に入れる
+                </button>
+              )}
             </div>
           )}
         </div>

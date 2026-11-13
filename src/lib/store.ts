@@ -2,7 +2,7 @@ import { useEffect, useState, useSyncExternalStore } from 'react';
 import textbook from '../data/textbook.json';
 import * as db from './db';
 import { newProgress, review } from './srs';
-import type { Grade, Progress, QuizResult, ReviewLog, Settings, Word } from './types';
+import type { Book, Grade, Progress, QuizResult, ReviewLog, Settings, Word } from './types';
 
 const TEXTBOOK = textbook as Word[];
 
@@ -16,6 +16,7 @@ interface State {
   reviews: ReviewLog[];
   quiz: Map<string, QuizResult>;
   settings: Settings;
+  books: Book[];
   syncStatus: { state: 'idle' | 'syncing' | 'error' | 'off'; message?: string; at?: number };
 }
 
@@ -27,6 +28,7 @@ let state: State = {
   reviews: [],
   quiz: new Map(),
   settings: DEFAULT_SETTINGS,
+  books: [],
   syncStatus: { state: 'off' },
 };
 const listeners = new Set<() => void>();
@@ -71,12 +73,13 @@ function mergeWords(user: Word[]): Word[] {
 }
 
 export async function reload() {
-  const [user, prog, revs, quiz, kv] = await Promise.all([
+  const [user, prog, revs, quiz, kv, books] = await Promise.all([
     db.getAll<Word>('words'),
     db.getAll<Progress>('progress'),
     db.getAll<ReviewLog>('reviews'),
     db.getAll<QuizResult>('quiz'),
     db.getAll<{ id: string; value: unknown; updatedAt: number }>('kv'),
+    db.getAll<Book>('books'),
   ]);
   const words = mergeWords(user);
   const s = kv.find((x) => x.id === 'settings')?.value as Partial<Settings> | undefined;
@@ -88,7 +91,39 @@ export async function reload() {
     reviews: revs.sort((a, b) => a.at - b.at),
     quiz: new Map(quiz.map((q) => [q.id, q])),
     settings: { ...DEFAULT_SETTINGS, ...(s || {}) },
+    books: books.filter((b) => !b.deleted).sort((a, b) => (a.createdAt ?? 0) - (b.createdAt ?? 0)),
   });
+}
+
+function newId(prefix: string) {
+  return `${prefix}:${Date.now().toString(36)}${Math.random().toString(36).slice(2, 7)}`;
+}
+
+export async function saveBook(b: Partial<Book> & { kind: Book['kind']; name: string }): Promise<Book> {
+  const now = Date.now();
+  const rec: Book = { ...b, id: b.id || newId(b.kind === 'folder' ? 'f' : 'b'), createdAt: b.createdAt ?? now, updatedAt: now } as Book;
+  if (rec.kind === 'book' && !rec.wordIds) rec.wordIds = [];
+  await db.put('books', rec);
+  await reload();
+  changed();
+  return rec;
+}
+
+export async function deleteBook(b: Book) {
+  const now = Date.now();
+  const recs: Book[] = [{ ...b, deleted: true, updatedAt: now }];
+  // フォルダーを消したら中の単語帳は「フォルダーなし」に移す
+  if (b.kind === 'folder') for (const x of state.books) if (x.folderId === b.id) recs.push({ ...x, folderId: undefined, updatedAt: now });
+  await db.putMany('books', recs);
+  await reload();
+  changed();
+}
+
+export async function setBookWords(bookId: string, update: (ids: string[]) => string[]) {
+  const b = state.books.find((x) => x.id === bookId);
+  if (!b) return;
+  const ids = Array.from(new Set(update(b.wordIds || [])));
+  await saveBook({ ...b, wordIds: ids });
 }
 
 export async function saveWord(w: Word) {

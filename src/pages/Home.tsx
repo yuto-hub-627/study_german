@@ -82,7 +82,7 @@ export function Home() {
         <div className="row" style={{ marginBottom: 10 }}>
           <h3 style={{ margin: 0 }}>単語の習得状況</h3>
           <div className="spacer" />
-          <a href="#/words" className="small">単語帳へ →</a>
+          <a href="#/words" className="small">教科書単語へ →</a>
         </div>
         <StageBar c={sc} legend />
         <div className="section-title">品詞別</div>

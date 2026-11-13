@@ -1,59 +1,52 @@
 import { useMemo, useState } from 'react';
-import { Icon } from '../components/Icon';
 import { Speak } from '../components/Speak';
 import { GenderTag } from '../components/WordTables';
+import { headword, speechText } from '../lib/german';
 import { fold } from '../lib/lexicon';
 import { go } from '../lib/router';
 import { stage } from '../lib/srs';
-import { headword, speechText } from '../lib/german';
 import { useStore } from '../lib/store';
 import { LESSONS, POS_LABEL, POS_ORDER, type Pos, type Word } from '../lib/types';
 
+const LESSON_INDEX = new Map(LESSONS.map((l, i) => [l, i]));
+
+/** 教科書単語タブ: 品詞でまとめず、課の順の一覧＋絞り込み */
 export function Words({ query }: { query: URLSearchParams }) {
-  const words = useStore((s) => s.words);
+  const all = useStore((s) => s.words);
   const progress = useStore((s) => s.progress);
+  const words = useMemo(() => all.filter((w) => w.src === 'textbook'), [all]);
   const [q, setQ] = useState('');
-  const [src, setSrc] = useState<string>(query.get('lesson') || 'all');
+  const [lesson, setLesson] = useState<string>(query.get('lesson') || 'all');
   const [pos, setPos] = useState<Pos | 'all'>((query.get('pos') as Pos) || 'all');
-  const [open, setOpen] = useState<Record<string, boolean>>({});
 
-  const filtered = useMemo(() => {
+  const list = useMemo(() => {
     const fq = fold(q);
-    return words.filter((w) => {
-      if (src === 'user' && w.src !== 'user') return false;
-      if (src !== 'all' && src !== 'user' && w.lesson !== src) return false;
-      if (pos !== 'all' && w.pos !== pos) return false;
-      if (q) {
-        if (/[぀-ヿ一-鿿]/.test(q)) return w.ja.includes(q);
-        return fold(w.de).includes(fq) || (w.pl ? fold(w.pl).includes(fq) : false);
-      }
-      return true;
-    });
-  }, [words, q, src, pos]);
-
-  const groups = POS_ORDER.map((p) => ({ p, list: filtered.filter((w) => w.pos === p).sort((a, b) => a.de.localeCompare(b.de, 'de')) })).filter((g) => g.list.length);
-  const userCount = words.filter((w) => w.src === 'user').length;
+    return words
+      .filter((w) => {
+        if (lesson !== 'all' && w.lesson !== lesson) return false;
+        if (pos !== 'all' && w.pos !== pos) return false;
+        if (q) {
+          if (/[぀-ヿ一-鿿]/.test(q)) return w.ja.includes(q);
+          return fold(w.de).includes(fq) || (w.pl ? fold(w.pl).includes(fq) : false);
+        }
+        return true;
+      })
+      .sort((a, b) => (LESSON_INDEX.get(a.lesson || '') ?? 99) - (LESSON_INDEX.get(b.lesson || '') ?? 99) || a.de.localeCompare(b.de, 'de'));
+  }, [words, q, lesson, pos]);
 
   return (
     <div className="stack">
       <div className="topbar">
-        <h1>単語帳</h1>
-        <button className="btn primary small" onClick={() => go('/add')}>
-          <Icon name="plus" size={18} /> 単語を追加
-        </button>
+        <h1>教科書単語</h1>
+        <span className="small muted">{list.length} / {words.length} 語</span>
       </div>
-      <div className="suggest">
-        <input className="input" placeholder="検索（ドイツ語 または 日本語）" value={q} onChange={(e) => setQ(e.target.value)} />
-      </div>
+      <input className="input" placeholder="検索（ドイツ語 または 日本語）" value={q} onChange={(e) => setQ(e.target.value)} />
       <div className="chips" role="group" aria-label="課で絞り込み">
-        <button className={`chip${src === 'all' ? ' on' : ''}`} onClick={() => setSrc('all')}>
-          すべて <span className="count">{words.length}</span>
-        </button>
-        <button className={`chip${src === 'user' ? ' on' : ''}`} onClick={() => setSrc('user')}>
-          自分で追加 <span className="count">{userCount}</span>
+        <button className={`chip${lesson === 'all' ? ' on' : ''}`} onClick={() => setLesson('all')}>
+          全課
         </button>
         {LESSONS.map((l) => (
-          <button key={l} className={`chip${src === l ? ' on' : ''}`} onClick={() => setSrc(l)}>
+          <button key={l} className={`chip${lesson === l ? ' on' : ''}`} onClick={() => setLesson(l)}>
             {l}
           </button>
         ))}
@@ -68,34 +61,24 @@ export function Words({ query }: { query: URLSearchParams }) {
           </button>
         ))}
       </div>
-      {groups.length === 0 && <div className="empty">該当する単語がありません</div>}
-      {groups.map(({ p, list }) => {
-        const isOpen = open[p] ?? (groups.length <= 3 || !!q || list.length <= 30);
-        return (
-          <div className="card" key={p} style={{ padding: '8px 16px' }}>
-            <button className="row btn ghost block" style={{ justifyContent: 'flex-start', padding: '8px 0' }} onClick={() => setOpen({ ...open, [p]: !isOpen })} aria-expanded={isOpen}>
-              <h3 style={{ margin: 0 }}>{POS_LABEL[p]}</h3>
-              <span className="tag">{list.length}</span>
-              <span className="spacer" />
-              <span style={{ transform: isOpen ? 'rotate(90deg)' : 'none', transition: 'transform .15s', display: 'inline-flex' }}>
-                <Icon name="chevron" size={18} />
-              </span>
-            </button>
-            {isOpen && (
-              <div className="wlist">
-                {list.map((w) => (
-                  <WordRow key={w.id} w={w} st={stage(progress.get(w.id))} />
-                ))}
-              </div>
-            )}
-          </div>
-        );
-      })}
+      <div className="card" style={{ padding: '4px 16px' }}>
+        {list.length === 0 ? <div className="empty">該当する単語がありません</div> : <WordList words={list} progress={progress} showLesson={lesson === 'all'} />}
+      </div>
     </div>
   );
 }
 
-function WordRow({ w, st }: { w: Word; st: string }) {
+export function WordList({ words, progress, showLesson, action }: { words: Word[]; progress: Map<string, unknown>; showLesson?: boolean; action?: (w: Word) => React.ReactNode }) {
+  return (
+    <div className="wlist">
+      {words.map((w) => (
+        <WordRow key={w.id} w={w} st={stage(progress.get(w.id) as never)} showLesson={showLesson} action={action} />
+      ))}
+    </div>
+  );
+}
+
+function WordRow({ w, st, showLesson, action }: { w: Word; st: string; showLesson?: boolean; action?: (w: Word) => React.ReactNode }) {
   return (
     <div className="witem" onClick={() => go(`/word/${encodeURIComponent(w.id)}`)}>
       <span className={`dot ${st}`} title={st} />
@@ -108,9 +91,11 @@ function WordRow({ w, st }: { w: Word; st: string }) {
         </div>
         <div className="ja">{w.ja}</div>
       </div>
-      {w.lesson && <span className="tag">{w.lesson}</span>}
+      <span className="tag">{POS_LABEL[w.pos]}</span>
+      {showLesson && w.lesson && <span className="tag">{w.lesson}</span>}
       {w.src === 'user' && <span className="tag accent">追加</span>}
       <Speak small text={speechText(w)} />
+      {action?.(w)}
     </div>
   );
 }

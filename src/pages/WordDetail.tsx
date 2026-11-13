@@ -1,16 +1,19 @@
+import { useMemo } from 'react';
 import { Icon } from '../components/Icon';
 import { Speak } from '../components/Speak';
 import { AdjTable, GenderTag, NounTable, VerbPrincipal, VerbTable } from '../components/WordTables';
 import { GENDER_LABEL, headword, speechText } from '../lib/german';
 import { go } from '../lib/router';
 import { retrievability, stage, STAGE_LABEL } from '../lib/srs';
-import { deleteWord, useStore } from '../lib/store';
+import { deleteWord, setBookWords, useStore } from '../lib/store';
 import { POS_LABEL } from '../lib/types';
 
 export function WordDetail({ id }: { id: string }) {
   const w = useStore((s) => s.wordMap.get(id));
   const p = useStore((s) => s.progress.get(id));
   const reviews = useStore((s) => s.reviews);
+  const allBooks = useStore((s) => s.books);
+  const books = useMemo(() => allBooks.filter((b) => b.kind === 'book'), [allBooks]);
   if (!w) return <div className="empty">単語が見つかりません</div>;
   const st = stage(p);
   const logs = reviews.filter((r) => r.wordId === id);
@@ -104,6 +107,31 @@ export function WordDetail({ id }: { id: string }) {
           {w.note && <p className="small" style={{ whiteSpace: 'pre-wrap' }}>{w.note}</p>}
         </div>
       )}
+      <div className="card">
+        <h3>MY単語帳</h3>
+        <div className="chips">
+          {books.filter((b) => b.wordIds?.includes(w.id)).map((b) => (
+            <span key={b.id} className="chip on" style={{ cursor: 'default' }}>
+              📘 {b.name}
+              <button className="btn ghost small" style={{ minHeight: 0, padding: '0 0 0 4px', boxShadow: 'none', color: 'inherit' }} aria-label={`${b.name}から外す`} onClick={() => void setBookWords(b.id, (ids) => ids.filter((x) => x !== w.id))}>
+                ✕
+              </button>
+            </span>
+          ))}
+          {books.some((b) => !b.wordIds?.includes(w.id)) ? (
+            <select className="input" style={{ width: 'auto', minHeight: 36 }} value="" onChange={(e) => e.target.value && void setBookWords(e.target.value, (ids) => [...ids, w.id])} aria-label="単語帳に追加">
+              <option value="">＋ 単語帳に追加…</option>
+              {books.filter((b) => !b.wordIds?.includes(w.id)).map((b) => (
+                <option key={b.id} value={b.id}>
+                  {b.name}
+                </option>
+              ))}
+            </select>
+          ) : books.length === 0 ? (
+            <a href="#/my" className="small">MY単語帳を作成する →</a>
+          ) : null}
+        </div>
+      </div>
       <div className="card">
         <h3>学習状況</h3>
         <div className="row small">

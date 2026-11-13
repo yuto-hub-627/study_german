@@ -14,6 +14,7 @@ const P: Record<string, string> = {
   sync: 'M20 11a8 8 0 0 0-14.9-3M4 4v4h4M4 13a8 8 0 0 0 14.9 3M20 20v-4h-4',
   search: 'M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM21 21l-4.3-4.3',
   chevron: 'M9 6l6 6-6 6',
+  folder: 'M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z',
 };
 
 export function Icon({ name, size }: { name: keyof typeof P | string; size?: number }) {

@@ -3,6 +3,7 @@ import { Icon } from './components/Icon';
 import { EditWord } from './pages/EditWord';
 import { GrammarLesson, GrammarList } from './pages/Grammar';
 import { Home } from './pages/Home';
+import { BookDetail, MyBooks } from './pages/MyBooks';
 import { Settings } from './pages/Settings';
 import { Study } from './pages/Study';
 import { WordDetail } from './pages/WordDetail';
@@ -13,7 +14,8 @@ import { setTtsOptions } from './lib/tts';
 
 const NAV = [
   { path: '/', label: 'ホーム', icon: 'home' },
-  { path: '/words', label: '単語帳', icon: 'words' },
+  { path: '/words', label: '教科書', icon: 'words' },
+  { path: '/my', label: 'MY単語帳', icon: 'folder' },
   { path: '/study', label: '学習', icon: 'study' },
   { path: '/grammar', label: '文法', icon: 'grammar' },
   { path: '/settings', label: '設定', icon: 'settings' },
@@ -30,15 +32,17 @@ export function App() {
   if (path === '/') page = <Home />;
   else if (path === '/words') page = <Words query={query} />;
   else if ((m = match('/word/:id', path))) page = <WordDetail id={m.id} />;
-  else if (path === '/add') page = <EditWord />;
+  else if (path === '/add') page = <EditWord bookId={query.get('book') || undefined} />;
+  else if (path === '/my') page = <MyBooks />;
+  else if ((m = match('/my/:id', path))) page = <BookDetail id={m.id} />;
   else if ((m = match('/edit/:id', path))) page = <EditWord id={m.id} />;
-  else if (path === '/study') page = <Study />;
+  else if (path === '/study') page = <Study query={query} />;
   else if (path === '/grammar') page = <GrammarList />;
   else if ((m = match('/grammar/:id', path))) page = <GrammarLesson key={m.id} id={m.id} />;
   else if (path === '/settings') page = <Settings query={query} />;
   else page = <div className="empty">ページが見つかりません</div>;
 
-  const active = (p: string) => (p === '/' ? path === '/' : path.startsWith(p) || (p === '/words' && (path.startsWith('/word') || path === '/add' || path.startsWith('/edit'))));
+  const active = (p: string) => (p === '/' ? path === '/' : path.startsWith(p) || (p === '/my' && (path === '/add' || path.startsWith('/edit'))));
 
   return (
     <div className="app">

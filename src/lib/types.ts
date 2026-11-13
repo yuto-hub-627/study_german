@@ -113,3 +113,17 @@ export const POS_LABEL: Record<Pos, string> = {
 export const POS_ORDER: Pos[] = ['noun', 'verb', 'adj', 'adv', 'prep', 'conj', 'pron', 'det', 'num', 'phrase', 'intj', 'other'];
 
 export const LESSONS = ['1A', '1B', '2A', '2B', '3A', '3B', '4A', '4B', '5A', '5B', '6A', '6B', '7A', '7B', '8A', '8B'];
+
+/** MY単語帳: フォルダーまたは単語帳 */
+export interface Book {
+  id: string;
+  kind: 'folder' | 'book';
+  name: string;
+  /** 単語帳が入っているフォルダー (kind=book のみ) */
+  folderId?: string;
+  /** 単語帳に入っている単語ID (kind=book のみ) */
+  wordIds?: string[];
+  createdAt?: number;
+  updatedAt: number;
+  deleted?: boolean;
+}

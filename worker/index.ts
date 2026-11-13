@@ -7,7 +7,7 @@ export interface Env {
   ASSETS: Fetcher;
 }
 
-const STORES = new Set(['words', 'progress', 'reviews', 'quiz', 'kv']);
+const STORES = new Set(['words', 'progress', 'reviews', 'quiz', 'kv', 'books']);
 const MAX_CHANGES = 500;
 const PAGE = 1000;
 const MAX_BODY = 2_000_000;

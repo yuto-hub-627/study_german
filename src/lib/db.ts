@@ -1,8 +1,8 @@
 import { openDB, type IDBPDatabase } from 'idb';
 import type { Progress, QuizResult, ReviewLog, Settings, Word } from './types';
 
-export type StoreName = 'words' | 'progress' | 'reviews' | 'quiz' | 'kv';
-export const SYNC_STORES: StoreName[] = ['words', 'progress', 'reviews', 'quiz', 'kv'];
+export type StoreName = 'words' | 'progress' | 'reviews' | 'quiz' | 'kv' | 'books';
+export const SYNC_STORES: StoreName[] = ['words', 'progress', 'reviews', 'quiz', 'kv', 'books'];
 
 interface OutboxItem {
   key: string; // `${store}:${id}`
@@ -14,8 +14,13 @@ interface OutboxItem {
 let dbp: Promise<IDBPDatabase> | null = null;
 export function db() {
   if (!dbp) {
-    dbp = openDB('study-german', 1, {
-      upgrade(d) {
+    dbp = openDB('study-german', 2, {
+      upgrade(d, oldVersion) {
+        if (oldVersion < 2 && oldVersion >= 1) {
+          d.createObjectStore('books', { keyPath: 'id' });
+          return;
+        }
+        d.createObjectStore('books', { keyPath: 'id' });
         d.createObjectStore('words', { keyPath: 'id' });
         d.createObjectStore('progress', { keyPath: 'id' });
         const r = d.createObjectStore('reviews', { keyPath: 'id' });
