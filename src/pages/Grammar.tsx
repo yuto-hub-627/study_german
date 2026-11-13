@@ -17,6 +17,13 @@ export function GrammarList() {
       <p className="muted small" style={{ marginTop: -8 }}>
         教科書の各課の文法事項を、要点と練習問題で確認できます。80%以上で合格です。
       </p>
+      <a href="#/separable" className="card lesson-card" style={{ color: 'inherit' }}>
+        <div className="lesson-badge" style={{ fontSize: '1rem' }}>an|</div>
+        <div style={{ flex: 1 }}>
+          <div style={{ fontWeight: 700 }}>分離動詞の一覧</div>
+          <div className="small muted">本体の動詞ごと・前つづりごとにまとめて覚える</div>
+        </div>
+      </a>
       {LESSONS_GRAMMAR.map((l) => {
         const r = quiz.get(l.id);
         return (

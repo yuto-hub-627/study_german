@@ -3,6 +3,7 @@ import { Icon } from './components/Icon';
 import { EditWord } from './pages/EditWord';
 import { GrammarLesson, GrammarList } from './pages/Grammar';
 import { Home } from './pages/Home';
+import { Separable } from './pages/Separable';
 import { BookDetail, MyBooks } from './pages/MyBooks';
 import { Settings } from './pages/Settings';
 import { Study } from './pages/Study';
@@ -34,6 +35,7 @@ export function App() {
   else if ((m = match('/word/:id', path))) page = <WordDetail id={m.id} />;
   else if (path === '/add') page = <EditWord bookId={query.get('book') || undefined} />;
   else if (path === '/my') page = <MyBooks />;
+  else if (path === '/separable') page = <Separable />;
   else if ((m = match('/my/:id', path))) page = <BookDetail id={m.id} />;
   else if ((m = match('/edit/:id', path))) page = <EditWord id={m.id} />;
   else if (path === '/study') page = <Study query={query} />;

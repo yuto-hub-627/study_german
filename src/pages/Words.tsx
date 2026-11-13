@@ -40,6 +40,14 @@ export function Words({ query }: { query: URLSearchParams }) {
         <h1>教科書単語</h1>
         <span className="small muted">{list.length} / {words.length} 語</span>
       </div>
+      <a href="#/separable" className="card lesson-card" style={{ color: 'inherit' }}>
+        <span className="lesson-badge" style={{ fontSize: '1rem' }}>an|</span>
+        <div style={{ flex: 1 }}>
+          <div style={{ fontWeight: 700 }}>分離動詞の一覧</div>
+          <div className="small muted">kommen → an|kommen, mit|kommen… 本体の動詞ごとにまとめて覚える</div>
+        </div>
+        <span style={{ display: 'inline-flex' }}>›</span>
+      </a>
       <input className="input" placeholder="検索（ドイツ語 または 日本語）" value={q} onChange={(e) => setQ(e.target.value)} />
       <div className="chips" role="group" aria-label="課で絞り込み">
         <button className={`chip${lesson === 'all' ? ' on' : ''}`} onClick={() => setLesson('all')}>
