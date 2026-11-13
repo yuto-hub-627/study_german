@@ -34,7 +34,7 @@ export function EditWord({ id, bookId }: { id?: string; bookId?: string }) {
 
   const applyEntry = (e: LexEntry, art?: Gender) => {
     setPicked(e);
-    const refl = !!e.v?.rf || /^sich\s/i.test(input);
+    const refl = e.p === 'verb' && (!!e.v?.rf || /^sich\s/i.test(input));
     setInput((refl ? 'sich ' : '') + e.w);
     up({
       de: e.w,
@@ -58,14 +58,22 @@ export function EditWord({ id, bookId }: { id?: string; bookId?: string }) {
   const check = useMemo(() => {
     const raw = input.trim();
     if (!raw || !lex) return null;
+    const full = lex.filter((e) => e.w === raw);
+    if (full.length) return { ok: true as const, exact: full, word: raw };
+    const phrase = /\s/.test(raw) && !/^(der|die|das|sich)\s+\S+$/i.test(raw);
+    if (phrase) {
+      const ci = lex.filter((e) => e.w.toLowerCase() === raw.toLowerCase());
+      if (ci.length) return { ok: false as const, kind: 'case' as const, cands: ci, word: raw, phrase };
+      return { ok: false as const, kind: 'unknown' as const, cands: [], word: raw, phrase };
+    }
     const m = raw.match(/^(der|die|das)\s+(.+)$/i);
     const word = (m ? m[2] : raw).replace(/^sich\s+/i, '');
     const exact = lex.filter((e) => e.w === word);
     if (exact.length) return { ok: true as const, exact, word };
     const ci = lex.filter((e) => e.w.toLowerCase() === word.toLowerCase());
-    if (ci.length) return { ok: false as const, kind: 'case' as const, cands: ci, word };
+    if (ci.length) return { ok: false as const, kind: 'case' as const, cands: ci, word, phrase: false };
     const cands = suggest(lex, word, 5).filter((s) => s.kind !== 'prefix' || fold(s.e.w) === fold(word));
-    return { ok: false as const, kind: 'unknown' as const, cands: cands.map((c) => c.e), word };
+    return { ok: false as const, kind: 'unknown' as const, cands: cands.map((c) => c.e), word, phrase: false };
   }, [input, lex]);
 
   const dup = useMemo(() => {
@@ -84,9 +92,18 @@ export function EditWord({ id, bookId }: { id?: string; bookId?: string }) {
 
   const onInput = (v: string) => {
     setInput(v);
-    const m = v.trim().match(/^(der|die|das)\s+(.+)$/i);
-    const word = (m ? m[2] : v.trim()).replace(/^sich\s+/i, '');
-    up({ de: word, ...(m ? { g: ARTS[m[1].toLowerCase()], pos: 'noun' as Pos } : {}), ...(/^sich\s/i.test(v.trim()) ? { refl: true, pos: 'verb' as Pos } : {}) });
+    const t = v.trim();
+    const m = t.match(/^(der|die|das)\s+(\S+)$/i);
+    const refl = /^sich\s+\S+$/i.test(t);
+    const isPhrase = /\s/.test(t) && !m && !refl;
+    if (isPhrase) {
+      // 熟語: 入力をそのまま見出しにする
+      up({ de: t, pos: 'phrase' as Pos, g: undefined, refl: undefined });
+      if (picked && picked.w !== t) setPicked(null);
+      return;
+    }
+    const word = (m ? m[2] : t).replace(/^sich\s+/i, '');
+    up({ de: word, ...(m ? { g: ARTS[m[1].toLowerCase()], pos: 'noun' as Pos } : {}), ...(refl ? { refl: true, pos: 'verb' as Pos } : {}) });
     if (picked && picked.w !== word) setPicked(null);
   };
 
@@ -140,7 +157,7 @@ export function EditWord({ id, bookId }: { id?: string; bookId?: string }) {
           {err && <div className="alert ng small">{err}（オフラインでは初回のみ辞書を利用できません）</div>}
           {check && !check.ok && (
             <div className="alert warn small">
-              {check.kind === 'case' ? '大文字・小文字が違うようです。' : '辞書に見つかりません。スペルを確認してください。'}
+              {check.kind === 'case' ? '大文字・小文字が違うようです。' : check.phrase ? '辞書にない熟語です。日本語の意味を入力すればそのまま追加できます。' : '辞書に見つかりません。スペルを確認してください。'}
               {check.cands.length > 0 && (
                 <div className="row" style={{ marginTop: 6 }}>
                   もしかして：

@@ -108,7 +108,7 @@ export const POS_LABEL: Record<Pos, string> = {
   num: '数詞',
   det: '冠詞類',
   intj: '間投詞',
-  phrase: '表現・フレーズ',
+  phrase: '熟語・表現',
   other: 'その他',
 };
 

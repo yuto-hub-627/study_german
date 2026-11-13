@@ -461,3 +461,9 @@ table.t .changed { color: var(--red); text-decoration: underline wavy var(--gold
 table.t .changed { text-decoration: none; background: linear-gradient(transparent 62%, var(--gold-soft) 62%); }
 
 input[type="range"] { accent-color: var(--red); width: 100%; }
+
+/* スマホでは一覧の右側タグを省いて単語・訳を優先 */
+@media (max-width: 599px) {
+  .witem > .tag { display: none; }
+  .witem .ja { white-space: normal; }
+}

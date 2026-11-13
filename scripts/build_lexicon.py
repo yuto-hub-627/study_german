@@ -108,6 +108,37 @@ for l in open(os.path.join(src, 'de_lemmas.jsonl'), encoding='utf-8'):
     if jj: e['ja'] = jj
     entries[key] = e
 
+# ---- 熟語 (phrases.jsonl があれば) ----
+ph_path = os.path.join(src, 'phrases.jsonl')
+ph_ja = {}
+pj = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'phrases_ja.tsv')
+if os.path.exists(pj):
+    for l in open(pj, encoding='utf-8'):
+        if l.startswith('#') or '\t' not in l:
+            continue
+        k, v = l.rstrip('\n').split('\t', 1)
+        ph_ja[k] = v
+SKIP = re.compile(r'^(alternative (form|spelling|letter-case)|formerly standard|initialism|abbreviation|used other than|non-idiomatic|for non-idiomatic|obsolete|misspelling)', re.I)
+STOP = {'jemand', 'jemandem', 'jemanden', 'jemandes', 'etwas', 'sich', 'jmdm', 'jmdn'}
+if os.path.exists(ph_path):
+    nph = 0
+    for l in open(ph_path, encoding='utf-8'):
+        d = json.loads(l)
+        w = d['w']
+        en = [g for g in d.get('en', []) if not SKIP.match(g)]
+        if not en or ('ph', w) in entries:
+            continue
+        toks = re.findall(r"[A-Za-zÄÖÜäöüß]+", w)
+        rs = [rank.get(t) or rank.get(t.lower()) or 60000 for t in toks if t.lower() not in STOP]
+        r = max(rs) if rs else 60000
+        e = {'w': w, 'p': 'phrase', 'r': r, 'en': en[:2]}
+        jj = ph_ja.get(w) or ('、'.join(ja_any[w][:2])[:48] if ja_any.get(w) else None)
+        if jj:
+            e['ja'] = jj
+        entries[('ph', w)] = e
+        nph += 1
+    print('phrases', nph, 'with ja', sum(1 for k, e in entries.items() if k[0] == 'ph' and 'ja' in e))
+
 lst = sorted(entries.values(), key=lambda e: (e['r'], e['w']))
 for e in lst:
     if not e['en']: del e['en']
