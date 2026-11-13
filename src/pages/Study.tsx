@@ -561,7 +561,7 @@ function Extra({ w }: { w: Word }) {
     const reg = regularVerb(w.de, w.sep);
     const first = (x?: string) => (x || '').split(' ')[0];
     const irregular = PERSONS.map((p, i) => ({ p, f: f.pr?.[i] })).filter((x, i) => x.f && first(x.f) !== first(reg.pr?.[i]));
-    const aux = (f.ax || '').startsWith('sein') ? 'ist' : 'hat';
+    const aux = (f.ax || '').startsWith('sein') ? 'sein' : 'haben';
     return (
       <div className="stack" style={{ gap: 8, width: '100%', maxWidth: 360 }}>
         <div className="principal" style={{ marginTop: 0 }}>
@@ -574,8 +574,8 @@ function Extra({ w }: { w: Word }) {
             <div className="v de">{f.pp ?? '—'}</div>
           </div>
           <div>
-            <div className="k">完了</div>
-            <div className={`v de${aux === 'ist' ? ' g-f' : ''}`}>{aux} …</div>
+            <div className="k">完了の助動詞</div>
+            <div className={`v de${aux === 'sein' ? ' g-f' : ''}`}>{aux}</div>
           </div>
         </div>
         {irregular.length > 0 && (
