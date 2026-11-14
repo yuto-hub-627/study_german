@@ -254,6 +254,12 @@ function Session({ queue, mode, onGrade, onQuit, remaining, total, peek }: { que
     window.addEventListener('keydown', on);
     return () => window.removeEventListener('keydown', on);
   }, [swipeable]);
+  // 学習中は画面全体をスクロールさせない (スマホ)
+  useEffect(() => {
+    document.documentElement.classList.add('lock-scroll');
+    window.scrollTo(0, 0);
+    return () => document.documentElement.classList.remove('lock-scroll');
+  }, []);
   const commitRef = useRef<((k: boolean) => void) | null>(null);
   const revealRef = useRef<(() => void) | null>(null);
 
@@ -374,7 +380,7 @@ function Session({ queue, mode, onGrade, onQuit, remaining, total, peek }: { que
         </span>
         <Speak small={mode === 'de-ja'} text={speechText(w)} />
       </div>
-      <div style={{ fontSize: mode === 'de-ja' ? '1.6rem' : '1.2rem', fontWeight: 600 }}>{w.ja}</div>
+      <div style={{ fontSize: mode === 'de-ja' ? 'clamp(1.15rem, 5vw, 1.6rem)' : '1.2rem', fontWeight: 600 }}>{w.ja}</div>
       <Extra w={w} />
     </>
   );
@@ -403,7 +409,7 @@ function Session({ queue, mode, onGrade, onQuit, remaining, total, peek }: { que
   ];
 
   return (
-    <div className="stack">
+    <div className="stack session">
       <div className="row">
         <button className="back" onClick={onQuit}>
           <Icon name="x" size={18} /> 終了
@@ -578,7 +584,7 @@ function Extra({ w }: { w: Word }) {
             <div className="v de">{f.pp ?? '—'}</div>
           </div>
           <div>
-            <div className="k">完了の助動詞</div>
+            <div className="k">助動詞</div>
             <div className={`v de${aux === 'sein' ? ' g-f' : ''}`}>{aux}</div>
           </div>
         </div>
