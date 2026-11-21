@@ -3,6 +3,7 @@ import { Icon } from './components/Icon';
 import { EditWord } from './pages/EditWord';
 import { GrammarLesson, GrammarList } from './pages/Grammar';
 import { Home } from './pages/Home';
+import { DictEntry, Dictionary } from './pages/Dictionary';
 import { Important } from './pages/Important';
 import { Separable } from './pages/Separable';
 import { BookDetail, MyBooks } from './pages/MyBooks';
@@ -16,7 +17,7 @@ import { setTtsOptions } from './lib/tts';
 
 const NAV = [
   { path: '/', label: 'ホーム', icon: 'home' },
-  { path: '/words', label: '教科書', icon: 'words' },
+  { path: '/dict', label: '辞書', icon: 'search' },
   { path: '/my', label: 'MY単語帳', icon: 'folder' },
   { path: '/study', label: '学習', icon: 'study' },
   { path: '/grammar', label: '文法', icon: 'grammar' },
@@ -34,6 +35,8 @@ export function App() {
   let m: Record<string, string> | null;
   if (path === '/') page = <Home />;
   else if (path === '/words') page = <Words query={query} />;
+  else if (path === '/dict') page = <Dictionary />;
+  else if ((m = match('/dict/:pos/:w', path))) page = <DictEntry key={path} pos={m.pos} w={m.w} />;
   else if ((m = match('/word/:id', path))) page = <WordDetail id={m.id} />;
   else if (path === '/add') page = <EditWord bookId={query.get('book') || undefined} />;
   else if (path === '/my') page = <MyBooks />;
