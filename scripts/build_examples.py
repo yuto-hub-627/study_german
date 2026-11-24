@@ -62,6 +62,8 @@ for e in lex:
     for f in forms: tok[f].add(k)
 
 wkey = {K(e): e for e in lex}
+# 小文字で始まる語 (代名詞・冠詞を含む)。文頭の Es / Die などを名詞と取り違えないため
+lower_words = {e['w'] for e in lex if e['w'][:1].islower()}
 TOK = re.compile(r"[A-Za-zÄÖÜäöüß]+")
 
 def lemmas_of(s):
@@ -69,7 +71,7 @@ def lemmas_of(s):
     last = ts[-1].lower() if ts else ''
     found = set()
     for i, t in enumerate(ts):
-        if i == 0 and t[0].isupper() and tok.get(t.lower()):
+        if i == 0 and t[0].isupper() and (tok.get(t.lower()) or t.lower() in lower_words):
             found |= tok.get(t.lower(), set())  # 文頭の大文字は小文字の語として読む (Es ist… の Es は名詞にしない)
         else:
             found |= tok.get(t, set())  # 名詞は大文字のまま照合
