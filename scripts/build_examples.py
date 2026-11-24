@@ -67,11 +67,15 @@ lower_words = {e['w'] for e in lex if e['w'][:1].islower()}
 TOK = re.compile(r"[A-Za-zÄÖÜäöüß]+")
 
 def lemmas_of(s):
-    ts = TOK.findall(s)
+    ms = list(TOK.finditer(s))
+    ts = [m.group() for m in ms]
+    # 文頭 (文の最初・. ! ? : の後・引用符の直後) の位置
+    # 文頭 (引用符・ダッシュ・空白を除いた直前の文字が . ! ? : か、何もない)
+    starts = {i for i, m in enumerate(ms) if re.sub(r'[\s"„“”»«‚‘’\'()–—-]+$', '', s[:m.start()])[-1:] in ('', '.', '!', '?', ':')}
     last = ts[-1].lower() if ts else ''
     found = set()
     for i, t in enumerate(ts):
-        if i == 0 and t[0].isupper() and (tok.get(t.lower()) or t.lower() in lower_words):
+        if i in starts and t[0].isupper() and (tok.get(t.lower()) or t.lower() in lower_words):
             found |= tok.get(t.lower(), set())  # 文頭の大文字は小文字の語として読む (Es ist… の Es は名詞にしない)
         else:
             found |= tok.get(t, set())  # 名詞は大文字のまま照合
