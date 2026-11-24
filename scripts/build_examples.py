@@ -69,9 +69,10 @@ def lemmas_of(s):
     last = ts[-1].lower() if ts else ''
     found = set()
     for i, t in enumerate(ts):
-        found |= tok.get(t, set())  # 名詞は大文字のまま照合
-        if t[0].isupper() and i == 0:
-            found |= tok.get(t.lower(), set())  # 文頭の大文字
+        if i == 0 and t[0].isupper() and tok.get(t.lower()):
+            found |= tok.get(t.lower(), set())  # 文頭の大文字は小文字の語として読む (Es ist… の Es は名詞にしない)
+        else:
+            found |= tok.get(t, set())  # 名詞は大文字のまま照合
         tl = t.lower()
         hit = sep.get((tl, last))
         if hit and i < len(ts) - 1: found |= hit
