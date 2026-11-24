@@ -487,3 +487,13 @@ input[type="range"] { accent-color: var(--red); width: 100%; }
   .session .flash > .face { margin-block: auto; }
   .session .face-back .principal .v { font-size: 1rem; }
 }
+
+/* 活用形 → 基本形 の説明 */
+.form-why { font-size: 0.8rem; color: var(--text-2); margin: 2px 0; line-height: 1.5; }
+.form-why b { color: var(--text); }
+
+/* 例文 */
+.examples { display: flex; flex-direction: column; gap: 10px; }
+.ex-item { padding-bottom: 10px; border-bottom: 1px dashed var(--line, #d8ccb4); }
+.ex-item:last-child { border-bottom: none; padding-bottom: 0; }
+.ex-item .ja { margin-top: 2px; }

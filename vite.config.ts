@@ -35,10 +35,10 @@ export default defineConfig({
             options: { cacheName: 'fonts', expiration: { maxEntries: 300 } },
           },
           {
-            // 予測入力用の辞書 (約4.6MB) は初回利用時にキャッシュ
+            // 予測入力用の辞書 (約10MB) と例文 (頭文字ごとのファイル) は使ったときにキャッシュ
             urlPattern: ({ url }) => url.pathname.startsWith('/dict/'),
             handler: 'StaleWhileRevalidate',
-            options: { cacheName: 'dict', expiration: { maxEntries: 4 } },
+            options: { cacheName: 'dict', expiration: { maxEntries: 40 } },
           },
         ],
       },

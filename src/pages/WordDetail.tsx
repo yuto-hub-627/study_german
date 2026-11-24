@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { Examples } from '../components/Examples';
 import { Icon } from '../components/Icon';
 import { Speak } from '../components/Speak';
 import { AdjTable, GenderTag, NounTable, VerbPrincipal, VerbTable } from '../components/WordTables';
@@ -107,6 +108,7 @@ export function WordDetail({ id }: { id: string }) {
           {w.note && <p className="small" style={{ whiteSpace: 'pre-wrap' }}>{w.note}</p>}
         </div>
       )}
+      <Examples pos={w.pos} w={w.de} />
       <div className="card">
         <h3>MY単語帳</h3>
         <div className="chips">

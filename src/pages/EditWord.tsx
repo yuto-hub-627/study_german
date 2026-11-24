@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { GermanInput, useLexicon } from '../components/GermanInput';
 import { Icon } from '../components/Icon';
 import { Speak } from '../components/Speak';
+import { FormWhy } from '../components/FormWhy';
 import { detectSeparable, fold, suggest, type LexEntry } from '../lib/lexicon';
 import { go } from '../lib/router';
 import { saveWord, setBookWords, useStore } from '../lib/store';
@@ -63,17 +64,18 @@ export function EditWord({ id, bookId }: { id?: string; bookId?: string }) {
     const phrase = /\s/.test(raw) && !/^(der|die|das|sich)\s+\S+$/i.test(raw);
     if (phrase) {
       const ci = lex.filter((e) => e.w.toLowerCase() === raw.toLowerCase());
-      if (ci.length) return { ok: false as const, kind: 'case' as const, cands: ci, word: raw, phrase };
-      return { ok: false as const, kind: 'unknown' as const, cands: [], word: raw, phrase };
+      if (ci.length) return { ok: false as const, kind: 'case' as const, cands: ci, word: raw, phrase, form: undefined };
+      return { ok: false as const, kind: 'unknown' as const, cands: [], word: raw, phrase, form: undefined };
     }
     const m = raw.match(/^(der|die|das)\s+(.+)$/i);
     const word = (m ? m[2] : raw).replace(/^sich\s+/i, '');
     const exact = lex.filter((e) => e.w === word);
     if (exact.length) return { ok: true as const, exact, word };
     const ci = lex.filter((e) => e.w.toLowerCase() === word.toLowerCase());
-    if (ci.length) return { ok: false as const, kind: 'case' as const, cands: ci, word, phrase: false };
-    const cands = suggest(lex, word, 5).filter((s) => s.kind !== 'prefix' || fold(s.e.w) === fold(word));
-    return { ok: false as const, kind: 'unknown' as const, cands: cands.map((c) => c.e), word, phrase: false };
+    if (ci.length) return { ok: false as const, kind: 'case' as const, cands: ci, word, phrase: false, form: undefined };
+    const sg = suggest(lex, word, 5).filter((s) => s.kind !== 'prefix' || fold(s.e.w) === fold(word));
+    const form = sg.find((s) => s.kind === 'form');
+    return { ok: false as const, kind: form ? ('form' as const) : ('unknown' as const), cands: sg.map((c) => c.e), form, word, phrase: false };
   }, [input, lex]);
 
   const dup = useMemo(() => {
@@ -157,10 +159,15 @@ export function EditWord({ id, bookId }: { id?: string; bookId?: string }) {
           {err && <div className="alert ng small">{err}（オフラインでは初回のみ辞書を利用できません）</div>}
           {check && !check.ok && (
             <div className="alert warn small">
-              {check.kind === 'case' ? '大文字・小文字が違うようです。' : check.phrase ? '辞書にない熟語です。日本語の意味を入力すればそのまま追加できます。' : '辞書に見つかりません。スペルを確認してください。'}
+              {check.form ? (
+                <>
+                  活用した形のようです。<FormWhy s={check.form} input={check.word} />
+                  単語帳には基本形で登録します。
+                </>
+              ) : check.kind === 'case' ? '大文字・小文字が違うようです。' : check.phrase ? '辞書にない熟語です。日本語の意味を入力すればそのまま追加できます。' : '辞書に見つかりません。スペルを確認してください。'}
               {check.cands.length > 0 && (
                 <div className="row" style={{ marginTop: 6 }}>
-                  もしかして：
+                  {check.form ? '基本形：' : 'もしかして：'}
                   {check.cands.slice(0, 5).map((c) => (
                     <button key={c.w + c.p} className="chip" onClick={() => applyEntry(c)}>
                       <span className="de">{c.w}</span>

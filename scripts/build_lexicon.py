@@ -11,8 +11,14 @@ Data license: Wiktionary content CC BY-SA 4.0 / FrequencyWords CC BY-SA 4.0
 """
 import sys, json, re, os, collections
 src, out = sys.argv[1], sys.argv[2]
+# 頻度順位: de_full.txt（約115万語）があればそれを使い、上位 MAXR 位までの語を収録する
+MAXR = 400000
+NORANK = MAXR + 100000
 rank = {}
-for i, l in enumerate(open(os.path.join(src, 'de_50k.txt'), encoding='utf-8')):
+rf = os.path.join(src, 'de_full.txt')
+if not os.path.exists(rf): rf = os.path.join(src, 'de_50k.txt')
+for i, l in enumerate(open(rf, encoding='utf-8')):
+    if i >= MAXR: break
     w = l.split()[0]
     rank.setdefault(w, i + 1)
     rank.setdefault(w.lower(), i + 1)
@@ -78,7 +84,9 @@ for l in open(os.path.join(src, 'de_lemmas.jsonl'), encoding='utf-8'):
             if g not in e['en'] and len(e['en']) < 3:
                 e['en'].append(g)
         continue
-    e = {'w': w, 'p': p, 'r': r or 60000, 'en': [g[:80] for g in d.get('en', [])[:3]]}
+    # よく使う語は英語の意味を3つまで、それ以外は2つまで（ファイルを軽くするため）
+    ne, nl = (3, 80) if (r or NORANK) <= 50000 else (2, 64)
+    e = {'w': w, 'p': p, 'r': r or NORANK, 'en': [g[:nl] for g in d.get('en', [])[:ne]]}
     if p == 'noun':
         if d.get('g'): e['g'] = d['g']
         if d.get('po'): e['po'] = 1
@@ -129,8 +137,8 @@ if os.path.exists(ph_path):
         if not en or ('ph', w) in entries:
             continue
         toks = re.findall(r"[A-Za-zÄÖÜäöüß]+", w)
-        rs = [rank.get(t) or rank.get(t.lower()) or 60000 for t in toks if t.lower() not in STOP]
-        r = max(rs) if rs else 60000
+        rs = [rank.get(t) or rank.get(t.lower()) or NORANK for t in toks if t.lower() not in STOP]
+        r = max(rs) if rs else NORANK
         e = {'w': w, 'p': 'phrase', 'r': r, 'en': en[:2]}
         jj = ph_ja.get(w) or ('、'.join(ja_any[w][:2])[:48] if ja_any.get(w) else None)
         if jj:

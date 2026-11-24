@@ -4,6 +4,8 @@ import { Icon } from '../components/Icon';
 import { Speak } from '../components/Speak';
 import { AdjTable, GenderTag, NounTable, VerbPrincipal, VerbTable } from '../components/WordTables';
 import { ARTICLE, GENDER_LABEL, headword, speechText } from '../lib/german';
+import { FormWhy } from '../components/FormWhy';
+import { Examples } from '../components/Examples';
 import { detectSeparable, fold, suggest, type LexEntry } from '../lib/lexicon';
 import { go } from '../lib/router';
 import { saveWord, setBookWords, useStore } from '../lib/store';
@@ -79,7 +81,8 @@ export function Dictionary() {
           ) : (
             <div className="wlist">
               {results[0]?.kind === 'fuzzy' && <div className="tiny muted" style={{ padding: '8px 4px 0' }}>完全一致がありません。もしかして：</div>}
-              {results.map(({ e, kind }) => {
+              {results.map((sg) => {
+                const { e, kind } = sg;
                 const m = mine.get(`${e.p}:${e.w}`);
                 const ja = m?.ja || e.ja || e.en?.[0] || '';
                 return (
@@ -92,7 +95,9 @@ export function Dictionary() {
                         </span>
                         {m?.lesson && <span className="tag">教科書 {m.lesson}</span>}
                         {kind === 'fuzzy' && <span className="tag warn">綴り違い?</span>}
+                        {kind === 'form' && <span className="tag accent">活用形→基本形</span>}
                       </div>
+                      <FormWhy s={sg} input={q} />
                       <div className="ja">{ja}</div>
                     </div>
                     <span className="tag">{POS_LABEL[e.p] ?? e.p}</span>
@@ -110,6 +115,7 @@ export function Dictionary() {
           <div className="card small muted stack" style={{ gap: 4 }}>
             <div>・ドイツ語はウムラウトなしでも検索できます（schon → schön、strasse → Straße）。</div>
             <div>・日本語で引くこともできます（家 → Haus）。熟語も中の単語から探せます（Hause → zu Hause）。</div>
+            <div>・活用した形からも引けます（isst → essen、ging → gehen、Häuser → Haus、größeren → groß）。何形なのかも表示します。</div>
             <div>・単語を開くと、意味・発音・活用表・格変化を確認して、MY単語帳に追加できます。</div>
           </div>
           <a href="#/separable" className="card lesson-card" style={{ color: 'inherit' }}>
@@ -213,6 +219,8 @@ export function DictEntry({ pos, w }: { pos: string; w: string }) {
         </div>
       )}
 
+      <Examples pos={word.pos} w={word.de} />
+
       {word.pos === 'verb' && (
         <>
           <div className="card">
@@ -284,7 +292,7 @@ export function DictEntry({ pos, w }: { pos: string; w: string }) {
           </div>
         </div>
       )}
-      <div className="tiny muted center">出典: Wiktionary（CC BY-SA 4.0）</div>
+      <div className="tiny muted center">出典: Wiktionary（CC BY-SA 4.0）・Tatoeba（CC BY 2.0 FR）</div>
       {msg && <div className="toast">{msg}</div>}
     </div>
   );

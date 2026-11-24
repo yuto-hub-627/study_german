@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { FormWhy } from './FormWhy';
 import { loadLexicon, suggest, type LexEntry, type Suggestion } from '../lib/lexicon';
 import { ARTICLE } from '../lib/german';
 import { POS_LABEL } from '../lib/types';
@@ -125,7 +126,9 @@ export function GermanInput({
                   </span>
                   <span className="tag">{POS_LABEL[s.e.p] ?? s.e.p}</span>
                   {s.kind === 'fuzzy' && <span className="tag warn">綴り違い?</span>}
+                  {s.kind === 'form' && <span className="tag accent">活用形→基本形</span>}
                 </div>
+                <FormWhy s={s} input={value} />
                 <div className="ja">{s.e.ja || s.e.en?.[0] || ''}</div>
               </div>
             </div>

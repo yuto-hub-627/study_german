@@ -2,6 +2,8 @@
 import sys, json, re
 POS_OK={'noun','verb','adj','adv','prep','conj','pron','num','intj','det','article','particle','postp'}
 out=open(sys.argv[1],'w')
+# 2番目の引数があれば、Wiktionary の例文 (英訳つき) も書き出す
+exo=open(sys.argv[2],'w') if len(sys.argv)>2 else None
 def has(tags,*t): return all(x in tags for x in t)
 for line in sys.stdin:
     try: d=json.loads(line)
@@ -68,4 +70,13 @@ for line in sys.stdin:
     for s in d.get('sounds',[]):
         if 'ipa' in s: e['ipa']=s['ipa'];break
     out.write(json.dumps(e,ensure_ascii=False)+'\n')
+    if exo:
+        exs=[]
+        for s in lemma_senses:
+            for x in s.get('examples',[]):
+                t=(x.get('text') or '').strip(); en=(x.get('english') or x.get('translation') or '').strip()
+                if x.get('type')!='example' or not en or en.startswith('(please') or '\n' in t or not (8<=len(t)<=110): continue
+                if [t,en] not in exs: exs.append([t,en])
+        if exs: exo.write(json.dumps({'w':w,'p':pos,'x':exs[:6]},ensure_ascii=False)+'\n')
 out.close()
+if exo: exo.close()

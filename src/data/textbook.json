@@ -3479,8 +3479,11 @@
 "ja": "薬剤師(女性)",
 "lesson": "2B",
 "src": "textbook",
+"en": "pharmacist (female)",
+"ipa": "/ˌapoˈteːkəʁɪn/",
 "g": "f",
-"pl": "Apothekerinnen"
+"pl": "Apothekerinnen",
+"gen": "Apothekerin"
 },
 {
 "id": "tb:Verkäufer",
@@ -3527,8 +3530,10 @@
 "ja": "看護師(女性)",
 "lesson": "2B",
 "src": "textbook",
+"en": "nurse (female)",
 "g": "f",
-"pl": "Krankenpflegerinnen"
+"pl": "Krankenpflegerinnen",
+"gen": "Krankenpflegerin"
 },
 {
 "id": "tb:Bundeskanzlerin",
@@ -3537,7 +3542,7 @@
 "ja": "連邦首相(女性)",
 "lesson": "2B",
 "src": "textbook",
-"en": "federal chancellor (female head of the German or Austrian federal government)",
+"en": "federal chancellor (female head of the German or Austrian federa",
 "ipa": "/ˈbʊndəsˌkant͡sləʁɪn/",
 "g": "f",
 "pl": "Bundeskanzlerinnen",
@@ -5261,8 +5266,11 @@
 "ja": "名所",
 "lesson": "3B",
 "src": "textbook",
+"en": "something worth seeing, a sight, tourist attraction",
+"ipa": "/ˈzeːənsˌvʏʁdɪçkaɪ̯t/",
 "g": "f",
-"pl": "Sehenswürdigkeiten"
+"pl": "Sehenswürdigkeiten",
+"gen": "Sehenswürdigkeit"
 },
 {
 "id": "tb:Idee",
@@ -8022,8 +8030,11 @@
 "ja": "語学コース",
 "lesson": "4B",
 "src": "textbook",
+"en": "language course",
+"ipa": "/ˈʃpʁaːχˌkʊʁs/",
 "g": "m",
-"pl": "Sprachkurse"
+"pl": "Sprachkurse",
+"gen": "Sprachkurses"
 },
 {
 "id": "tb:Fluss",
@@ -8537,8 +8548,11 @@
 "ja": "冬学期",
 "lesson": "5A",
 "src": "textbook",
+"en": "fall semester, autumn semester, winter semester",
+"ipa": "/ˈvɪntɐzeˌmɛstɐ/",
 "g": "n",
-"pl": "Wintersemester"
+"pl": "Wintersemester",
+"gen": "Wintersemesters"
 },
 {
 "id": "tb:Kindheit",
@@ -9004,7 +9018,9 @@
 "pos": "adj",
 "ja": "次の (nächstes Jahr 来年)",
 "lesson": "5B",
-"src": "textbook"
+"src": "textbook",
+"en": "besides, in addition to",
+"ipa": "/nɛːçst/"
 },
 {
 "id": "tb:erkältet",
@@ -10656,8 +10672,11 @@
 "ja": "太陽光発電設備",
 "lesson": "6B",
 "src": "textbook",
+"en": "solar power plant",
+"ipa": "/zoˈlaːɐ̯ʔanˌlaːɡə/",
 "g": "f",
-"pl": "Solaranlagen"
+"pl": "Solaranlagen",
+"gen": "Solaranlage"
 },
 {
 "id": "tb:Umweltschutz",
@@ -10896,7 +10915,13 @@
 "pos": "adj",
 "ja": "曇った",
 "lesson": "6B",
-"src": "textbook"
+"src": "textbook",
+"en": "cloudy",
+"ipa": "/ˈvɔlkɪç/",
+"c": [
+"wolkiger",
+"am wolkigsten"
+]
 },
 {
 "id": "tb:bewölkt",
@@ -13060,8 +13085,11 @@
 "ja": "クリスマスマーケット",
 "lesson": "8A",
 "src": "textbook",
+"en": "Christmas market",
+"ipa": "/ˈvaɪ̯naxt͡sˌmaʁkt/",
 "g": "m",
-"pl": "Weihnachtsmärkte"
+"pl": "Weihnachtsmärkte",
+"gen": "Weihnachtsmarktes"
 },
 {
 "id": "tb:Weihnachtsbaum",

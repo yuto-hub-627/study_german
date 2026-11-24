@@ -77,8 +77,140 @@ export function editDistance(a: string, b: string, max = 3): number {
 
 export interface Suggestion {
   e: LexEntry;
-  kind: 'exact' | 'prefix' | 'fuzzy' | 'ja';
+  kind: 'exact' | 'prefix' | 'fuzzy' | 'ja' | 'form';
   dist?: number;
+  /** kind === 'form' のとき: 入力した形が何形か (例: "du・er/sie/es の現在形") */
+  why?: string;
+  /** kind === 'form' のとき: 入力された形 (辞書の綴り) */
+  form?: string;
+}
+
+// ---------- 活用形 → 基本形 ----------
+const PERSONS = ['ich', 'du', 'er/sie/es', 'wir', 'ihr', 'sie/Sie'];
+interface FormHit {
+  e: LexEntry;
+  form: string;
+  why: string;
+}
+const formIdx = new WeakMap<LexEntry[], Map<string, FormHit[]>>();
+
+function personLabel(arr: (string | null | undefined)[] | undefined, form: string): string {
+  const ps = (arr || []).map((f, i) => (f === form ? PERSONS[i] : null)).filter(Boolean) as string[];
+  return ps.join('・');
+}
+
+function getFormIndex(list: LexEntry[]): Map<string, FormHit[]> {
+  let m = formIdx.get(list);
+  if (m) return m;
+  m = new Map();
+  const add = (form: string | null | undefined, e: LexEntry, why: string) => {
+    if (!form) return;
+    const k = fold(form);
+    if (!k || k === e.k) return;
+    let a = m!.get(k);
+    if (!a) m!.set(k, (a = []));
+    const same = a.find((h) => h.e === e && h.form === form);
+    if (same) {
+      if (!same.why.includes(why)) same.why += ' / ' + why;
+      return;
+    }
+    a.push({ e, form, why });
+  };
+  for (const e of list) {
+    if (e.p === 'verb' && e.v) {
+      const v = e.v;
+      const tense = (arr: (string | null)[] | undefined, name: string) => {
+        if (!arr) return;
+        const seen = new Set<string>();
+        for (const f of arr) {
+          if (!f || seen.has(f)) continue;
+          seen.add(f);
+          const parts = f.split(' ');
+          const who = personLabel(arr, f);
+          if (parts.length === 2) {
+            // 分離動詞: fängt an → "fängt" でも "fängt an" でも引ける
+            add(parts[0], e, `${name}（${who}）※分離動詞：文では「${parts[0]} … ${parts[1]}」`);
+            add(f, e, `${name}（${who}）`);
+          } else add(f, e, `${name}（${who}）`);
+        }
+      };
+      tense(v.pr, '現在形');
+      tense(v.pt, '過去形');
+      tense(v.k2, '接続法第2式');
+      if (v.im) {
+        if (v.im[0]) add(v.im[0].split(' ')[0], e, 'du に対する命令形');
+        if (v.im[1] && v.im[1] !== (v.pr?.[4] || '')) add(v.im[1].split(' ')[0], e, 'ihr に対する命令形');
+      }
+      if (v.pp) {
+        const aux = (v.ax || 'haben').split('/')[0];
+        add(v.pp, e, `過去分詞（完了形は ${aux} ＋ ${v.pp}）`);
+      }
+      // 分離動詞の zu不定詞 (anzufangen)
+      const sep = v.pr?.[2]?.split(' ')[1];
+      if (sep && e.w.startsWith(sep)) add(sep + 'zu' + e.w.slice(sep.length), e, 'zu不定詞');
+    } else if (e.p === 'noun') {
+      if (e.pl && e.pl !== e.w) {
+        add(e.pl, e, '複数形');
+        if (!/[ns]$/.test(e.pl)) add(e.pl + 'n', e, '複数3格（与格）');
+      }
+      if (e.gen && e.gen !== e.w) add(e.gen, e, e.wk ? '単数2格（男性弱変化：2・3・4格は -en/-n）' : '単数2格（属格）');
+    } else if (e.p === 'adj' && e.c) {
+      if (e.c[0]) add(e.c[0], e, '比較級');
+      const sup = e.c[1]?.replace(/^am /, '');
+      if (sup) {
+        add(sup, e, '最上級（am 〜sten）');
+        if (sup.endsWith('en')) add(sup.slice(0, -2), e, '最上級');
+      }
+    }
+  }
+  formIdx.set(list, m);
+  return m;
+}
+
+const adjIdx = new WeakMap<LexEntry[], Map<string, LexEntry[]>>();
+const ADJ_END = ['en', 'em', 'er', 'es', 'e', 'n', 'm', 'r', 's'];
+
+/** 入力が活用形なら、その基本形と「何形か」を返す */
+export function lookupForm(list: LexEntry[], q: string): Suggestion[] {
+  const k = fold(q.trim());
+  if (k.length < 2) return [];
+  const idx = getFormIndex(list);
+  const word = q.trim();
+  // fängt と fangt のようにウムラウトだけ違う形は、綴りが一致する方を採用
+  const hits = idx.get(k) || [];
+  const out: Suggestion[] = hits
+    .filter((h) => h.form === word || !hits.some((o) => o.e === h.e && o.form === word))
+    .filter((h, i, arr) => arr.findIndex((o) => o.e === h.e) === i)
+    .map((h) => ({ e: h.e, kind: 'form' as const, why: h.why, form: h.form }));
+  // 形容詞の語尾変化 (großen → groß, größeren → größer → groß, dunkle → dunkel)
+  let adjs = adjIdx.get(list);
+  if (!adjs) {
+    adjs = new Map();
+    for (const e of list) if (e.p === 'adj') (adjs.get(e.k!) || adjs.set(e.k!, []).get(e.k!)!).push(e);
+    adjIdx.set(list, adjs);
+  }
+  const adjOf = (key: string) => adjs!.get(key) || [];
+  for (const end of ADJ_END) {
+    if (!k.endsWith(end) || k.length - end.length < 2) continue;
+    const stem = k.slice(0, -end.length);
+    const label = `に格語尾 -${word.toLowerCase().endsWith(end) ? word.slice(-end.length) : end} がついた形`;
+    const cands: [string, string][] = [[stem, '']];
+    // dunkel → dunkle / teuer → teure
+    if (/[lr]$/.test(stem)) cands.push([stem.slice(0, -1) + 'e' + stem.slice(-1), '']);
+    for (const [s] of cands) {
+      for (const e of adjOf(s)) if (!out.some((o) => o.e === e)) out.push({ e, kind: 'form', why: `原級${label}`, form: word });
+      for (const h of idx.get(s) || []) {
+        if (h.e.p !== 'adj' || out.some((o) => o.e === h.e)) continue;
+        out.push({ e: h.e, kind: 'form', why: `${h.why.replace(/（.*$/, '')}「${h.form}」${label}`, form: word });
+      }
+    }
+    // müde → müden (語幹が e で終わる)
+    for (const e of adjOf(stem + 'e')) if (end.length === 1 && !out.some((o) => o.e === e)) out.push({ e, kind: 'form', why: `原級${label}`, form: word });
+  }
+  // 綴りが完全に一致するもの → 分離動詞でないもの → よく使う語 の順
+  const sepRank = (s: Suggestion) => (s.why?.includes('分離動詞') ? 1 : 0);
+  out.sort((a, b) => (a.form === word ? 0 : 1) - (b.form === word ? 0 : 1) || sepRank(a) - sepRank(b) || a.e.r - b.e.r);
+  return out;
 }
 
 const SEP_PREFIXES = ['ab', 'an', 'auf', 'aus', 'bei', 'ein', 'fern', 'fest', 'her', 'hin', 'los', 'mit', 'nach', 'vor', 'weg', 'zu', 'zurück', 'zusammen', 'statt', 'teil', 'kennen', 'spazieren'];
@@ -124,8 +256,18 @@ export function suggest(list: LexEntry[], q: string, limit = 8): Suggestion[] {
     }
     phrases.sort((a, b) => (a.e.ja ? 0 : 1) - (b.e.ja ? 0 : 1) || a.e.r - b.e.r);
   }
+  // 活用形 → 基本形 (isst → essen)
+  let forms = lookupForm(list, raw).filter((f) => !exact.some((x) => x.e === f.e));
+  const fset = new Set(forms.map((f) => f.e));
+  const prefix2 = prefix.filter((p) => !fset.has(p.e));
   const nPh = Math.min(3, phrases.length);
-  let out = [...[...exact, ...prefix].slice(0, limit - nPh), ...phrases.slice(0, nPh)];
+  // 綴りどおりの見出し語 → 活用形 → ウムラウト等を無視して一致した見出し語 (Häuser → Haus を Hauser より先に)
+  const exact1 = exact.filter((x) => x.e.w === raw || x.e.w.toLowerCase() === raw.toLowerCase());
+  const exact2 = exact.filter((x) => !exact1.includes(x));
+  // 見出し語そのものを打ったときは、分離動詞の活用形 (essen → aufessen) は出さない
+  if (exact1.length) forms = forms.filter((f) => !f.why?.includes('分離動詞')).slice(0, 2);
+  else forms = forms.slice(0, 3);
+  let out = [...[...exact1, ...forms, ...exact2, ...prefix2].slice(0, limit - nPh), ...phrases.slice(0, nPh)];
   if (out.length === 0 && k.length >= 3) {
     // スペルミス候補
     const max = k.length <= 4 ? 1 : k.length <= 7 ? 2 : 3;
@@ -150,4 +292,25 @@ export function detectSeparable(w: string, e?: LexEntry): string | undefined {
   if (parts.length === 2 && SEP_PREFIXES.includes(parts[1]) && w.startsWith(parts[1])) return parts[1];
   if (parts.length === 2 && w.startsWith(parts[1])) return parts[1];
   return undefined;
+}
+
+// ---------- 例文 ----------
+/** [ドイツ語, 日本語訳 | null, 英訳?] */
+export type Example = [string, string | null, string?];
+const exCache = new Map<string, Promise<Record<string, Example[]>>>();
+
+/** 単語の例文 (Tatoeba の日本語訳つき / Wiktionary の英訳つき) */
+export async function loadExamples(pos: string, w: string): Promise<Example[]> {
+  const c = fold(w)[0] || '_';
+  let p = exCache.get(c);
+  if (!p) {
+    p = fetch(`${import.meta.env.BASE_URL}dict/ex/${c}.json`)
+      .then((r) => (r.ok ? (r.json() as Promise<Record<string, Example[]>>) : {}))
+      .catch(() => {
+        exCache.delete(c);
+        return {};
+      });
+    exCache.set(c, p);
+  }
+  return (await p)[`${pos}:${w}`] || [];
 }
