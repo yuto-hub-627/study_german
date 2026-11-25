@@ -13,7 +13,7 @@ import { saveWord, setBookWords, useStore } from '../lib/store';
 import { POS_LABEL, type Word } from '../lib/types';
 
 /** 辞書エントリーを単語データに変換 (活用表などの表示・単語帳への追加用) */
-function toWord(e: LexEntry): Word {
+export function toWord(e: LexEntry): Word {
   const refl = e.p === 'verb' && !!e.v?.rf;
   return {
     id: `lex:${e.p}:${e.w}`,
@@ -119,11 +119,13 @@ export function Dictionary() {
             <div>・活用した形からも引けます（isst → essen、ging → gehen、Häuser → Haus、größeren → groß）。何形なのかも表示します。</div>
             <div>・単語を開くと、意味・発音・活用表・格変化を確認して、MY単語帳に追加できます。</div>
           </div>
-          <a href="#/separable" className="card lesson-card" style={{ color: 'inherit' }}>
-            <span className="lesson-badge" style={{ fontSize: '1rem' }}>an|</span>
+          <a href="#/groups" className="card lesson-card" style={{ color: 'inherit' }}>
+            <span className="lesson-badge" style={{ fontSize: '0.9rem' }}>
+              <Icon name="folder" size={22} />
+            </span>
             <div style={{ flex: 1 }}>
-              <div style={{ fontWeight: 700 }}>分離動詞の一覧</div>
-              <div className="small muted">kommen → an|kommen, mit|kommen… 本体の動詞ごとにまとめて覚える</div>
+              <div style={{ fontWeight: 700 }}>単語グループ</div>
+              <div className="small muted">前置詞の格・不規則動詞のパターン・性がわかる語尾・反対語・テーマ別・分離動詞など</div>
             </div>
             <Icon name="chevron" size={18} />
           </a>

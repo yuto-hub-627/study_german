@@ -537,3 +537,8 @@ input[type="range"] { accent-color: var(--red); width: 100%; }
 .form-opt { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 8px 10px; border-radius: 10px; border: 1.5px solid var(--black, #222); background: #fffdf7; cursor: pointer; text-align: left; color: inherit; }
 .form-opt .de { font-size: 1.05rem; font-weight: 700; }
 .form-opt.on { background: #fbe7a8; }
+
+/* 単語グループ: 2語ずつ並べる (反対語・置く/ある) */
+.wg-pairs { display: grid; grid-template-columns: 1fr 1fr; column-gap: 14px; }
+.wg-pairs .sep-row { position: relative; }
+.wg-pairs .wg-arrow { position: absolute; right: -14px; top: 50%; transform: translateY(-50%); width: 14px; text-align: center; color: var(--text-3, #888); font-size: 0.8rem; }

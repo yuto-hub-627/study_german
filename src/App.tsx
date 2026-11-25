@@ -6,6 +6,7 @@ import { Home } from './pages/Home';
 import { DictEntry, Dictionary } from './pages/Dictionary';
 import { Important } from './pages/Important';
 import { Separable } from './pages/Separable';
+import { WordGroups, WordGroupTopic } from './pages/WordGroups';
 import { BookDetail, MyBooks } from './pages/MyBooks';
 import { Settings } from './pages/Settings';
 import { Study } from './pages/Study';
@@ -41,6 +42,8 @@ export function App() {
   else if (path === '/add') page = <EditWord bookId={query.get('book') || undefined} />;
   else if (path === '/my') page = <MyBooks />;
   else if (path === '/separable') page = <Separable />;
+  else if (path === '/groups') page = <WordGroups />;
+  else if ((m = match('/groups/:id', path))) page = <WordGroupTopic key={m.id} id={m.id} />;
   else if (path === '/important') page = <Important />;
   else if ((m = match('/my/:id', path))) page = <BookDetail id={m.id} />;
   else if ((m = match('/edit/:id', path))) page = <EditWord id={m.id} />;
@@ -52,7 +55,7 @@ export function App() {
   else if (path === '/settings') page = <Settings query={query} />;
   else page = <div className="empty">ページが見つかりません</div>;
 
-  const active = (p: string) => (p === '/' ? path === '/' : path.startsWith(p) || (p === '/my' && (path === '/add' || path.startsWith('/edit'))) || (p === '/study' && (path.startsWith('/grammar') || path === '/compose')));
+  const active = (p: string) => (p === '/' ? path === '/' : path.startsWith(p) || (p === '/my' && (path === '/add' || path.startsWith('/edit'))) || (p === '/study' && (path.startsWith('/grammar') || path === '/compose')) || (p === '/dict' && (path === '/separable' || path.startsWith('/groups'))));
 
   return (
     <div className="app">
