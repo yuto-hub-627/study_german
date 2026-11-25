@@ -16,6 +16,7 @@ for f in deu jpn; do curl -sS https://downloads.tatoeba.org/exports/per_language
 curl -sS https://downloads.tatoeba.org/exports/links.tar.bz2 | tar xj -C $D
 python3 scripts/tatoeba_pairs.py $D $D/de_ja_pairs.tsv
 python3 scripts/build_examples.py public/dict/lexicon.json $D public/dict/ex
+python3 scripts/build_info.py $D/de_raw.jsonl public/dict/lexicon.json public/dict/info   # 語源・成り立ち・関連語
 python3 scripts/build_textbook.py public/dict/lexicon.json data/textbook_words.tsv src/data/textbook.json
 ```
 - 日本語訳: 日本語版Wiktionary → 英語版Wiktionaryの翻訳表経由の順で採用
@@ -23,3 +24,4 @@ python3 scripts/build_textbook.py public/dict/lexicon.json data/textbook_words.t
 - 活用形→基本形の予測（isst → essen）は、辞書の活用データからアプリ側で逆引き表を作る（`src/lib/lexicon.ts` の `lookupForm`）。追加データは不要
 - 例文: `public/dict/ex/<頭文字>.json`。1語あたり Tatoeba（日本語訳つき）最大3文＋Wiktionary（英訳つき）。辞書の単語ページで頭文字のファイルだけ読み込む
 - ライセンス: Wiktionary (CC BY-SA 4.0), FrequencyWords (CC BY-SA 4.0), Tatoeba (CC BY 2.0 FR)
+- 語源・成り立ち: `public/dict/info/<頭文字>.json`（Wiktionary の語源テンプレートから、成り立ち・同じ語源の英単語・由来・類義語・反義語・派生語・原文）。日本語の説明（言語名・接頭辞の意味）はアプリ側の `src/components/WordInfoCard.tsx` に持つ
