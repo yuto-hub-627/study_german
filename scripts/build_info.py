@@ -106,6 +106,8 @@ for line in open(raw, encoding='utf-8'):
     tx = re.sub(r'\s+', ' ', tx).strip()
     if tx:
         r['tx'] = tx if len(tx) <= 420 else tx[:400].rsplit(' ', 1)[0] + ' …'
+    # 英語の同族語・原文は画面に出さない (2026-11-25 ユーザー判断) のでデータからも外す
+    r.pop('en', None); r.pop('tx', None)
     if r: info[(p, w)] = r
 
 shards = collections.defaultdict(dict)

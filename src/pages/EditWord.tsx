@@ -247,7 +247,6 @@ export function EditWord({ id, bookId }: { id?: string; bookId?: string }) {
         <div className="field">
           <label htmlFor="ja">日本語の意味</label>
           <input id="ja" className="input" value={w.ja} onChange={(e) => up({ ja: e.target.value })} placeholder="辞書から自動入力されます（編集可）" />
-          {w.en && <div className="tiny muted">英語: {w.en}</div>}
         </div>
 
         <div className="field">

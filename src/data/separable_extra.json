@@ -1,0 +1,1692 @@
+[
+[
+"aufhalten",
+"auf",
+"halten",
+"引き止める、足止めする",
+1311,
+"hält … auf",
+"aufgehalten",
+"持つ、飼う"
+],
+[
+"aufpassen",
+"auf",
+"passen",
+"見張る、気を付ける",
+1637,
+"passt … auf",
+"aufgepasst",
+"合う、似合う"
+],
+[
+"nachdenken",
+"nach",
+"denken",
+"考える",
+1767,
+"denkt … nach",
+"nachgedacht",
+"思う、考える"
+],
+[
+"aufgeben",
+"auf",
+"geben",
+"諦める、断念する",
+1896,
+"gibt … auf",
+"aufgegeben",
+"～を与える、ある"
+],
+[
+"zulassen",
+"zu",
+"lassen",
+"許す、認める",
+2167,
+"lässt … zu",
+"zugelassen",
+"許可する、容認する"
+],
+[
+"weitermachen",
+"weiter",
+"machen",
+"続ける",
+2197,
+"macht … weiter",
+"weitergemacht",
+"～をする、～を作る"
+],
+[
+"anhalten",
+"an",
+"halten",
+"止まる、止める",
+2375,
+"hält … an",
+"angehalten",
+"持つ、飼う"
+],
+[
+"festhalten",
+"fest",
+"halten",
+"しっかりつかむ",
+2642,
+"hält … fest",
+"festgehalten",
+"持つ、飼う"
+],
+[
+"anfassen",
+"an",
+"fassen",
+"触る、触れる",
+2686,
+"fasst … an",
+"angefasst",
+"捉える、つかむ"
+],
+[
+"zugeben",
+"zu",
+"geben",
+"自白する、認める",
+2715,
+"gibt … zu",
+"zugegeben",
+"～を与える、ある"
+],
+[
+"zurückkehren",
+"zurück",
+"kehren",
+"戻る、帰る",
+2766,
+"kehrt … zurück",
+"zurückgekehrt",
+"掃除する、掃く"
+],
+[
+"anbieten",
+"an",
+"bieten",
+"提供する",
+2937,
+"bietet … an",
+"angeboten",
+"値をつける、入札する"
+],
+[
+"aufwachen",
+"auf",
+"wachen",
+"目覚める、起きる",
+2962,
+"wacht … auf",
+"aufgewacht",
+"おきる、目をさます"
+],
+[
+"loslassen",
+"los",
+"lassen",
+"放す、解放する",
+3021,
+"lässt … los",
+"losgelassen",
+"許可する、容認する"
+],
+[
+"vorbereiten",
+"vor",
+"bereiten",
+"準備する、用意する",
+3042,
+"bereitet … vor",
+"vorbereitet",
+""
+],
+[
+"umdrehen",
+"um",
+"drehen",
+"裏返す、（sich）振り返る",
+3306,
+"dreht … um",
+"umgedreht",
+"回る、回す"
+],
+[
+"reingehen",
+"rein",
+"gehen",
+"中に入る",
+3409,
+"geht … rein",
+"reingegangen",
+"歩く、歩行する"
+],
+[
+"weitergehen",
+"weiter",
+"gehen",
+"前進する",
+3489,
+"geht … weiter",
+"weitergegangen",
+"歩く、歩行する"
+],
+[
+"anschauen",
+"an",
+"schauen",
+"（じっと）見る",
+3535,
+"schaut … an",
+"angeschaut",
+"見る、ご覧になる"
+],
+[
+"einfallen",
+"ein",
+"fallen",
+"思いつく、思い出す",
+3542,
+"fällt … ein",
+"eingefallen",
+"落ちる、（戦闘で）敗北する"
+],
+[
+"auftauchen",
+"auf",
+"tauchen",
+"現れる、出てくる",
+3572,
+"taucht … auf",
+"aufgetaucht",
+"潜る"
+],
+[
+"anstellen",
+"an",
+"stellen",
+"雇う、（列に）並ぶ",
+3846,
+"stellt … an",
+"angestellt",
+"立てる、置く"
+],
+[
+"abwarten",
+"ab",
+"warten",
+"（結果を）待つ",
+4091,
+"wartet … ab",
+"abgewartet",
+"待つ、修繕する"
+],
+[
+"abhalten",
+"ab",
+"halten",
+"妨げる、（会を）開く",
+4199,
+"hält … ab",
+"abgehalten",
+"持つ、飼う"
+],
+[
+"mitteilen",
+"mit",
+"teilen",
+"知らせる、伝える",
+4226,
+"teilt … mit",
+"mitgeteilt",
+"振り分ける、分割する"
+],
+[
+"vorbeikommen",
+"vorbei",
+"kommen",
+"立ち寄る",
+4237,
+"kommt … vorbei",
+"vorbeigekommen",
+"来る、起こる"
+],
+[
+"einsetzen",
+"ein",
+"setzen",
+"使う、投入する",
+4250,
+"setzt … ein",
+"eingesetzt",
+"～を置く、設置する"
+],
+[
+"wegnehmen",
+"weg",
+"nehmen",
+"取り上げる",
+4374,
+"nimmt … weg",
+"weggenommen",
+"取る、取る"
+],
+[
+"ausschalten",
+"aus",
+"schalten",
+"（スイッチを）切る",
+4557,
+"schaltet … aus",
+"ausgeschaltet",
+"切り替える"
+],
+[
+"zusammenarbeiten",
+"zusammen",
+"arbeiten",
+"協力する、共同して働く",
+4714,
+"arbeitet … zusammen",
+"zusammengearbeitet",
+"働く、(再帰用法) 働いて … になる"
+],
+[
+"angehen",
+"an",
+"gehen",
+"（電気が）つく、関係する",
+4750,
+"geht … an",
+"angegangen",
+"歩く、歩行する"
+],
+[
+"zustimmen",
+"zu",
+"stimmen",
+"賛成する",
+4793,
+"stimmt … zu",
+"zugestimmt",
+"投票する"
+],
+[
+"durchführen",
+"durch",
+"führen",
+"実行する",
+4829,
+"führt … durch",
+"durchgeführt",
+"導く、率いる"
+],
+[
+"aufbauen",
+"auf",
+"bauen",
+"組み立てる、築く",
+4924,
+"baut … auf",
+"aufgebaut",
+"建てる、造る"
+],
+[
+"vorschlagen",
+"vor",
+"schlagen",
+"提案する",
+5078,
+"schlägt … vor",
+"vorgeschlagen",
+"殴る、叩く"
+],
+[
+"auflegen",
+"auf",
+"legen",
+"電話を切る",
+5200,
+"legt … auf",
+"aufgelegt",
+"横にする、置く"
+],
+[
+"ausdrücken",
+"aus",
+"drücken",
+"表現する、絞る",
+5310,
+"drückt … aus",
+"ausgedrückt",
+"押す、抱きしめる"
+],
+[
+"absagen",
+"ab",
+"sagen",
+"断る、取り消す",
+5570,
+"sagt … ab",
+"abgesagt",
+"言う、口にする"
+],
+[
+"ablenken",
+"ab",
+"lenken",
+"気をそらす",
+5588,
+"lenkt … ab",
+"abgelenkt",
+"向ける"
+],
+[
+"ablehnen",
+"ab",
+"lehnen",
+"断る、否定する",
+5609,
+"lehnt … ab",
+"abgelehnt",
+"傾く、もたれる"
+],
+[
+"aussprechen",
+"aus",
+"sprechen",
+"発音する、言い表す",
+5613,
+"spricht … aus",
+"ausgesprochen",
+"（ある言語等）を話す、しゃべる"
+],
+[
+"abschalten",
+"ab",
+"schalten",
+"（スイッチを）切る、休む",
+5698,
+"schaltet … ab",
+"abgeschaltet",
+"切り替える"
+],
+[
+"abschließen",
+"ab",
+"schließen",
+"鍵をかける、終える",
+5702,
+"schließt … ab",
+"abgeschlossen",
+"閉める、閉じる"
+],
+[
+"zurücklassen",
+"zurück",
+"lassen",
+"残していく、置いていく",
+5728,
+"lässt … zurück",
+"zurückgelassen",
+"許可する、容認する"
+],
+[
+"feststellen",
+"fest",
+"stellen",
+"確認する、気づく",
+5731,
+"stellt … fest",
+"festgestellt",
+"立てる、置く"
+],
+[
+"aushalten",
+"aus",
+"halten",
+"耐える、我慢する",
+5743,
+"hält … aus",
+"ausgehalten",
+"持つ、飼う"
+],
+[
+"ausprobieren",
+"aus",
+"probieren",
+"試みる、試す",
+5771,
+"probiert … aus",
+"ausprobiert",
+"試す、試みる"
+],
+[
+"zurückholen",
+"zurück",
+"holen",
+"取り戻す",
+5806,
+"holt … zurück",
+"zurückgeholt",
+"持ち帰る、持って来る"
+],
+[
+"anschließen",
+"an",
+"schließen",
+"つなぐ、接続する",
+5918,
+"schließt … an",
+"angeschlossen",
+"閉める、閉じる"
+],
+[
+"ausführen",
+"aus",
+"führen",
+"実行する、行う",
+5939,
+"führt … aus",
+"ausgeführt",
+"導く、率いる"
+],
+[
+"aufbrechen",
+"auf",
+"brechen",
+"出発する、こじ開ける",
+6040,
+"bricht … auf",
+"aufgebrochen",
+"壊す、破る"
+],
+[
+"aufregen",
+"auf",
+"regen",
+"（sich）興奮する、腹を立てる",
+6102,
+"regt … auf",
+"aufgeregt",
+"～を動かす、動く"
+],
+[
+"vorlesen",
+"vor",
+"lesen",
+"朗読する、読み聞かせる",
+6261,
+"liest … vor",
+"vorgelesen",
+"(本などを）読む"
+],
+[
+"anzeigen",
+"an",
+"zeigen",
+"表示する、届け出る",
+6265,
+"zeigt … an",
+"angezeigt",
+"見せる、～を示す"
+],
+[
+"abbrechen",
+"ab",
+"brechen",
+"中断する、折る",
+6303,
+"bricht … ab",
+"abgebrochen",
+"壊す、破る"
+],
+[
+"herstellen",
+"her",
+"stellen",
+"生産する、作る",
+6428,
+"stellt … her",
+"hergestellt",
+"立てる、置く"
+],
+[
+"ablegen",
+"ab",
+"legen",
+"（服を）脱ぐ、（試験を）受ける",
+6477,
+"legt … ab",
+"abgelegt",
+"横にする、置く"
+],
+[
+"wegwerfen",
+"weg",
+"werfen",
+"捨てる",
+6577,
+"wirft … weg",
+"weggeworfen",
+"投げる、（手で）シュートする"
+],
+[
+"abziehen",
+"ab",
+"ziehen",
+"引き抜く、差し引く",
+6675,
+"zieht … ab",
+"abgezogen",
+"引く、(たばこなどを) 吸う"
+],
+[
+"fernhalten",
+"fern",
+"halten",
+"抑止する",
+6704,
+"hält … fern",
+"ferngehalten",
+"持つ、飼う"
+],
+[
+"durchhalten",
+"durch",
+"halten",
+"踏ん張る",
+6748,
+"hält … durch",
+"durchgehalten",
+"持つ、飼う"
+],
+[
+"mitbekommen",
+"mit",
+"bekommen",
+"気づく、耳にする",
+6767,
+"bekommt … mit",
+"mitbekommen",
+"手に入れる、得る"
+],
+[
+"ausleihen",
+"aus",
+"leihen",
+"借りる",
+6893,
+"leiht … aus",
+"ausgeliehen",
+"貸す、借りる"
+],
+[
+"auslösen",
+"aus",
+"lösen",
+"引き起こす",
+6940,
+"löst … aus",
+"ausgelöst",
+"解く、買う"
+],
+[
+"zurücktreten",
+"zurück",
+"treten",
+"辞任する、辞職する",
+7038,
+"tritt … zurück",
+"zurückgetreten",
+"踏む、漕ぐ"
+],
+[
+"aufhängen",
+"auf",
+"hängen",
+"掛ける、吊るす",
+7056,
+"hängt … auf",
+"aufgehängt",
+"掛ける、首を吊らせる"
+],
+[
+"aufheben",
+"auf",
+"heben",
+"拾い上げる、取っておく",
+7182,
+"hebt … auf",
+"aufgehoben",
+"上げる"
+],
+[
+"abschneiden",
+"ab",
+"schneiden",
+"切り取る",
+7246,
+"schneidet … ab",
+"abgeschnitten",
+"切る、交わる"
+],
+[
+"umkehren",
+"um",
+"kehren",
+"引き返す、逆にする",
+7320,
+"kehrt … um",
+"umgekehrt",
+"掃除する、掃く"
+],
+[
+"fertigmachen",
+"fertig",
+"machen",
+"完了する、完うする",
+7545,
+"macht … fertig",
+"fertiggemacht",
+"～をする、～を作る"
+],
+[
+"freilassen",
+"frei",
+"lassen",
+"釈放する、束縛を解く",
+7630,
+"lässt … frei",
+"freigelassen",
+"許可する、容認する"
+],
+[
+"einrichten",
+"ein",
+"richten",
+"（部屋を）しつらえる、設置する",
+7695,
+"richtet … ein",
+"eingerichtet",
+""
+],
+[
+"einschalten",
+"ein",
+"schalten",
+"（スイッチを）入れる",
+7724,
+"schaltet … ein",
+"eingeschaltet",
+"切り替える"
+],
+[
+"einatmen",
+"ein",
+"atmen",
+"息を吸う",
+7875,
+"atmet … ein",
+"eingeatmet",
+"呼吸する、息をする"
+],
+[
+"zurückhalten",
+"zurück",
+"halten",
+"引き止める、控える",
+7876,
+"hält … zurück",
+"zurückgehalten",
+"持つ、飼う"
+],
+[
+"hinweisen",
+"hin",
+"weisen",
+"指す、指し示す",
+7950,
+"weist … hin",
+"hingewiesen",
+"指す、指し示す"
+],
+[
+"durchkommen",
+"durch",
+"kommen",
+"通り抜ける、（試験に）受かる",
+8063,
+"kommt … durch",
+"durchgekommen",
+"来る、起こる"
+],
+[
+"ausliefern",
+"aus",
+"liefern",
+"配達する、引き渡す",
+8181,
+"liefert … aus",
+"ausgeliefert",
+"引き渡す、埋め合わせる"
+],
+[
+"fortsetzen",
+"fort",
+"setzen",
+"続ける",
+8434,
+"setzt … fort",
+"fortgesetzt",
+"～を置く、設置する"
+],
+[
+"anpassen",
+"an",
+"passen",
+"合わせる、適応させる",
+8441,
+"passt … an",
+"angepasst",
+"合う、似合う"
+],
+[
+"eintreffen",
+"ein",
+"treffen",
+"到着する",
+8494,
+"trifft … ein",
+"eingetroffen",
+"会う、出会う"
+],
+[
+"darstellen",
+"dar",
+"stellen",
+"表す、描く",
+8738,
+"stellt … dar",
+"dargestellt",
+"立てる、置く"
+],
+[
+"einschlagen",
+"ein",
+"schlagen",
+"打ち込む、（道を）とる",
+8766,
+"schlägt … ein",
+"eingeschlagen",
+"殴る、叩く"
+],
+[
+"klarkommen",
+"klar",
+"kommen",
+"うまくやっていく",
+8806,
+"kommt … klar",
+"klargekommen",
+"来る、起こる"
+],
+[
+"hinzufügen",
+"hinzu",
+"fügen",
+"追加する、足す",
+8843,
+"fügt … hinzu",
+"hinzugefügt",
+""
+],
+[
+"einholen",
+"ein",
+"holen",
+"追いつく、（情報を）集める",
+8864,
+"holt … ein",
+"eingeholt",
+"持ち帰る、持って来る"
+],
+[
+"zurückzahlen",
+"zurück",
+"zahlen",
+"返済する",
+8918,
+"zahlt … zurück",
+"zurückgezahlt",
+"～に支払う"
+],
+[
+"wiedergutmachen",
+"wieder",
+"gutmachen",
+"埋め合わせる、償う",
+9072,
+"macht … wieder … gut",
+"wiedergutgemacht",
+"償う"
+],
+[
+"eingreifen",
+"ein",
+"greifen",
+"介入する",
+9080,
+"greift … ein",
+"eingegriffen",
+"～をつかむ、つかむ"
+],
+[
+"austauschen",
+"aus",
+"tauschen",
+"交換する、取り替える",
+9122,
+"tauscht … aus",
+"ausgetauscht",
+"交換する、取り替える"
+],
+[
+"anzünden",
+"an",
+"zünden",
+"点火する、点じる",
+9134,
+"zündet … an",
+"angezündet",
+"火を点ける"
+],
+[
+"ausschließen",
+"aus",
+"schließen",
+"除く、除外する",
+9217,
+"schließt … aus",
+"ausgeschlossen",
+"閉める、閉じる"
+],
+[
+"vorbeischauen",
+"vorbei",
+"schauen",
+"訪ねる、訪問する",
+9292,
+"schaut … vorbei",
+"vorbeigeschaut",
+"見る、ご覧になる"
+],
+[
+"anhaben",
+"an",
+"haben",
+"着ている",
+9315,
+"hat … an",
+"angehabt",
+"時制の助動詞として完了を表す、（何かを）持つ"
+],
+[
+"vorwerfen",
+"vor",
+"werfen",
+"非難する、責める",
+9328,
+"wirft … vor",
+"vorgeworfen",
+"投げる、（手で）シュートする"
+],
+[
+"aufwecken",
+"auf",
+"wecken",
+"起こす、目覚めさせる",
+9479,
+"weckt … auf",
+"aufgeweckt",
+"(寝ている人を) 起こす、引き出す"
+],
+[
+"durchstehen",
+"durch",
+"stehen",
+"耐える",
+9561,
+"steht … durch",
+"durchgestanden",
+"立つ、居る"
+],
+[
+"gutmachen",
+"gut",
+"machen",
+"償う",
+9600,
+"macht … gut",
+"gutgemacht",
+"～をする、～を作る"
+],
+[
+"einsehen",
+"ein",
+"sehen",
+"理解する、認める",
+9721,
+"sieht … ein",
+"eingesehen",
+"見る、～を探す"
+],
+[
+"aufteilen",
+"auf",
+"teilen",
+"分配する、分ける",
+9935,
+"teilt … auf",
+"aufgeteilt",
+"振り分ける、分割する"
+],
+[
+"einhalten",
+"ein",
+"halten",
+"（約束などを）守る",
+9987,
+"hält … ein",
+"eingehalten",
+"持つ、飼う"
+],
+[
+"abreißen",
+"ab",
+"reißen",
+"取り壊す、ちぎる",
+10050,
+"reißt … ab",
+"abgerissen",
+"破る、奪う"
+],
+[
+"ausfüllen",
+"aus",
+"füllen",
+"書き込む、記入する",
+10066,
+"füllt … aus",
+"ausgefüllt",
+"満たす、盛る"
+],
+[
+"anwenden",
+"an",
+"wenden",
+"用いる、使う",
+10082,
+"wendet … an",
+"angewandt",
+"変える"
+],
+[
+"aufwärmen",
+"auf",
+"wärmen",
+"温め直す、ウォーミングアップする",
+10091,
+"wärmt … auf",
+"aufgewärmt",
+"温める"
+],
+[
+"abstimmen",
+"ab",
+"stimmen",
+"投票する、調整する",
+10316,
+"stimmt … ab",
+"abgestimmt",
+"投票する"
+],
+[
+"vormachen",
+"vor",
+"machen",
+"やって見せる、ごまかす",
+10368,
+"macht … vor",
+"vorgemacht",
+"～をする、～を作る"
+],
+[
+"auskommen",
+"aus",
+"kommen",
+"（mit）やっていく、足りる",
+10386,
+"kommt … aus",
+"ausgekommen",
+"来る、起こる"
+],
+[
+"andeuten",
+"an",
+"deuten",
+"ほのめかす",
+10398,
+"deutet … an",
+"angedeutet",
+""
+],
+[
+"aufsteigen",
+"auf",
+"steigen",
+"登る、昇進する",
+10405,
+"steigt … auf",
+"aufgestiegen",
+"のぼる、たかくなる"
+],
+[
+"auflösen",
+"auf",
+"lösen",
+"解散する、溶かす",
+10575,
+"löst … auf",
+"aufgelöst",
+"解く、買う"
+],
+[
+"abheben",
+"ab",
+"heben",
+"（お金を）引き出す、離陸する",
+10659,
+"hebt … ab",
+"abgehoben",
+"上げる"
+],
+[
+"wegrennen",
+"weg",
+"rennen",
+"逃げる、逃走する",
+10722,
+"rennt … weg",
+"weggerannt",
+"走る、速く歩く"
+],
+[
+"ablaufen",
+"ab",
+"laufen",
+"（期限が）切れる、進行する",
+10739,
+"läuft … ab",
+"abgelaufen",
+"走る、歩く"
+],
+[
+"fortgehen",
+"fort",
+"gehen",
+"立ち去る",
+10763,
+"geht … fort",
+"fortgegangen",
+"歩く、歩行する"
+],
+[
+"ausbrechen",
+"aus",
+"brechen",
+"噴出する、脱出する",
+10788,
+"bricht … aus",
+"ausgebrochen",
+"壊す、破る"
+],
+[
+"auswählen",
+"aus",
+"wählen",
+"選ぶ",
+10828,
+"wählt … aus",
+"ausgewählt",
+"選ぶ、選挙する"
+],
+[
+"ausweichen",
+"aus",
+"weichen",
+"よける、身をかわす",
+10884,
+"weicht … aus",
+"ausgewichen",
+"柔らかくなる、軟らかくなる"
+],
+[
+"zusammenleben",
+"zusammen",
+"leben",
+"一緒に暮らす",
+10981,
+"lebt … zusammen",
+"zusammengelebt",
+"生きる、暮らす"
+],
+[
+"weitergeben",
+"weiter",
+"geben",
+"伝える、パスする",
+11063,
+"gibt … weiter",
+"weitergegeben",
+"～を与える、ある"
+],
+[
+"nachgeben",
+"nach",
+"geben",
+"譲歩する、たわむ",
+11187,
+"gibt … nach",
+"nachgegeben",
+"～を与える、ある"
+],
+[
+"abbiegen",
+"ab",
+"biegen",
+"曲がる",
+11403,
+"biegt … ab",
+"abgebogen",
+"～を曲げる、曲がる"
+],
+[
+"anmelden",
+"an",
+"melden",
+"登録する、申し込む",
+11483,
+"meldet … an",
+"angemeldet",
+"報告する、報ずる"
+],
+[
+"einreichen",
+"ein",
+"reichen",
+"提出する",
+11572,
+"reicht … ein",
+"eingereicht",
+"足りる、充分である"
+],
+[
+"davonlaufen",
+"davon",
+"laufen",
+"逃げる、逃走する",
+11649,
+"läuft … davon",
+"davongelaufen",
+"走る、歩く"
+],
+[
+"zurückbleiben",
+"zurück",
+"bleiben",
+"立ち遅れる、残る",
+11732,
+"bleibt … zurück",
+"zurückgeblieben",
+"(..した)ままである、留まる"
+],
+[
+"hinnehmen",
+"hin",
+"nehmen",
+"堪え忍ぶ、許す",
+11926,
+"nimmt … hin",
+"hingenommen",
+"取る、取る"
+],
+[
+"ausreichen",
+"aus",
+"reichen",
+"足りる",
+12193,
+"reicht … aus",
+"ausgereicht",
+"足りる、充分である"
+],
+[
+"hinstellen",
+"hin",
+"stellen",
+"置く",
+12271,
+"stellt … hin",
+"hingestellt",
+"立てる、置く"
+],
+[
+"aufladen",
+"auf",
+"laden",
+"充電する、積む",
+12277,
+"lädt … auf",
+"aufgeladen",
+"載せる、(武器に)弾を入れる"
+],
+[
+"vorziehen",
+"vor",
+"ziehen",
+"（〜より）好む、前に出す",
+12339,
+"zieht … vor",
+"vorgezogen",
+"引く、(たばこなどを) 吸う"
+],
+[
+"beitragen",
+"bei",
+"tragen",
+"貢献する",
+12349,
+"trägt … bei",
+"beigetragen",
+"持つ、着る"
+],
+[
+"ausüben",
+"aus",
+"üben",
+"（職業などを）営む、行使する",
+12374,
+"übt … aus",
+"ausgeübt",
+"練習する、鍛える"
+],
+[
+"zurücknehmen",
+"zurück",
+"nehmen",
+"取り消す、引き取る",
+12393,
+"nimmt … zurück",
+"zurückgenommen",
+"取る、取る"
+],
+[
+"zurechtkommen",
+"zurecht",
+"kommen",
+"暮らす、やっていく",
+12772,
+"kommt … zurecht",
+"zurechtgekommen",
+"来る、起こる"
+],
+[
+"unterbringen",
+"unter",
+"bringen",
+"泊める、収容する",
+12782,
+"bringt … unter",
+"untergebracht",
+"～を持ってくる、～を持っていく"
+],
+[
+"abliefern",
+"ab",
+"liefern",
+"引き渡す、届ける",
+12820,
+"liefert … ab",
+"abgeliefert",
+"引き渡す、埋め合わせる"
+],
+[
+"anstarren",
+"an",
+"starren",
+"見詰める、じろじろ見る",
+12864,
+"starrt … an",
+"angestarrt",
+"見詰める、じろじろ見る"
+],
+[
+"beitreten",
+"bei",
+"treten",
+"加わる、参加する",
+12882,
+"tritt … bei",
+"beigetreten",
+"踏む、漕ぐ"
+],
+[
+"ausatmen",
+"aus",
+"atmen",
+"息を吐く",
+12945,
+"atmet … aus",
+"ausgeatmet",
+"呼吸する、息をする"
+],
+[
+"durchschauen",
+"durch",
+"schauen",
+"見通す、見抜く",
+12963,
+"schaut … durch",
+"durchgeschaut",
+"見る、ご覧になる"
+],
+[
+"vorgeben",
+"vor",
+"geben",
+"見せ掛ける、装う",
+13057,
+"gibt … vor",
+"vorgegeben",
+"～を与える、ある"
+],
+[
+"auslassen",
+"aus",
+"lassen",
+"抜かす、省く",
+13111,
+"lässt … aus",
+"ausgelassen",
+"許可する、容認する"
+],
+[
+"aufgehen",
+"auf",
+"gehen",
+"（太陽が）昇る、開く",
+13150,
+"geht … auf",
+"aufgegangen",
+"歩く、歩行する"
+],
+[
+"zusammenkommen",
+"zusammen",
+"kommen",
+"集まる",
+13152,
+"kommt … zusammen",
+"zusammengekommen",
+"来る、起こる"
+],
+[
+"abschlagen",
+"ab",
+"schlagen",
+"断る、切り落とす",
+13164,
+"schlägt … ab",
+"abgeschlagen",
+"殴る、叩く"
+],
+[
+"umfallen",
+"um",
+"fallen",
+"倒れる",
+13374,
+"fällt … um",
+"umgefallen",
+"落ちる、（戦闘で）敗北する"
+],
+[
+"aufführen",
+"auf",
+"führen",
+"上演する",
+13659,
+"führt … auf",
+"aufgeführt",
+"導く、率いる"
+],
+[
+"anbringen",
+"an",
+"bringen",
+"取り付ける",
+13689,
+"bringt … an",
+"angebracht",
+"～を持ってくる、～を持っていく"
+],
+[
+"wiederherstellen",
+"wieder",
+"herstellen",
+"立て直す、再建する",
+13701,
+"stellt … wieder … her",
+"wiederhergestellt",
+"生産する、作る"
+],
+[
+"festlegen",
+"fest",
+"legen",
+"決める、定める",
+13746,
+"legt … fest",
+"festgelegt",
+"横にする、置く"
+],
+[
+"eingeben",
+"ein",
+"geben",
+"入力する",
+13922,
+"gibt … ein",
+"eingegeben",
+"～を与える、ある"
+],
+[
+"großziehen",
+"groß",
+"ziehen",
+"育てる",
+13995,
+"zieht … groß",
+"großgezogen",
+"引く、(たばこなどを) 吸う"
+],
+[
+"zulegen",
+"zu",
+"legen",
+"（体重などが）増える、手に入れる",
+14164,
+"legt … zu",
+"zugelegt",
+"横にする、置く"
+],
+[
+"beistehen",
+"bei",
+"stehen",
+"手伝う",
+14291,
+"steht … bei",
+"beigestanden",
+"立つ、居る"
+],
+[
+"durchsetzen",
+"durch",
+"setzen",
+"押し通す、実現させる",
+14394,
+"setzt … durch",
+"durchgesetzt",
+"～を置く、設置する"
+],
+[
+"nachfragen",
+"nach",
+"fragen",
+"問い合わせる、尋ねる",
+14538,
+"fragt … nach",
+"nachgefragt",
+"質問する、尋ねる"
+],
+[
+"abwenden",
+"ab",
+"wenden",
+"防ぐ、（顔を）そむける",
+14584,
+"wendet … ab",
+"abgewendet",
+"変える"
+],
+[
+"anerkennen",
+"an",
+"erkennen",
+"認める",
+14751,
+"erkennt … an",
+"anerkannt",
+"認識する、気づく"
+],
+[
+"einführen",
+"ein",
+"führen",
+"導入する、輸入する",
+14835,
+"führt … ein",
+"eingeführt",
+"導く、率いる"
+],
+[
+"aufessen",
+"auf",
+"essen",
+"残さず食べる",
+14853,
+"isst … auf",
+"aufgegessen",
+"～を食べる、食事する"
+],
+[
+"zusammenbrechen",
+"zusammen",
+"brechen",
+"崩壊する、倒れる",
+14883,
+"bricht … zusammen",
+"zusammengebrochen",
+"壊す、破る"
+],
+[
+"absuchen",
+"ab",
+"suchen",
+"探す、捜す",
+14916,
+"sucht … ab",
+"abgesucht",
+"探す、求める"
+],
+[
+"einfrieren",
+"ein",
+"frieren",
+"凍らせる、冷凍する",
+14925,
+"friert … ein",
+"eingefroren",
+"冷える、凍える"
+],
+[
+"abwaschen",
+"ab",
+"waschen",
+"皿を洗う、食器類を洗う",
+15281,
+"wäscht … ab",
+"abgewaschen",
+"洗う、洗濯する"
+],
+[
+"umtauschen",
+"um",
+"tauschen",
+"交換する、両替する",
+22595,
+"tauscht … um",
+"umgetauscht",
+"交換する、取り替える"
+],
+[
+"hochladen",
+"hoch",
+"laden",
+"アップロードする",
+31562,
+"lädt … hoch",
+"hochgeladen",
+"載せる、(武器に)弾を入れる"
+],
+[
+"abmelden",
+"ab",
+"melden",
+"ログアウトする、（転出の）届けを出す",
+47180,
+"meldet … ab",
+"abgemeldet",
+"報告する、報ずる"
+],
+[
+"herunterladen",
+"herunter",
+"laden",
+"ダウンロードする",
+48322,
+"lädt … herunter",
+"heruntergeladen",
+"載せる、(武器に)弾を入れる"
+]
+]

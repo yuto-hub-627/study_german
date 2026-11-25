@@ -45,12 +45,12 @@ function WordLink({ lex, w }: { lex: LexEntry[] | null; w: string }) {
   const e = findEntry(lex, w);
   if (!e) return <span className="de">{w}</span>;
   return (
-    <button className="chip" onClick={() => go(dictPath(e))} title={e.ja || e.en?.[0]}>
+    <button className="chip" onClick={() => go(dictPath(e))} title={e.ja}>
       <span className="de">
         {e.p === 'noun' && e.g ? ARTICLE[e.g] + ' ' : ''}
         {e.w}
       </span>
-      {(e.ja || e.en?.[0]) && <span className="tiny muted wi-gloss"> {(e.ja || e.en![0]).split(/[、;,(]/)[0].trim()}</span>}
+      {e.ja && <span className="tiny muted wi-gloss"> {e.ja.split(/[、;,(]/)[0].trim()}</span>}
     </button>
   );
 }
@@ -80,8 +80,8 @@ export function WordInfoCard({ pos, w, lex }: { pos: string; w: string; lex: Lex
 
   if (!info) return null;
   const parts = info.pt || [];
-  const hasMore = !!(info.sy?.length || info.an?.length || info.dv?.length || info.tx);
-  const hasBasic = parts.length > 0 || !!info.en?.length || !!origin;
+  const hasMore = !!(info.sy?.length || info.an?.length || info.dv?.length);
+  const hasBasic = parts.length > 0 || !!origin;
   if (!hasBasic && !hasMore) return null;
 
   return (
@@ -113,14 +113,6 @@ export function WordInfoCard({ pos, w, lex }: { pos: string; w: string; lex: Lex
           </div>
         </div>
       )}
-      {!!info.en?.length && (
-        <div className="wi-row">
-          <div className="wi-label">英語との関係</div>
-          <div>
-            英語の <b className="de">{info.en.join(' / ')}</b> と同じ語源（もとは同じ言葉）
-          </div>
-        </div>
-      )}
       {origin && (
         <div className="wi-row">
           <div className="wi-label">由来</div>
@@ -146,7 +138,7 @@ export function WordInfoCard({ pos, w, lex }: { pos: string; w: string; lex: Lex
 
       {hasMore && !more && (
         <button className="btn ghost small" style={{ marginTop: 8 }} onClick={() => setMore(true)}>
-          もっと見る（類義語・関連語・原文）
+          もっと見る（似た意味の語・関連語）
         </button>
       )}
       {more && (
@@ -181,15 +173,6 @@ export function WordInfoCard({ pos, w, lex }: { pos: string; w: string; lex: Lex
               </div>
             </div>
           )}
-          {info.tx && (
-            <div className="wi-row">
-              <div className="wi-label">語源の原文（英語）</div>
-              <div className="small muted de" style={{ lineHeight: 1.6 }}>
-                {info.tx}
-              </div>
-            </div>
-          )}
-          <div className="tiny muted">出典: Wiktionary（CC BY-SA 4.0）</div>
         </div>
       )}
     </div>

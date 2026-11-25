@@ -165,7 +165,6 @@ export function DictEntry({ pos, w }: { pos: string; w: string }) {
     setTimeout(() => setMsg(null), 2500);
   };
 
-  const meanings = entry?.en || [];
 
   return (
     <div className="stack">
@@ -207,18 +206,6 @@ export function DictEntry({ pos, w }: { pos: string; w: string }) {
         )}
       </div>
 
-      {meanings.length > 0 && (
-        <div className="card">
-          <h3>意味（英語）</h3>
-          <ol style={{ margin: 0, paddingLeft: '1.3em' }}>
-            {meanings.map((m) => (
-              <li key={m} className="small">
-                {m}
-              </li>
-            ))}
-          </ol>
-        </div>
-      )}
 
       <Examples pos={word.pos} w={word.de} />
       <WordInfoCard pos={word.pos} w={word.de} lex={lex} />
@@ -294,7 +281,6 @@ export function DictEntry({ pos, w }: { pos: string; w: string }) {
           </div>
         </div>
       )}
-      <div className="tiny muted center">出典: Wiktionary（CC BY-SA 4.0）・Tatoeba（CC BY 2.0 FR）</div>
       {msg && <div className="toast">{msg}</div>}
     </div>
   );

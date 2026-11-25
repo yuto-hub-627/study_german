@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { Icon } from '../components/Icon';
 import { Speak } from '../components/Speak';
 import { PREFIX_MEANING, SEPARABLE, type SepGroup } from '../data/separable';
+import EXTRA from '../data/separable_extra.json';
 import { loadLexicon } from '../lib/lexicon';
 import { go } from '../lib/router';
 import { saveWord, setBookWords, useStore } from '../lib/store';
@@ -15,6 +16,22 @@ interface Item {
   er: string;
   pp: string;
   zu: string;
+  /** よく使う語 */
+  top?: boolean;
+}
+
+type ExtraRow = [full: string, prefix: string, base: string, ja: string, rank: number, er: string, pp: string, baseJa: string];
+
+/** 手で書いた一覧 (separable.ts) ＋ 辞書から足した語 (separable_extra.json) を本体の動詞ごとにまとめる */
+function allGroups() {
+  const map = new Map<string, { key: string; title: string; sub: string; items: Item[]; r: number }>();
+  SEPARABLE.forEach((g, i) => map.set(g.base, { key: g.base, title: g.base, sub: g.ja, items: itemsOf(g).map((it) => ({ ...it, top: true })), r: i }));
+  for (const [full, prefix, base, ja, rank, er, pp, baseJa] of EXTRA as ExtraRow[]) {
+    let g = map.get(base);
+    if (!g) map.set(base, (g = { key: base, title: base, sub: baseJa, items: [], r: 1000 + rank }));
+    g.items.push({ prefix, base, ja, full, er, pp, zu: `${prefix}zu${base}`, top: rank <= 5000 });
+  }
+  return [...map.values()].sort((a, b) => a.r - b.r);
 }
 
 function itemsOf(g: SepGroup): Item[] {
@@ -46,7 +63,7 @@ export function Separable() {
   }, [words]);
 
   const groups = useMemo(() => {
-    const all = SEPARABLE.map((g) => ({ key: g.base, title: g.base, sub: g.ja, items: itemsOf(g) }));
+    const all = allGroups();
     if (view === 'base') return all;
     const byPrefix = new Map<string, Item[]>();
     for (const g of all) for (const it of g.items) byPrefix.set(it.prefix, [...(byPrefix.get(it.prefix) || []), it]);
@@ -205,6 +222,7 @@ export function Separable() {
                       <span className="de" style={{ fontSize: '1.2rem' }}>
                         <span style={{ color: 'var(--red)' }}>{it.prefix}</span>|{it.base}
                       </span>
+                      {it.top && <span className="tiny" style={{ color: 'var(--gold, #c90)' }} title="よく使う">★</span>}
                       {tbId && (
                         <a href={`#/word/${encodeURIComponent(tbId)}`} className="tag" onClick={(e) => e.stopPropagation()}>
                           教科書

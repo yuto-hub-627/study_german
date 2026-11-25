@@ -13,12 +13,14 @@ export function Examples({ pos, w }: { pos: string; w: string }) {
       alive = false;
     };
   }, [pos, w]);
-  if (!list || list.length === 0) return null;
+  // 日本語訳のある例文だけ出す
+  const ja = (list || []).filter((x) => x[1]);
+  if (ja.length === 0) return null;
   return (
     <div className="card">
       <h3>例文</h3>
       <div className="examples">
-        {list.map(([de, ja, en]) => (
+        {ja.map(([de, jaText]) => (
           <div key={de} className="ex-item">
             <div className="row" style={{ flexWrap: 'nowrap', alignItems: 'flex-start', gap: 8 }}>
               <div className="de" style={{ flex: 1 }}>
@@ -26,12 +28,9 @@ export function Examples({ pos, w }: { pos: string; w: string }) {
               </div>
               <Speak small text={de} />
             </div>
-            {ja ? <div className="ja small">{ja}</div> : en ? <div className="small muted">英訳: {en}</div> : null}
+            <div className="ja small">{jaText}</div>
           </div>
         ))}
-      </div>
-      <div className="tiny muted" style={{ marginTop: 8 }}>
-        出典: Tatoeba（CC BY 2.0 FR）・Wiktionary（CC BY-SA 4.0）
       </div>
     </div>
   );

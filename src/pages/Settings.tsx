@@ -205,7 +205,7 @@ export function Settings({ query }: { query: URLSearchParams }) {
 
       <div className="card small muted stack" style={{ gap: 4 }}>
         <b style={{ color: 'var(--text)' }}>データについて</b>
-        <div>辞書データ: Wiktionary（kaikki.org 経由, CC BY-SA 4.0）、頻度リスト: FrequencyWords (CC BY-SA 4.0)。</div>
+        <div>辞書データ: Wiktionary（kaikki.org 経由, CC BY-SA 4.0）、頻度リスト: FrequencyWords (CC BY-SA 4.0)、例文・作文問題: Tatoeba (CC BY 2.0 FR)。</div>
         <div>教科書の単語・文法は授業用教科書の内容をもとに独自にまとめたものです。</div>
       </div>
       {msg && <div className="toast">{msg}</div>}
