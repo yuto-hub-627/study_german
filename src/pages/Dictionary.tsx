@@ -6,6 +6,7 @@ import { AdjTable, GenderTag, NounTable, VerbPrincipal, VerbTable } from '../com
 import { ARTICLE, GENDER_LABEL, headword, speechText } from '../lib/german';
 import { FormWhy } from '../components/FormWhy';
 import { Examples } from '../components/Examples';
+import { WordInfoCard } from '../components/WordInfoCard';
 import { detectSeparable, fold, suggest, type LexEntry } from '../lib/lexicon';
 import { go } from '../lib/router';
 import { saveWord, setBookWords, useStore } from '../lib/store';
@@ -220,6 +221,7 @@ export function DictEntry({ pos, w }: { pos: string; w: string }) {
       )}
 
       <Examples pos={word.pos} w={word.de} />
+      <WordInfoCard pos={word.pos} w={word.de} lex={lex} />
 
       {word.pos === 'verb' && (
         <>

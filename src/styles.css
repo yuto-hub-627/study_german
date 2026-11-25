@@ -497,3 +497,11 @@ input[type="range"] { accent-color: var(--red); width: 100%; }
 .ex-item { padding-bottom: 10px; border-bottom: 1px dashed var(--line, #d8ccb4); }
 .ex-item:last-child { border-bottom: none; padding-bottom: 0; }
 .ex-item .ja { margin-top: 2px; }
+
+/* 語源・成り立ち */
+.word-info .wi-row { display: grid; grid-template-columns: 7.5em 1fr; gap: 4px 12px; padding: 6px 0; align-items: start; }
+.word-info .wi-label { font-size: 0.78rem; font-weight: 700; color: var(--text-2); padding-top: 4px; }
+.word-info .wi-affix { margin: 6px 0 0; padding-left: 1.2em; }
+@media (max-width: 520px) { .word-info .wi-row { grid-template-columns: 1fr; } .word-info .wi-label { padding-top: 0; } }
+.word-info .chip { max-width: 100%; }
+.word-info .wi-gloss { display: inline-block; max-width: 11em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: bottom; }

@@ -297,20 +297,44 @@ export function detectSeparable(w: string, e?: LexEntry): string | undefined {
 // ---------- 例文 ----------
 /** [ドイツ語, 日本語訳 | null, 英訳?] */
 export type Example = [string, string | null, string?];
-const exCache = new Map<string, Promise<Record<string, Example[]>>>();
+const shardCache = new Map<string, Promise<Record<string, unknown>>>();
+
+/** public/dict/<dir>/<頭文字>.json から 1 語分を読む */
+async function loadShard<T>(dir: string, pos: string, w: string): Promise<T | undefined> {
+  const c = fold(w)[0] || '_';
+  const key = dir + '/' + c;
+  let p = shardCache.get(key);
+  if (!p) {
+    p = fetch(`${import.meta.env.BASE_URL}dict/${key}.json`)
+      .then((r) => (r.ok ? (r.json() as Promise<Record<string, unknown>>) : {}))
+      .catch(() => {
+        shardCache.delete(key);
+        return {};
+      });
+    shardCache.set(key, p);
+  }
+  return (await p)[`${pos}:${w}`] as T | undefined;
+}
 
 /** 単語の例文 (Tatoeba の日本語訳つき / Wiktionary の英訳つき) */
 export async function loadExamples(pos: string, w: string): Promise<Example[]> {
-  const c = fold(w)[0] || '_';
-  let p = exCache.get(c);
-  if (!p) {
-    p = fetch(`${import.meta.env.BASE_URL}dict/ex/${c}.json`)
-      .then((r) => (r.ok ? (r.json() as Promise<Record<string, Example[]>>) : {}))
-      .catch(() => {
-        exCache.delete(c);
-        return {};
-      });
-    exCache.set(c, p);
-  }
-  return (await p)[`${pos}:${w}`] || [];
+  return (await loadShard<Example[]>('ex', pos, w)) || [];
+}
+
+/** 語源・成り立ち・関連語 (Wiktionary) */
+export interface WordInfo {
+  /** 成り立ち [部品, 英語の意味?] */
+  pt?: [string, string?][];
+  /** 由来 [言語コード, 語, i=受け継いだ / b=借用 / d=由来] */
+  o?: [string, string, 'i' | 'b' | 'd'][];
+  /** 同じ語源の英単語 */
+  en?: string[];
+  sy?: string[];
+  an?: string[];
+  dv?: string[];
+  /** 語源の原文 (英語) */
+  tx?: string;
+}
+export async function loadInfo(pos: string, w: string): Promise<WordInfo | undefined> {
+  return loadShard<WordInfo>('info', pos, w);
 }

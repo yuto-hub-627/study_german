@@ -1,5 +1,7 @@
 import { useMemo } from 'react';
 import { Examples } from '../components/Examples';
+import { useLexicon } from '../components/GermanInput';
+import { WordInfoCard } from '../components/WordInfoCard';
 import { Icon } from '../components/Icon';
 import { Speak } from '../components/Speak';
 import { AdjTable, GenderTag, NounTable, VerbPrincipal, VerbTable } from '../components/WordTables';
@@ -10,6 +12,7 @@ import { deleteWord, setBookWords, useStore } from '../lib/store';
 import { POS_LABEL } from '../lib/types';
 
 export function WordDetail({ id }: { id: string }) {
+  const { lex } = useLexicon();
   const w = useStore((s) => s.wordMap.get(id));
   const p = useStore((s) => s.progress.get(id));
   const reviews = useStore((s) => s.reviews);
@@ -109,6 +112,7 @@ export function WordDetail({ id }: { id: string }) {
         </div>
       )}
       <Examples pos={w.pos} w={w.de} />
+      <WordInfoCard pos={w.pos} w={w.de} lex={lex} />
       <div className="card">
         <h3>MY単語帳</h3>
         <div className="chips">
