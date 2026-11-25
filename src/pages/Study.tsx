@@ -136,7 +136,11 @@ export function Study({ query }: { query: URLSearchParams }) {
   return (
     <div className="stack">
       <div className="topbar">
-        <h1>単語の学習</h1>
+        <button className="back" onClick={() => go('/study')}>
+          <Icon name="back" size={18} /> 学習
+        </button>
+        <h1 style={{ fontSize: '1.15rem' }}>単語の学習</h1>
+        <span style={{ width: 60 }} />
       </div>
       <div className="card stack">
         <div className="field">

@@ -1,12 +1,8 @@
-import { StageBar } from '../components/StageBar';
-import { LESSONS_GRAMMAR } from '../data/grammar';
+import { Icon } from '../components/Icon';
 import { go } from '../lib/router';
 import { stage } from '../lib/srs';
-import { accuracy, dailyCounts, dueWords, newLearnedToday, retention, stageCounts, startOfDay, streak } from '../lib/stats';
+import { dailyCounts, dueWords, newLearnedToday, startOfDay, streak } from '../lib/stats';
 import { useNow, useStore } from '../lib/store';
-import { POS_LABEL, POS_ORDER, type Pos } from '../lib/types';
-
-const DAY = 86400000;
 
 export function Home() {
   const words = useStore((s) => s.words);
@@ -20,20 +16,13 @@ export function Home() {
   const learnedToday = newLearnedToday(reviews, now);
   const newLeft = Math.max(0, settings.dailyNew - learnedToday);
   const unlearned = words.filter((w) => stage(progress.get(w.id)) === 'new').length;
-  const ret = retention(words, progress, now);
-  const acc7 = accuracy(reviews, now - 7 * DAY);
   const st = streak(reviews, now);
-  const sc = stageCounts(words, progress);
   const todayCount = reviews.filter((r) => r.at >= startOfDay(now)).length;
+  const composeLast = quiz.get('compose')?.last;
   const daily = dailyCounts(reviews, 14, now);
   const maxDaily = Math.max(1, ...daily.map((d) => d.total));
 
-  const byPos = POS_ORDER.map((p) => {
-    const ws = words.filter((w) => w.pos === p);
-    return { p, n: ws.length, c: stageCounts(ws, progress) };
-  }).filter((x) => x.n > 0);
 
-  const gramDone = LESSONS_GRAMMAR.filter((l) => (quiz.get(l.id)?.best ?? 0) >= 0.8).length;
 
   return (
     <div className="stack">
@@ -51,57 +40,25 @@ export function Home() {
             <div className="small" style={{ opacity: 0.85 }}>今日の回答 {todayCount} 回{st > 0 ? ` ・ ${st}日連続 🔥` : ''}</div>
           </div>
           <div className="spacer" />
-          <button className="btn" onClick={() => go('/study')}>
+          <button className="btn" onClick={() => go('/study/words')}>
             学習をはじめる
           </button>
         </div>
       </div>
 
-      <div className="grid grid-3">
-        <div className="card stat">
-          <div className="label">推定定着率</div>
-          <div className="value">{ret === null ? '—' : `${Math.round(ret * 100)}%`}</div>
-          <div className="sub">学習済みの語を今テストした場合の想起率</div>
-        </div>
-        <div className="card stat">
-          <div className="label">正答率（7日）</div>
-          <div className="value">{acc7 ? `${Math.round(acc7.rate * 100)}%` : '—'}</div>
-          <div className="sub">{acc7 ? `${acc7.n} 回の回答` : 'まだ回答がありません'}</div>
-        </div>
-        <div className="card stat">
-          <div className="label">定着した語</div>
-          <div className="value">
-            {sc.mature}
-            <span className="small muted"> / {words.length}</span>
+      <a href="#/compose" className="card lesson-card" style={{ color: 'inherit' }}>
+        <span className="lesson-badge" style={{ fontSize: '0.95rem' }}>
+          <Icon name="edit" size={22} />
+        </span>
+        <div style={{ flex: 1 }}>
+          <div style={{ fontWeight: 700 }}>作文練習</div>
+          <div className="small muted">
+            カードを並べて文を作る。動詞・冠詞は長押しで活用形に
+            {composeLast !== undefined ? ` ・ 前回 ${Math.round(composeLast * 100)}%` : ''}
           </div>
-          <div className="sub">復習間隔が21日以上になった語</div>
         </div>
-      </div>
-
-      <div className="card">
-        <div className="row" style={{ marginBottom: 10 }}>
-          <h3 style={{ margin: 0 }}>単語の習得状況</h3>
-          <div className="spacer" />
-          <a href="#/dict" className="small">辞書へ →</a>
-        </div>
-        <StageBar c={sc} legend />
-        <div className="section-title">品詞別</div>
-        <div className="stack" style={{ gap: 10 }}>
-          {byPos.map(({ p, n, c }) => (
-            <div key={p} className="row" style={{ flexWrap: 'nowrap', cursor: 'pointer' }} onClick={() => go(`/words?pos=${p}`)}>
-              <div style={{ width: 92, flexShrink: 0 }} className="small">
-                {POS_LABEL[p as Pos]}
-              </div>
-              <div style={{ flex: 1 }}>
-                <StageBar c={c} />
-              </div>
-              <div className="tiny muted" style={{ width: 64, textAlign: 'right', flexShrink: 0 }}>
-                {Math.round(((c.young + c.mature) / n) * 100)}% / {n}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+        <Icon name="chevron" size={18} />
+      </a>
 
       <div className="card">
         <h3>最近2週間の学習</h3>
@@ -123,26 +80,6 @@ export function Home() {
         </div>
       </div>
 
-      <div className="card">
-        <div className="row" style={{ marginBottom: 8 }}>
-          <h3 style={{ margin: 0 }}>文法</h3>
-          <div className="spacer" />
-          <span className="small muted">
-            合格 {gramDone} / {LESSONS_GRAMMAR.length} 課
-          </span>
-        </div>
-        <div className="chips">
-          {LESSONS_GRAMMAR.map((l) => {
-            const r = quiz.get(l.id);
-            const cls = r ? (r.best >= 0.8 ? 'tag ok' : 'tag warn') : 'tag';
-            return (
-              <a key={l.id} href={`#/grammar/${l.id}`} className={cls} style={{ padding: '6px 10px', fontSize: '0.8rem' }} title={l.title}>
-                {l.id} {r ? `${Math.round(r.best * 100)}%` : ''}
-              </a>
-            );
-          })}
-        </div>
-      </div>
     </div>
   );
 }

@@ -12,7 +12,11 @@ export function GrammarList() {
   return (
     <div className="stack">
       <div className="topbar">
-        <h1>文法</h1>
+        <button className="back" onClick={() => go('/study')}>
+          <Icon name="back" size={18} /> 学習
+        </button>
+        <h1 style={{ fontSize: '1.15rem' }}>文法問題</h1>
+        <span style={{ width: 60 }} />
       </div>
       <p className="muted small" style={{ marginTop: -8 }}>
         教科書の各課の文法事項を、要点と練習問題で確認できます。80%以上で合格です。

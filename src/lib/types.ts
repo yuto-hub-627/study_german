@@ -92,6 +92,11 @@ export interface Settings {
   studyCount?: number;
   direction: 'de-ja' | 'ja-de' | 'mixed';
   lessonsFilter: string[];
+  /** 作文問題の条件 (前回の設定を覚える) */
+  composeLessons?: string[];
+  composeOutside?: boolean;
+  composeCount?: number;
+  composeDummy?: boolean;
   syncCode?: string;
   lastSync?: number;
   serverCursor?: number;

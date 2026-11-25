@@ -9,6 +9,7 @@ import { Separable } from './pages/Separable';
 import { BookDetail, MyBooks } from './pages/MyBooks';
 import { Settings } from './pages/Settings';
 import { Study } from './pages/Study';
+import { Compose, StudyHub } from './pages/Compose';
 import { WordDetail } from './pages/WordDetail';
 import { Words } from './pages/Words';
 import { match, useRoute } from './lib/router';
@@ -20,7 +21,6 @@ const NAV = [
   { path: '/dict', label: '辞書', icon: 'search' },
   { path: '/my', label: 'MY単語帳', icon: 'folder' },
   { path: '/study', label: '学習', icon: 'study' },
-  { path: '/grammar', label: '文法', icon: 'grammar' },
   { path: '/important', label: '重要なこと', icon: 'star', desktopOnly: true },
   { path: '/settings', label: '設定', icon: 'settings' },
 ];
@@ -44,13 +44,15 @@ export function App() {
   else if (path === '/important') page = <Important />;
   else if ((m = match('/my/:id', path))) page = <BookDetail id={m.id} />;
   else if ((m = match('/edit/:id', path))) page = <EditWord id={m.id} />;
-  else if (path === '/study') page = <Study query={query} />;
+  else if (path === '/study') page = [...query.keys()].length ? <Study query={query} /> : <StudyHub />;
+  else if (path === '/study/words') page = <Study query={query} />;
+  else if (path === '/compose') page = <Compose />;
   else if (path === '/grammar') page = <GrammarList />;
   else if ((m = match('/grammar/:id', path))) page = <GrammarLesson key={m.id} id={m.id} />;
   else if (path === '/settings') page = <Settings query={query} />;
   else page = <div className="empty">ページが見つかりません</div>;
 
-  const active = (p: string) => (p === '/' ? path === '/' : path.startsWith(p) || (p === '/my' && (path === '/add' || path.startsWith('/edit'))));
+  const active = (p: string) => (p === '/' ? path === '/' : path.startsWith(p) || (p === '/my' && (path === '/add' || path.startsWith('/edit'))) || (p === '/study' && (path.startsWith('/grammar') || path === '/compose')));
 
   return (
     <div className="app">

@@ -17,6 +17,7 @@ curl -sS https://downloads.tatoeba.org/exports/links.tar.bz2 | tar xj -C $D
 python3 scripts/tatoeba_pairs.py $D $D/de_ja_pairs.tsv
 python3 scripts/build_examples.py public/dict/lexicon.json $D public/dict/ex
 python3 scripts/build_info.py $D/de_raw.jsonl public/dict/lexicon.json public/dict/info   # 語源・成り立ち・関連語
+python3 scripts/build_compose.py public/dict/lexicon.json src/data/textbook.json $D/de_ja_pairs.tsv $D/de_full.txt public/dict/compose.json   # 作文問題
 python3 scripts/build_textbook.py public/dict/lexicon.json data/textbook_words.tsv src/data/textbook.json
 ```
 - 日本語訳: 日本語版Wiktionary → 英語版Wiktionaryの翻訳表経由の順で採用
